@@ -1,0 +1,83 @@
+Title: Confitemini Domino
+Composer: Alessandro Costantini\\{\twelverm (c.1581-1657) }
+Style: STB 
+Meter: C
+Octave: 4 4 3
+%Bars/line: 7
+Pages: 2
+Systems: 8
+Space: -1 -1 -1
+%% \twelverm 
+
+% Set A4 paper
+%%h270m
+%%w190m
+@+2 d4+ d { d2 | d4 } d d2  | e2d e4  | d2 { d | d4 } d f2  | e0         |
+L: Con-fi-te-mi-ni Do-mi-no, quo-ni-am bo-
+@+2 b4 b { b2  | b4 } a  b2  | c2d c4  | b2 { b  | b4 } b d ( { d | d } c8s b c2 ) |
+L: Con-fi-te-mi-ni  Do-mi-no,        quo-ni-am bo-
+@-6 g4 g { g2  | g4 } fs g2 | c2d- c4 | g2+ { g | g4 } g d2 | a0+         |   
+L: Con-fi-te-mi-ni Do-mi-no, quo-ni-am bo-
+
+d0        | e4 e { e2 | e4 } e e ( { e | e } d8 c d4d ) d8 | e2 { c2 | c } c | c0 |  
+L: nus, Con-fi-te-mi-ni          Do-mi-no, quo-ni-am bo-nus
+d0        | c4 c { c2 | c4 } c c2 | ad a4 | g0 | r2 { a2 | a4 } a c ( { c | 
+L: nus, Con-fi-te-mi-ni Do-mi-no, quo-ni-am bo-
+d0-        | a4+ a4 { a2 | a4 } a a2 | f2d f4 |  e0 |  r2 { f2 | f4 } f a2 | 
+L: nus, Con-fi-te-mi-ni Do-mi-no, quo-ni-am 
+
+% bar 14
+d0             | c0 | e4d e8 e4 d | cd c8 b2     | r4 a b cs | dd d8 c2n    |
+L: bo-nus, quo-ni-am in sae-cu-lum mi-se-ri-cor-di-a
+c4 } b8 a b2 ) | c0 | c4d c8 c4 b | ad a8 e2    | r2 r4 e4  | fs gs ad a8 |
+L: nus,               quo-ni-am in  sae-cu-lum           mi-se-ri-cor-di-
+g0             | c0- | rp         | a4d+ a8 a4 g4 | fd f8 e2  | rp          |
+L: bo-nus, quo-ni-am in sae-cu-lum mi-se-ri-cor-di-a
+
+% bar 20
+b0        | a2 r2 | r4 b c d | ed e8 e2 | d0 | c0 | c4d c8 c4 b4 |
+L: e-ius mi-se-ri-cor-di-a e-ius. Quo-ni-am in 
+g4s ( a2 g4 ) | a2 r2 | r4 g a b | c4d c8 c2 | ( b4 c2 b4 ) | c2 r2 | e4d e8 e4 d4 |
+L: a e-ius mi-se-ri-cor-di-a e-ius. Quo-ni-am in 
+rp           | r4 d e fs | gd g8 f2n | ( e2d f4 | g0 ) | c0- | rp | 
+L:         Mi-se-ri-cor-di-a e-ius.
+
+% bar 27
+a2d g4s | a c d e | fd f8 f2 | e0 | d0 || 3/2 a2 a b |
+L: sae-cu-lum mi-se-ri-cor-di-a e-ius. Al-le-lu
+c4d c8 b2 | r4 a b cs | dd d8 d2 | ( cs4 d2 c4 ) | d0 || 3/2 rp | 
+L: sae-cu-lum mi-se-ri-cor-di-a e-ius. 
+r4 c4 d e | f2d e4 | d0 | a0+ | d0- || 3/2 rp | 
+L: mi-se-ri-cor-di-a e-ius. 
+
+% bar 33
+( c2d b4 a2 ) | b2 e2d e4 | d2 ( ed d4 | c2 ) b b | a0d | rp | c2 c d |
+L: ia al-le-lu-ia, al-le-lu-ia, al-le-lu-
+e2- e fs | g4 g g2 a | b ( c2d b4 | a2 ) a gs | a0d | rp | a2 a b |
+L: Al-le-lu-ia al-le-lu-ia, al-le-lu-ia, al-le-lu-
+rp | e2 e2 fs | ( g2d f4s e2 ) | fn d e | a0d | d2- d e | ( fd e4 d2 | 
+L: Al-le-lu-ia, al-le-lu-ia, al-le-lu-ia, 
+
+% bar 40
+( e4 d c b a2 ) | b2f a g | f4 a a2 bn | ( c2d b4 a2 ) | ( b2d a4 b c | d2 ) d cs | d0d |
+L: ia, al-le-lu-ia, al-le-lu-ia, al-le-lu-ia,
+( c4 b a g f2 ) | ( d4 e ) f2d e4 | f4 c+ c2 d2 | e0d | ( d2d c4 d e | f2 ) e e | d0d |
+L: ia, al-le-lu-ia, al-le-lu-ia, al-le-lu-ia,
+c0 ) r2 | rp |  rp | e2 e fs | g0d | d2 a+ a | d0d- |
+L: al-le-lu-ia, al-le-lu-ia,
+
+
+% bar 47
+d2 d cn | ( b2d c4 d2 ) |  g2d- a4 b2 | ( c2d b8 a8 g2 ) | g2 a a | g0d | 
+L: al-le-lu-ia, al-le-lu-ia, al-le-lu-ia.
+rp | rp |  g2- g f | e2d ( d4 e f | g2 ) g fs | g0d | 
+L: al-le-lu-ia, al-le-lu-ia. 
+rp | g2 g f | ( e0 d2 | c0 ) c2 | e d0 | g0d | 
+L: al-le-lu-ia, al-le-lu-ia, al-le-lu-ia.
+
+
+
+
+
+
+

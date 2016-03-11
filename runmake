@@ -1,0 +1,15 @@
+#!/bin/bash
+
+while sleep 1; do
+  DOIT=false
+  for mtx in *.mtx; do
+    pdf=$(echo $mtx | sed 's/\.mtx$/.pdf/')
+    #echo $mtx $pdf
+    if [ $mtx -nt $pdf ]; then
+      DOIT=true
+    fi
+  done
+  if [ $DOIT = true ]; then
+    make
+  fi
+done
