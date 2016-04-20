@@ -1,0 +1,13 @@
+tmp
+*.log
+*.pml
+*.mx1
+*.mx2
+*.aux
+*.pmx
+*.dvi
+*.ps
+confitemini-domino-stb.tex
+confitemini-domino-ttt.tex
+my-peace.tex
+document.pdf

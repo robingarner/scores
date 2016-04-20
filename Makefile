@@ -5,7 +5,8 @@
 %.pdf: %.pmx
 	pmx2pdf $^
 
-targets: confitemini-domino-ttt.pdf confitemini-domino-stb.pdf
+targets: confitemini-domino-ttt.pdf confitemini-domino-stb.pdf \
+	my-peace.pdf
 
 # confitemini-domino-ttt.pdf : confitemini-domino-ttt.pmx
 #	pmx2pdf confitemini-domino-ttt
