@@ -1,9 +1,8 @@
 Title: My Peace
 Composer: 
 Style: SATB
+Octave: 4 4 3 3 
 Meter: 2/4
-Octave: 4 4 4
-%Bars/line: 5
 Pages: 1
 Systems: 3
 Space: +8 
@@ -13,19 +12,19 @@ Space: +8
 %%h270m
 %%w190m
 e8 | e4d e8 | a8 a4 a8 | b4d b8 | e8- e4 r8 |
-e8 | c4d c8 | f8 f4 g8 | f4d d8 | b8 b4 r8 |
+e8 | c4d c8 | f8 f4 g8r | f4d d8 | b8 b4 r8 |
 L: My peace I leave you, my peace I give you
 e8- | a4d a8 | c8 c4 c8 | b4d a8 | g8s g4 r8 |
-e8- | Rl a4d g8 | f8 f4 e8 | d4d b8 | e8 e4 r8 |
+e8- | Rl a4d g8r | f8 f4 e8 | d4d b8 | e8 e4 r8 |
 
-[ c8+ c ] b a | b4 r8 e8 | c4d a8 | f8 f4 d8 |
-[ e8 e ] d d | b4 r8 e | e4d e8 | d8 d4 d8 |
-L: trouble not your hearts. My peace I leave you my
-[ a8 a ] a a | gs4 r8 g | a4d c8 | a8 a4 f8 |
-[ c8 c ] c c | e4  r8 e | a4d- a8 | d8 d4 d8 |
+ c8+ c  b a | b4 r8 e8 | c4d a8 | f8 f4 d8 |
+ e8 e  d d | b4 r8 e | e4d e8 | d8 d4 d8 |
+L: trou-ble not your hearts. My peace I leave you my
+ a8 a  a a | gs4 r8 g | a4d c8 | a8 a4 f8 |
+ c8 c  f f | e4  r8 e | a4d- a8 | d8 d4 d8 |
 
 b4d+ g8 | e8 e4d | a4 a8 gs8 | a4 r8 e8 :|
 d4d d8 | c8 c4d | [ { c8 d8 } ] e8 e | c4 r8 e8 :|
 L: peace I give you.  Be not a-fraid. My
 g4d b8 | g8 g4d | a4 c8 b8 | a4 r8 e8 :|
-g4d- g8 | c8 c4d | f4 e8 e8 | e4 za- r8 e8 :|
+g4d- g8 | c8 c4d | f4 e8 e8 | e4 za- r8 e8+ :|
