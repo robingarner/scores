@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Sun Jul 17 16:41:27 AEST 2016
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=palastinalied.tex
+outputFile=palastinalied.pdf
+langSpell=en
+markDer=true
+srcDir=

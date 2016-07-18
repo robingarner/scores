@@ -5,6 +5,7 @@ tmp
 *.mx2
 *.aux
 *.pmx
+*.mup
 *.dvi
 *.ps
 confitemini-domino-stb.tex
@@ -15,3 +16,7 @@ linverno.tex
 /document.synctex.gz
 /palastinalied.pdf
 /palastinalied.synctex.gz
+kruisvaarderslied.pdf
+kruisvaarderslied.tex
+linverno.tex
+
