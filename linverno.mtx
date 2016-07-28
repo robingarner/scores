@@ -6,42 +6,77 @@ Octave: 4 4 3B
 %Bars/line: 5
 Pages: 1
 Systems: 4
-Space: 2 2 2 
+Space: 8 8 0 
 %% \twelverm 
 
 % Set A4 paper
-%%h270m
+%%h220m
 %%w190m
 @+0 c4 | f g a g  | f2 f4 c | f g a b | 
 L: L'in ver-no l'e pas-sa-to, l'a-pri-le non c'e
+L: Las-s\`u per le mon-ta-gne la ne-ve non c'\`e 
+L: La bel-la alla fin-es-tra, la guar-da su in
+L: Te l'ho pur sem-pre det-to, che mag-gio la vir-
 @+0 c4+  | a b c b  | a2 a4 c | a c f d |
 L: L'in ver-no l'e pas-sa-to, l'a-pri-le non c'e
-@-4 r4  | r2 r4 c+ | cd b8 a4 g | f2 f4 f4 | 
-L: L'in-ver-no l'e pas-sa-to l'a-
+L: Las-s\`u per le mon-ta-gne la ne-ve non c'\`e 
+L: La bel-la alla fin-es-tra, la guar-da su in
+L: Te l'ho pur sem-pre det-to, che mag-gio la vir-
+@-12 r4  | r2 r4 c+ | cd b8 a4 g | f2 f4 f4 | 
+L: L'in-ver-no l'e pas-sa-to, l'a-
+L: Las-s\`u per le mon-ta-gne, la 
+L: La bel-la alla fin-es-tra, la
+L: Te l'ho pur sem-pre det-to, che 
+
 
 
 g2d g4 | g f e d | c2 c4 c | c c d e |
-L: piu, e ri-tor-na-to mag-gio al can-to del cu-
+L: pi\`u, e ri-tor-na-to mag-gio al can-to del cu-
+L: pi\`u, co-min-cia far' il ni-do il po-ve-ro cu- 
+L: gi\`u, l'a-spet-ta fi-dan-za-to al can-to del cu-
+L: t\`u, Di far sen-tir l'a-mor-e al can-to del cu-
 e2d c4 | b a g f | e2 g4 a | b d c b |
-L: piu, e ri-tor-na-to mag-gio al can-to del cu-
+L: pi\`u, e ri-tor-na-to mag-gio al can-to del cu-
+L: pi\`u, co-min-cia far' il ni-do il po-ve-ro cu- 
+L: gi\`u, l'a-spet-ta fi-dan-za-to al can-to del cu-
+L: t\`u, Di far sen-tir l'a-mor-e al can-to del cu-
 b4d a8 g4 f | c2+ r4 c | b a g f | e2 g4 g |
-L: pri-le non c'e piu, e ri-tor-na-to mag-gio al 
-
+L: pri-le non c'e pi\`u, e ri-tor-na-to mag-gio al 
+L: ne-ve non c'\`e  pi\`u, co-min-cia far' il ni-do il po-ve-ro cu- 
+L: guar-da su in gi\`u,  l'a-spet-ta fi-dan-za-to al can-to del cu-
+L: mag-gio la vir-t\`u,  Di far sen-tir l'a-mor-e al can-to del cu-
 
 f2 r4 c+4 | a r r c | a r r c | d c b a | g2d g4 |
-L: cu cu cu cu cu l'a-pri-le non c'e piu, e
+L: c\`u cu-c\`u cu-c\`u l'a-pri-le non c'e piu, e
+L: c\`u cu-c\`u cu-c\`u la ne-ve non c'\`e gi\`u, co-
+L: c\`u cu-c\`u cu-c\`u  la guar-da su in gi\`u, l'a-
+L: c\`u cu-c\`u cu-c\`u  che mag-gio la vir-t\`u, Di 
 a2 r2 | d4 c f r | d c f a- | b a g f | c2d+ c4 |
-L: cu cu-u cu cu-u cu l'a-pri-le non c'e piu, e
+L: c\`u cu--c\`u cu--c\`u l'a-pri-le non c'e piu, e
+L: c\`u cu--c\`u cu--c\`u la ne-ve non c'\`e gi\`u, co-
+L: c\`u cu--c\`u cu--c\`u la guar-da su in gi\`u, l'a-
+L: c\`u cu--c\`u cu--c\`u che mag-gio la vir-t\`u, Di 
 c4d b8 a4 g | f2 r4 g4 | f4 r4 r4 f | f2 f2 | e4 d c2 |
-L: can-to del cu-cu cu-cu l'a-pri-le no-n c'e 
-
+L: can-to del cu-c\`u cu-c\`u l'a-pri-le no-n c'e 
+L: po-ve-ro cu-c\`u cu-c\`u la ne-ve no-n c'\`e 
+L: can-to del cu-c\`u cu-c\`u la guar-da su- in gi\`u,
+L: can-to del cu-c\`u cu-c\`u che mag-gio la vir-t\`u,
 
 g4 f e d | c2 c4 c | c c d e | f2d r4 |
-L: ri-tor-na-to mag-gio al can-to del cu-cu
+L: ri-tor-na-to mag-gio al can-to del cu-c\`u. 
+L: min-cia far' il ni-do il po-ve-ro cu-c\`u. 
+L: spet-ta fi-dan-za-to al can-to del cu-c\`u. 
+L: far sen-tir l'a-mor-e al can-to del cu-c\`u.
 b4 a g f | e2 g4 a | b d c b | a2d r4 | 
-L: ri-tor-na-to mag-gio al can-to del cu-cu
+L: ri-tor-na-to mag-gio al can-to del cu-c\`u. 
+L: min-cia far' il ni-do il po-ve-ro cu-c\`u. 
+L: spet-ta fi-dan-za-to al can-to del cu-c\`u. 
+L: far sen-tir l'a-mor-e al can-to del cu-c\`u.
 c2+ r4 c4 | b a g f | e2 g4 c4- | f2d r4 | 
 L: piu, e ri-tor-na-to mag-gio cu-cu.
+L:  gi\`u, co-min-cia far' il ni-do cu-c\`u.
+L:   gi\`u, l'a-spet-ta fi-dan-za-to  cu-c\`u.
+L:  t\`u, Di far sen-tir l'a-mor-e  cu-c\`u.
 
 
 
