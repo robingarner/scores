@@ -1,4 +1,7 @@
 \documentclass{article}
+% Uses the full page (smaller margins)
+\usepackage[cm]{fullpage}
+
 \usepackage{mtxlatex,charter}
 \usepackage{etex}
 \usepackage{verse}
@@ -11,22 +14,30 @@
 \input{linverno}
 \end{score}
 
-\begin{verse}
-
+\begin{figure}[h!]
+\begin{minipage}{80mm}
+\begin{verse} 
 Las-s\`u per le mon-ta-gne la ne-ve non c'\`e pi\`u, \\
 co-min-cia far' il ni-do il po-ve-ro cu-c\`u \\ 
 cu-c\`u cu-c\`u la ne-ve non c'\`e gi\`u, \\
-co-min-cia far' il ni-do il po-ve-ro cu-c\`u. \\!
+co-min-cia far' il ni-do (il po-ve-ro) cu-c\`u. \\!
+
 
 La bel-la alla fin-es-tra, la guar-da su in gi\`u, \\
 l'a-spet-ta fi-dan-za-to al can-to del cu-c\`u \\
  cu-c\`u cu-c\`u  la guar-da su in gi\`u, \\
-l'a-spet-ta fi-dan-za-to al can-to del cu-c\`u.  \\!
-
+l'a-spet-ta fi-dan-za-to (al can-to del) cu-c\`u.  \\!
+\end{verse}
+\end{minipage}
+\begin{minipage}{80mm}
+\begin{verse} 
 Te l'ho pur sem-pre det-to, che mag-gio la vir- \\
 t\`u, Di far sen-tir l'a-mor-e al can-to del cu- \\
 c\`u cu-c\`u cu-c\`u  che mag-gio la vir-t\`u,  \\
-Di far sen-tir l'a-mor-e al can-to del cu-c\`u. \\!
+Di far sen-tir l'a-mor-e (al can-to del) cu-c\`u. \\!
 \end{verse}
+\end{minipage}
+
+\end{figure}
 
 \end{document}
