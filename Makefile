@@ -8,15 +8,22 @@
 %.pdf: %.tex
 	pdflatex $^
 
-targets: confitemini-domino-ttt.pdf confitemini-domino-stb.pdf \
+.PHONY: confitemini-domino
+
+all: confitemini-domino \
 	my-peace.pdf my-peace-latex.pdf linverno.pdf \
 	kruisvaarderslied.pdf palastinalied.pdf \
         palastinalied-deutsch.pdf \
 	linverno-latex.pdf
 
+
+confitemini-domino:
+	$(MAKE) -C confitemini
+
 linverno.pdf: linverno.pmx linverno-lyrics.tex
 my-peace.pdf: my-peace.pmx
-confitemini-domino-stb.pdf: confitemini-domino-stb.pmx
+confitemini-domino-stb.pdf: cd/confitemini-domino-stb.pmx
+confitemini-domino-ttt.pdf: cd/confitemini-domino-ttt.pmx
 kruisvaarderslied.pdf: kruisvaarderslied.pmx
 
 linverno-latex.pdf: linverno.pdf linverno-latex.tex
@@ -35,3 +42,5 @@ my-peace-latex.pdf: my-peace-latex.tex my-peace.pdf
 #confitemini-domino-ttt.pmx : confitemini-domino-ttt.mtx
 #	prepmx -bvn confitemini-domino-ttt
 #
+clean: 
+	rm *.mx1 *.mx2 *.aux *.log *.dvi *.pmx *.pml
