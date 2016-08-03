@@ -1,0 +1,54 @@
+\documentclass{article}
+% Uses the full page (smaller margins)
+\usepackage[cm]{fullpage}
+
+\usepackage{../mtxlatex,charter}
+\usepackage{etex}
+\usepackage{verse}
+\mtxlatex
+\pagestyle{empty}
+\renewcommand{\writebarno}{\rule{0pt}{12pt}}
+
+\begin{document}
+
+
+\begin{center}
+\framebox{\parbox{170mm}{
+\begin{mus} \input kvl-1.tex \end{mus}
+}}
+\framebox{
+\begin{minipage}{170mm}
+\begin{mus} \input kvl-1.tex \end{mus}
+\end{minipage}
+}
+\end{center}
+
+\begin{figure}[h!]
+\begin{minipage}{85mm}
+\begin{verse} 
+All-er erst le-be ich mir wer-de. \\
+Sit mein sun-dig au-ge siht \\
+Das rei-ne land und auch die er-de \\
+der man so vil er-en giht \\ 
+Mirst ge-sche-hen des ich je bat, ich bin kom-men \\
+an die Stat, da Got men-nisch li-chen trat\\!
+
+
+Sch\"o-niu lant r\^\i-ch un-de h\^e-re, swaz ich der noch h\^an ge-sehen, \\
+S\^o bi-st d\^uz ir all-er \^er-e. Waz ist wun-ders hie ge-schehen! \\
+Daz ein ma-get ein kint ge-bar, h\^ere \"uber al-ler  \\
+en-gel schar, was daz niht ein wun-der gar?  \\!
+\end{verse}
+\end{minipage}
+\begin{minipage}{85mm}
+\begin{verse} 
+Hie liez er si-ch rei-ne tou-fen, daz der men-sche rei-ne s\^\i. \\
+D\^o li-ez er sich hie ver-kou-fen, daz wir ei-gen wur-den fr\^i. \\
+An-ders w\ae-ren wir ver--lorn. Wol dir, sper, kriuze   \\
+un-de dorn! W\^e dir, heiden, daz ist dir zorn! \\!
+\end{verse}
+\end{minipage}
+
+\end{figure}
+
+\end{document}

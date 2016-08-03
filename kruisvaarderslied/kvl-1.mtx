@@ -1,0 +1,15 @@
+Style: SOLO
+%Octave: 4 4 4 3 
+Sharps: 2
+Meter: 6/4
+Pages: 1
+Systems: 1
+%Bars/line: 12
+
+% Set A4 paper
+%%h50m
+%%w90m
+|: e2d e2d | g2d g4 f2 | e2d ( e8 f8 g4 f ) | e2d ( e4 d2 ) | f2d a2d b2d ( b4 a g ) | ( g f2 ) ( e4 d e ) | ( f g f e2d ) |
+L: All-er erst le-be ich mir wer-de. Sit mein sun-dig au-ge siht
+L: Sch\"o-niu lant r\^\i-ch un-de h\^e-re, swaz ich der noch h\^an ge-sehen,
+L: Hie liez er si-ch rei-ne tou-fen, daz der men-sche rei-ne s\^\i.

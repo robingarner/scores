@@ -8,17 +8,16 @@
 %.pdf: %.tex
 	pdflatex $^
 
-.PHONY: confitemini-domino
+.PHONY: confitemini-domino kruisvaarderslied
 
 all: confitemini-domino \
-	my-peace.pdf my-peace-latex.pdf linverno.pdf \
-	kruisvaarderslied.pdf palastinalied.pdf \
-        palastinalied-deutsch.pdf \
-	linverno-latex.pdf
-
+	my-peace.pdf my-peace-latex.pdf linverno.pdf
 
 confitemini-domino:
 	$(MAKE) -C confitemini
+
+kruisvaarderslied:
+	$(MAKE) -C kruisvaarderslied
 
 linverno.pdf: linverno.pmx linverno-lyrics.tex
 my-peace.pdf: my-peace.pmx
