@@ -1,82 +1,109 @@
 Title: Kruisvaarderslied (P\"alestinalied)
 Composer: Walther von der Vogelweide {\twelverm (c. 1170--c. 1230), arr. Chr. Andersen}
-Style: SATB4
+Style: SATB
 %Octave: 4 4 4 3 
 Sharps: 2
 Meter: 6/4
-Pages: 4
-Systems: 4
+Pages: 3
+Systems: 12
 %Bars/line: 7
-Space: +12 +12 +2 +12
+%Space: +12 +12 +2 +12
+Space: -2 +0 
 %% \twelverm 
 
 % Set A4 paper
 %%h270m
 %%w190m
-|: e2d e2d | g2d g4 f2 | e2d ( e8 f8 g4 f ) | e2d ( e4 d2 ) | f2d a2d b2d ( b4 a g ) | ( g f2 ) ( e4 d e ) | ( f g f e2d ) |
+e2d e2d | g2d g4 f2 | e2d ( e8 f8 g4 f ) | e2d ( e4 d2 ) | f2d a2d b2d ( b4 a g ) | ( g f2 ) ( e4 d e ) | ( f g f e2d ) |
+e2d e2d | g2d g4 f2 | e2d ( e8 f8 g4 f ) | e2d ( e4 d2 ) | f2d a2d b2d ( b4 a g ) | ( g f2 ) ( e4 d e ) | ( f g f e2d ) |
 L: All-er erst le-be ich mir wer-de. Sit mein sun-dig au-ge siht
-L: Sch\"o-niu lant r\^\i-ch un-de h\^e-re, swaz ich der noch h\^an ge-sehen,
-L: Hie liez er si-ch rei-ne tou-fen, daz der men-sche rei-ne s\^\i.
-%L: D\^o er sich wol-te \"ubr unser bar-men, hie leit er den grim-men t\^ot,
-|: e2d e2d | g2d g4 f2 | e2d ( e8 f8 g4 f ) | e2d ( e4 d2 ) | f2d a2d b2d ( b4 a g ) | ( g f2 ) ( e4 d e ) | ( f g f e2d ) |
-L: All-er erst le-be ich mir wer-de. Sit mein sun-dig au-ge siht
-L: Sch\"o-niu lant r\^\i-ch un-de h\^e-re, swaz ich der noch h\^an ge-sehen,
-L: Hie liez er si-ch rei-ne tou-fen, daz der men-sche rei-ne s\^\i.
-%L: D\^o er sich wol-te \"ubr unser bar-men, hie leit er den grim-men t\^ot,
-|: e2d e2d | g2d g4 f2 | e2d ( e8 f8 g4 f ) | e2d ( e4 d2 ) | f2d a2d b2d ( b4 a g ) | ( g f2 ) ( e4 d e ) | ( f g f e2d ) |
-@-8 |: e2d e2d | g2d g4 f2 | e2d ( e8 f8 g4 f ) | e2d ( e4 d2 ) | f2d a2d b2d ( b4 a g ) | ( g f2 ) ( e4 d e ) | ( f g f e2d ) |
-L: All-er erst le-be ich mir wer-de. Sit mein sun-dig au-ge siht
-L: Sch\"o-niu lant r\^\i-ch un-de h\^e-re, swaz ich der noch h\^an ge-sehen,
-L: Hie liez er si-ch rei-ne tou-fen, daz der men-sche rei-ne s\^\i.
-%L: D\^o er sich wol-te \"ubr unser bar-men, hie leit er den grim-men t\^ot,
+e2d e2d | g2d g4 f2 | e2d ( e8 f8 g4 f ) | e2d ( e4 d2 ) | f2d a2d b2d ( b4 a g ) | ( g f2 ) ( e4 d e ) | ( f g f e2d ) |
+e2d e2d | g2d g4 f2 | e2d ( e8 f8 g4 f ) | e2d ( e4 d2 ) | f2d a2d b2d ( b4 a g ) | ( g f2 ) ( e4 d e ) | ( f g f e2d ) |
+L: 
 
 e2d e4 e2 | g2d ( g4 f2 ) | e2dr ( e8 f8 g4 f4 ) | e2d ( e4 d2 ) | f2d a2d | b2d ( b4 a4 g4 ) | ( g4 f2 ) ( e4 d4 e4 ) | ( f4 g f e2d ) |
-L: Das rei-ne land und auch die er-de der man so vil er-en giht
-L: S\^o bi-st d\^uz ir all-er \^er-e. Waz ist wun-ders hie ge-schehen!
-L: D\^o li-ez er sich hie ver-kou-fen, daz wir ei-gen wur-den fr\^i.
-%L: Er vil- r\^\i che durch uns ar--men, daz wir k\oe-men \^uz der n\^ot.
-e2d d4r b2 | b2d ( b4 c2 ) | ( d4 a2 ) ( b8 c8 d4 c4 ) | b2d ( c4 d2 ) | ( f2 e4 ) d2d | g2d ( f2 e4 ) | ( d4 c2 ) b2d | ( c2 d4 e2d ) |
-L: Das rei-ne land und auch die er-de der man so vil er-en giht
-L: s\^o bi-st d\^uz ir all-er \^er-e. Waz ist wun-ders hie ge-schehen!
-L: D\^o li-ez er sich hie ver-kou-fen, daz wir ei-gen wur-den fr\^i.
-%L: Er vil- r\^\i che durch uns ar--men, daz wir k\oe-men \^uz der n\^ot.
 e2d e4 e2 | g2d ( g4 f2 ) | e2dr ( e8 f8 g4 f4 ) | e2d ( e4 f2 ) | f2d a2d | b2d ( b4 a4 g4 ) | ( g4 f2 ) ( e4 d4 e4 ) | ( f4 g f e2d ) |
-e2d d4r b2 | b2d ( b4 c2 ) | ( d4 a2 ) ( b8 c8 d4 c4 ) | b2d ( c4 d2 ) | ( f2 e4 ) d2d | g2d ( f2 e4 ) | ( d4 c2 ) b2d | ( c2 d4 e2d ) |
 L: Das rei-ne land und auch die er-de der man so vil er-en giht
-L: s\^o bi-st d\^uz ir all-er \^er-e. Waz ist wun-ders hie ge-schehen!
-L: D\^o li-ez er sich hie ver-kou-fen, daz wir ei-gen wur-den fr\^i.
-%L: Er vil- r\^\i che durch uns ar--men, daz wir k\oe-men \^uz der n\^ot.
+e2d d4r b2 | b2d ( b4 c2 ) | ( d4 a2 ) ( b8 c8 d4 c4 ) | b2d ( c4 d2 ) | ( f2 e4 ) d2d | g2d ( f2 e4 ) | ( d4 c2 ) b2d | ( c2 d4 e2d ) |
+@-8 e2d d4r b2 | b2d ( b4 c2 ) | ( d4 a2 ) ( b8 c8 d4 c4 ) | b2d ( c4 d2 ) | ( f2 e4 ) d2d | g2d ( f2 e4 ) | ( d4 c2 ) b2d | ( c2 d4 e2d ) |
+L: Das rei-ne land und auch die er-de der man so vil er-en giht
 
 b2d+ d2d | d4 d2 ( b4 a2 ) | b2d ( d4 c2 ) | b2d r2d | b2d ( d4 c b ) | a2d ( a8 g8 f4 e4 ) |
-L: Mirst ge-sche-hen des ich je bat, ich bin kom-
-L: Daz ein ma-get ein kint ge-bar, h\^ere \"uber al-ler 
-L: An-ders w\ae-ren wir ver--lorn. Wol dir, sper, kriuze 
-%L: Daz in d\^o des niht ver--dr\^oz, dast ein wun-der 
 g2d g2d | a2d ( g4 f2 | f2 ) e4 f2 g4s | f2d ( g2dn | g2d ) g2d | f2d ( f2 e4 ) |
-L: Mirst ge-sche-hen des ich je bat, ich bin kom-
-L: Daz ein ma-get ein kint ge-bar, h\^ere \"uber al-ler 
-L: An-ders w\ae-ren wir ver-lorn. Wol dir, sper, kriuze 
-%L: Daz in d\^o des niht ver--dr\^oz, dast ein wun-der 
+L: Mirst ge-sche-hen des ich je bat, ich bin kom-men
 b2d+ d2d | d2d ( b4 a2 ) | b2d d4 c2 | b2d ( b2d b2d ) b2d | d2d ( a2d |
 e0d | e0d | b2d b2d | r2d ( e2d | e2d ) e2d d2d ( d2d | 
 L: Mirst ge-sche-hen ich bin kom-men
-L: Daz ein ma-get, h\^ere \"uber al-ler 
-L: An-ders w\ae-ren. Wol dir, sper, kriuze un-de 
-%L: Daz in d\^o des niht ver--dr\^oz, dast ein wun-der 
 
 f2d ( g4 f e ) | d2d r2d | f2d a2d | b2d ( b4 a g ) | f2d ( e4 d e ) | ( f g f e2d ) :|]
-L: an die Stat, da Got men-nisch li-chen trat
-L: en-gel schar, was daz niht ein wun-der gar?
-L: un-de dorn! W\^e dir, heiden, daz ist dir zorn!
-%L: al-ze gr\^oz, all-er wun-der \"uber gen-\^oz. 
 f2d ( g4 f e ) | d2d r2d | ( f2 e4 ) d2d | ( e2 d4 ) ( f2 g4 ) | f2d ( e4 d e ) | ( f g f e2d ) :|]
 L: an die Stat, da Got men-nisch li-chen trat
-L: en-gel schar, was daz niht ein wun-der gar?
-L: un-de dorn! W\^e dir, heiden, daz ist dir zorn!
-%L: al-ze gr\^oz, all-er wun-der \"uber gen-\^oz. 
 a2d ) b2 c4n | a2d ( a2d | a2d ) a2d | g2d ( f2 e4 ) | b2d+ ( b4 a b ) | ( cs e c b2d ) :|]
 d2d ) ( g4 f ) e | d2d ( d2d | d2d ) d2d | b0d | b2d b2d b2d e2d :|]
+LT: an die Stat, da Got men-nisch li-chen trat
 L: an die Stat, da Got men-nisch li-chen trat
+
+
+%
+%  Second verse
+%
+%
+|: e2d e2d | g2d g4 f2 | e2d ( e8 f8 g4 f ) | e2d ( e4 d2 ) | f2d a2d b2d ( b4 a g ) | ( g f2 ) ( e4 d e ) | ( f g f e2d ) |
+|: e2d e2d | g2d g4 f2 | e2d ( e8 f8 g4 f ) | e2d ( e4 d2 ) | f2d a2d b2d ( b4 a g ) | ( g f2 ) ( e4 d e ) | ( f g f e2d ) |
+L: Sch\"o-niu lant r\^\i-ch un-de h\^e-re, swaz ich der noch h\^an ge-sehen,
+|: e2d- e2d | g2d g4 f2 | e2d ( e8 f8 g4 f ) | e2d ( e4 d2 ) | f2d a2d b2d ( b4 a g ) | ( g f2 ) ( e4 d e ) | ( f g f e2d ) |
+|: e2d e2d | g2d g4 f2 | e2d ( e8 f8 g4 f ) | e2d ( e4 d2 ) | f2d a2d b2d ( b4 a g ) | ( g f2 ) ( e4 d e ) | ( f g f e2d ) |
+L: Sch\"o-niu lant r\^\i-ch un-de h\^e-re, swaz ich der noch h\^an ge-sehen,
+
+e2d e4 e2 | g2d ( g4 f2 ) | e2dr ( e8 f8 g4 f4 ) | e2d ( e4 d2 ) | f2d a2d | b2d ( b4 a4 g4 ) | ( g4 f2 ) ( e4 d4 e4 ) | ( f4 g f e2d ) |
+e2d d4r b2 | b2d ( b4 c2 ) | ( d4 a2 ) ( b8 c8 d4 c4 ) | b2d ( c4 d2 ) | ( f2 e4 ) d2d | g2d ( f2 e4 ) | ( d4 c2 ) b2d | ( c2 d4 e2d ) |
+L: s\^o bi-st d\^uz ir all-er \^er-e. Waz ist wun-ders hie ge-schehen!
+e2d e4 e2 | g2d ( g4 f2 ) | e2dr ( e8 f8 g4 f4 ) | e2d ( e4 f2 ) | f2d a2d | b2d ( b4 a4 g4 ) | ( g4 f2 ) ( e4 d4 e4 ) | ( f4 g f e2d ) |
+e2d d4r b2 | b2d ( b4 c2 ) | ( d4 a2 ) ( b8 c8 d4 c4 ) | b2d ( c4 d2 ) | ( f2 e4 ) d2d | g2d ( f2 e4 ) | ( d4 c2 ) b2d | ( c2 d4 e2d ) |
+L: s\^o bi-st d\^uz ir all-er \^er-e. Waz ist wun-ders hie ge-schehen!
+
+b2d+ d2d | d4 d2 ( b4 a2 ) | b2d ( d4 c2 ) | b2d r2d | b2d ( d4 c b ) | a2d ( a8 g8 f4 e4 ) |
+g2d g2d | a2d ( g4 f2 | f2 ) e4 f2 g4s | f2d ( g2dn | g2d ) g2d | f2d ( f2 e4 ) |
+L: Daz ein ma-get ein kint ge-bar, h\^ere \"uber al-ler 
+b2d+ d2d | d2d ( b4 a2 ) | b2d d4 c2 | b2d ( b2d b2d ) b2d | d2d ( a2d |
+e0d | e0d | b2d b2d | r2d ( e2d | e2d ) e2d d2d ( d2d | 
+L: Daz ein ma-get, h\^ere \"uber al-ler 
+
+f2d ( g4 f e ) | d2d r2d | f2d a2d | b2d ( b4 a g ) | f2d ( e4 d e ) | ( f g f e2d ) :|]
+f2d ( g4 f e ) | d2d r2d | ( f2 e4 ) d2d | ( e2 d4 ) ( f2 g4 ) | f2d ( e4 d e ) | ( f g f e2d ) :|]
 L: en-gel schar, was daz niht ein wun-der gar?
+a2d ) b2 c4n | a2d ( a2d | a2d ) a2d | g2d ( f2 e4 ) | b2d+ ( b4 a b ) | ( cs e c b2d ) :|]
+d2d ) ( g4 f ) e | d2d ( d2d | d2d ) d2d | b0d | b2d b2d b2d e2d :|]
+L: en-gel schar, was daz niht ein wun-der gar?
+
+%
+%  Third verse
+%
+%
+|: e2d e2d | g2d g4 f2 | e2d ( e8 f8 g4 f ) | e2d ( e4 d2 ) | f2d a2d b2d ( b4 a g ) | ( g f2 ) ( e4 d e ) | ( f g f e2d ) |
+|: e2d e2d | g2d g4 f2 | e2d ( e8 f8 g4 f ) | e2d ( e4 d2 ) | f2d a2d b2d ( b4 a g ) | ( g f2 ) ( e4 d e ) | ( f g f e2d ) |
+L: Hie liez er si-ch rei-ne tou-fen, daz der men-sche rei-ne s\^\i.
+|: e2d- e2d | g2d g4 f2 | e2d ( e8 f8 g4 f ) | e2d ( e4 d2 ) | f2d a2d b2d ( b4 a g ) | ( g f2 ) ( e4 d e ) | ( f g f e2d ) |
+|: e2d e2d | g2d g4 f2 | e2d ( e8 f8 g4 f ) | e2d ( e4 d2 ) | f2d a2d b2d ( b4 a g ) | ( g f2 ) ( e4 d e ) | ( f g f e2d ) |
+L: Hie liez er si-ch rei-ne tou-fen, daz der men-sche rei-ne s\^\i.
+
+e2d e4 e2 | g2d ( g4 f2 ) | e2dr ( e8 f8 g4 f4 ) | e2d ( e4 d2 ) | f2d a2d | b2d ( b4 a4 g4 ) | ( g4 f2 ) ( e4 d4 e4 ) | ( f4 g f e2d ) |
+e2d d4r b2 | b2d ( b4 c2 ) | ( d4 a2 ) ( b8 c8 d4 c4 ) | b2d ( c4 d2 ) | ( f2 e4 ) d2d | g2d ( f2 e4 ) | ( d4 c2 ) b2d | ( c2 d4 e2d ) |
+L: D\^o li-ez er sich hie ver-kou-fen, daz wir ei-gen wur-den fr\^i.
+e2d e4 e2 | g2d ( g4 f2 ) | e2dr ( e8 f8 g4 f4 ) | e2d ( e4 f2 ) | f2d a2d | b2d ( b4 a4 g4 ) | ( g4 f2 ) ( e4 d4 e4 ) | ( f4 g f e2d ) |
+e2d d4r b2 | b2d ( b4 c2 ) | ( d4 a2 ) ( b8 c8 d4 c4 ) | b2d ( c4 d2 ) | ( f2 e4 ) d2d | g2d ( f2 e4 ) | ( d4 c2 ) b2d | ( c2 d4 e2d ) |
+L: D\^o li-ez er sich hie ver-kou-fen, daz wir ei-gen wur-den fr\^i.
+
+b2d+ d2d | d4 d2 ( b4 a2 ) | b2d ( d4 c2 ) | b2d r2d | b2d ( d4 c b ) | a2d ( a8 g8 f4 e4 ) |
+g2d g2d | a2d ( g4 f2 | f2 ) e4 f2 g4s | f2d ( g2dn | g2d ) g2d | f2d ( f2 e4 ) |
+L: An-ders w\ae-ren wir ver-lorn. Wol dir, sper, kriuze 
+b2d+ d2d | d2d ( b4 a2 ) | b2d d4 c2 | b2d ( b2d b2d ) b2d | d2d ( a2d |
+e0d | e0d | b2d b2d | r2d ( e2d | e2d ) e2d d2d ( d2d | 
+L: An-ders w\ae-ren. Wol dir, sper, kriuze un-de 
+
+f2d ( g4 f e ) | d2d r2d | f2d a2d | b2d ( b4 a g ) | f2d ( e4 d e ) | ( f g f e2d ) :|]
+f2d ( g4 f e ) | d2d r2d | ( f2 e4 ) d2d | ( e2 d4 ) ( f2 g4 ) | f2d ( e4 d e ) | ( f g f e2d ) :|]
+L: un-de dorn! W\^e dir, heiden, daz ist dir zorn!
+a2d ) b2 c4n | a2d ( a2d | a2d ) a2d | g2d ( f2 e4 ) | b2d+ ( b4 a b ) | ( cs e c b2d ) :|]
+d2d ) ( g4 f ) e | d2d ( d2d | d2d ) d2d | b0d | b2d b2d b2d e2d :|]
 L: un-de dorn! W\^e  hei-den, daz ist dir zorn!
-%L: al-ze gr\^oz, all-er wun-der \"uber gen-\^oz. 

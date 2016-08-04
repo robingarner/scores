@@ -10,7 +10,7 @@
 
 .PHONY: confitemini-domino kruisvaarderslied
 
-all: confitemini-domino \
+all: confitemini-domino kruisvaarderslied \
 	my-peace.pdf my-peace-latex.pdf linverno.pdf
 
 confitemini-domino:

@@ -9,7 +9,7 @@
 \begin{document}
 
 \newlength{\vcolwidth}
-\setlength{\vcolwidth}{0.3\textwidth}
+\setlength{\vcolwidth}{0.48\textwidth}
 
 \newlength{\ssep}
 \setlength{\ssep}{3ex}
@@ -17,9 +17,16 @@
 %\tablinesep=3ex
 %\tabcolsep=10pt
 
+\newcounter{Verse}
 \newenvironment{stanza}{
+\stepcounter{Verse}
+\flagverse{\theVerse. }
 }{
 }
+
+
+\newcommand{\numberverse}{}
+
 \begin{verse}
 \poemtitle{Pal\"astinalied}
 
@@ -28,14 +35,14 @@
 %
 % First stanza
 %
-\begin{stanza}
-N\^u lebe ich mir alr\^erst werde, \\
-s\^\i t m\^\i n s\"undic ouge sihet \\
-daz h\^ere lant und ouch die erde, \\
-der man vil der \^eren gihet.\\
-N\^u ist geschehen, des ich ie bat:\\
-ich bin komen an die stat,\\
-d\^a got mennischl\^\i chen trat.\\!
+\begin{stanza} 
+All-er erst le-be ich mir wer-de, \\
+Sit mein sun-dig au-ge siht \\
+Das rei-ne land und auch die er-de \\
+der man so vil er-en giht, \\
+Mirst ge-sche-hen des ich je bat\\
+ich bin kommen an die stat,\\
+d\^a Got mennisch l\^\i chen trat.\\!
 \end{stanza}
 
 
@@ -94,9 +101,9 @@ als er Abrah\^ame erschein.\\!
 D\^o er den tievel d\^o geschande,\\
 daz nie keiser baz gestreit,\\
 d\^o fuor er her wider ze lande.\\
-D\^o huob sich der juden leit,\\
-daz er herre ir huote brach,\\
-und daz man in s\^\i t lebendic sach,\\
+D\^o huob sich der juden leit,\\ 
+daz er herre ir huote brach,\\ 
+und daz man in s\^\i t lebendic sach,\\ 
 den ir hant sluoc unde stach.\\!
 \end{stanza} 
 %

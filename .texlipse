@@ -1,5 +1,5 @@
 #TeXlipse project settings
-#Mon Aug 01 09:56:54 AEST 2016
+#Wed Aug 03 14:46:42 AEST 2016
 markTmpDer=true
 builderNum=2
 outputDir=
@@ -7,8 +7,8 @@ makeIndSty=
 bibrefDir=
 outputFormat=pdf
 tempDir=tmp
-mainTexFile=linverno-latex.tex
-outputFile=linverno-latex.pdf
+mainTexFile=palastinalied-deutsch.tex
+outputFile=palastinalied-deutsch.pdf
 langSpell=en
 markDer=true
-srcDir=
+srcDir=kruisvaarderslied
