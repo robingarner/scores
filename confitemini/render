@@ -1,0 +1,9 @@
+for v in soprano tenor bass; do 
+  timidity --adjust-key=0 confitemini-domino-stb-${v}.mid \
+      -o confitemini-domino-stb-${v}.wav \
+      --output-24bit -A120 -Ow; 
+  timidity --adjust-key=-3 confitemini-domino-stb-${v}.mid \
+      -o confitemini-domino-stb-${v}-b3.wav \
+      --output-24bit -A120 -Ow; 
+done
+for f in *.wav; do lame $f ${f//wav/mp3}; done
