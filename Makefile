@@ -11,7 +11,8 @@
 .PHONY: confitemini-domino kruisvaarderslied
 
 all: confitemini-domino kruisvaarderslied \
-	my-peace.pdf my-peace-latex.pdf linverno.pdf
+	my-peace.pdf my-peace-latex.pdf linverno.pdf \
+	spring.pdf
 
 confitemini-domino:
 	$(MAKE) -C confitemini
@@ -21,6 +22,7 @@ kruisvaarderslied:
 
 linverno.pdf: linverno.pmx linverno-lyrics.tex
 my-peace.pdf: my-peace.pmx
+spring.pdf: spring.pmx
 confitemini-domino-stb.pdf: cd/confitemini-domino-stb.pmx
 confitemini-domino-ttt.pdf: cd/confitemini-domino-ttt.pmx
 kruisvaarderslied.pdf: kruisvaarderslied.pmx

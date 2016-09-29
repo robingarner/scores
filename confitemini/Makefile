@@ -8,9 +8,10 @@
 %.pdf: %.tex
 	pdflatex $^
 
-targets: confitemini-domino-ttt.pdf confitemini-domino-stb.pdf
+targets: confitemini-domino-ttt.pdf confitemini-domino-stb.pdf confitemini-domino-ttb.pdf
 
 confitemini-domino-stb.pdf: confitemini-domino-stb.pmx
+confitemini-domino-ttb.pdf: confitemini-domino-ttb.pmx
 confitemini-domino-ttt.pdf: confitemini-domino-ttt.pmx
 
 clean: 
