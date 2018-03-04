@@ -1,27 +1,37 @@
 Title: Confitemini Domino
-Composer: Alessandro Costantini\\ { c.1581-1657}
-TTT: Voices T1 T2 T3; Choral; Clefs G G G
-Style: TTT
+Composer: Alessandro Costantini {\twelverm (c.1581-1657) }
+Style: ATB 
 Meter: C
-Octave: 4 4 4
-Bars/line: 7
+Octave: 5 4 3
+%Bars/line: 7
 Pages: 2
 Systems: 8
-Space: -2 -2 -2
+Space: -1 -1 -1
+%% \twelverm 
 
-@+0 d4+ d { d2 | d4 } d d2  | e2d e4  | d2 { d | d4 } d f2  | e0         |
-L: Con-fi-te-mi-ni Do-mi-no Quo-ni-am Bo-
-@+0 b4 b { b2  | b4 } a  b2  | c2d c4  | b2 { b  | b4 } b d ( { d | d } c8s b c2 ) |
-L: Con-fi-te-mi-ni  Do-mi-no        Quo-ni-am Bo-
+% Set A4 paper
+%%h270m
+%%w190m
+%%It160ibaobcl 
+% Soprano
+% %%Iihahaclv64:64:127
+% Alto/Tenor
+% %%Iihaclhav64:127:64
+% Bass
+%%Iiobhahav127:64:64
+@-1 d4- d { d2 | d4 } d d2  | e2d e4  | d2 { d | d4 } d f2  | e0         |
+L: Con-fi-te-mi-ni Do-mi-no, quo-ni-am bo-
+@+2 b4 b { b2  | b4 } a  b2  | c2d c4  | b2 { b  | b4 } b d ( { d | d } c8s b c2 ) |
+L: Con-fi-te-mi-ni  Do-mi-no,        quo-ni-am bo-
 @-6 g4 g { g2  | g4 } fs g2 | c2d- c4 | g2+ { g | g4 } g d2 | a0+         |   
-L: Con-fi-te-mi-ni Do-mi-no Quo-ni-am Bo-
+L: Con-fi-te-mi-ni Do-mi-no, quo-ni-am bo-
 
 d0        | e4 e { e2 | e4 } e e ( { e | e } d8 c d4d ) d8 | e2 { c2 | c } c | c0 |  
-L: nus, Con-fi-te-mi-ni          Do-mi-no Quo-ni-am Bo-nus
+L: nus, Con-fi-te-mi-ni          Do-mi-no, quo-ni-am bo-nus
 d0        | c4 c { c2 | c4 } c c2 | ad a4 | g0 | r2 { a2 | a4 } a c ( { c | 
-L: nus, Con-fi-te-mi-ni Do-mi-no Quo-ni-am bo-
+L: nus, Con-fi-te-mi-ni Do-mi-no, quo-ni-am bo-
 d0-        | a4+ a4 { a2 | a4 } a a2 | f2d f4 |  e0 |  r2 { f2 | f4 } f a2 | 
-L: nus, Con-fi-te-mi-ni Do-mi-no Quo-ni-am 
+L: nus, Con-fi-te-mi-ni Do-mi-no, quo-ni-am 
 
 % bar 14
 d0             | c0 | e4d e8 e4 d | cd c8 b2     | r4 a b cs | dd d8 c2n    |
@@ -37,15 +47,24 @@ L: e-ius mi-se-ri-cor-di-a e-ius. Quo-ni-am in
 g4s ( a2 g4 ) | a2 r2 | r4 g a b | c4d c8 c2 | ( b4 c2 b4 ) | c2 r2 | e4d e8 e4 d4 |
 L: a e-ius mi-se-ri-cor-di-a e-ius. Quo-ni-am in 
 rp           | r4 d e fs | gd g8 f2n | ( e2d f4 | g0 ) | c0- | rp | 
-L:         mi-se-ri-cor-di-a e-ius
+L:         Mi-se-ri-cor-di-a e-ius.
 
 % bar 27
-a2d g4s | a c d e | fd f8 f2 | e0 | d0 || 3/2 a2 a b |
-L: sae-cu-lum mi-se-ri-cor-di-a e-ius. Al-le-lu
-c4d c8 b2 | r4 a b cs | dd d8 d2 | ( cs4 d2 c4 ) | d0 || 3/2 rp | 
+a2d g4s | a c d e | fd f8 f2 | e0 | d0 ||
+L: sae-cu-lum mi-se-ri-cor-di-a e-ius.
+c4d c8 b2 | r4 a b cs | dd d8 d2 | ( cs4 d2 c4 ) | d0 ||
 L: sae-cu-lum mi-se-ri-cor-di-a e-ius. 
-r4 c4 d e | f2d e4 | d0 | a0+ | d0- || 3/2 rp | 
+r4 c4 d e | f2d e4 | d0 | a0+ | d0- ||
 L: mi-se-ri-cor-di-a e-ius. 
+
+%%It260
+% bar 32
+3/2 a2 a b |
+L: Al-le-lu
+3/2 rp | 
+L: 
+3/2 rp | 
+L: 
 
 % bar 33
 ( c2d b4 a2 ) | b2 e2d e4 | d2 ( ed d4 | c2 ) b b | a0d | rp | c2 c d |
@@ -69,7 +88,7 @@ d2 d cn | ( b2d c4 d2 ) |  g2d- a4 b2 | ( c2d b8 a8 g2 ) | g2 a a | g0d |]
 L: al-le-lu-ia, al-le-lu-ia, al-le-lu-ia.
 rp | rp |  g2- g f | e2d ( d4 e f | g2 ) g fs | g0d |]
 L: al-le-lu-ia, al-le-lu-ia. 
-rp | g2 g f | e e d | c c c | e d0 | g0d |]
+rp | g2 g f | ( e0 d2 | c0 ) c2 | e d0 | g0d |]
 L: al-le-lu-ia, al-le-lu-ia, al-le-lu-ia.
 
 
