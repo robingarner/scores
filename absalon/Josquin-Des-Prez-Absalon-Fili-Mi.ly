@@ -129,10 +129,10 @@ sopranoVoice = \relative c'' {
   c2 a4 a'4~ |           % Bar 75
   a4 g8 f8 e8 d8 e4 |
   d2 a'2 |
-  a2. fs4~( |
-  fs4 d4) d2 |
+  a2. fs4~ |
+  fs4 d4 d2 |
   r4 d4 g2~ |             % Bar 80
-  g4 e2( c4) |
+  g4 e2 c4 |
   c2 f2~ |
   f4 e4 d4. c16 d16 |
   c4 d2 cs4 |
@@ -167,7 +167,7 @@ verseSopranoVoice = \lyricmode {
   % Bar 69
   non vi -- vam ul -- tra,
   non vi -- vam ul- __  _ _ _ _ _ _ _ tra,
-  sed de -- scen -- dam in in -- fer -- num
+  sed de -- scen- __ _ dam in in -- fer- __ _ num
   plo- __ _ _ _ _ _ _ _ rans.
 
 }
@@ -245,7 +245,7 @@ altoVoice = \relative c {
   f e8 d e2 |
   d1 |
   a'2 a2 |
-  g4.( a8) b2 |        % Bar 70
+  g4. a8 b2 |        % Bar 70
   a2 r2 |
   r1 |
   f1 |
@@ -257,9 +257,9 @@ altoVoice = \relative c {
   d2. b4~ |
   b4 g g2 |           % Bar 80
   r4 g4 c2~ |
-  c4 a2( f4) |
-  f2 g4( f~ |
-  f e8 d e2) |
+  c4 a2 f4 |
+  f2 g4 f~ |
+  f e8 d e2 |
   d1\fermata \bar "|."         % Bar 85
 }
 
@@ -294,10 +294,10 @@ verseAltoVoice = \lyricmode {
   in- __ fer- __ _ num plo- __ _ _ _ _ rans,
 
   % Bar 69
-  Non vi- vam ul- tra,
+  Non vi- vam __ _ ul- tra,
   non vi- vam ul- __ _ _ _ _ _ _ _ tra, __ _
   sed de- scen- __ _ dam in
-  in- __ fer- __ num plo- __ rans.
+  in- __ fer- __ _ num plo- __ _ _ _ _ rans.
 }
 
 tenorVoice = \relative c' {
@@ -364,7 +364,7 @@ tenorVoice = \relative c' {
   f2 e |
   a2 r2 |
   a2 a2~ |          % Bar 60
-  a4 fs2( d4) |
+  a4 fs2 d4 |
   d2 r4 d4 |
   g2. e4~ |
   e c4 c2~ |
@@ -381,7 +381,7 @@ tenorVoice = \relative c' {
   f2 e2 |          % Bar 75
   a2 r2 |
   a2 a2~ |
-  a4 fs2( d4) |
+  a4 fs2 d4 |
   d2 r4 d |
   g2. e4~ |          % Bar 80
   e c  c2~ |
@@ -411,13 +411,13 @@ verseTenorVoice = \lyricmode {
   fi- __ li mi, Ab- __  _ sa- __ _ lon
 
   % Bar 50
-  Non __ _ _ _ _ _ _ _ _ vi- __  _ _ _ _ _ _ _ _ _ _ vam vi- __ _ _ _ vam ul- __ tra,
-  sed de- scen-  dam in __ _
+  Non __ _ _ _ _ _ _ _ _ vi- __  _ _ _ _ _ _ _ _ _ _ vam vi- __ _ _ _ vam ul- tra,
+  sed __ _ de- scen-  dam in __ _
   in- fer- __ _ _ _ _ _ num plo- __ _ _ _  rans, __ _ _ _ _ _ _ _ _ _ _ 
 
   % Bar
   non __ vi- __ _ _ _ vam ul- __ tra,
-  sed de- scen- dam in __ _ in- fer- __ _ _ _ _ num
+  sed __ _ de- scen- dam in __ _ in- fer- __ _ _ _ _ num
   plo- __ rans.
 }
 
@@ -478,7 +478,7 @@ bassVoice = \relative c {
   a1~ | a1 |            % Bar 58-59
   d2 r2 |               % Bar 60
   d2 d~ |               % Bar 60
-  d4 b2( g4) |          % Bar 62
+  d4 b2 g4 |          % Bar 62
   g2 r4 g4 |            % Bar 63
   c2. a4~ |            % Bar 64
   a4 f f2 |            % Bar 65
@@ -495,7 +495,7 @@ bassVoice = \relative c {
   a1 |                  % Bar 76
   d2 r2 |               % Bar 77
   d2 d2~ |              % Bar 78
-  d4 b2( g4) |          % Bar 79
+  d4 b2 g4 |          % Bar 79
   g2 r4 g4 |            % Bar 80
   c2. a4~ |            % Bar 81
   a4 f f2 |            % Bar 82
@@ -523,13 +523,13 @@ verseBassVoice = \lyricmode {
   % Bar 52
   Non vi- vam ul- __ _ _ _ _ _ _ _ tra,
   vi- vam ul- __ tra,
-  sed de- scen- __  dam in
+  sed de- scen- __ _ dam in
   in- fer- __ _ num plo- rans,
 
   % Bar 69
   non vi- vam ul- __ _ _ _ _ _ _ _ tra,
   vi- vam ul- __ tra,
-  sed de- scen- __ dam in in- fer- __ _ num
+  sed de- scen- __ _ dam in in- fer- __ _ num
   plo- __ rans.
 }
 
