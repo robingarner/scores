@@ -8,7 +8,10 @@
 %.pdf: %.tex
 	pdflatex $^
 
-all: kruisvaarderslied.pdf kvl.pdf
+%.pdf: %.ly
+	lilypond $^
+
+all: kruisvaarderslied.pdf kvl.pdf kruisvaarderslied-lp.pdf
 
 kruisvaarderslied.pdf: kruisvaarderslied.pmx
 

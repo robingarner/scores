@@ -8,8 +8,10 @@
 }
 
 \paper {
-  page-count = #5
+  page-count = #4
+  system-count = #12
 }
+
 
 global = {
   \key g \major
@@ -124,16 +126,16 @@ sopranoVoice = \relative c'' {
   b2 r2 |
   d1 |
   b2 d2 |
-  c2( a4 a'4~ |           % Bar 75
-  a4 g8 f8 e8 d8 e4) |
+  c2 a4 a'4~ |           % Bar 75
+  a4 g8 f8 e8 d8 e4 |
   d2 a'2 |
   a2. fs4~( |
   fs4 d4) d2 |
   r4 d4 g2~ |             % Bar 80
   g4 e2( c4) |
-  c2 f2~( |
+  c2 f2~ |
   f4 e4 d4. c16 d16 |
-  c4 d2 cs4) |
+  c4 d2 cs4 |
   d1\fermata \bar "|."            % Bar 85
 }
 
@@ -164,13 +166,13 @@ verseSopranoVoice = \lyricmode {
 
   % Bar 69
   non vi -- vam ul -- tra,
-  non vi -- vam ul -- tra,
+  non vi -- vam ul- __  _ _ _ _ _ _ _ tra,
   sed de -- scen -- dam in in -- fer -- num
-  plo -- rans.
+  plo- __ _ _ _ _ _ _ _ rans.
 
 }
 
-altoVoice = \relative c' {
+altoVoice = \relative c {
   \global
   \dynamicUp
   % Music follows here.
@@ -238,7 +240,7 @@ altoVoice = \relative c' {
   d2. b4~ |
   b g g2 |
   r4 g4 d'2~ |
-  d4 a2( f4) |         % Bar 65
+  d4 a2 f4 |         % Bar 65
   f2 g4 f~ |
   f e8 d e2 |
   d1 |
@@ -248,12 +250,12 @@ altoVoice = \relative c' {
   r1 |
   f1 |
   g2 g |
-  a4.( b8 c d e4~ |    % Bar 75
-  e8 d d2 cs4) |
-  d2( d,2) |
+  a4. b8 c d e4~ |    % Bar 75
+  e8 d d2 cs4 |
+  d2 d,2 |
    r2 d'|
-  d2. b4~( |
-  b4 g) g2 |           % Bar 80
+  d2. b4~ |
+  b4 g g2 |           % Bar 80
   r4 g4 c2~ |
   c4 a2( f4) |
   f2 g4( f~ |
@@ -289,12 +291,12 @@ verseAltoVoice = \lyricmode {
   Non vi- __ _ _ vam ul- __ _ _ tra,
   non vi- vam ul- __ _ _ _ _ _ _ _ tra, __ _
   sed de- scen- __ _ dam in
-  in- __ fer- __ num plo- __ _ _ _ _ rans,
+  in- __ fer- __ _ num plo- __ _ _ _ _ rans,
 
   % Bar 69
   Non vi- vam ul- tra,
-  non vi- vam ul- tra,
-  sed de- scen- __ dam in
+  non vi- vam ul- __ _ _ _ _ _ _ _ tra, __ _
+  sed de- scen- __ _ dam in
   in- __ fer- __ num plo- __ rans.
 }
 
@@ -364,28 +366,28 @@ tenorVoice = \relative c' {
   a2 a2~ |          % Bar 60
   a4 fs2( d4) |
   d2 r4 d4 |
-  g2. e4~( |
-  e c4) c2~ |
-  c4 f4.( g8 a4 |          % Bar 65
+  g2. e4~ |
+  e c4 c2~ |
+  c4 f4. g8 a4 |          % Bar 65
   d,1 |
   a'1 |
-  bf2) a |
+  bf2 a |
   a,4. b8 c4 d |
   e2 d4. e8 |             % Bar 70
   f g a2 g4~ |
   g8 f e d e2 |
   d1 |
-  d2.( e4 |
-  f2 e2) |          % Bar 75
+  d2. e4 |
+  f2 e2 |          % Bar 75
   a2 r2 |
   a2 a2~ |
   a4 fs2( d4) |
   d2 r4 d |
-  g2. e4~( |          % Bar 80
-  e c)  c2~ |
-  c4 f4.( g8 a4 |
+  g2. e4~ |          % Bar 80
+  e c  c2~ |
+  c4 f4. g8 a4 |
   d,1 |
-  a'1) |
+  a'1 |
   a1\fermata \bar "|."          % Bar 85
 }
 
@@ -410,12 +412,12 @@ verseTenorVoice = \lyricmode {
 
   % Bar 50
   Non __ _ _ _ _ _ _ _ _ vi- __  _ _ _ _ _ _ _ _ _ _ vam vi- __ _ _ _ vam ul- __ tra,
-  sed de- scen-  dam in
-  in- fer- __ num plo- __ _ _ _  rans, __ _ _ _ _ _ _ _ _ _ _ 
+  sed de- scen-  dam in __ _
+  in- fer- __ _ _ _ _ _ num plo- __ _ _ _  rans, __ _ _ _ _ _ _ _ _ _ _ 
 
   % Bar
-  non __ vi- __ vam ul- __ tra,
-  sed de- scen- dam in in- fer- __ num
+  non __ vi- __ _ _ _ vam ul- __ tra,
+  sed de- scen- dam in __ _ in- fer- __ _ _ _ _ num
   plo- __ rans.
 }
 
@@ -478,8 +480,8 @@ bassVoice = \relative c {
   d2 d~ |               % Bar 60
   d4 b2( g4) |          % Bar 62
   g2 r4 g4 |            % Bar 63
-  c2. a4~( |            % Bar 64
-  a4 f) f2 |            % Bar 65
+  c2. a4~ |            % Bar 64
+  a4 f f2 |            % Bar 65
   bf1 |                 % Bar 66
   a1 |                  % Bar 67
   r1 |                  % Bar 68
@@ -495,8 +497,8 @@ bassVoice = \relative c {
   d2 d2~ |              % Bar 78
   d4 b2( g4) |          % Bar 79
   g2 r4 g4 |            % Bar 80
-  c2. a4~( |            % Bar 81
-  a4 f) f2 |            % Bar 82
+  c2. a4~ |            % Bar 81
+  a4 f f2 |            % Bar 82
   bf1~ |                % Bar 83
   bf1 |                 % Bar 84
   d,1\fermata  \bar "|."        % Bar 85
@@ -522,41 +524,45 @@ verseBassVoice = \lyricmode {
   Non vi- vam ul- __ _ _ _ _ _ _ _ tra,
   vi- vam ul- __ tra,
   sed de- scen- __  dam in
-  in- fer- __ num plo- rans,
+  in- fer- __ _ num plo- rans,
 
   % Bar 69
   non vi- vam ul- __ _ _ _ _ _ _ _ tra,
   vi- vam ul- __ tra,
-  sed de- scen- __ dam in in- fer- __ num
+  sed de- scen- __ dam in in- fer- __ _ num
   plo- __ rans.
 }
 
 sopranoVoicePart = \new Staff \with {
   instrumentName = "Soprano"
+  shortInstrumentName = "S"
   #(midiVoice 'soprano)
 } { \sopranoVoice }
 \addlyrics { \verseSopranoVoice }
 
 altoVoicePart = \new Staff \with {
   instrumentName = "Alto"
+  shortInstrumentName = "A"
   #(midiVoice 'alto)
 } { \clef "treble" \altoVoice }
 \addlyrics { \verseAltoVoice }
 
 tenorVoicePart = \new Staff \with {
   instrumentName = "Tenor"
+  shortInstrumentName = "T"
   #(midiVoice 'tenor)
 } { \clef "treble_8" \tenorVoice }
 \addlyrics { \verseTenorVoice }
 
 bassVoicePart = \new Staff \with {
   instrumentName = "Bass"
+  shortInstrumentName = "B"
   #(midiVoice 'bass)
 } { \clef bass \bassVoice }
 \addlyrics { \verseBassVoice }
 
 \score {
-    \transpose d d
+    \transpose d g
 
   <<
     \sopranoVoicePart
@@ -564,7 +570,12 @@ bassVoicePart = \new Staff \with {
     \tenorVoicePart
     \bassVoicePart
   >>
-  \layout { }
+  \layout { 
+    \context {
+      \Voice
+      \consists "Ambitus_engraver"
+    }
+  }
   \midi {
     \tempo 4=120
   }
