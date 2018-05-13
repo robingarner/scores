@@ -159,7 +159,7 @@ verseSopranoVoice = \lyricmode {
   ut mo- __ ri -- _ ar pro __ _ _ _ te, __
   fi --  li mi, Ab -- sa __ _ lon? __
 
-  Non vi -- vam ul -- __ _ tra,
+  Non vi -- vam ul- __ _ tra,
   non vi -- vam ul- __ _  _ _ _ _ _ _ tra,
   sed de -- scen- __ _  dam in
   in- __ fer- __ _ num plo- __ _ _ _ _ _ rans,
