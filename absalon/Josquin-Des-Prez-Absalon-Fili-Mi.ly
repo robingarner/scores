@@ -408,11 +408,11 @@ verseTenorVoice = \lyricmode {
 
   % Bar 40
   quis det __ _ _ _ ut __ _ mo- __ _ _ _ _ _ _ _  ri- _ ar __ _ pro te,
-  fi- __ li mi, Ab- __  _ sa- __ _ lon
+  fi- __ li mi, Ab- __  _ sa- __ lon
 
   % Bar 50
-  Non __ _ _ _ _ _ _ _ _ vi- __  _ _ _ _ _ _ _ _ _ _ vam vi- __ _ _ _ vam ul- tra,
-  sed __ _ de- scen-  dam in __ _
+  Non  vi- __  _ _ _ _ _ _ _ _ vam vi- __ _ _ _ _ _ _ _ _ _ vam ul- __ _ _ _ tra,
+  sed de- scen- __ _  dam in 
   in- fer- __ _ _ _ _ _ num plo- __ _ _ _  rans, __ _ _ _ _ _ _ _ _ _ _ 
 
   % Bar
@@ -499,8 +499,8 @@ bassVoice = \relative c {
   g2 r4 g4 |            % Bar 80
   c2. a4~ |            % Bar 81
   a4 f f2 |            % Bar 82
-  bf1~ |                % Bar 83
-  bf1 |                 % Bar 84
+  bf1 |                % Bar 83
+  a1 |                 % Bar 84
   d,1\fermata  \bar "|."        % Bar 85
 }
 
@@ -530,7 +530,7 @@ verseBassVoice = \lyricmode {
   non vi- vam ul- __ _ _ _ _ _ _ _ tra,
   vi- vam ul- __ tra,
   sed de- scen- __ _ dam in in- fer- __ _ num
-  plo- __ rans.
+  plo- __ _ rans.
 }
 
 sopranoVoicePart = \new Staff \with {

@@ -1,0 +1,36 @@
+{ "inputs" : [
+    { "file" : "../absalon/Absalon_Fili_Mi_4.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Allon gay.Costeley.SATB.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/April_is_in_my_mistress_face_Morley.pdf" },
+    { "file" : "../josquin-ave-maria/Ave_Maria_-_Josquin_V5.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Ave_Verum_Corpus_Byrd.pdf", 
+      "align" : "ODD" 
+    },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Lassus-Bonjour.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/BYRD-MA3.pdf",
+      "range" : "1-16" 
+    },
+    { "file" : "../confitemini/confitemini-ATB.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Those_dainty_daffodillies.SATBB.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Deep_lamenting_Morley.SAB.pdf" },
+    { "file" : "../draw_on/Draw_on_sweet_night_Wilbye.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Fine_knacks.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Hark,_all_ye_lovely_saints.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Hic_Est_beatissimus_Evangelista_Nanino.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Il_bianco_e_dolce_Arcadelt.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Il_Est_Bel_Et_Bon.David.E minor.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/I_love,_alas,_I_love_thee.SAATB.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Lullaby_Byrd_SAATB.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Margot-labourez-les-vignes_Arcadelt.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Now_is_the_month_1_0.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Gibbons_Loosemore_O Lord.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/O_Magnum_Mysterium.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/O_sleep,_fond_fancy.SSB.pdf" },
+    { "file" : "../sicut/Palestrina-Sicut_Cervus_Desiderat.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Ford, Since First--TUMS.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Springtime_mantleth_every_bough.SAT.pdf" },
+    { "file" : "../shsb/SweetHoneySuckingBees-OneTone.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Vedrassi_prima_Palestrina.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Versa_est_in_luctum_Lobo.pdf" }
+  ]
+}

@@ -17,7 +17,7 @@ hcomposer="Palestrina"
 
 \header {
 	title=\markup{\fontsize #4 "Sicut cervus"}
-	subtitle="Salmo 42"
+	subtitle="Psalm 42"
 	subsubtitle=\markup{\null \vspace #2.5 }
 	composer="Giovanni Pierluigi da Palestrina (c.1525-1594)"
 	%opus="(-)"
