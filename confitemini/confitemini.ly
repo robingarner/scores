@@ -42,18 +42,18 @@ highNotes= \relative c' {
   \break \time 3/2 a2 a b |
   c2. b4 a2 | b2 e2. e4 | d2 e2. d4 | c2 b2 b2 | a1. | R1. | c2 c2 d2 |
   e4 d c b a2 | bes2 a g | f4 a a2 b | c2. b4 a2 | b2. a4 b c | d2 d cis | d1. |
-  d2 d c | b2. c4 d2 |  g,2. a4 b2 | c2. b8 a8 g2 | g2 a a | g1. \bar "|."
+  d2 d c | b2. c4 d2 |  g,2. a4 b2 | c2. b8 a8 g2 | g2 a a | g1. \fermata  \bar "|."
 }
 
 highLyrics=\lyricmode{
   Con- fi- te- mi- ni Do- mi- no, quo- ni- am bo- nus, 
-  Con- fi- te- mi- ni Do- __ _ _ _ mi- no, quo- ni- am bo- nus.
+  Con- fi- te- mi- ni Do- -- _ _ _ mi- no, quo- ni- am bo- nus.
   Quo- ni- am in sae- cu- lum mi- se- ri- cor- di- a e- ius 
   mi- se- ri- cor- di- a e- ius. 
   Quo- ni- am in sae- cu- lum mi- se- ri- cor- di- a e- ius.
   
-  Al- le- lu ia __ _ _ al- le- lu- ia, al- __ _ _ le- lu- ia, al- le- lu- ia, __ _ _ _ _
-  al- le- lu- ia, al- le- lu- ia, __ _ _ al- __ _ _ _ _ le- lu- ia, al- le- lu- ia, __ _ _ 
+  Al- le- lu ia __ _ _ al- le- lu- ia, al- -- _ _ le- lu- ia, al- le- lu- ia, __ _ _ _ _
+  al- le- lu- ia, al- le- lu- ia, __ _ _ al- -- _ _ _ _ le- lu- ia, al- le- lu- ia, __ _ _ 
   al- le- lu- ia, __ _ _ _ al- le- lu- ia.
 }
 
@@ -66,23 +66,23 @@ c4. c8 b2 | r4 a b cis | d4. d8 d2 | cis4 d2 cis4 | d1 \bar "||"
 \break \time 3/2 R1. | 
 e,2 e fis | g4 g g2 a | b c2. b4 | a2 a gis | a1. | R1. | a2 a b |
 c4 b a g f2 | d4 e f2. e4 | f4 c' c2 d2 | e1. | d2. c4 d e | f2 e e | d1. |
-R1. | R1. |  g,2 g f | e2. d4 e f | g2 g fis | g1. ||
+R1. | R1. |  g,2 g f | e2. d4 e f | g2 g fis | g1. \fermata ||
 
 }
 
 
 midLyrics=\lyricmode{
-  Con- fi- te- mi- ni  Do- mi- no,        quo- ni- am bo- __ _ _ _ nus, 
-  Con- fi- te- mi- ni Do- mi- no, quo- ni- am bo- __ _ _ _ nus.             
+  Con- fi- te- mi- ni  Do- mi- no,        quo- ni- am bo- -- _ _ _ nus, 
+  Con- fi- te- mi- ni Do- mi- no, quo- ni- am bo- -- _ _ _ nus.             
   Quo- ni- am in  sae- cu- lum           
-  mi- se- ri- cor- di- a e- __ _ ius 
-  mi- se- ri- cor- di- a e- __ _ _ ius. 
+  mi- se- ri- cor- di- a e- -- _ ius 
+  mi- se- ri- cor- di- a e- -- _ _ ius. 
   Quo- ni- am in sae- cu- lum 
-  mi- se- ri- cor- di- a e- __ _ _ ius. 
+  mi- se- ri- cor- di- a e- -- _ _ ius. 
   
-  Al- le- lu- ia al- le- lu- ia, al- __ _ _ le- lu- ia, al- le- lu- 
-  ia, __ _ _ _ _ al- __ _ le- lu- ia, al- le- lu- ia, al- __ _ _ _ _ le- lu- ia,
-  al- le- lu- ia, al- __ _ _ _ le- lu- ia. 
+  Al- le- lu- ia al- le- lu- ia, al- -- _ _ le- lu- ia, al- le- lu- 
+  ia, __ _ _ _ _ al---_ _ le- lu- ia, al- le- lu- ia, al- -- _ _ _ _ le- lu- ia,
+  al- le- lu- ia, al- -- _ _ _ le- lu- ia. 
 }
 
 lowNotes=\relative c {
@@ -94,7 +94,7 @@ r4 c4 d e | f2. e4 | d1 | a'1 | d,1 ||
 \break \time 3/2 R1. | 
 R1. | e2 e2 fis | g2. fis4 e2 | f d e | a1. | d,2 d e | f2. e4 d2 | 
 c1 r2 | R1. |  R1. | e2 e fis | g1. | d2 a' a | d,1. |
-R1. | g2 g f | e1 d2 | c1 c2 | e d1 | g1. ||
+R1. | g2 g f | e1 d2 | c1 c2 | e d1 | g1. \fermata ||
 
 }
 
@@ -102,7 +102,7 @@ R1. | g2 g f | e1 d2 | c1 c2 | e d1 | g1. ||
 lowLyrics=\lyricmode{
   Con-  fi- te- mi- ni Do- mi- no, quo- ni- am bo- nus, 
   Con- fi- te- mi- ni Do- mi- no, quo- ni- am bo- nus.
-  Quo- ni- am in sae- cu- lum mi- se- ri- cor- di- a e- __ _ _ ius.
+  Quo- ni- am in sae- cu- lum mi- se- ri- cor- di- a e- -- _ _ ius.
   Mi- se- ri- cor- di- a e- ius.
   
   Al- le- lu- ia, __ _ _ al- le- lu- ia, al- le- lu- ia, __ _ _ _
@@ -115,7 +115,7 @@ lowLyrics=\lyricmode{
 % {high,mid,low}Clef
 %
 
-% voicing = #'ATB
+voicing = #'ATB
 
 voicings = #'(
    (ATB . (  (high . ((name . "Alto")   (clef . "treble") (octave . 0)))
@@ -212,9 +212,9 @@ voicings = #'(
 	oddHeaderMarkup= \markup  \fill-line { 
 	  \on-the-fly #not-first-page \hcomposer \on-the-fly #not-first-page 
 	  \htitle \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
-	system-count=8
+	system-count=7
 	page-count = 2
-	ragged-last-bottom = ##f
+	ragged-last-bottom = ##t
 	indent=2.0\cm
 	system-system-spacing =
 	#'((basic-distance . 20) (minimum-distance . 0) (padding . 5))

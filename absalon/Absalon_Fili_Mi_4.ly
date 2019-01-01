@@ -2,11 +2,15 @@
 \version "2.18.2"
 % automatically converted by musicxml2ly from Absalon_Fili_Mi_4.mxl
 
+htitle="Absalon Fili Mi"
+hcomposer="Josquin des Pres"
+
+
 \header {
     encodingsoftware = "MuseScore 2.1.0"
     encodingdate = "2018-07-30"
-    composer = "Pierre de la Rue"
-    title = "Absalon Fili Mi"
+    composer = #(string-append hcomposer " (or Pierre de la Rue)")
+    title = \htitle
     }
 
 #(set-global-staff-size 14.7954330709)
@@ -17,8 +21,14 @@
     bottom-margin = 2.0\cm
     left-margin = 1.0\cm
     right-margin = 1.0\cm
-  page-count = #2
-  system-count = #8
+    page-count = #2
+    system-count = #8
+
+    evenHeaderMarkup=\markup  \fill-line { 
+	  \fromproperty #'page:page-number-string \htitle \hcomposer }
+    oddHeaderMarkup= \markup  \fill-line { 
+	  \on-the-fly #not-first-page \hcomposer \on-the-fly #not-first-page 
+	  \htitle \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
 }
 
 \layout {
@@ -116,20 +126,21 @@ PartPOneVoiceOne =  \relative g' {
     g1 \bar "|."
     }
 
-PartPOneVoiceOneLyricsOne =  \lyricmode { Ab -- sa -- lon fi -- li "mi,"
-    fi -- li "mi," fi __ _ _ _ li mi __ _ fi -- li
-    "mi," Ab -- sa -- lon __ _ _ fi -- li "mi," Ab -- sa --
-    "lon," Ab -- sa -- lon fi -- li mi __ _ _ _ _
-    _ _ fi -- li "mi," __ _ _ _ _ Ab --
-    _ _ sa -- "lon," Ab -- sa __ _ "lon," Ab __ _
+PartPOneVoiceOneLyricsOne =  \lyricmode { Ab -- sa -- lon fi -- li mi,
+    fi -- li mi, fi -- _ _ _ li mi __ _ fi -- li
+    mi, Ab -- sa -- lon __ _ _ fi -- li mi, Ab -- sa --
+    lon, Ab -- sa -- lon fi -- li mi __ _ _ _ _
+    _ _ fi -- li mi, __ _ _ _ _ Ab --
+    _ _ sa -- lon, Ab -- sa -- _ lon, Ab -- _
     _ _ sa -- lon quis det ut mo -- ri -- ar pro __ _
-    "te," ut mo -- ri -- ar pro -- te -- fi -- li mi Ab -- sa __ _
-    "lon?" -- Non vi -- vam ul __ _ "tra," non vi -- vam ul --
-    _ _ _ _ _ "tra," sed de -- scen __ _
-    dam in in -- fer __ _ num plo __ _ _ _ _
-    _ rans non vi -- vam ul __ _ "tra," non vi -- vam ul --
-    _ _ _ _ _ "tra," sed de -- scen __ _
-    dam in in -- fer __ _ num plo __ _ _ _ _
+    "te," ut mo -- ri -- ar pro -- te -- fi -- li mi Ab -- sa -- _
+    "lon?" __ 
+    Non vi -- vam ul -- _ "tra," non vi -- vam ul --
+    _ _ _ _ _ "tra," sed de -- scen -- _
+    dam in in -- fer -- _ num plo __ _ _ _ _
+    _ rans non vi -- vam ul -- _ "tra," non vi -- vam ul --
+    _ _ _ _ _ "tra," sed de -- scen -- _
+    dam in in -- fer -- _ num plo -- _ _ _ _
     _ _ rans }
 PartPTwoVoiceOne =  \relative c' {
     \clef "treble" \key c \major \time 2/2 R1*2 | % 3
@@ -216,21 +227,21 @@ PartPTwoVoiceOne =  \relative c' {
     g1 \bar "|."
     }
 
-PartPTwoVoiceOneLyricsOne =  \lyricmode { Ab -- sa -- lon fi -- li "mi,"
-    fi __ _ li "mi," fi -- li "mi," Ab -- sa -- "lon," __ _
-    _ fi __ _ li __ _ "mi," Ab -- sa -- "lon," Ab -- sa
-    -- "lon," fi -- li "mi," fi __ _ _ _ li "mi," --
-    _ _ _ _ fi __ _ _ li "mi," Ab -- sa --
-    lon __ _ fi -- li "mi," __ _ _ Ab __ _ sa --
-    "lon," Ab -- sa -- lon __ _ _ _ _ _ fi --
-    li "mi," quis det ut mo -- ri -- ar pro te __ _ pro __ _
+PartPTwoVoiceOneLyricsOne =  \lyricmode { Ab -- sa -- lon fi -- li mi,
+    fi -- _ li mi, fi -- li mi, Ab -- sa -- lon, __ _
+    _ fi -- _ li -- _ mi, Ab -- sa -- lon, Ab -- sa
+    -- lon, fi -- li mi, fi -- _ _ _ li mi, --
+    _ _ _ _ fi -- _ _ li mi, Ab -- sa --
+    lon __ _ fi -- li mi, __ _ _ Ab -- _ sa --
+    lon, Ab -- sa -- lon __ _ _ _ _ _ fi --
+    li mi, quis det ut mo -- ri -- ar pro te __ _ pro __ _
     "te," __ _ _ pro __ _ _ _ "te," fi -- li mi
-    Ab -- sa -- lon non vi __ _ _ vam ul __ _ _ tra
-    non vi -- vam ul __ _ _ _ _ _ tra __ _
-    sed de -- scen __ _ dam in in -- fer __ _ num plo --
+    Ab -- sa -- lon non vi -- _ _ vam ul -- _ _ tra
+    non vi -- vam ul -- _ _ _ _ _ tra __ _
+    sed de -- scen -- _ dam in in -- fer -- _ num plo --
     _ _ _ "rans," non vi -- vam __ _ ul -- "tra,"
-    non vi -- vam ul __ _ _ _ _ _ tra __ _
-    sed de -- scen __ _ dam in in -- fer __ _ num plo --
+    non vi -- vam ul -- _ _ _ _ _ tra __ _
+    sed de -- scen -- _ dam in in -- fer -- _ num plo --
     _ _ _ rans }
 PartPThreeVoiceOne =  \relative g {
     \clef "treble_8" \key c \major \time 2/2 R1*3 | % 4
@@ -319,22 +330,22 @@ PartPThreeVoiceOne =  \relative g {
     d1 \bar "|."
     }
 
-PartPThreeVoiceOneLyricsOne =  \lyricmode { Ab -- sa -- "lon," fi -- li
-    "mi," fi __ _ _ li mi Ab __ _ _ _ sa -- lon
-    _ fi -- li "mi," Ab -- sa -- "lon," __ _ _ Ab --
-    _ sa -- lon fi -- li "mi," fi -- li "mi," fi -- li mi Ab -- sa
-    -- "lon," fi -- li "mi," Ab -- sa -- lon __ _ _ fi -- li
-    __ _ mi __ _ _ Ab -- sa __ _ lon __ _
-    _ Ab -- sa -- "lon," Ab __ _ _ sa __ _ lon -- fi
-    -- li "mi," __ _ quis det __ _ _ ut __ _ _
+PartPThreeVoiceOneLyricsOne =  \lyricmode { Ab -- sa -- lon, fi -- li
+    mi, fi -- _ _ li mi Ab -- _ _ _ sa -- lon
+    _ fi -- li mi, Ab -- sa -- lon, __ _ _ Ab --
+    _ sa -- lon fi -- li mi, fi -- li mi, fi -- li mi Ab -- sa
+    -- lon, fi -- li mi, Ab -- sa -- lon __ _ _ fi -- li
+    __ _ mi __ _ _ Ab -- sa -- _ lon __ _
+    _ Ab -- sa -- lon, Ab -- _ _ sa -- _ lon -- fi
+    -- li mi, __ _ quis det __ _ _ ut __ _ _
     mo -- ri -- ar pro __ _ "te," pro __ _ "te," fi -- li mi
-    Ab __ _ sa -- "lon?" non vi __ _ _ _ _
-    _ _ _ vam ul __ _ _ _ _ _
-    "tra," ul __ _ _ _ "tra," sed de -- scen __ _
-    dam in in -- fer __ _ num -- plo __ _ _ _ _
-    plo -- rans non _ vi __ _ vam ul __ _ _ _
-    _ _ "tra," ul __ _ _ _ "tra," sed de --
-    scen __ _ dam in in -- fer __ _ num -- plo __ _
+    Ab -- _ sa -- "lon?" non vi -- _ _ _ _
+    _ _ _ vam ul -- _ _ _ _ _
+    "tra," ul -- _ _ _ "tra," sed de -- scen -- _
+    dam in in -- fer -- _ num -- plo __ _ _ _ _
+    plo -- rans non _ vi -- _ vam ul -- _ _ _
+    _ _ "tra," ul -- _ _ _ "tra," sed de --
+    scen -- _ dam in in -- fer -- _ num -- plo -- _
     _ _ _ rans }
 PartPFourVoiceOne =  \relative c {
     \clef "bass" \key c \major \time 2/2 R1*5 | % 6
@@ -420,17 +431,17 @@ PartPFourVoiceOne =  \relative c {
     }
 
 PartPFourVoiceOneLyricsOne =  \lyricmode { Ab -- sa -- lon, fi -- li
-    mi, __ fi -- li "mi," ab -- sa -- lon __ _ _ Ab -- sa --
-    lon fi -- li mi, __ _ _ _ _ _ _ _ _
-    Ab -- sa -- lon fi -- li "mi," fi __ _ _ _ _ 
-     li "mi," Ab __ _ _ sa -- lon Ab __ _ _ sa
-    -- lon fi -- li -- "mi," quis det ut mo -- ri -- ar pro "te," ut --
-    _ mo -- ri -- ar -- pro te, fi -- li mi Ab -- sa -- lon?
-    Non vi -- vam ul __ _ _ _ _ _ "tra," ul --
-    _ _ "tra," sed de -- scen __ _ dam in in -- fer --
-    _ num plo -- "rans," non vi -- vam ul __ _ _ _
-    _ _ tra ul __ _ _ tra sed de -- scen __ _
-    dam in in -- fer __ _ num plo __ _ "rans." }
+    mi, __ fi -- li mi, ab -- sa -- lon __ _ _ Ab -- sa --
+    lon fi -- li mi, __ _ _ fi --  _ _ _ li mi
+    Ab -- sa -- lon fi -- li mi, fi -- _ _ _ _ 
+     li mi, Ab -- _ _ sa -- lon Ab -- _ _ sa
+    -- lon fi -- li mi, quis det ut mo -- ri -- ar pro te,
+    ut __    _ mo -- ri -- ar -- pro te, fi -- li mi Ab -- sa -- lon? __
+    Non vi -- vam ul -- _ _ _ _ _ "tra," ul --
+    _ _ "tra," sed de -- scen -- _ dam in in -- fer --
+    _ num plo -- "rans," non vi -- vam ul -- _ _ _
+    _ _ tra ul -- _ _ tra sed de -- scen -- _
+    dam in in -- fer -- _ num plo -- _ "rans." }
 
 % The score definition
 \score {
