@@ -8,8 +8,8 @@ hcomposer="Josquin des Pres"
 \header {
     encodingsoftware = "MuseScore 2.1.0"
     encodingdate = "2018-08-20"
-    composer = "\hcomposer (1450-1521)"
-    title = "Ave Maria"
+    composer = #(string-append hcomposer " (1450-1521)")
+    title = \htitle
 }
     
 
@@ -182,7 +182,7 @@ PartPOneVoiceOne =  \relative g' {
     }
 
 PartPOneVoiceOneLyricsOne =  \lyricmode { 
-  A -- ve Ma -- ri -- _ a, 
+  A -- ve __ Ma -- ri -- _ a, 
   gra -- _ ti -- a ple -- _ _ _ _ na, 
     Do -- mi -- nus te -- _ _ _ _ _ _ _ _ _ _ _ cum,
     Vir -- go se -- re -- _ na, se -- _ re -- na, 
@@ -353,7 +353,7 @@ PartPTwoVoiceOne =  \relative g {
     }
 
 PartPTwoVoiceOneLyricsOne =  \lyricmode { 
-    A -- ve Ma -- ri -- _ a, 
+    A -- ve __ Ma -- ri -- _ a, 
     gra -- _ ti -- a ple -- _ _ _ _ na,
     Do -- mi -- nus te -- _ cum, 
     Vir -- go se -- re -- _ _ _ _ _ _ _ _ _ _ _ _ na,
@@ -517,7 +517,7 @@ PartPThreeVoiceOne =  \relative g {
     }
 
 PartPThreeVoiceOneLyricsOne =  \lyricmode { 
-  A -- ve Ma -- ri -- _ a, 
+  A -- ve __ Ma -- ri -- _ a, 
   gra -- _ ti -- a ple -- _ _ _ _ na 
     Do -- mi -- nus te -- _ _ _ _ _ _ cum 
     Vir -- go se -- re -- _ _ _ _ _ na, __
@@ -676,7 +676,7 @@ PartPFourVoiceOne =  \relative g, {
     }
 
 PartPFourVoiceOneLyricsOne =  \lyricmode { 
-    A -- ve Ma -- ri -- _ a, 
+    A -- ve __ Ma -- ri -- _ a, 
     gra -- _ ti -- a ple -- _ na,
     Do -- mi -- nus te -- _ cum,
     Vir -- go se -- re -- _ na, 
