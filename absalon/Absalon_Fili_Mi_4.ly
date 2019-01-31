@@ -127,8 +127,8 @@ PartPOneVoiceOne =  \relative g' {
     }
 
 PartPOneVoiceOneLyricsOne =  \lyricmode { Ab -- sa -- lon fi -- li mi,
-    fi -- li mi, fi -- _ _ _ li mi __ _ fi -- li
-    mi, Ab -- sa -- lon __ _ _ fi -- li mi, Ab -- sa --
+    fi -- li mi, fi -- _ _ _ li mi, __ _ fi -- li
+    mi, Ab -- sa -- lon, __ _ _ fi -- li mi, Ab -- sa --
     lon, Ab -- sa -- lon fi -- li mi __ _ _ _ _
     _ _ fi -- li mi, __ _ _ _ _ Ab --
     _ _ sa -- lon, Ab -- sa -- _ lon, Ab -- _
@@ -331,7 +331,7 @@ PartPThreeVoiceOne =  \relative g {
     }
 
 PartPThreeVoiceOneLyricsOne =  \lyricmode { Ab -- sa -- lon, fi -- li
-    mi, fi -- _ _ li mi Ab -- _ _ _ sa -- lon
+    mi, fi -- _ _ li mi Ab -- _ _ _ sa -- lon,
     _ fi -- li mi, Ab -- sa -- lon, __ _ _ Ab --
     _ sa -- lon fi -- li mi, fi -- li mi, fi -- li mi Ab -- sa
     -- lon, fi -- li mi, Ab -- sa -- lon __ _ _ fi -- li
@@ -432,10 +432,11 @@ PartPFourVoiceOne =  \relative c {
 
 PartPFourVoiceOneLyricsOne =  \lyricmode { Ab -- sa -- lon, fi -- li
     mi, __ fi -- li mi, ab -- sa -- lon __ _ _ Ab -- sa --
-    lon fi -- li mi, __ _ _ fi --  _ _ _ li mi
+    lon fi -- li mi, __ _ _ fi --  _ _ _ li mi,
     Ab -- sa -- lon fi -- li mi, fi -- _ _ _ _ 
-     li mi, Ab -- _ _ sa -- lon Ab -- _ _ sa
-    -- lon fi -- li mi, quis det ut mo -- ri -- ar pro te,
+     li mi, Ab -- _ _ sa -- lon, 
+     Ab -- _ _ sa -- lon fi -- li mi, 
+     quis det ut mo -- ri -- ar pro te,
     ut __    _ mo -- ri -- ar -- pro te, fi -- li mi Ab -- sa -- lon? __
     Non vi -- vam ul -- _ _ _ _ _ "tra," ul --
     _ _ "tra," sed de -- scen -- _ dam in in -- fer --
