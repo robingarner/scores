@@ -166,15 +166,15 @@ PartPOneVoiceOneLyricsOne =  \lyricmode {
   -- rise from pain -- ful me -- lan -- cho -- ly, a -- rise from
   pain -- ful me- lan -- cho -- ly, My life so ill through want of
   com -- fort fares, That un -- to thee, to thee I con -- se --
-  crate it whol- __ _ _ ly, That un -- to thee I con -- se -- crate it
-  whol- __ _ ly: Sweet night draw on, Sweet night draw on, O sweet
+  crate it whol -- _ _ ly, That un -- to thee I con -- se -- crate it
+  whol -- _ ly: Sweet night draw on, Sweet night draw on, O sweet
   night draw on, Sweet night draw on, Sweet night draw on, My
   griefs when they __ _ be told To shades and dark- ness, find some
-  ease from pain- __ _ ing, And while thou all in si -- lence dost en
+  ease from pain -- _ ing, And while thou all in si -- lence dost en
   -- fold, in si- lence dost en -- fold, and while thou all in
-  si -- lence dost en- __ _ _ _ _ _ fold, I then shall have best time for my
+  si -- lence dost en -- _ _ _ _ _ fold, I then shall have best time for my
   com -- plain -- ing, I then shall have best time for my com --
-  plain- __ _ _ ing, for my com -- plain- __ _ _ _ ing, I then shall have best
+  plain -- _ _ ing, for my com -- plain -- _ _ _ ing, I then shall have best
   time for my com -- plain- ing.
 }
 PartPTwoVoiceOne =  \relative a' {
@@ -299,10 +299,10 @@ PartPTwoVoiceOneLyricsOne =  \lyricmode {
   That un -- to thee, to thee I con -- se -- crate it whol -- ly:
   Sweet night draw on, Sweet night draw on, Sweet night draw on,
   Sweet night draw on, My griefs when they __ _ _ be told To shades and
-  dark -- ness, find some ease from pain- __ _ ing, And while thou
-  all in si -- lence dost en- __ _ _ _ fold, And while thou all in si-
+  dark -- ness, find some ease from pain -- _ ing, And while thou
+  all in si -- lence dost en -- _ _ _ fold, And while thou all in si-
   lence dost en- fold, and while thou all in si -- lence dost
-  en- __ _ _ _ fold, I then shall have best time for my com -- plain --
+  en -- _ _ _ fold, I then shall have best time for my com -- plain --
   ing, I then shall have best time for my com -- plain -- ing, I
   then shall have best time for my com -- plain -- ing.
 }
@@ -442,12 +442,12 @@ PartPThreeVoiceOneLyricsOne =  \lyricmode {
   ly: Sweet night draw on, Sweet night draw on, Sweet night draw
   on, Sweet night draw on, Sweet night draw on, Sweet night draw
   on, My griefs when they be told To shades and dark -- ness, find
-  some ease from pain- __ _ _ ing, to shades and dark -- ness, find
-  some ease from pain- __ _ _ ing, And while thou all in __ _ si -- lence
-  en- __ _ _ _ _ fold, and while thou all in si -- lence dost en- __ _ _ fold, I
-  then shall have best time for my com -- plain- __ _ _ ing, for my com
+  some ease from pain -- _ _ ing, to shades and dark -- ness, find
+  some ease from pain -- _ _ ing, And while thou all in __ _ si -- lence
+  en -- _ _ _ _ fold, and while thou all in si -- lence dost en -- _ _ fold, I
+  then shall have best time for my com -- plain -- _ _ ing, for my com
   -- plain -- ing, I then shall have best time for my com --
-  plain- ing, for my com- plain- __ _ _ ing, for my com -- plain- __ _ _ _ _
+  plain- ing, for my com- plain -- _ _ ing, for my com -- plain -- _ _ _ _
   ing.
 }
 PartPFourVoiceOne =  \relative d' {
@@ -584,12 +584,12 @@ PartPFourVoiceOneLyricsOne =  \lyricmode {
   night draw on, draw on, Sweet night draw on, Sweet night draw
   on, Sweet night draw on, Sweet night draw on, My griefs when
   they __ _ _ be told To shades and dark -- ness, find some ease from
-  pain- __ _ _ ing, to shades and dark -- ness, find some ease from
-  pain -- ing, And while thou all in si -- lence dost en- __ _ _ _ fold,
+  pain -- _ _ ing, to shades and dark -- ness, find some ease from
+  pain -- ing, And while thou all in si -- lence dost en -- _ _ _ fold,
   in si -- lence dost en -- fold, and while thou all in si -- lence
   dost en -- fold, and while thou all in si -- lence dost en --
   fold, I then shall have best time for my com -- plain ing, for
-  my com -- plain- __ _ ing, I then shall have best time __ _ _ for my __ _ com --
+  my com -- plain -- _ ing, I then shall have best time __ _ _ for my __ _ com --
   plain -- ing, I then shall have best time for my com -- plain-
   ing.
 }
@@ -718,7 +718,7 @@ PartPFiveVoiceOneLyricsOne =  \lyricmode {
   night draw on, Sweet night draw on, Sweet night draw on, draw
   on, Sweet night, Sweet night draw on, My griefs when they be __ _ _ 
   told To shades and dark -- ness, find some ease from pain --
-  ing, To shades and dark -- ness, find some ease from pain- __ _ _ _ _
+  ing, To shades and dark -- ness, find some ease from pain -- _ _ _ _
   ing, And while thou all in si -- lence dost en -- fold, and
   while thou all in si -- lence dost __ _ _ en -- fold, for my com -- plain
   -- ing, I then shall have best time for my com -- plain -- ing,
@@ -823,9 +823,9 @@ PartPSixVoiceOneLyricsOne =  \lyricmode {
   to thee I con -- se -- crate it whol -- ly: Sweet night draw on,
   draw on, My griefs when they be told To shades and dark -- ness,
   find some ease from pain -- ing, And while thou all in si -- lence
-  dost en- __ _ _ _ fold, and while thou all in si -- lence dost en- __ _ _ _
+  dost en -- _ _ _ fold, and while thou all in si -- lence dost en -- _ _ _
   fold, I then shall have best time for my com -- plain -- ing, I
-  then shall have best time for my com -- plain- __ _ _ ing.
+  then shall have best time for my com -- plain -- _ _ ing.
 }
 
 % The score definition
