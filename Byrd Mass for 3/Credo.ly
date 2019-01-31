@@ -45,10 +45,13 @@ credoAltoNotes =  \relative fis' {
     r2 fis2 g2 a2 ~ | % 154
     a4 g4 fis2 e2 d2 ~ | 
     % Original has a long bar and a d\breve
-    d2 cis2  d1 ^\fermata \bar "||" \barNumberCheck #42
+    \once \hide Staff.TimeSignature \time 2/2 
+    d2 cis2  \bar "!"
+    \once \hide Staff.TimeSignature \time 4/2 
+    d\breve ^\fermata \bar "||" \barNumberCheck #43
     a1 b2 cis2 | % 158
     d2 e2. cis4 a2 | % 159
-    r2 e'2 fis2 b,2 | \barNumberCheck #45
+    r2 e'2 fis2 b,2 | \barNumberCheck #46
     e1 d1 | % 161
     cis2 d4 cis4 b4 a4 b2 ~ | % 162
     b2 a2 r2 fis'2  | % 163
@@ -58,7 +61,7 @@ credoAltoNotes =  \relative fis' {
     d2 a'2. g4 e4 fis4 | % 167
     g4 a4 b4 a4 g4 fis4 e2 | % 168
     fis1 d1 | % 169
-    d2 d2 e1 ~ | \barNumberCheck #55
+    d2 d2 e1 ~ | \barNumberCheck #56
     e2 e2 d1  | % 171
     d2 g2. g4 fis2 ~ | % 172
     fis4 e4 e1 dis2 | % 173
@@ -68,7 +71,7 @@ credoAltoNotes =  \relative fis' {
     g1 e2 fis2 ~ | % 177
     fis4 d4 e2. d4 d2 ~  | % 178
     d2 cis2 d1 | % 179
-    r2 a'1 g2 | \barNumberCheck #65
+    r2 a'1 g2 | \barNumberCheck #66
     fis2 d2 r2 e2 ~ | % 181
     e4 d4 d1 cis2 | % 182
     d1 a1 | % 183
@@ -78,7 +81,7 @@ credoAltoNotes =  \relative fis' {
     fis2 e2 d2 g2 | % 187
     fis2. fis4 b,2 a2 ~ | % 188
     a4 b4 cis2 d2. b4 | % 189
-    cis1 r2 d2 | \barNumberCheck #75
+    cis1 r2 d2 | \barNumberCheck #76
     fis2 g2 a2 d,2  | % 191
     r2 fis2. e4 fis2 | % 192
     d4 e4 fis2 d1 | % 193
@@ -88,7 +91,7 @@ credoAltoNotes =  \relative fis' {
     fis1 d2 e4 fis4 | % 197
     g1 fis1 | % 198
     a,2. b4 cis2 d4 e4 | % 199
-    fis4 g4 a1 g2 | \barNumberCheck #85
+    fis4 g4 a1 g2 | \barNumberCheck #86
     fis\breve  | % 201
     r2 e2 cis2 fis2 | % 202
     e2. e4 a,2 d2 ~ | % 203
@@ -98,7 +101,7 @@ credoAltoNotes =  \relative fis' {
     r2 d2 d2. d4 | % 207
     e2 fis2 g2 e2  | % 208
     fis1 r2 fis2 | % 209
-    e2. e4 e1 | \barNumberCheck #95
+    e2. e4 e1 | \barNumberCheck #96
     d2 cis2 b1 | % 211
     a1 r2 a'2 | % 212
     g2 fis2 d2. e4 | % 213
@@ -108,9 +111,11 @@ credoAltoNotes =  \relative fis' {
     r2 a2 fis2 g2 | % 217
     a1 d,2 r2 | % 218
     r2 d2 b2 cis2 |
-    d1 a1 ~ | \barNumberCheck #105
+    \once \hide Staff.TimeSignature \time 2/2 
+    d1 \bar "!" \barNumberCheck #106
+    \once \hide Staff.TimeSignature \time 4/2 
     a\breve ^\fermata \bar "||"
-    R\breve*11  | \barNumberCheck #117
+    R\breve*11  | \barNumberCheck #118
     r1 r2 e'2 ~ | % 233
     e2 g2 fis1 | % 234
     e1 e2 d2 ~ | % 235
@@ -118,7 +123,7 @@ credoAltoNotes =  \relative fis' {
     e2 cis2 d2 e2 | % 237
     fis1 d2 e2  | % 238
     fis2 g2 e2 fis2 | % 239
-    g1 fis2 b,2 ~ | \barNumberCheck #125
+    g1 fis2 b,2 ~ | \barNumberCheck #126
     b2 ais2 b2. cis4 | % 241
     d1 cis1 | % 242
     r2 fis1 e2 | % 243
@@ -128,7 +133,7 @@ credoAltoNotes =  \relative fis' {
     dis1 r2 d2 | % 247
     fis1 e1 | % 248
     r2 e2. fis4 g2 | % 249
-    fis1 r2 a2 | \barNumberCheck #135
+    fis1 r2 a2 | \barNumberCheck #136
     g2. fis4 e2 fis2 | % 251
     e2. d4 cis2 cis2 | % 252
     d2 e2 fis2. e4  | % 253
@@ -138,7 +143,7 @@ credoAltoNotes =  \relative fis' {
     fis2 e2 d2. e4 | % 257
     cis1 r2 cis2 | % 258
     fis2. fis4 b,2 g'2 ~ | % 259
-    g2 fis1 e2 | \barNumberCheck #145
+    g2 fis1 e2 | \barNumberCheck #146
     a2. g4 fis4 e4 fis2 ~ | % 261
     fis2 e2 fis1 | % 262
     r2 fis2 e2 d2 ~ | % 263
@@ -148,7 +153,7 @@ credoAltoNotes =  \relative fis' {
     fis'2 g2 a1  | % 267
     e1 e2. fis4 | % 268
     g4 a4 b2 a2 g2 ~ | % 269
-    g4 fis4 d1 e2 ~ | \barNumberCheck #155
+    g4 fis4 d1 e2 ~ | \barNumberCheck #156
     e2 d2. cis4 a2 | % 271
     b1 r2 cis2 | % 272
     e2 fis4 g4 a1  | % 273
@@ -158,7 +163,7 @@ credoAltoNotes =  \relative fis' {
     d2 e4 fis4 g1 | % 277
     fis2 fis2. e4 e2 ~ | % 278
     e2 d2 cis1 | % 279
-    d\breve  | \barNumberCheck #165
+    d\breve  | \barNumberCheck #166
     d1 r2 d2 ~ | % 281
     d4 e4 fis4 g4 a2 d,2 | % 282
     fis\breve ^\fermata \bar "|."
@@ -249,12 +254,14 @@ credoTenorNotes =  \relative a {
     e2. d4 cis2 b2 ~ | % 153
     b2 a2 b2 e,2 | % 154
     fis2 a2. g4 fis2 |
-    e2 e2 
+    \once \hide Staff.TimeSignature \time 2/2 
+    e2 e2 \bar "!"
     % Original has a long bar and a fis\breve
-    fis1 ^\fermata \bar "||"  \barNumberCheck #42
+    \once \hide Staff.TimeSignature \time 4/2 
+    fis \breve ^\fermata \bar "||"  \barNumberCheck #43
     r2 d1 e2 | % 158
     fis2 g2 a2. fis4 | % 159
-    d2 r2 r1 | \barNumberCheck #45
+    d2 r2 r1 | \barNumberCheck #46
     r2 a'2 b2 fis2 | % 161
     a1 g1 | % 162
     fis2 g4 fis4 e4 d4 a'2 ~  | % 163
@@ -264,7 +271,7 @@ credoTenorNotes =  \relative a {
     b4 a4 fis4 g4 a4 b4 cis4 d4 | % 167
     e2 d1 cis2 | % 168
     d1 b1 | % 169
-    b2 a2 c2 b2 ~ | \barNumberCheck #55
+    b2 a2 c2 b2 ~ | \barNumberCheck #56
     b2 a2 b2 fis2  | % 171
     b2. b4 a2 a2 ~ | % 172
     a4 g4 e2 fis1 | % 173
@@ -274,7 +281,7 @@ credoTenorNotes =  \relative a {
     r2 g2 a1 | % 177
     fis2 g2. fis4 d2  | % 178
     e2 e2 d1 ~ | % 179
-    d1 r1 | \barNumberCheck #65
+    d1 r1 | \barNumberCheck #66
     r1 a'2. g4 | % 181
     fis2 d2 e2. e4 | % 182
     d2 g2 fis1 | % 183
@@ -284,7 +291,7 @@ credoTenorNotes =  \relative a {
     ais1 r2 b2 ~ | % 187
     b2 a2 g2 d'2 | % 188
     cis2. cis4 fis,2 b4 b4 ~ | % 189
-    b4 ais8 [ gis8 ] ais2 b1 ~ | \barNumberCheck #75
+    b4 ais8 [ gis8 ] ais2 b1 ~ | \barNumberCheck #76
     b1 a2 b2 | % 191
     cis2 d2 a2 r2 | % 192
     r2 a2. a4 gis2 | % 193
@@ -294,7 +301,7 @@ credoTenorNotes =  \relative a {
     r2 d2 b2 cis4 d4 | % 197
     e4 d2 cis4 d1 | % 198
     fis,2. g4 a2 b4 cis4 | % 199
-    d4 e4 fis1 e2 | \barNumberCheck #85
+    d4 e4 fis1 e2 | \barNumberCheck #86
     d2 b2 fis2 d'2  | % 201
     cis2. cis4 a2 d2 ~ | % 202
     d2 cis2 d1 | % 203
@@ -304,7 +311,7 @@ credoTenorNotes =  \relative a {
     r2 b2 a2. b4 | % 207
     g2 a2 b2 a2  | % 208
     a1 r2 d2 | % 209
-    cis2. b4 cis2 b2 ~ | \barNumberCheck #95
+    cis2. b4 cis2 b2 ~ | \barNumberCheck #96
     b4 a4 a1 gis2 | % 211
     r2 a2 g2 fis2 | % 212
     b2. a4 fis2 gis2 | % 213
@@ -314,9 +321,12 @@ credoTenorNotes =  \relative a {
     cis2. a4 d2 b2 | % 217
     cis2 d1 a2 | % 104
     r4 a4 fis2 g2 a2 ~ |
-    a4 d,4 g1 fis4 e4 | 
-    fis\breve ^\fermata \bar "||" \barNumberCheck #106 
-    a1. b2 | \barNumberCheck #107
+    \once \hide Staff.TimeSignature \time 2/2 
+    a4 d,4 g2 ~ \bar "!"
+    \once \hide Staff.TimeSignature \time 4/2 
+    g2 fis4 e4
+    fis1 ^\fermata \bar "||" \barNumberCheck #107
+    a1. b2 | \barNumberCheck #108
     d2. d4 cis2 b2 ~ | % 223
     b2 a2 g2. g4 | % 224
     fis1 r2 b2 | % 225
@@ -324,7 +334,7 @@ credoTenorNotes =  \relative a {
     b1 r2 d2 | % 227
     cis2 b1 a2 | % 228
     e2 g2 fis1 | % 229
-    b,2 b'2 a4 b4 cis4 d4  | \barNumberCheck #115
+    b,2 b'2 a4 b4 cis4 d4  | \barNumberCheck #116
     b4 cis4 d2 cis2 e2 | % 231
     d4 e4 cis4 d4 b1 | % 232
     cis1 r2 cis2 ~ | % 233
@@ -334,7 +344,7 @@ credoTenorNotes =  \relative a {
     a1 fis2 g2 | % 237
     a2 b1 e,2  | % 238
     r2 b'2 cis2 d2 | % 239
-    b2 cis2 d1 | \barNumberCheck #125
+    b2 cis2 d1 | \barNumberCheck #126
     cis1 r1 | % 241
     r2 fis1 e2 | % 242
     a,2 d2 cis1 | % 243
@@ -344,7 +354,7 @@ credoTenorNotes =  \relative a {
     b\breve | % 247
     r2 a2 cis1 | % 248
     b1 r2 b2 ~ | % 249
-    b4 cis4 d2 a1 | \barNumberCheck #135
+    b4 cis4 d2 a1 | \barNumberCheck #136
     r1 r2 a2 | % 251
     g2. fis4 e2 a2 | % 252
     b2 cis2 d2. cis4  | % 253
@@ -354,7 +364,7 @@ credoTenorNotes =  \relative a {
     d2 cis2 b1 | % 257
     r1 r2 a2 ~ | % 258
     a2 d2. d4 b2 | % 259
-    d1 cis1 | \barNumberCheck #145
+    d1 cis1 | \barNumberCheck #146
     a2 d1 cis2 | % 261
     b1 r2 cis2 | % 262
     b2 a1 b2 | % 263
@@ -364,7 +374,7 @@ credoTenorNotes =  \relative a {
     r2 b2 cis2 d2 ~  | % 267
     d2 cis2 r2 b2 ~ | % 268
     b4 cis4 d4 e4 fis2 e2 | % 269
-    b2. cis4 d2. cis4 | \barNumberCheck #155
+    b2. cis4 d2. cis4 | \barNumberCheck #156
     a2 b4. cis8 b4 a4 a2 ~ | % 271
     a2 gis2 a1 ~ | % 272
     a1 r1  | % 273
@@ -374,7 +384,7 @@ credoTenorNotes =  \relative a {
     d2 g2 g4 a4 b2 ~ | % 277
     b2 a2 a2. g4 | % 278
     e2 fis2 e1 | % 279
-    r2 d2. e4 fis4 g4  | \barNumberCheck #165
+    r2 d2. e4 fis4 g4  | \barNumberCheck #166
     a2 d,2 fis2 r4 a4 | % 281
     b4 cis4 d2. a4 b2 ~ | % 282
     b2 a2 a1 ^\fermata \bar "|."}
@@ -470,9 +480,10 @@ credoBassNotes =  \relative d {
     a4 g4 fis2 e2 e2 | % 153
     d1 b2 cis2 | % 154
     d2. d4 a1 |
-    a2 a2 
-    % Original has a long bar and a d\breve
-    d1 ^\fermata \bar "||" \barNumberCheck #42
+    \once \hide Staff.TimeSignature \time 2/2 
+    a2 a2 \bar "!"
+    \once \hide Staff.TimeSignature \time 4/2 
+    d\breve ^\fermata \bar "||" \barNumberCheck #43
     | % 157
     R1*2 | % 158
     r1 a1 | % 159
@@ -486,7 +497,7 @@ credoBassNotes =  \relative d {
     g4 fis4 d4 e4 fis4 g4 a2 | % 167
     g2. fis4 e1 | % 168
     d1 g1 | % 169
-    g2 fis2 e2. d4 | \barNumberCheck #55
+    g2 fis2 e2. d4 | \barNumberCheck #56
     c2 c2 b1  | % 171
     r2 b2 d2. d4 | % 172
     a2 c2 b1 | % 173
@@ -496,7 +507,7 @@ credoBassNotes =  \relative d {
     e1 cis2 d2 ~ | % 177
     d2 g,2 b1  | % 178
     a1 r2 a'2 ~ | % 179
-    a4 g4 fis2 d2 e2 ~ | \barNumberCheck #65
+    a4 g4 fis2 d2 e2 ~ | \barNumberCheck #66
     e4 d4 d1 cis2 | % 181
     d1 a1 | % 182
     r2 b2 d2. e4 | % 183
@@ -506,7 +517,7 @@ credoBassNotes =  \relative d {
     cis2. cis4 b1 | % 187
     r1 r2 fis'2 ~ | % 188
     fis2 e2 d2 g2 | % 189
-    fis2. fis4 b,1 | \barNumberCheck #75
+    fis2. fis4 b,1 | \barNumberCheck #76
     r2 e2 fis2 g2 | % 191
     a2 d,2 r2 d2 ~ | % 192
     d4 cis4 d2 b1 | % 193
@@ -516,7 +527,7 @@ credoBassNotes =  \relative d {
     d2 e4 fis4 g2. fis4 | % 197
     e1 d1 ~ | % 198
     d1 r1 | % 199
-    d2. e4 fis2 g4 a4 | \barNumberCheck #85
+    d2. e4 fis2 g4 a4 | \barNumberCheck #86
     b4 cis4 d1 b2  | % 201
     a1 r1 | % 202
     r2 a2 fis2 b2 | % 203
@@ -526,7 +537,7 @@ credoBassNotes =  \relative d {
     r2 g'2 fis2. g4 | % 207
     e2 d2 b2 cis2  | % 208
     d1 r2 d2 | % 209
-    a'2. gis4 a2 e4 fis4 | \barNumberCheck #95
+    a'2. gis4 a2 e4 fis4 | \barNumberCheck #96
     g2 a2 e1 | % 211
     r2 fis2 e2 d2 | % 212
     b1. b2 | % 213
@@ -536,8 +547,10 @@ credoBassNotes =  \relative d {
     a1 d,2 r2 | % 217
     r2 d2 b2 cis2 | % 218
     d2. b4 e2 a,2 |
-    b2. cis4 d1 ~ | 
-    d\breve ^\fermata \bar "||" \barNumberCheck #106
+    \once \hide Staff.TimeSignature \time 2/2 
+    b2. cis4  \bar "!"
+    \once \hide Staff.TimeSignature \time 4/2 
+    d\breve ^\fermata \bar "||" \barNumberCheck #107
     r1 d1 ~ | % 222
     d2 b2 e2. e4 | % 223
     d2 fis2. e4 e2 ~ | % 224
@@ -546,7 +559,7 @@ credoBassNotes =  \relative d {
     g1 d1 | % 227
     r1 d1 | % 228
     cis2 b1 a2 | % 229
-    d2 g2 fis1  | \barNumberCheck #115
+    d2 g2 fis1  | \barNumberCheck #116
     b,2 fis'2 e4 fis4 g4 a4 | % 231
     fis4 g4 a1 gis2 | % 232
     a1 r2 a2 ~ | % 233
@@ -556,7 +569,7 @@ credoBassNotes =  \relative d {
     R1*2 | % 237
     d1 b2 cis2  | % 238
     d2 e1 b2 | % 239
-    r2 e2 fis2 g2 | \barNumberCheck #125
+    r2 e2 fis2 g2 | \barNumberCheck #126
     e2 fis2 g1 | % 241
     fis1 a1 ~ | % 242
     a2 b2 a2. g4 | % 243
@@ -566,7 +579,7 @@ credoBassNotes =  \relative d {
     b1 r2 b2 | % 247
     d1 a1 | % 248
     r2 e'2. d4 e2 | % 249
-    d1 r2 fis2 | \barNumberCheck #135
+    d1 r2 fis2 | \barNumberCheck #136
     e2. d4 cis2 d2 | % 251
     g,2. d'4 a1 | % 252
     R1*2  | % 253
@@ -576,7 +589,7 @@ credoBassNotes =  \relative d {
     d2 a'2. gis8 [ fis8 ] gis2 | % 257
     a1 r2 fis2 ~ | % 258
     fis2 b2. b4 e,2 | % 259
-    b'1 a1 | \barNumberCheck #145
+    b'1 a1 | \barNumberCheck #146
     r2 fis2 a1 | % 261
     g1 fis1 | % 262
     d1 cis2 b2 ~ | % 263
@@ -586,7 +599,7 @@ credoBassNotes =  \relative d {
     r1 r2 fis2  | % 267
     g2 a1 e2 | % 268
     r1 r2 e2 ~ | % 269
-    e4 fis4 g4 a4 b2 a2 ~ | \barNumberCheck #155
+    e4 fis4 g4 a4 b2 a2 ~ | \barNumberCheck #156
     a2 d,1 fis2 | % 271
     e1 a,2 r4 a4 | % 272
     cis2 d4 e4 fis1  | % 273
@@ -596,7 +609,7 @@ credoBassNotes =  \relative d {
     fis2 e1 b2 | % 277
     d1 a2. b4 | % 278
     cis2 d2 a1 | % 279
-    r1 r2 d2 ~  | \barNumberCheck #165
+    r1 r2 d2 ~  | \barNumberCheck #166
     d4 e4 fis4 g4 a2 d,2 | % 281
     g2 d1 b2 | % 282
     d\breve ^\fermata \bar "|."

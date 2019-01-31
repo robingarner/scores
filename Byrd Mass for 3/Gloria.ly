@@ -47,9 +47,11 @@ gloriaAltoNotes = \relative fis' {
     cis2 e2. d4 cis4 b4 | % 49
     a2 a'1 d,2 | 
     fis2. e4 d4 cis4 d2 | % 51
-    \time 6/2 cis1  % 52
+    \once \hide Staff.TimeSignature \time 2/2 
+    cis1  \bar "!" % 52
+    \once \hide Staff.TimeSignature  \time 4/2 
     dis\breve ^\fermata \bar "||"
-    \time 4/2 R\breve*5
+    R\breve*5
     r1 r2 d2 | % 59
     fis2 e4 d4 fis2 e2 ~ | 
     e2 d2 g1 | % 61
@@ -182,9 +184,11 @@ gloriaTenorNotes = \relative a {
     a1 e2 fis2 ~ | % 49
     fis4 g4 fis4 e4 d4 cis4 b2 ~ |
     b2 b'2. fis2 b4 ~ | % 51
-    \time 6/2 b4 ais8 [ gis8 ] ais2  % 52
+    \once \hide Staff.TimeSignature \time 2/2 
+    b4 ais8 [ gis8 ] ais2  \bar "!" % 52
+    \once \hide Staff.TimeSignature \time 4/2 
     b\breve ^\fermata \bar "||"
-    \time 4/2 fis2. g4 a2 b2 ~ | % 54
+    fis2. g4 a2 b2 ~ | % 54
     b2 fis2 b2 b2 | % 55
     cis1 ais1 | % 56
     r2 b2. a4 d2 | % 57
@@ -324,9 +328,9 @@ gloriaBassNotes = \relative d {
     a1 r2 a'2 ~ | % 49
     a2 d,2 fis2. e4 | 
     d4 cis4 b2. ais4 b2  | % 51
-    \time 6/2 fis'1 % 52
-    b,\breve ^\fermata \bar "||"
-    \time 4/2 R1*2 | % 54
+    \once \hide Staff.TimeSignature  \time 2/2 fis'1 \bar "!" % 52
+    \once \hide Staff.TimeSignature  \time 4/2 b,\breve ^\fermata \bar "||"
+    R1*2 | % 54
     b2. cis4 d2 e2 ~ | % 55
     e2 cis2 fis2 fis2 | % 56
     g1 d1 | % 57
