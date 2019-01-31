@@ -2,7 +2,7 @@
 \version "2.18.0"
 
 #(set-default-paper-size "a4")
-#(set-global-staff-size 16.3)
+#(set-global-staff-size 18)
 %mobile -s15.5 -i3.2
 
 italicas=\override LyricText.font-shape = #'italic
