@@ -6,8 +6,6 @@ htitle="Ave Maria"
 hcomposer="Josquin des Pres"
 
 \header {
-    encodingsoftware = "MuseScore 2.1.0"
-    encodingdate = "2018-08-20"
     composer = #(string-append hcomposer " (1450-1521)")
     title = \htitle
 }
