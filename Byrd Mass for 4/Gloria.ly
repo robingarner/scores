@@ -1,5 +1,6 @@
 \version "2.18.2"
 \language "english"
+\include "articulate.ly"
 
 #(set-global-staff-size 15)
 \header {
@@ -133,12 +134,11 @@ GloriaSopranoNotes =  \relative b' {
   b4 a4 g4 fs4 g4 e4 b'2 ~ | % 157
   b2 a2 b1 | % 158
   b1. c2 |
-  b1 b1 \bar "!"
-  \once \omit Staff.TimeSignature \time 2/2 r2 b2 ~ | \barNumberCheck #127
-  \once \omit Staff.TimeSignature \time 4/2 b4 ^"rit." a4 g4 fs4 g2 e2 | % 161
-  a2 c2. b4 b2 ~ | % 162
-  b4 a4 a1 gs4 fs4 | % 163
-  gs\breve \fermata \bar "|."
+  b1 b1 |
+  r2 b2. ^"rit." a4 g4 fs4 | \barNumberCheck #127
+  g2 e2 a2 c2 ~ | % 161
+  c4 b4 b2. a4 a2 ~ | % 162
+  a2 gs4 fs4 gs1 \fermata \bar "|." \pageBreak
 }
 
 GloriaSopranoLyrics  =  \lyricmode {
@@ -286,12 +286,11 @@ GloriaAltoNotes =  \relative e' {
   fs2 r2 r2 g2 | % 157
   e2. e4 ds2 fs2 ~ | % 158
   fs4 e4 ds4 cs4 ds4 b4 e2 ~ |
-  e2 ds4 cs4 ds4 fs4 e2 ~ \bar "!"
-  \once \omit Staff.TimeSignature \time 2/2 e2 ds2 |
-  \once \omit Staff.TimeSignature \time 4/2  e\breve | % 161
-  r2 e2. d4 c4 b4 | % 162
-  c2 a2 e'1 ~ | % 163
-  e\breve \fermata \bar "|."
+  e2 ds4 cs4 ds4 fs4 e2 ~ |
+  e2 ds2 e1 ~ |
+  e1 r2 e2 ~ | % 161
+  e4 d4 c4 b4 c2 a2 | % 162
+  e'\breve \fermata \bar "|."
 }
 
 GloriaAltoLyrics  =  \lyricmode {
@@ -438,12 +437,11 @@ GloriaTenorNotes =  \relative b {
   d'2 \melisma b2 \melismaEnd b1 | % 157
   r1 r2 b2 | % 158
   g2. g4 fs2 a2 ~ |
-  a4 g4 fs4 e4 fs4 d4 g2 \bar "!"
-  \once \omit Staff.TimeSignature \time 2/2 fs1 |
-  \once \omit Staff.TimeSignature \time 4/2  e1 b'2 \melisma c2 | % 161
-  a1 \melismaEnd e1 | % 162
-  r2 c'1 \melisma b4 a4 \melismaEnd | % 163
-  b\breve \fermata \bar "|."
+  a4 g4 fs4 e4 fs4 d4 g2 |
+  fs1 e1 |
+  b'2 \melisma c2 a1 \melismaEnd | % 161
+  e1 r2 c'2 ~ | % 162
+  c2 \melisma b4 a4 \melismaEnd b1 \fermata \bar "|."
 }
 GloriaTenorLyrics  =  \lyricmode {
   Lau -- da -- mus "te." A -- do -- ra --
@@ -594,11 +592,10 @@ GloriaBassNotes =  \relative e {
   d2 e1 b2 | % 157
   c1 b1 | % 158
   b1. a2 |
-  b\breve \bar "!"
-  \once \omit Staff.TimeSignature \time 2/2 b1 |
-  \once \omit Staff.TimeSignature \time 4/2 r2 e2. d4 c4 b4 | % 161
-  c4 a4 a'1 gs2 | % 162
-  a1 e1 ~ | % 163
+  b\breve |
+  b1 r2 e2 ~ |
+  e4 d4 c4 b4 c4 a4 a'2 ~ | % 161
+  a2 gs2 a1 | % 162
   e\breve \fermata \bar "|."
 }
 GloriaBassLyrics  =  \lyricmode {
@@ -615,7 +612,7 @@ GloriaBassLyrics  =  \lyricmode {
   Fi -- li -- us Pa -- _ _ _ _ "tris:" Qui tol --
   lis pec -- ca -- ta mun -- _ _ _ _ _ _
   "di:" mi -- se -- re -- re no -- _ _ _ _ _
-  _ "bis," mi -- ae -- re -- re no -- "bis." Qui tol -- lis pec
+  _ "bis," mi -- se -- re -- re no -- "bis." Qui tol -- lis pec
   -- ca -- ta mun -- "di:" sus -- ci -- pe de -- pre -- ca -- ti -- o
   -- nem no -- "stram," sus -- ci -- pe de -- pre -- ca -- ti -- o --
   nem no -- "stram." Qui se -- "des " __ ad dex -- te -- ram Pa --
@@ -628,54 +625,69 @@ GloriaBassLyrics  =  \lyricmode {
   _ _ _ _ _ _ "men. " __ 
 }
 
-\score {
-  \transpose c df
-  <<
-    \new StaffGroup <<
-      \new Staff <<
-        \set Staff.instrumentName = "Soprano"
-        \set Staff.shortInstrumentName = "S."
-        \context Staff <<
-          \context Voice = "GloriaSoprano" { \GloriaSopranoNotes }
-          \new Lyrics \lyricsto "GloriaSoprano" \GloriaSopranoLyrics
+\bookpart {
+  \paper {
+    evenHeaderMarkup=\markup  \fill-line { 
+	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
+	  \on-the-fly #not-first-page "Mass for Four Voices: Gloria"
+	  \on-the-fly #not-first-page "Byrd" }
+    oddHeaderMarkup= \markup  \fill-line { 
+	  \on-the-fly #not-first-page "Byrd"
+	  \on-the-fly #not-first-page "Mass for Four Voices: Gloria"
+	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
+  }
+  \header { 
+    title="Gloria in Excelcis Deo"
+  }
+  \score {
+    \transpose c df
+    <<
+      \new StaffGroup <<
+        \new Staff <<
+          \set Staff.instrumentName = "Soprano"
+          \set Staff.shortInstrumentName = "S."
+          \context Staff <<
+            \context Voice = "GloriaSoprano" { \GloriaSopranoNotes }
+            \new Lyrics \lyricsto "GloriaSoprano" \GloriaSopranoLyrics
+          >>
         >>
-      >>
-      \new Staff <<
-        \set Staff.instrumentName = "Alto"
-        \set Staff.shortInstrumentName = "A."
-        \context Staff <<
-          \context Voice = "GloriaAlto" { \GloriaAltoNotes }
-          \new Lyrics \lyricsto "GloriaAlto" \GloriaAltoLyrics
+        \new Staff <<
+          \set Staff.instrumentName = "Alto"
+          \set Staff.shortInstrumentName = "A."
+          \context Staff <<
+            \context Voice = "GloriaAlto" { \GloriaAltoNotes }
+            \new Lyrics \lyricsto "GloriaAlto" \GloriaAltoLyrics
+          >>
         >>
-      >>
-      \new Staff <<
-        \set Staff.instrumentName = "Tenor"
-        \set Staff.shortInstrumentName = "T."
-        \context Staff <<
-          \context Voice = "GloriaTenor" { \GloriaTenorNotes }
-          \new Lyrics \lyricsto "GloriaTenor" \GloriaTenorLyrics
+        \new Staff <<
+          \set Staff.instrumentName = "Tenor"
+          \set Staff.shortInstrumentName = "T."
+          \context Staff <<
+            \context Voice = "GloriaTenor" { \GloriaTenorNotes }
+            \new Lyrics \lyricsto "GloriaTenor" \GloriaTenorLyrics
+          >>
         >>
-      >>
-      \new Staff <<
-        \set Staff.instrumentName = "Bass"
-        \set Staff.shortInstrumentName = "B."
-        \context Staff <<
-          \context Voice = "GloriaBass" { \GloriaBassNotes }
-          \new Lyrics \lyricsto "GloriaBass" \GloriaBassLyrics
+        \new Staff <<
+          \set Staff.instrumentName = "Bass"
+          \set Staff.shortInstrumentName = "B."
+          \context Staff <<
+            \context Voice = "GloriaBass" { \GloriaBassNotes }
+            \new Lyrics \lyricsto "GloriaBass" \GloriaBassLyrics
+          >>
         >>
+
       >>
 
     >>
-
-  >>
-  \header { piece = \markup{ \fontsize #4 "Gloria in Excelcis Deo" } }
-  \layout {ragged-right = ##f
-      % system-count = #7
-      \override Score.BarNumber.break-visibility = ##(#f #t #t)
-      \context {\Staff 
-        \consists Ambitus_engraver 
-      }
+    \layout {ragged-right = ##f
+             % system-count = #7
+             \override Score.BarNumber.break-visibility = ##(#f #t #t)
+             \context {\Staff 
+                       \consists Ambitus_engraver 
+             }
+    }
+    \midi {
+      
+    }
   }
-  \midi {}
 }
-

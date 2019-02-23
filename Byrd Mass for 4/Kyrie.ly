@@ -1,6 +1,9 @@
 \version "2.18.2"
 \language "english"
 
+htitle="Mass for Four Voices"
+hcomposer="William Byrd"
+
 #(set-global-staff-size 15)
 \header {
   title = "Mass for Four Voices"
@@ -40,7 +43,7 @@ KyrieSopranoNotes  = \relative b' {
   a2 \melisma g2 \melismaEnd fs1 | \barNumberCheck #20
   fs1 ^"rit." fs2 fs2 \bar "!"
   \once \hide Staff.TimeSignature \time 2/2 fs1 |
-  \once \hide Staff.TimeSignature  \time 4/2  fs\breve  ^\fermata \bar "||" \break
+  \once \hide Staff.TimeSignature  \time 4/2  fs\breve  ^\fermata \bar "||" \pageBreak
   \tempo 2=88 
   g2. g4 fs2 b2 ~ | % 23
   b2 a2 b1 | % 24
@@ -58,7 +61,7 @@ KyrieSopranoNotes  = \relative b' {
   a2 fs2 g1 \bar "!"
   \once \hide Staff.TimeSignature \time 2/2 
   fs1 |
-  \once \hide Staff.TimeSignature \time 4/2  gs\breve \bar "|."
+  \once \hide Staff.TimeSignature \time 4/2  gs\breve \bar "|." \pageBreak
 }
 
 KyrieSopranoLyrics =  \lyricmode {
@@ -232,6 +235,18 @@ KyrieBassLyrics  =  \lyricmode {
   _ "son." 
 }
 
+\bookpart {
+  \paper {
+    page-count = #2
+    evenHeaderMarkup=\markup  \fill-line { 
+	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
+	  \on-the-fly #not-first-page "Mass for Four Voices: Kyrie"
+	  \on-the-fly #not-first-page "Byrd" }
+    oddHeaderMarkup= \markup  \fill-line { 
+	  \on-the-fly #not-first-page "Byrd"
+	  \on-the-fly #not-first-page "Mass for Four Voices: Kyrie"
+	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
+  }
 \score {
   \transpose c df
   <<
@@ -273,12 +288,16 @@ KyrieBassLyrics  =  \lyricmode {
 
   >>
   \header { piece = \markup{ \fontsize #4 "Kyrie eleison" } }
-  \layout {ragged-right = ##f
+  \layout {
+    ragged-last-bottom = ##t
+      ragged-right = ##f
       system-count = #7
-      \override Score.BarNumber.break-visibility = ##(#f #t #t)
+    page-count = #2
+     \override Score.BarNumber.break-visibility = ##(#f #t #t)
       \context {\Staff 
         \consists Ambitus_engraver 
       }
   }
   \midi {}
+}
 }

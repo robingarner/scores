@@ -17,99 +17,94 @@
 
 CredoSopranoNotes =  \relative b' {
   \clef "treble" \key g \major \numericTimeSignature\time 4/2 | % 1
-  \numericTimeSignature\time 4/2  | % 164
   \tempo 2=96 r1 b1 | % 165
   b2 a2 b2 g2 | % 166
   fs2. ( g4 ) a1 | % 167
   r2 e2 g2. a4 | % 168
   b4 ( c4 d2 ) d2 c2 | % 169
   b2. c4 b2 a4 g4 |
-  a4 b4 a2. g4 g2 ~ \bar "!"
-  \once \omit Staff.TimeSignature \time 2/2 g2 fs2 |
-  \once \omit Staff.TimeSignature \time 4/2 g1 r2 g2 ~ | % 172
-  g2 g2 c2. c4 | % 173
-  b2 b2. a4 ( g2 ) | % 174
-  fs2 fs1 e2 | % 175
-  g2 fs4 fs2 e8 ( [ d8 ] e2 ) | % 176
-  fs1 r1 | % 177
-  r2 e1 d2 | % 178
-  g1. a2 | % 179
-  b2. b4 g2 c2 ~ | \barNumberCheck #18
-  c4 b4 b1 ( a2 ) | % 181
-  g2 d'2. d4 c2 | % 182
-  b1. a2 | % 183
-  c2 b1 a2 ~ | % 184
-  a2 g2 e1 |
-  g2 fs1 e2 ~  \bar "!" 
-  \once \omit Staff.TimeSignature \time 2/2 e2 ds2 |
-  \once \omit Staff.TimeSignature \time 4/2  e\breve | % 187
-  R1*6 | \barNumberCheck #29
+  a4 b4 a2. g4 g2 ~ |
+  g2 fs2 g1 | %
+  r2 g1 g2 | % 172
+  c2. c4 b2 b2 ~ | % 173
+  b4 a4 ( g2 ) fs2 fs2 ~ | % 174
+  fs2 e2 g2 fs4 fs4 ~ | % 175
+  fs4 e8 ( [ d8 ] e2 ) fs1 | % 176
+  r1 r2 e2 ~ | % 177
+  e2 d2 g1 ~ | % 178
+  g2 a2 b2. b4 | % 179
+  g2 c2. b4 b2 ~ | \barNumberCheck #18
+  b2 ( a2 ) g2 d'2 ~ | % 181
+  d4 d4 c2 b1 ~ | % 182
+  b2 a2 c2 b2 ~ | % 183
+  b2 a1 g2 | % 184
+  e1 g2 fs2 ~ |
+  fs2 e1 ds2 |
+  e\breve | % 187
+  R1*6 | \barNumberCheck #28
   r1 r2 a2 ~ | % 191
-  a2 fs2 g2 b2 ~ | % 192
-  b2 ( a2 ) b1 | % 193
+  a2 fs2 g2 b2 ( ~ | % 192
+  b2 a2 ) b1 | % 193
   r1 r1 | % 194
   b1 a2 c2 ~ | % 195
   c2 b2 r2 a2 | % 196
   e2 g2 a4 ( b4 c2 ) ~ |
-  c2 b2 a4 g4 g4 fs8 [ e8 ] \bar "!" 
-  \once \omit Staff.TimeSignature \time 2/2 fs1 |
-  \once \omit Staff.TimeSignature \time 4/2  R1*2 | % 199
-  b2. a4 b2 c2 | \barNumberCheck #40
-  d1 g,2 g2 ~ | % 201
-  g4 fs4 g4 a4 b2 fs2 | % 202
-  g1 fs2 b2 ~ | % 203
-  b4 a4 b4 c4 d2 g,2 | % 204
-  c1 b1 ~ | % 205
-  b1 r1 | % 206
-  r1 g2 a2 | % 207
-  b2. b4 e,2 b'2 ~ | % 208
-  b2 a2 b1 | % 209
-  R1*2 | \barNumberCheck #50
-  r1 b2 c2 | % 211
-  d2. c4 b2 g4 a4 |
-  b2 -"rit." a2. g4 fs2 ~ \bar "!"
-  \once \omit Staff.TimeSignature \time 2/2 fs4 g4 ( e2 )|
-  \once \omit Staff.TimeSignature \time 4/2  fs\breve \bar "||" \break
+  c2 b2 a4 g4 g4 fs8 [ e8 ] | 
+  fs1 r1 |
+  r1 b2. a4 | % 199
+  b2 c2 d1 | \barNumberCheck #39
+  g,2 g2. fs4 g4 a4 | % 201
+  b2 fs2 g1 | % 202
+  fs2 b2. a4 b4 c4 | % 203
+  d2 g,2 c1 | % 204
+  b\breve | % 205
+  R1*2 | % 206
+  g2 a2 b2. b4 | % 207
+  e,2 b'1 a2 | % 208
+  b1 r1 | % 209
+  R1*2 | \barNumberCheck #49
+  b2 c2 d2. c4 | % 211
+  b2 g4 a4 b2 ^"rit." a2 ~ |
+  a4 g4 fs2. g4 ( e2 )|
+  fs\breve \bar "||" \break
   \tempo 2=96 b1 b2 a2 | % 215
   b2 c2. b4 g2 | % 216
   r2 b2 a2 fs2 | % 217
   g1 fs2 d2 | % 218
   e1 ds1 | % 219
-  r2 e2 c1 | \barNumberCheck #61
+  r2 e2 c1 | \barNumberCheck #59
   b1 g'2 b2 ~ | % 221
   b4 a4 fs4 g4 a2. g8 [ fs8 ] |
-  e4 ^"rit." fs4 g2. fs4 fs4 e8 [ d8 ] \bar "!"
-  \once \omit Staff.TimeSignature \time 2/2 e1 |
-  \once \omit Staff.TimeSignature \time 4/2  \bar "||" % 223
-  \tempo 2=80 fs1 r1 | % 224
-  r2 e2 g1 | % 225
-  fs2 g2. a4 g2 | % 226
-  R1*2 | % 227
-  r2 e2 g2. a4 | % 228
-  b2 c2. ( b4 a2 ) | % 229
-  g\breve | \barNumberCheck #72
-  r2 a1 g2 | % 231
-  a2 c2 b2. ( a4 | % 232
-  g2 ) a2 g1 | % 233
-  r1 r2 e2 | % 234
-  g2 ^"rit." fs2 a2. g4 | % 235
-  fs4 e4 fs1 e2 | % 236
-  g2. fs4 e4 d4 e2 \bar "||"
+  e4 ^"rit." fs4 g2. fs4 fs4 e8 [ d8 ] |
+  e1 fs1 \bar "||" % 223
+  \tempo 2=80 r1 r2 e2 | % 224
+  g1 fs2 g2 ~ | % 225
+  g4 a4 g2 r1 | % 226
+  r1 r2 e2 | % 227
+  g2. a4 b2 c2 ~ | % 228
+  c4 ( b4 a2 ) g1 ~ | % 229
+  g1 r2 a2 ~ | \barNumberCheck #70
+  a2 g2 a2 c2 | % 231
+  b2. ( a4 g2 ) a2 | % 232
+  g1 r1 | % 233
+  r2 e2 g2 ^"rit." fs2 | % 234
+  a2. g4 fs4 e4 fs2 ~ | % 235
+  fs2 e2 g2. fs4 | % 236
+  e4 d4 e2 ds1 \bar "||"
   \tempo 2=72 | % 237
-  ds1 r2 fs2 ^\p ~ | % 238
-  fs2 fs2 b2 a2 | % 239
-  b2. a4 fs2 b2 | \barNumberCheck #82
-  as1 b2 g2 | % 241
-  fs2. e4 ds4 e4 fs4 ( g4 | % 242
-  a2 ) e2 r2 fs2 ~ | % 243
-  fs2 -"rit." e2 d2 d2 \bar "||"
-  \time 3/1  g\breve e1 \bar "||"
-  \numericTimeSignature\time 4/2  | % 245
+  r2 fs2 ^\p ~ fs2 fs2 | % 238
+  b2 a2 b2. a4 | % 239
+  fs2 b2 as1 | \barNumberCheck #80
+  b2 g2 fs2. e4 | % 241
+  ds4 e4 fs4 ( g4 a2 ) e2 | % 242
+  r2 fs1 ^"rit." e2 | % 243
+  d2 d2 g1 ~ |
+  g1 e1 \bar "||"
   \tempo 2=104 e1 r1 | % 246
   R1*2 | % 247
   r1 r2 e2 ^\f | % 248
   a2 b2 c2 d2 | % 249
-  b2. b4 a2 g2 | \barNumberCheck #87
+  b2. b4 a2 g2 | \barNumberCheck #90
   fs1 r2 e2 | % 251
   a2 fs4 a4 g2 e2 | % 252
   fs2 g4 fs4 e4 d4 e2 ~ | % 253
@@ -119,29 +114,28 @@ CredoSopranoNotes =  \relative b' {
   r2 d2 a2 b2 | % 257
   c2. c4 c2 b2 ~ | % 258
   b4 ( a4 g4 a4 ) b2 r4 b4 | % 259
-  e,2 fs2 g2. fs4 | \barNumberCheck #97
-  g2 a4 c4 b4. a8 g4 a8 [ b8 ] \bar "||"
-  \time 3/1  c4 b4 a2 r4 g4 b4. b8 a4 g2 ( fs4 ) \bar "||"
-  \numericTimeSignature\time 4/2  | % 262
-  \tempo 2=104 g\breve | % 263
-  r1 r2 d2 | % 264
-  d'2. d4 c2 d2 | % 265
-  b2 d2 a1 | % 266
-  R1*2 | % 267
-  r2 g2 d'2. d4 | % 268
-  c2 b2. a4 ( b2 ) | % 269
-  g1 fs1 | \barNumberCheck #107
-  r2 e2 b'2 b2 | % 271
-  c2. c4 b1 | % 272
-  r1 r2 g2 ~ | % 273
-  g4 a4 b1 e,2 ~ | % 274
-  e2 g2 c1 | % 275
-  b1 b2. ( a4 | % 276
-  g2 ) fs2 r2 b2 ~ | % 277
-  b4 c4 d1 a2 | % 278
-  r2 c2 b2 g2 \bar "||"
-  \time 3/1  b1. g2 r1 \bar "||"
-  \numericTimeSignature\time 4/2  | \barNumberCheck #117
+  e,2 fs2 g2. fs4 | \barNumberCheck #100
+  g2 a4 c4 b4. a8 g4 a8 [ b8 ] |
+  c4 b4 a2 r4 g4 b4. b8 |
+  a4 g2 ( fs4 ) g1 ~ \bar "||"
+  \tempo 2=104 g1 r1 | % 263
+  r2 d2 d'2. d4 | % 264
+  c2 d2 b2 d2 | % 265
+  a1 r1 | % 266
+  r1 r2 g2 | % 267
+  d'2. d4 c2 b2 ~ | % 268
+  b4 a4 ( b2 ) g1 | % 269
+  fs1 r2 e2 | \barNumberCheck #111
+  b'2 b2 c2. c4 | % 271
+  b1 r1 | % 272
+  r2 g2. a4 b2 ~ | % 273
+  b2 e,1 g2 | % 274
+  c1 b1 | % 275
+  b2. ( a4 g2 ) fs2 | % 276
+  r2 b2. c4 d2 ~ | % 277
+  d2 a2 r2 c2 | % 278
+  b2 g2 b1 ~ |
+  b2 g2 r1 \bar "||"
   \tempo 2=104 r2 g1 g2 | % 281
   a2. a4 b1 | % 282
   c1 b1 | % 283
@@ -151,7 +145,7 @@ CredoSopranoNotes =  \relative b' {
   fs2 d2 r1 | % 287
   R1*2 | % 288
   r2 b'2. a4 b4 ( c4 | % 289
-  d2 ) d,2 r1 | \barNumberCheck #127
+  d2 ) d,2 r1 | \barNumberCheck #131
   r2 c'2 b2 a2 ~ | % 291
   a4 g4 g2 fs4. ( g8 a4 fs4 ) \bar "||"
   \tempo 2=104 g1 r1 | % 293
@@ -161,32 +155,32 @@ CredoSopranoNotes =  \relative b' {
   a1 r2 g2 ~ | % 297
   g4 a4 b1 c2 | % 298
   d2 ( g,2 c1 ) | % 299
-  b1 r2 b2 | \barNumberCheck #137
+  b1 r2 b2 | \barNumberCheck #141
   a2 fs2 g2. a4 | % 301
   b1 e,1 | % 302
   r2 b'1 b2 | % 303
   c2 b2 b1 | % 304
   r2 d1 g,2 | % 305
-  b2. ( c4 b2 ) a4 a4 ~ \bar "||"
-  \time 3/1  | % 306
-  a4 -"rit." g4 g1 fs4 e4 fs4 g2 fs4 \bar "||"
-  \numericTimeSignature\time 4/2  g\breve \bar "||"
+  b2. ( c4 b2 ) a4 a4 ~ |
+  a4 ^"rit." g4 g1 fs4 e4 |
+  fs4 g4 ~ g4 fs4 g1 ~ \bar "||"
   \tempo 2=104 | % 308
-  g1 b2 g2 | % 309
-  r2 b2. ( c4 d2 ) | \barNumberCheck #147
-  b1 r2 b2 | % 311
-  c2. b4 a2 a2 | % 312
-  g2. g4 fs2 fs2 | % 313
-  g2 a2 b2. b4 | % 314
-  a1 c2 b2 ~ | % 315
-  b2 a2 b1 | % 316
-  r2 gs2 a2. a4 | % 317
-  fs2 a1 fs2 | % 318
-  g1 e1 ~ | % 319
-  e1 e1 | \barNumberCheck #157
-  r2 a1 e2 | % 321
-  g2. a4 b1 | % 322
-  g2 a2. g4 b2 ~ | % 323
+  g1 g1 |
+  b2 g2 r2 b2 ~ | % 309
+  b4 ( c4 d2 ) b1 | \barNumberCheck #147
+  r2 b2 c2. b4 | % 311
+  a2 a2 g2. g4 | % 312
+  fs2 fs2 g2 a2 | % 313
+  b2. b4 a1 | % 314
+  c2 b1 a2 | % 315
+  b1 r2 gs2 | % 316
+  a2. a4 fs2 a2 ~ | % 317
+  a2 fs2 g1 | % 318
+  e\breve | % 319
+  e1 r2 a2 ~ | \barNumberCheck #157
+  a2 e2 g2. a4 | % 321
+  b1 g2 a2 ~ | % 322
+  a4 g4 b2 ~ | % 323
   b4 ( a4 g2 ) fs1 | % 324
   r2 fs2 e2 g2 ~ | % 325
   g2 fs2 g4. a8 b4 c4 | % 326
@@ -206,7 +200,7 @@ CredoSopranoNotes =  \relative b' {
   b2. b4 a2 b2 ~ | % 338
   b4 -"rit." a4 g4 fs8 [ e8 ] d4 b4 b'2 ~ | % 339
   b2 a2 b1 \bar "||"
-  \time 3/1  c1 ( b\breve ) gs\breve ^\fermata \bar "||"
+  \time 3/1  c1 ( b\breve ) gs\breve ^\fermata \bar "||" \pageBreak
 }
 
 CredoSopranoLyrics  =  \lyricmode {
@@ -256,34 +250,33 @@ CredoSopranoLyrics  =  \lyricmode {
 
 CredoAltoNotes =  \relative e' {
   \clef "treble" \key g \major \numericTimeSignature\time 4/2
-  \numericTimeSignature\time 4/2  e1 e2 d2 | % 165
+  e1 e2 d2 | % 165
   e2 c2 b2. ( c4 ) | % 166
   d1 r2 a2 | % 167
   c2. d4 e4 ( fs4 g2 ) | % 168
   g2 fs2 b,2 ( e2 ) | % 169
   d2 g2 g2 fs2 ~ |
-  fs2 e2 d2 e2 \bar "!"
-  \once \omit Staff.TimeSignature \time 2/2 c1 |
-  \once \omit Staff.TimeSignature \time 4/2  b\breve | % 172
-  r2 e1 e2 | % 173
-  g2. g4 d2 d2 ~ | % 174
-  d4 c4 ( b2 ) a1 | % 175
-  r1 r2 b2 ~ | % 176
-  b2 a2 c2 b4 b4 ~ | % 177
-  b4 a8 ( [ g8 ] a2 ) b2 b'2 ~ | % 178
-  b4 e,4 g1 fs2 | % 179
-  g2. g4 e1 | \barNumberCheck #18
-  g2 fs2 e2 a,2 | % 181
-  r4 g'2 g4 fs2 e2 ~ | % 182
-  e2 d2 e2 fs2 | % 183
-  g2. g4 fs1 | % 184
-  e1. e2 |
-  d1. b2 \bar "!" 
-  \once \omit Staff.TimeSignature \time 2/2 b1 |
-  \once \omit Staff.TimeSignature \time 4/2  r2 b1 b2 | % 187
+  fs2 e2 d2 e2 |
+  c1 b1 ~ |
+  b1 r2 e2 ~ | % 172
+  e2 e2 g2. g4 | % 173
+  d2 d2. c4 ( b2 ) | % 174
+  a1 r1 | % 175
+  r2 b1 a2 | % 176
+  c2 b4 b2 a8 ( [ g8 ] a2 ) | % 177
+  b2 b'2. e,4 g2 ~ | % 178
+  g2 fs2 g2. g4 | % 179
+  e1 g2 fs2 | \barNumberCheck #18
+  e2 a,2 r4 g'2 g4 | % 181
+  fs2 e1 d2 | % 182
+  e2 fs2 g2. g4 | % 183
+  fs1 e1 ~ | % 184
+  e2 e2 d1 ~ |
+  d2 b2 b1 |
+  r2 b1 b2 | % 187
   d1 c2 b2 ~ | % 188
   b2 a2 d2 e2 | % 189
-  fs2. fs4 d2 g2 ~ | \barNumberCheck #29
+  fs2. fs4 d2 g2 ~ | \barNumberCheck #28
   g2 e2 fs1 | % 191
   d1 b2 g2 | % 192
   c1 b1 | % 193
@@ -291,56 +284,55 @@ CredoAltoNotes =  \relative e' {
   d2 g2 ( fs2 e2 ) | % 195
   e\breve | % 196
   r2 e2 c2 a2 |
-  e'2. ( g4 ) fs2 e2 ~  \bar "!" 
-  \once \omit Staff.TimeSignature \time 2/2 e4 ( ds8 [ cs8 ] ds2 ) |
-  \once \omit Staff.TimeSignature \time 4/2  e1 r1 | % 199
-  g2. fs4 g2 e2 | \barNumberCheck #40
-  d2 g,2 r1 | % 201
-  b1 g2 b2 ~ | % 202
-  b2 c2 d2 g,2 | % 203
-  c2 b2 r2 e2 ~ | % 204
-  e4 d4 e4 fs4 g2 d2 | % 205
-  e1 d1 ~ | % 206
-  d1 r2 e2 | % 207
-  fs2 g2. fs4 d2 | % 208
-  e2 c2 b1 | % 209
-  e2 fs2 a2. a4 | \barNumberCheck #50
-  g2 fs1 e2 | % 211
-  fs2 b,1 c2 |
-  d2. c4 b2 a2 ~  \bar "!" 
-  \once \omit Staff.TimeSignature \time 2/2 a2 g2 |
-  \once \omit Staff.TimeSignature \time 4/2  fs\breve \bar "||"
+  e'2. ( g4 ) fs2 e2 ~  | 
+  e4 ( ds8 [ cs8 ] ds2 ) e1 |
+  r1 g2. fs4 | % 199
+  g2 e2 d2 g,2 | \barNumberCheck #39
+  r1 b1 | % 201
+  g2 b1 c2 | % 202
+  d2 g,2 c2 b2 | % 203
+  r2 e2. d4 e4 fs4 | % 204
+  g2 d2 e1 | % 205
+  d\breve | % 206
+  r2 e2 fs2 g2 ~ | % 207
+  g4 fs4 d2 e2 c2 | % 208
+  b1 e2 fs2 | % 209
+  a2. a4 g2 fs2 ~ | \barNumberCheck #49
+  fs2 e2 fs2 b,2 ~ | % 211
+  b2 c2 d2. c4 |
+  b2 a1 g2 |
+  fs\breve \bar "||"
   R1*10 | % 219
   R1*6 |
-  R1*2 \bar "!" 
-  \once \omit Staff.TimeSignature \time 2/2 R1 |
-  \once \omit Staff.TimeSignature \time 4/2  r2 a2 b2 a2 | % 224
-  b2. c4 b1 | % 225
-  r1 r2 c2 | % 226
-  b2. c4 d2 e2 ~ | % 227
-  e4 d4 c2 b1 | % 228
-  e,1 r2 e'2 ~ | % 229
-  e2 d2 e2 g2 | \barNumberCheck #72
-  fs2. fs4 e2 d2 | % 231
-  fs2 e2 g2. ( fs4 | % 232
-  e2 ) fs2 e2 d2 ~ | % 233
-  d4 e4 fs1 e2 ~ | % 234
-  e2 ds2 e2 e,2 | % 235
-  b'2. a4 fs2 a2 | % 236
-  g2 g1 e2 \bar "||"
-  fs1 r2 d'2 ^\p ~ | % 238
-  d2 d2 d2 d2 | % 239
-  d2. d4 d2 b2 | \barNumberCheck #82
-  cs1 b2 b2 | % 241
-  b2. b4 b2 d2 | % 242
-  cs1 d1 | % 243
-  a2. c4 b2 g2 \bar "||"
-  \time 3/1  b2. b4 e,2 r4 e4 g2 c2 \bar "||"
-  \numericTimeSignature\time 4/2  b1 r2 b2 ^\f | % 246
+  R1*2 |
+  r1 r2 a2 |
+  b2 a2 b2. c4 | % 224
+  b1 r1 | % 225
+  r2 c2 b2. c4 | % 226
+  d2 e2. d4 c2 | % 227
+  b1 e,1 | % 228
+  r2 e'1 d2 | % 229
+  e2 g2 fs2. fs4 | \barNumberCheck #70
+  e2 d2 fs2 e2 | % 231
+  g2. ( fs4 e2 ) fs2 | % 232
+  e2 d2. e4 fs2 ~ | % 233
+  fs2 e1 ds2 | % 234
+  e2 e,2 b'2. a4 | % 235
+  fs2 a2 g2 g2 ~ | % 236
+  g2 e2 fs1 \bar "||"
+  r2 d'1 ^\p d2 | % 238
+  d2 d2 d2. d4 | % 239
+  d2 b2 cs1 | \barNumberCheck #80
+  b2 b2 b2. b4 | % 241
+  b2 d2 cs1 | % 242
+  d1 a2. c4 | % 243
+  b2 g2 b2. b4 |
+  e,2 r4 e4 g2 c2 \bar "||"
+  b1 r2 b2 ^\f | % 246
   cs2 ds2 e2 g2 | % 247
   fs2. fs4 e1 | % 248
   d2 ( b2 a2 ) b2 | % 249
-  g'2. g4 fs2 e2 | \barNumberCheck #87
+  g'2. g4 fs2 e2 | \barNumberCheck #90
   ds1 r1 | % 251
   r1 r2 b2 | % 252
   d2 b4 d4 c4 ( b4 c2 ) | % 253
@@ -350,28 +342,29 @@ CredoAltoNotes =  \relative e' {
   e2 fs2 d4 fs4 e2 | % 257
   a,4. b8 c4. d8 e4 fs4 g4 fs4 | % 258
   e1 d1 | % 259
-  R1*2 | \barNumberCheck #97
-  e2 a,2 b4 d4. d8 d4 \bar "||"
-  \time 3/1  e4 g4 fs4. e8 d4 e8 [ fs8 ] g4 fs4 e2 ( d2 ) \bar "||"
-  \numericTimeSignature\time 4/2  b1 b1 | % 263
-  r2 b2 g'2. g4 | % 264
-  fs2 g2 e2 d2 | % 265
-  g2 r4 d4 fs2. fs4 | % 266
-  e2 g2. fs4 ( g2 ) | % 267
-  e1 d1 | % 268
-  r2 g,2 d'2. d4 | % 269
-  c2 b2. a4 ( b2 ) | \barNumberCheck #107
-  g1 fs2 b2 | % 271
-  e2 e2 g2. g4 | % 272
-  d1 r1 | % 273
-  e2. fs4 g1 ~ | % 274
-  g2 g,2 r2 e'2 ~ | % 275
-  e4 fs4 g1 d2 | % 276
-  r2 a'2 fs2 g2 | % 277
-  e2 d2. e4 fs2 ~ | % 278
-  fs2 e4 fs4 g2 e2 \bar "||"
-  \time 3/1  d1 b2 c1 b2 \bar "||"
-  \numericTimeSignature\time 4/2  r2 e1 e2 | % 281
+  R1*2 | \barNumberCheck #100
+  e2 a,2 b4 d4. d8 d4 |
+  e4 g4 fs4. e8 d4 e8 [ fs8 ] g4 fs4 |
+  e2 ( d2 ) b1 |
+  b1 r2 b2 | % 263
+  g'2. g4 fs2 g2 | % 264
+  e2 d2 g2 r4 d4 | % 265
+  fs2. fs4 e2 g2 ~ | % 266
+  g4 fs4 ( g2 ) e1 | % 267
+  d1 r2 g,2 | % 268
+  d'2. d4 c2 b2 ~ | % 269
+  b4 a4 ( b2 ) g1 | \barNumberCheck #111
+  fs2 b2 e2 e2 | % 271
+  g2. g4 d1 | % 272
+  r1 e2. fs4 | % 273
+  g1. g,2 | % 274
+  r2 e'2. fs4 g2 ~ | % 275
+  g2 d2 r2 a'2 | % 276
+  fs2 g2 e2 d2 ~ | % 277
+  d4 e4 fs1 e4 fs4 | % 278
+  g2 e2 d1 |
+  b2 c1 b2 \bar "||"
+  r2 e1 e2 | % 281
   fs2. fs4 g2 g2 ~ | % 282
   g2 ( fs2 ) g1 | % 283
   e2. e4 fs2 d2 | % 284
@@ -380,7 +373,7 @@ CredoAltoNotes =  \relative e' {
   d'1 fs2. e4 | % 287
   fs4 ( g4 a2 ) d,2 g2 | % 288
   fs2 e1 d2 | % 289
-  b1 d2 e4. fs8 | \barNumberCheck #127
+  b1 d2 e4. fs8 | \barNumberCheck #131
   g4 e4 fs4 e4 d2. a4 | % 291
   b4. ( c8 d2 ) d1 \bar "||"
   r2 b1 d2 | % 293
@@ -390,19 +383,20 @@ CredoAltoNotes =  \relative e' {
   fs2 d2 e1 | % 297
   d1 r2 a'2 | % 298
   g2 e2 e2. fs4 | % 299
-  g1 fs2 g2 | \barNumberCheck #137
+  g1 fs2 g2 | \barNumberCheck #141
   fs2. d4 e2. fs4 | % 301
   g2. a4 b2. a8 [ g8 ] | % 302
   fs4 e4 fs2 gs1 | % 303
   r2 g1 g2 | % 304
   e2 g2 d1 | % 305
-  g1 d2 e2 ~ \bar "||"
-  \time 3/1  e2 b2 d2. a4 d1 \bar "||"
-  \numericTimeSignature\time 4/2  d\breve \bar "||"
-  r1 g1 | % 309
-  fs2 g2 r2 g2 ~ | \barNumberCheck #147
-  g2 ( fs2 ) g2 d2 | % 311
-  e2. g4 fs2 fs2 | % 312
+  g1 d2 e2 ~ |
+  e2 b2 d2. a4 |
+  d1 d1 ~ \bar "||"
+  d1 r1 |
+  g1 fs2 g2 | % 309
+  r2 g1 ( fs2 ) | \barNumberCheck #147
+  g2 d2 e2. g4 | % 311
+  fs2 fs2 | % 312
   e2. d4 d1 | % 313
   r2 e2 d2 g2 | % 314
   fs2. fs4 e1 | % 315
@@ -483,32 +477,30 @@ CredoAltoLyrics  =  \lyricmode {
 
 CredoTenorNotes =  \relative b {
   \transposition c \clef "treble_8" \key g \major
-  \numericTimeSignature\time 4/2 
   \numericTimeSignature\time 4/2  R1*8 | % 168
   r1 r2 e,2 | % 169
   g2. a4 b4 ( c4 d2 ) |
-  d2 c2 b2 a4 g4 \bar "!"
-  \once \omit Staff.TimeSignature \time 2/2 a4 b4 a2 |
-  \once \omit Staff.TimeSignature \time 4/2  g1 r2 e2 ~ | % 172
-  e2 e2 g2. g4 | % 173
-  g2 e4. fs8 g4 a4 b2 | % 174
-  a2 d1 c2 | % 175
-  b2 a2 g2. g4 | % 176
-  fs1 a2. g4 | % 177
-  e2 e2 g2 fs2 | % 178
-  e2 b'2. g4 d'2 ~ | % 179
-  d4 b4 d1 c2 | \barNumberCheck #18
-  d1 r2 e2 ~ | % 181
-  e2 d2 r2 c4 ( d4 | % 182
-  e4 fs4 g1 ) d2 | % 183
-  r1 d2. d4 | % 184
-  c2 b1 a2 |
-  b2. a4 fs2 g2 \bar "!" 
-  \once \omit Staff.TimeSignature \time 2/2 fs1 |
-  \once \omit Staff.TimeSignature \time 4/2  r2 g1 g2 | % 187
+  d2 c2 b2 a4 g4 |
+  a4 b4 a2 g1 |
+  r2 e2 ~ e2 e2 | % 172
+  g2. g4 g2 e4. fs8 | % 173
+  g4 a4 b2 a2 d2 ~ | % 174
+  d2 c2 b2 a2 | % 175
+  g2. g4 fs1 | % 176     <---     Here
+  a2. g4 e2 e2 | % 177
+  g2 fs2 e2 b'2 ~ | % 178
+  b4 g4 d'2. b4 d2 ~ | % 179
+  d2 c2 d1 | \barNumberCheck #18
+  r2 e1 d2 | % 181
+  r2 c4 ( d4 e4 fs4 g2 ~ | % 182
+  g2 ) d2 r1 | % 183
+  d2. d4 c2 b2 ~ | % 184
+  b2 a2 b2. a4 |
+  fs2 g2 fs1 |
+  r2 g1 g2 | % 187
   a2 b2 g1 | % 188
   fs1 b2 e,4 a4 ~ | % 189
-  a4 a4 fs2 b2. a4 | \barNumberCheck #29
+  a4 a4 fs2 b2. a4 | \barNumberCheck #28
   b2 cs2 d1 | % 191
   R1*2 | % 192
   r2 e1 d2 | % 193
@@ -516,62 +508,61 @@ CredoTenorNotes =  \relative b {
   b1 r2 a2 | % 195
   e2 g2 a4 ( b4 c2 ) ~ | % 196
   c2 b2 a1 |
-  g1 r1 \bar "!" 
-  \once \omit Staff.TimeSignature \time 2/2 r1 |
-  \once \omit Staff.TimeSignature \time 4/2  c2. b4 c2 d2 | % 199
-  e1 e,1 | \barNumberCheck #40
-  b'2. a4 b2 c2 | % 201
-  d\breve | % 202
-  g,1 b1 | % 203
-  e2. d4 b1 | % 204
-  c1 d1 | % 205
-  r2 g,2 a2 b2 ~ | % 206
-  b4 a4 fs2 g2 e2 | % 207
-  ds2 r2 r1 | % 208
-  r1 r2 b'2 | % 209
-  c2 d2. c4 a2 | \barNumberCheck #50
-  b2. ( a4 g4 fs4 ) g2 | % 211
-  a2 r2 d2 e2 |
-  fs2. e4 d1  \bar "!" 
-  \once \omit Staff.TimeSignature \time 2/2 b2. cs4 |
-  \once \omit Staff.TimeSignature \time 4/2  ds\breve \bar "||"
+  g1 r1 |
+  r1 c2. b4 |
+  c2 d2 e1 | % 199
+  e,1 b'2. a4 | \barNumberCheck #39
+  b2 c2 d1 ~ | % 201
+  d1 g,1 | % 202
+  b1 e2. d4 | % 203
+  b1 c1 | % 204
+  d1 r2 g,2 | % 205
+  a2 b2 ~ b4 a4 fs2 | % 206
+  g2 e2 ds2 r2 | % 207
+  R1*2 | % 208
+  r2 b'2 c2 d2 ~ | % 209
+  d4 c4 a2 b2. ( a4 | \barNumberCheck #49
+  g4 fs4 ) g2 a2 r2 | % 211
+  d2 e2 fs2. e4 |
+  d1  b2. cs4 |
+  ds\breve \bar "||"
   r1 d1 | % 215
   d2 c2 d2 e2 ~ | % 216
   e4 d4 b2 r2 d2 | % 217
   b2 g2 b1 | % 218
   g2 e2 fs1 | % 219
-  e\breve | \barNumberCheck #61
+  e\breve | \barNumberCheck #59
   r2 g2 e1 | % 221
   d1 r1 |
-  a'2 e'2. d4 d2 ~  \bar "!" 
-  \once \omit Staff.TimeSignature \time 2/2 d4 cs8 [ b8 ] cs2 |
-  \once \omit Staff.TimeSignature \time 4/2  d\breve | % 224
-  r1 r2 g,2 | % 225
-  d'2 b2 c2. e4 | % 226
-  d1 r2 a2 | % 227
-  c2. d4 e2 g2 ~ | % 228
-  g4 fs4 e2. d4 c2 | % 229
-  b1 r2 b2 ~ | \barNumberCheck #72
-  b2 a2 c2 b2 | % 231
-  a2. a4 g1 | % 232
-  r2 a2 c2 b2 | % 233
-  d2. ( c4 b4 a4 ) g2 | % 234
-  b2 r4 b4 c2 b2 | % 235
-  d2. c4 b4 a4 c2 ~ | % 236
-  c4 b4 b1 a2 \bar "||"
-  b1 r2 b2 ^\p ~ | % 238
-  b2 b2 g2 fs2 | % 239
-  g2. fs4 d2 g2 | \barNumberCheck #82
-  fs1 b,2 e2 | % 241
-  ds2. e4 b2 b'2 | % 242
-  a1 d,1 | % 243
-  r1 g2. fs4 \bar "||"
-  \time 3/1  e2 g2 c2 ( b1 ) a2 \bar "||"
-  \numericTimeSignature\time 4/2  gs1 r1 | % 246
+  a'2 e'2. d4 d2 ~  |
+  d4 cs8 [ b8 ] cs2 d1 ~ |
+  d1 r1 | % 224
+  r2 g,2 d'2 b2 | % 225
+  c2. e4 d1 | % 226
+  r2 a2 c2. d4 | % 227
+  e2 g2. fs4 e2 ~ | % 228
+  e4 d4 c2 b1 | % 229
+  r2 b1 a2 | \barNumberCheck #70
+  c2 b2 a2. a4 | % 231
+  g1 r2 a2 | % 232
+  c2 b2 d2. ( c4 | % 233
+  b4 a4 ) g2 b2 r4 b4 | % 234
+  c2 b2 d2. c4 | % 235
+  b4 a4 c2. b4 b2 ~ | % 236
+  b2 a2 b1 \bar "||"
+  r2 b1 ^\p b2 | % 238
+  g2 fs2 g2. fs4 | % 239
+  d2 g2 fs1 | \barNumberCheck #80
+  b,2 e2 ds2. e4 | % 241
+  b2 b'2 a1 | % 242
+  d,1 r1 | % 243
+  g2. fs4 e2 g2 |
+  c2 ( b1 ) a2 \bar "||"
+  gs1 r1 | % 246
   r1 r2 b2 ^\f | % 247
   cs2 ds2 e2 g2 | % 248
   fs2. d4 e2 d2 ~ | % 249
-  d4 d4 b2 d2 ( b2 ) | \barNumberCheck #87
+  d4 d4 b2 d2 ( b2 ) | \barNumberCheck #90
   b\breve | % 251
   r2 fs2 b2 g4 e4 | % 252
   b'2. fs4 g2 e4. fs8 | % 253
@@ -581,28 +572,29 @@ CredoTenorNotes =  \relative b {
   c2 d4 e4 fs2 ( gs2 ) | % 257
   a2 e2 a,2 b2 | % 258
   c2. c4 b4. a8 fs4 g4 | % 259
-  a4 c4 b2 e,1 | \barNumberCheck #97
-  r1 r2 b'2 \bar "||"
-  \time 3/1  e,2 fs2 g4. fs8 e4 d4 ( c2 d2 ) \bar "||"
-  \numericTimeSignature\time 4/2  g1 r2 b2 | % 263
-  d2. d4 c2 b2 | % 264
-  a2 g2 ( a2 b2 ) | % 265
-  g1 r1 | % 266
-  r2 g2 d'2. d4 | % 267
-  c2 b2. a4 ( b2 ) | % 268
-  g1 fs1 | % 269
-  r2 g2 d'2 d2 | \barNumberCheck #107
-  e2. e4 d2 g,2 | % 271
-  a2. a4 g1 | % 272
-  r2 g2. a4 b2 ~ | % 273
-  b2 e,2 r2 e2 | % 274
-  e'2. d4 c2 a2 | % 275
-  r1 r2 b2 ~ | % 276
-  b4 c4 d1 g,2 ~ | % 277
-  g2 b2 g2 fs2 | % 278
-  a1 e2 c'2 \bar "||"
-  \time 3/1  b1 g2 e'1 d2 \bar "||"
-  \numericTimeSignature\time 4/2  r2 c1 b2 | % 281
+  a4 c4 b2 e,1 | \barNumberCheck #100
+  r1 r2 b'2 |
+  e,2 fs2 g4. fs8 e4 d4 ( | 
+  c2 d2 ) g1 |
+  r2 b2 d2. d4 | % 263
+  c2 b2 a2 g2 ( | % 264
+  a2 b2 ) g1 | % 265
+  r1 r2 g2 | % 266
+  d'2. d4 c2 b2 ~ | % 267
+  b4 a4 ( b2 ) g1 | % 268
+  fs1 r2 g2 | % 269
+  d'2 d2 e2. e4 | \barNumberCheck #111
+  d2 g,2 a2. a4 | % 271
+  g1 r2 g2 ~ | % 272
+  g4 a4 b1 e,2 | % 273
+  r2 e2 e'2. d4 | % 274
+  c2 a2 r1 | % 275
+  r2 b2. c4 d2 ~ | % 276
+  d2 g,1 b2 | % 277
+  g2 fs2 a1 | % 278
+  e2 c'2 b1 |
+  g2 e'1 d2 \bar "||"
+  r2 c1 b2 | % 281
   d2. d4 d1 | % 282
   e2 ( d4 c4 ) d2 d2 ~ | % 283
   d2 cs2 d1 | % 284
@@ -611,7 +603,7 @@ CredoTenorNotes =  \relative b {
   b4 a4 b4 ( c4 d2 ) a2 | % 287
   d2 c2 b1 ~ | % 288
   b2 g2 r2 g2 | % 289
-  g4. ( a8 b4 g4 ) a2 c2 | \barNumberCheck #127
+  g4. ( a8 b4 g4 ) a2 c2 | \barNumberCheck #131
   b2 a2. g4 fs2 | % 291
   g4. ( a8 b4 g4 ) a1 \bar "||"
   r2 g1 b2 | % 293
@@ -621,38 +613,39 @@ CredoTenorNotes =  \relative b {
   d2. a4 c1 | % 297
   b1 r1 | % 298
   r2 r4 e4 c2 a2 | % 299
-  b4. c8 d1 g,2 | \barNumberCheck #137
+  b4. c8 d1 g,2 | \barNumberCheck #141
   r2 d'2 c2 a2 | % 301
   g4. a8 b2. e,4 e'2 ~ | % 302
   e2 ds2 e1 | % 303
   r2 d1 b2 | % 304
   c2 b2 b1 | % 305
-  r1 r2 c2 ~ \bar "||"
-  \time 3/1  c2 g2 b2. c4 b2 a2 \bar "||"
-  \numericTimeSignature\time 4/2  b\breve \bar "||"
-  r1 d1 | % 309
-  d2 d2 r2 b2 ~ | \barNumberCheck #147
-  b4 ( c4 d2 ) b2 b2 | % 311
-  a2. g4 d'2 a2 | % 312
-  c2. b4 a2 d2 | % 313
-  b2 c2 b4 ( c4 d2 ) ~ | % 314
-  d4 d4 a1 b2 | % 315
-  e2. ( fs4 g2 ) fs2 | % 316
-  e1 r2 cs2 | % 317
-  d2. d4 a2 b2 ~ | % 318
-  b2 e,2 g1 | % 319
-  c1 b1 | \barNumberCheck #157
-  a2 a2 c2. d4 | % 321
-  e1 d2 b2 ~ | % 322
-  b2 a2 c2 b4 a4 | % 323
-  g2. a4 b1 | % 324
-  b2 b2 c1 | % 325
-  a1 g2. a4 | % 326
-  b4 c4 d1 g,2 | % 327
-  b4. c8 d4 b4 e1 ~ | % 328
-  e2 b2 r2 g2 ~ \bar "||"
-  \time 3/1  g4 a4 c1 ( b2 a1 ) \bar "||"
-  \numericTimeSignature\time 4/2  g1 r1 | % 331
+  r1 r2 c2 ~ |
+  c2 g2 b2. c4 |
+  b2 a2 b1 ~ \bar "||"
+  b1 r1 |
+  d1 d2 d2 | % 309
+  r2 b2. ( c4 d2 ) | \barNumberCheck #147
+  b2 b2 a2. g4 | % 311
+  d'2 a2 c2. b4 | % 312
+  a2 d2 b2 c2 | % 313
+  b4 ( c4 ) d2. d4 a2 ~ | % 314
+  a2 b2 e2. ( fs4 | % 315
+  g2 ) fs2 e1 | % 316
+  r2 cs2 d2. d4 | % 317
+  a2 b1 e,2 | % 318
+  g1 c1 | % 319
+  b1 a2 a2 | \barNumberCheck #157
+  c2. d4 e1 | % 321
+  d2 b1 a2 | % 322
+  c2 b4 a4 g2. a4 | % 323
+  b1 b2 b2 | % 324
+  c1 a1 | % 325
+  g2. a4 b4 c4 d2 ~ | % 326
+  d2 g,2 b4. c8 d4 b4 | % 327
+  e1. b2 | % 328
+  r2 g2. a4 c2 ~ |
+  c2 ( b2 a1 ) \bar "||"
+  g1 r1 | % 331
   r1 r2 c2 | % 332
   d2 c4 d4 e4 fs4 g2 ~ | % 333
   g2 fs2 g1 | % 334
@@ -711,29 +704,27 @@ CredoTenorLyrics  =  \lyricmode {
 }
 CredoBassNotes =  \relative e {
   \clef "bass" \key g \major \numericTimeSignature\time 4/2
-  \numericTimeSignature\time 4/2  R1*12 |
-  R1*2 \bar "!"
-  \once \omit Staff.TimeSignature \time 2/2 R1 |
-  \once \omit Staff.TimeSignature \time 4/2  r2 e1 e2 | % 172
-  g2. g4 c,1 | % 173
-  e4. ( fs8 g1 ) g2 | % 174
-  d1 r1 | % 175
-  R1*2 | % 176
-  d2. c4 a2 b2 | % 177
-  c2. c4 b1 | % 178
-  r2 e1 d2 | % 179
-  g1. a2 | \barNumberCheck #18
-  b2. b4 g2 c2 ~ | % 181
-  c2 b2 a1 | % 182
-  g2 g2. g4 fs2 | % 183
-  e1 d1 | % 184
-  e2. d4 c2 c2 |
-  b\breve ~ \bar "!"
-  \once \omit Staff.TimeSignature \time 2/2 b1 |
-  \once \omit Staff.TimeSignature \time 4/2  r2 e1 e2 | % 187
+  R1*14 |
+  r1. e2 ~ |
+  e2 e2 g2. g4 | % 172
+  c,1 e4. ( fs8 g2 ~ | % 173
+  g2 ) g2 d1 | % 174
+  R1*2 | % 175
+  r1 d2. c4 | % 176
+  a2 b2 c2. c4 | % 177
+  b1 r2 e2 ~ | % 178
+  e2 d2 g1 ~ | % 179
+  g2 a2 b2. b4 | \barNumberCheck #18
+  g2 c1 b2 | % 181
+  a1 g2 g2 ~ | % 182
+  g4 g4 fs2 e1 | % 183
+  d1 e2. d4 | % 184
+  c2 c2 b1  ~ |
+  b\breve |
+  r2 e1 e2 | % 187
   fs2 g2 e1 | % 188
   d1 b2 cs2 | % 189
-  d2. d4 b2 e2 ~ | \barNumberCheck #29
+  d2. d4 b2 e2 ~ | \barNumberCheck #28
   e2 e2 d1 | % 191
   R1*2 | % 192
   r1 g1 | % 193
@@ -741,86 +732,86 @@ CredoBassNotes =  \relative e {
   g'1 r1 | % 195
   r2 e2 c2 a2 | % 196
   c4 ( d4 e2 ) a,2 r4 a'4 |
-  e2 g2 a4 ( b4 c2 ) \bar "!" 
-  \once \omit Staff.TimeSignature \time 2/2 b1 |
-  \once \omit Staff.TimeSignature \time 4/2  a2. g4 a2 fs2 | % 199
-  e1. ( c2 ) | \barNumberCheck #40
-  b1 r1 | % 201
+  e2 g2 a4 ( b4 c2 ) |
+  b1 a2. g4 |
+  a2 fs2 e1 ~ | % 199
+  e2 ( c2 ) b1 | \barNumberCheck #39
   R1*2 | % 202
-  e1 d2 e2 ~ | % 203
-  e4 fs4 g1 e2 | % 204
-  a1 g1 | % 205
-  r2 e2 fs2 g2 ~ | % 206
-  g4 fs4 d2 e2 c2 | % 207
-  b1 r1 | % 208
-  e2 fs2 g2. fs4 | % 209
-  e2 d1 c2 | \barNumberCheck #50
-  b1 e1 | % 211
-  d2 g2. fs4 e2 |
-  d\breve  \bar "!" 
-  \once \omit Staff.TimeSignature \time 2/2 e1 |
-  \once \omit Staff.TimeSignature \time 4/2  b\breve \bar "||"
+  r1 e1 | % 201
+  d2 e2. fs4 g2 ~ | % 203
+  g2 e2 a1 | % 204
+  g1 r2 e2 | % 205
+  fs2 g2. fs4 d2 | % 206
+  e2 c2 b1 | % 207
+  r1 e2 fs2 | % 208
+  g2. fs4 e2 d2 ~ | % 209
+  d2 c2 b1 | \barNumberCheck #49
+  e1 d2 g2 ~ | % 211
+  g4 fs4 e2 d1 ~ |
+  d1 e1 |
+  b\breve \bar "||"
   g'1 g2 fs2 | % 215
   g2 a2. g4 e2 | % 216
   r2 g2 fs2 d2 | % 217
   e1 d2 b2 | % 218
   c1 b1 | % 219
-  r2 c2 a1 | \barNumberCheck #61
+  r2 c2 a1 | \barNumberCheck #59
   g1 r2 g'2 | % 221
   d'2. c4 a4 b4 c2 ~ |
-  c4 b8 [ a8 ] g4 a4 b1  \bar "!" 
-  \once \omit Staff.TimeSignature \time 2/2 a1 |
-  \once \omit Staff.TimeSignature \time 4/2  r2 d,2 g2 fs2 | % 224
-  g2. a4 g1 | % 225
-  r1 r2 c,2 | % 226
-  g'2. a4 b2 c2 ~ | % 227
-  c4 ( b4 a2 ) e1 | % 228
-  r2 a,2 c2. d4 | % 229
-  e2 g2. ( fs4 e2 ) | \barNumberCheck #72
-  d1 r1 | % 231
-  r1 r2 e2 ~ | % 232
-  e2 d2 e2 g2 | % 233
-  fs2. ( e4 d2 ) e2 | % 234
-  b1 r1 | % 235
-  r2 b2 d2 c2 | % 236
-  e2. ( d4 c2 ) c2 \bar "||"
-  b\breve | % 238
-  R1*4 | \barNumberCheck #82
-  R1*8 \bar "||"
-  \time 3/1  R1*3 \bar "||"
-  \numericTimeSignature\time 4/2  r2 e2 ^\f fs2 gs2 | % 246
+  c4 b8 [ a8 ] g4 a4 b1  |
+  a1 r2 d,2 |
+  g2 fs2 g2. a4 | % 224
+  g1 r1 | % 225
+  r2 c,2 g'2. a4 | % 226
+  b2 c2. ( b4 a2 ) | % 227
+  e1 r2 a,2 | % 228
+  c2. d4 e2 g2  ( ~ | % 229
+  g4 fs4 e2 ) d1 | \barNumberCheck #70
+  R1*2 | % 231
+  r2 e1 d2 | % 232
+  e2 g2 fs2. ( e4 | % 233
+  d2 ) e2 b1 | % 234
+  r1 r2 b2 | % 235
+  d2 c2 e2. ( d4 | % 236
+  c2 ) c2 b1 ~ \bar "||"
+  b1 r1 | % 238
+  R1*4 | \barNumberCheck #80
+  R1*8 |
+  R1*2 \bar "||"
+  r2 e2 ^\f fs2 gs2 | % 246
   a2 b2 e,2. e4 | % 247
   a2 b2 ( g2 ) e2 | % 248
   R1*2 | % 249
-  g2. g4 d2 e2 | \barNumberCheck #87
+  g2. g4 d2 e2 | \barNumberCheck #90
   b2 b2 g'2 e4 g4 | % 251
   fs2 ( d2 ) e1 | % 252
   r2 b2 e2 c4 a4 | % 253
   b1 e1 | % 254
   R1*8 | % 258
   e2. fs4 g2 a4 b4 | % 259
-  c2 ( d2 ) e2 b2 | \barNumberCheck #97
-  e,2 fs2 g2. fs4 \bar "||"
-  \time 3/1  g2 a4 c4 b4. a8 g4 a8 [ b8 ] c4 b4 a2 \bar "||"
-  \numericTimeSignature\time 4/2  r2 e2 g2. g4 | % 263
-  fs2 g2 e2 g2 | % 264
-  d2 r2 r1 | % 265
-  r2 b'2 d2. d4 | % 266
-  c2 b1 g2 | % 267
-  a2 g2. fs4 g2 | % 268
-  e1 d2 b2 | % 269
-  e2. g4 d2 b2 ( | \barNumberCheck #107
-  c2 e2 ) b1 | % 271
-  r1 r2 g'2 ~ | % 272
-  g4 a4 b1 e,2 ~ | % 273
-  e2 g1 c2 ~ | % 274
-  c2 b2 a1 | % 275
-  g2 e2. fs4 g2 ~ | % 276
-  g2 d2 r1 | % 277
-  r2 b2. c4 d2 ~ | % 278
-  d2 a2 r2 e'2 \bar "||"
-  \time 3/1  g2 d2 e1. g2 \bar "||"
-  \numericTimeSignature\time 4/2  r2 c,1 e2 | % 281
+  c2 ( d2 ) e2 b2 | \barNumberCheck #100
+  e,2 fs2 g2. fs4 |
+  g2 a4 c4 b4. a8 g4 a8 [ b8 ] |
+  c4 b4 a2 r2 e2 |
+  g2. g4 fs2 g2 | % 263
+  e2 g2 d2 r2 | % 264
+  r1 r2 b'2 | % 265
+  d2. d4 c2 b2 ~ | % 266
+  b2 g2 a2 g2 ~ | % 267
+  g4 fs4 g2 e1 | % 268
+  d2 b2 e2. g4 | % 269
+  d2 b2 ( c2 e2 ) | \barNumberCheck #111
+  b1 r1 | % 271
+  r2 g'2. a4 b2 ~ | % 272
+  b2 e,1 g2 ~ | % 273
+  g2 c1 b2 | % 274
+  a1 g2 e2 ~ | % 275
+  e4 fs4 g1 d2 | % 276
+  r1 r2 b2 ~ | % 277
+  b4 c4 d1 a2 | % 278
+  r2 e'2 g2 d2 |
+  e1. g2 |
+  r2 c,1 e2 | % 281
   d2. d4 g2 b2 ( | % 282
   a1 ) g1 | % 283
   a2. a4 d,1 | % 284
@@ -829,7 +820,7 @@ CredoBassNotes =  \relative e {
   d\breve | % 287
   r1 r2 e2 ~ | % 288
   e4 d4 e4 ( fs4 g2 ) g,2 | % 289
-  r2 g'2 fs2 e2 ~ | \barNumberCheck #127
+  r2 g'2 fs2 e2 ~ | \barNumberCheck #131
   e2 a,2 b2 d4. ( c8 | % 291
   b4. a8 g2 ) d'1 \bar "||"
   r2 e1 d2 | % 293
@@ -839,38 +830,39 @@ CredoBassNotes =  \relative e {
   d,1 r1 | % 297
   r2 g1 a2 | % 298
   b2 c2 a1 | % 299
-  g1 r1 | \barNumberCheck #137
+  g1 r1 | \barNumberCheck #141
   r1 r2 c2 | % 301
   b2 e,2 g2. a4 | % 302
   b1 e,1 | % 303
   r2 g1 g2 | % 304
   a2 g2 g1 | % 305
-  r2 g1 c,2 \bar "||"
-  \time 3/1  e1 ( d\breve ) \bar "||"
-  \numericTimeSignature\time 4/2  g\breve \bar "||"
-  r1 g1 | % 309
-  b2 g2 r2 g2 ~ | \barNumberCheck #147
-  g4 ( a4 b2 ) g1 | % 311
-  r1 r2 d2 | % 312
-  e2. g4 d2 d2 | % 313
-  e2 c2 g'2. g4 | % 314
-  d1 a'2 g2 ~ | % 315
-  g2 c2 b1 | % 316
-  r2 e,2 a2. a4 | % 317
-  d,2 d2. d4 d2 | % 318
-  e\breve | % 319
-  a,1 e'2 e2 | \barNumberCheck #157
-  fs2. g4 a1 | % 321
-  e1 g1 ~ | % 322
-  g2 d2 e1 ~ | % 323
-  e1 b1 ~ | % 324
-  b1 r1 | % 325
-  d1 e2 g2 ~ | % 326
-  g2 d2 g4. a8 b4 c4 | % 327
-  d2 b2 a1 | % 328
-  e2 g2. ( fs4 e4 d4 \bar "||"
-  \time 3/1  c1 ) d\breve \bar "||"
-  \numericTimeSignature\time 4/2  r2 e2 g2 fs4 g4 | % 331
+  r2 g1 c,2 |
+  e1 ( d1 ~ |
+  d1 ) g1 ~ \bar "||"
+  g1 r1 |
+  g1 b2 g2 | % 309
+  r2 g2. ( a4 b2 ) | \barNumberCheck #147
+  g1 r1 | % 311
+  r2 d2 e2. g4 | % 312
+  d2 d2 e2 c2 | % 313
+  g'2. g4 d1 | % 314
+  a'2 g1 c2 | % 315
+  b1 r2 e,2 | % 316
+  a2. a4 d,2 d2 ~ | % 317
+  d4 d4 d2 e1 ~ | % 318
+  e1 a,1 | % 319
+  e'2 e2 fs2. g4 | \barNumberCheck #157
+  a1 e1 | % 321
+  g1. d2 | % 322
+  e\breve | % 323
+  b\breve | % 324
+  r1 d1 | % 325
+  e2 g1 d2 | % 326
+  g4. a8 b4 c4 d2 b2 | % 327
+  a1 e2 g2 ~ | % 328
+  g4 ( fs4 e4 d4 c1 ) |
+  d\breve |
+  r2 e2 g2 fs4 g4 | % 331
   a2 b2 c2 a2 | % 332
   g1 r1 | % 333
   r2 d2 g2 e4 g4 | % 334
@@ -920,54 +912,56 @@ CredoBassLyrics  =  \lyricmode {
   "li." A -- "men." A -- "men." 
 }
 
-\score {
-  \transpose c df
-  <<
-    \new StaffGroup <<
-      \new Staff <<
-        \set Staff.instrumentName = "Soprano"
-        \set Staff.shortInstrumentName = "S."
-        \context Staff <<
-          \context Voice = "CredoSoprano" { \CredoSopranoNotes }
-          \new Lyrics \lyricsto "CredoSoprano" \CredoSopranoLyrics
+\bookpart {
+  \score {
+    \transpose c df
+    <<
+      \new StaffGroup <<
+        \new Staff <<
+          \set Staff.instrumentName = "Soprano"
+          \set Staff.shortInstrumentName = "S."
+          \context Staff <<
+            \context Voice = "CredoSoprano" { \CredoSopranoNotes }
+            \new Lyrics \lyricsto "CredoSoprano" \CredoSopranoLyrics
+          >>
         >>
-      >>
-      \new Staff <<
-        \set Staff.instrumentName = "Alto"
-        \set Staff.shortInstrumentName = "A."
-        \context Staff <<
-          \context Voice = "CredoAlto" { \CredoAltoNotes }
-          \new Lyrics \lyricsto "CredoAlto" \CredoAltoLyrics
+        \new Staff <<
+          \set Staff.instrumentName = "Alto"
+          \set Staff.shortInstrumentName = "A."
+          \context Staff <<
+            \context Voice = "CredoAlto" { \CredoAltoNotes }
+            \new Lyrics \lyricsto "CredoAlto" \CredoAltoLyrics
+          >>
         >>
-      >>
-      \new Staff <<
-        \set Staff.instrumentName = "Tenor"
-        \set Staff.shortInstrumentName = "T."
-        \context Staff <<
-          \context Voice = "CredoTenor" { \CredoTenorNotes }
-          \new Lyrics \lyricsto "CredoTenor" \CredoTenorLyrics
+        \new Staff <<
+          \set Staff.instrumentName = "Tenor"
+          \set Staff.shortInstrumentName = "T."
+          \context Staff <<
+            \context Voice = "CredoTenor" { \CredoTenorNotes }
+            \new Lyrics \lyricsto "CredoTenor" \CredoTenorLyrics
+          >>
         >>
-      >>
-      \new Staff <<
-        \set Staff.instrumentName = "Bass"
-        \set Staff.shortInstrumentName = "B."
-        \context Staff <<
-          \context Voice = "CredoBass" { \CredoBassNotes }
-          \new Lyrics \lyricsto "CredoBass" \CredoBassLyrics
+        \new Staff <<
+          \set Staff.instrumentName = "Bass"
+          \set Staff.shortInstrumentName = "B."
+          \context Staff <<
+            \context Voice = "CredoBass" { \CredoBassNotes }
+            \new Lyrics \lyricsto "CredoBass" \CredoBassLyrics
+          >>
         >>
+
       >>
 
     >>
-
-  >>
-  \header { piece = \markup{ \fontsize #4 "Credo in unum Deum" } }
-  \layout {ragged-right = ##f
-      % system-count = #7
-      \override Score.BarNumber.break-visibility = ##(#f #t #t)
-      \context {\Staff 
-        \consists Ambitus_engraver 
-      }
+    \header { piece = \markup{ \fontsize #4 "Credo in unum Deum" } }
+    \layout {ragged-right = ##f
+             % system-count = #7
+             \override Score.BarNumber.break-visibility = ##(#f #t #t)
+             \context {\Staff 
+                       \consists Ambitus_engraver 
+             }
+    }
+    \midi {}
   }
-  \midi {}
-}
 
+}

@@ -17,7 +17,7 @@
 
 SanctusSopranoNotes =  \relative b' {
   \clef "treble" \key g \major \numericTimeSignature\time 4/2
-  \tempo 2=88 e,2. -"(editorial extra text in ms. 351-4, 374-5)" fs4 g4
+  \tempo 2=88 e,2. ^"(editorial extra text in ms. 351-4, 374-5)" fs4 g4
   a4 b2 ~ | % 343
   b2 a4 g4 fs2 d2 | % 344
   g1 fs2. a4 | % 345
@@ -62,7 +62,7 @@ SanctusSopranoNotes =  \relative b' {
   a2 b2 c1 | % 382
   b2 -"rit." b2. cs4 d2 | % 383
   b\breve ~ | % 384
-  b\breve \bar "|."
+  b\breve \bar "||"
   \tempo 2=96 r1 g1 ~ | % 386
   g1 a1 | % 387
   b\breve | % 388
@@ -88,7 +88,7 @@ SanctusSopranoNotes =  \relative b' {
   g2 e2 b'2. cs4 | % 408
   d4 -"rit." cs4 b4 a4 b2 g2 ~ | % 409
   g4 a4 b2. ( a4 gs4 fs4 ) | \barNumberCheck #69
-  gs\breve \fermata \bar "|."
+  gs\breve \fermata \bar "|." \pageBreak
 }
 
 SanctusSopranoLyrics  =  \lyricmode {
@@ -155,7 +155,7 @@ SanctusAltoNotes =  \relative e' {
   a,2 r2 r2 a2 | % 382
   e'2. d4 e2 fs2 | % 383
   g1 fs1 ~ | % 384
-  fs\breve \bar "|."
+  fs\breve \bar "||"
   e1. b2 | % 386
   c2 b2 a2 d2 ~ | % 387
   d2 ( e2 ) b1 | % 388
@@ -249,7 +249,7 @@ SanctusTenorNotes =  \relative b {
   e'2. d4 e2 fs2 | % 382
   g1 g,2 b2 ~ | % 383
   b4 e,4 e'1 ( ds4 cs4 ) | % 384
-  ds\breve \bar "|."
+  ds\breve \bar "||"
   R1*4 | % 387
   g,\breve ~ | % 388
   g1 a1 | % 389
@@ -331,7 +331,7 @@ SanctusBassNotes =  \relative e {
   c2 ( b2 ) a1 | % 382
   e2 g1 d2 | % 383
   e2 e2 b'1 | % 384
-  b,\breve \bar "|."
+  b,\breve \bar "||"
   R1*4 | % 387
   r2 e1 b2 | % 388
   c2 b2 a2 d2 ~ | % 389
@@ -355,7 +355,7 @@ SanctusBassNotes =  \relative e {
   e'2. fs4 g2 e2 | % 408
   b'\breve | % 409
   e,1 b1 | \barNumberCheck #69
-  e\breve \fermata \bar "|."
+  e\breve \fermata \bar "|." 
 }
 SanctusBassLyrics  =  \lyricmode {
   San -- _ _ _ _ _ _ "ctus," San -- _
@@ -372,55 +372,57 @@ SanctusBassLyrics  =  \lyricmode {
   
 }
 
-\score {
-  \transpose c df
-  <<
-    \new StaffGroup <<
-      \new Staff <<
-        \set Staff.instrumentName = "Soprano"
-        \set Staff.shortInstrumentName = "S."
-        \context Staff <<
-          \context Voice = "SanctusSoprano" { \SanctusSopranoNotes }
-          \new Lyrics \lyricsto "SanctusSoprano" \SanctusSopranoLyrics
+\bookpart {
+
+  \score {
+    \transpose c df
+    <<
+      \new StaffGroup <<
+        \new Staff <<
+          \set Staff.instrumentName = "Soprano"
+          \set Staff.shortInstrumentName = "S."
+          \context Staff <<
+            \context Voice = "SanctusSoprano" { \SanctusSopranoNotes }
+            \new Lyrics \lyricsto "SanctusSoprano" \SanctusSopranoLyrics
+          >>
         >>
-      >>
-      \new Staff <<
-        \set Staff.instrumentName = "Alto"
-        \set Staff.shortInstrumentName = "A."
-        \context Staff <<
-          \context Voice = "SanctusAlto" { \SanctusAltoNotes }
-          \new Lyrics \lyricsto "SanctusAlto" \SanctusAltoLyrics
+        \new Staff <<
+          \set Staff.instrumentName = "Alto"
+          \set Staff.shortInstrumentName = "A."
+          \context Staff <<
+            \context Voice = "SanctusAlto" { \SanctusAltoNotes }
+            \new Lyrics \lyricsto "SanctusAlto" \SanctusAltoLyrics
+          >>
         >>
-      >>
-      \new Staff <<
-        \set Staff.instrumentName = "Tenor"
-        \set Staff.shortInstrumentName = "T."
-        \context Staff <<
-          \context Voice = "SanctusTenor" { \SanctusTenorNotes }
-          \new Lyrics \lyricsto "SanctusTenor" \SanctusTenorLyrics
+        \new Staff <<
+          \set Staff.instrumentName = "Tenor"
+          \set Staff.shortInstrumentName = "T."
+          \context Staff <<
+            \context Voice = "SanctusTenor" { \SanctusTenorNotes }
+            \new Lyrics \lyricsto "SanctusTenor" \SanctusTenorLyrics
+          >>
         >>
-      >>
-      \new Staff <<
-        \set Staff.instrumentName = "Bass"
-        \set Staff.shortInstrumentName = "B."
-        \context Staff <<
-          \context Voice = "SanctusBass" { \SanctusBassNotes }
-          \new Lyrics \lyricsto "SanctusBass" \SanctusBassLyrics
+        \new Staff <<
+          \set Staff.instrumentName = "Bass"
+          \set Staff.shortInstrumentName = "B."
+          \context Staff <<
+            \context Voice = "SanctusBass" { \SanctusBassNotes }
+            \new Lyrics \lyricsto "SanctusBass" \SanctusBassLyrics
+          >>
         >>
+
       >>
 
     >>
-
-  >>
-  \header { piece = \markup{ \fontsize #4 "Sanctus Benedictus" } }
-  \layout {ragged-right = ##f
-      % system-count = #7
-      \override Score.BarNumber.break-visibility = ##(#f #t #t)
-      \context {\Staff 
-        \consists Ambitus_engraver 
-      }
+    \header { piece = \markup{ \fontsize #4 "Sanctus Benedictus" } }
+    \layout {ragged-right = ##f
+             % system-count = #7
+             \override Score.BarNumber.break-visibility = ##(#f #t #t)
+             \context {\Staff 
+                       \consists Ambitus_engraver 
+             }
+    }
+    \midi {}
   }
-  \midi {}
+
 }
-
-

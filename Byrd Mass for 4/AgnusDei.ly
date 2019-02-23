@@ -46,7 +46,7 @@ AgnusDeiSopranoNotes =  \relative b' {
   a2. -"rit." g4 e4 fs4 g1 fs2 \bar "||"
   \numericTimeSignature\time 4/2  | % 437
   \tempo 2=88 g\breve | % 438
-  b1. \f g2 | % 439
+  b1. ^\f g2 | % 439
   c2. ( b4 a4 g4 fs2 ) | \barNumberCheck #30
   b2 g2. e4 a2 ~ | % 441
   a4 ( g4 fs4 e4 fs1 ) | % 442
@@ -111,7 +111,7 @@ AgnusDeiAltoNotes =  \relative e' {
   R1*10 | % 432
   R1*8 \bar "||"
   \time 3/1  R1*3 \bar "||"
-  \numericTimeSignature\time 4/2  r1 d1 \f ~ | % 438
+  \numericTimeSignature\time 4/2  r1 d1 ^\f ~ | % 438
   d2 b2 e2. ( d4 | % 439
   c4 b4 a2 ) d1 | \barNumberCheck #30
   b2. g4 c2. ( b4 | % 441
@@ -177,7 +177,7 @@ AgnusDeiTenorNotes =  \relative b {
   \time 3/1  d2 c2 c2 b2 a1 \bar "||"
   \numericTimeSignature\time 4/2  b\breve | % 438
   R1*2 | % 439
-  r1 r2 d2 \f ~ | \barNumberCheck #30
+  r1 r2 d2 ^\f ~ | \barNumberCheck #30
   d2 b2 e2. ( d4 | % 441
   c4 b4 a2 ) d1 ~ | % 442
   d1 r2 c2 | % 443
@@ -238,7 +238,7 @@ AgnusDeiBassNotes =  \relative e {
   fs4. g8 a2 e4. fs8 g2 \bar "||"
   \time 3/1  d4. e8 f2 c4. d8 e4 b4 c2 d2 \bar "||"
   \numericTimeSignature\time 4/2  | % 437
-  g,\breve \f | % 438
+  g,\breve ^\f | % 438
   g'1. e2 | % 439
   a2. ( g4 fs4 e4 d2 ) | \barNumberCheck #30
   g1 c,1 ~ | % 441
@@ -285,55 +285,57 @@ AgnusDeiBassLyrics  =  \lyricmode {
   "cem."
 }
 
-\score {
-  \transpose c df
-  <<
-    \new StaffGroup <<
-      \new Staff <<
-        \set Staff.instrumentName = "Soprano"
-        \set Staff.shortInstrumentName = "S."
-        \context Staff <<
-          \context Voice = "AgnusDeiSoprano" { \AgnusDeiSopranoNotes }
-          \new Lyrics \lyricsto "AgnusDeiSoprano" \AgnusDeiSopranoLyrics
+\bookpart {
+
+  \score {
+    \transpose c df
+    <<
+      \new StaffGroup <<
+        \new Staff <<
+          \set Staff.instrumentName = "Soprano"
+          \set Staff.shortInstrumentName = "S."
+          \context Staff <<
+            \context Voice = "AgnusDeiSoprano" { \AgnusDeiSopranoNotes }
+            \new Lyrics \lyricsto "AgnusDeiSoprano" \AgnusDeiSopranoLyrics
+          >>
         >>
-      >>
-      \new Staff <<
-        \set Staff.instrumentName = "Alto"
-        \set Staff.shortInstrumentName = "A."
-        \context Staff <<
-          \context Voice = "AgnusDeiAlto" { \AgnusDeiAltoNotes }
-          \new Lyrics \lyricsto "AgnusDeiAlto" \AgnusDeiAltoLyrics
+        \new Staff <<
+          \set Staff.instrumentName = "Alto"
+          \set Staff.shortInstrumentName = "A."
+          \context Staff <<
+            \context Voice = "AgnusDeiAlto" { \AgnusDeiAltoNotes }
+            \new Lyrics \lyricsto "AgnusDeiAlto" \AgnusDeiAltoLyrics
+          >>
         >>
-      >>
-      \new Staff <<
-        \set Staff.instrumentName = "Tenor"
-        \set Staff.shortInstrumentName = "T."
-        \context Staff <<
-          \context Voice = "AgnusDeiTenor" { \AgnusDeiTenorNotes }
-          \new Lyrics \lyricsto "AgnusDeiTenor" \AgnusDeiTenorLyrics
+        \new Staff <<
+          \set Staff.instrumentName = "Tenor"
+          \set Staff.shortInstrumentName = "T."
+          \context Staff <<
+            \context Voice = "AgnusDeiTenor" { \AgnusDeiTenorNotes }
+            \new Lyrics \lyricsto "AgnusDeiTenor" \AgnusDeiTenorLyrics
+          >>
         >>
-      >>
-      \new Staff <<
-        \set Staff.instrumentName = "Bass"
-        \set Staff.shortInstrumentName = "B."
-        \context Staff <<
-          \context Voice = "AgnusDeiBass" { \AgnusDeiBassNotes }
-          \new Lyrics \lyricsto "AgnusDeiBass" \AgnusDeiBassLyrics
+        \new Staff <<
+          \set Staff.instrumentName = "Bass"
+          \set Staff.shortInstrumentName = "B."
+          \context Staff <<
+            \context Voice = "AgnusDeiBass" { \AgnusDeiBassNotes }
+            \new Lyrics \lyricsto "AgnusDeiBass" \AgnusDeiBassLyrics
+          >>
         >>
+
       >>
 
     >>
-
-  >>
-  \header { piece = \markup{ \fontsize #4 "Agnus Dei" } }
-  \layout {ragged-right = ##f
-      % system-count = #7
-      \override Score.BarNumber.break-visibility = ##(#f #t #t)
-      \context {\Staff 
-        \consists Ambitus_engraver 
-      }
+    \header { piece = \markup{ \fontsize #4 "Agnus Dei" } }
+    \layout {ragged-right = ##f
+             % system-count = #7
+             \override Score.BarNumber.break-visibility = ##(#f #t #t)
+             \context {\Staff 
+                       \consists Ambitus_engraver 
+             }
+    }
+    \midi {}
   }
-  \midi {}
+
 }
-
-
