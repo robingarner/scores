@@ -27,11 +27,11 @@
   % system-count = #16
     evenHeaderMarkup=\markup  \fill-line { 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
-	  \on-the-fly #not-first-page "Mass for Four Voices"
+	  \on-the-fly #not-part-first-page "Mass for Four Voices"
 	  \on-the-fly #not-first-page "Byrd" }
     oddHeaderMarkup= \markup  \fill-line { 
 	  \on-the-fly #not-first-page "Byrd" 
-	  \on-the-fly #part-first-page "Mass for Four Voices"
+	  \on-the-fly #not-part-first-page "Mass for Four Voices"
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
 }
 
@@ -53,9 +53,9 @@
 }
 \include "Kyrie.ly"
 \include "Gloria.ly"
-\include "Credo.ly"
-\include "Sanctus.ly"
-\include "AgnusDei.ly"
+%\include "Credo.ly"
+%\include "Sanctus.ly"
+%\include "AgnusDei.ly"
 
 
 

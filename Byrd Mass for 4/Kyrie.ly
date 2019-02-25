@@ -72,7 +72,7 @@ KyrieSopranoLyrics =  \lyricmode {
   -- "son," Chri -- ste e -- lei -- "son." Ky -- ri -- e e -- lei --
   "son," Ky -- ri -- e e -- lei -- "son," Ky -- rie e -- lei -- "son,"
   Ky -- ri -- e e -- lei -- "son," Ky -- ri -- e e -- lei -- "son," Ky
-  -- rie e -- lei -- "son." 
+  -- rie e -- lei -- _ "son." 
 }
 
 KyrieAltoNotes =  \relative e' {
@@ -125,8 +125,8 @@ KyrieAltoLyrics =  \lyricmode {
   ste e -- le -- _ _ _ _ i -- "son," Chri -- ste e
   -- lei -- "son." Ky -- ri -- e e -- lei -- "son," Ky -- ri -- e e --
   lei -- "son," Ky -- rie e -- lei -- "son," Ky -- rie e -- lei --
-  "son," Ky -- ri -- e -- e -- lei -- "son," Ky -- ri -- e e -- le --
-  _ _ _ _ _ i -- "son." 
+  "son," Ky -- ri -- e -- e -- lei -- "son," Ky -- ri -- e e -- lei --
+  _ _ _ _ _ _ "son." 
 }
 
 KyrieTenorNotes =  \relative b {
@@ -171,16 +171,18 @@ KyrieTenorNotes =  \relative b {
 }
 
 KyrieTenorLyrics  =  \lyricmode {
-  Ky -- rie e --
-  lei -- _ _ _ _ _ _ _ "son," Ky --
-  rie e -- lei -- _ _ _ _ _ _ _
-  _ _ "son." Chri -- ste e -- lei -- "son," Chri -- ste e --
-  lei -- _ _ _ _ "son," Chri -- ste e -- le -- i
-  -- "son," Chri -- ste e -- lei -- _ _ "son." Ky -- rie e
-  -- lei -- "son," Ky -- rie e -- lei -- "son," Ky -- ri -- e e -- lei
-  "son," Ky -- ri -- e e -- lei -- "son," Ky -- ri -- e e -- lei --
-  _ _ _ _ _ _ _ _ _
-  _ _ _ "son." 
+  Ky -- rie e -- lei -- _ _ _ _ _ _ _ "son," 
+  Ky -- rie e -- lei -- _ _ _ _ _ _ _ _ _ "son." 
+  Chri -- ste e -- lei -- "son," 
+  Chri -- ste e -- lei -- _ _ _ _ "son," 
+  Chri -- ste e -- le -- i -- "son," 
+  Chri -- ste e -- lei -- _ _ "son." 
+  Ky -- rie e -- lei -- "son," 
+  Ky -- rie e -- lei -- "son," 
+  Ky -- ri -- e e -- lei "son," 
+  Ky -- ri -- e e -- lei -- "son," 
+  Ky -- ri -- e e -- lei -- 
+  _ _ _ _ _ _ _ _ _ _ _ _ "son." 
 }
 
 
@@ -236,15 +238,18 @@ KyrieBassLyrics  =  \lyricmode {
 }
 
 \bookpart {
+  \header { 
+    title="Mass for Four Voices"
+    subtitle="Kyrie Eleison"
+  }
   \paper {
-    page-count = #2
     evenHeaderMarkup=\markup  \fill-line { 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
-	  \on-the-fly #not-first-page "Mass for Four Voices: Kyrie"
+	  \on-the-fly #not-part-first-page "Mass for Four Voices: Kyrie"
 	  \on-the-fly #not-first-page "Byrd" }
     oddHeaderMarkup= \markup  \fill-line { 
 	  \on-the-fly #not-first-page "Byrd"
-	  \on-the-fly #not-first-page "Mass for Four Voices: Kyrie"
+	  \on-the-fly #not-part-first-page "Mass for Four Voices: Kyrie"
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
   }
 \score {
@@ -292,7 +297,7 @@ KyrieBassLyrics  =  \lyricmode {
     ragged-last-bottom = ##t
       ragged-right = ##f
       system-count = #7
-    page-count = #2
+    % page-count = #2
      \override Score.BarNumber.break-visibility = ##(#f #t #t)
       \context {\Staff 
         \consists Ambitus_engraver 

@@ -373,7 +373,20 @@ SanctusBassLyrics  =  \lyricmode {
 }
 
 \bookpart {
-
+  \header { 
+    title="Mass for Four Voices"
+    subtitle="Sanctus Benedictus"
+  }
+  \paper {
+    evenHeaderMarkup=\markup  \fill-line { 
+	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
+	  \on-the-fly #not-part-first-page "Mass for Four Voices: Sanctus"
+	  \on-the-fly #not-first-page "Byrd" }
+    oddHeaderMarkup= \markup  \fill-line { 
+	  \on-the-fly #not-first-page "Byrd"
+	  \on-the-fly #not-part-first-page "Mass for Four Voices: Sanctus"
+	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
+  }
   \score {
     \transpose c df
     <<
@@ -414,7 +427,6 @@ SanctusBassLyrics  =  \lyricmode {
       >>
 
     >>
-    \header { piece = \markup{ \fontsize #4 "Sanctus Benedictus" } }
     \layout {ragged-right = ##f
              % system-count = #7
              \override Score.BarNumber.break-visibility = ##(#f #t #t)

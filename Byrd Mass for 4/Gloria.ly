@@ -626,18 +626,19 @@ GloriaBassLyrics  =  \lyricmode {
 }
 
 \bookpart {
+  \header { 
+    title="Mass for Four Voices"
+    subtitle="Gloria in Excelcis Deo"
+  }
   \paper {
     evenHeaderMarkup=\markup  \fill-line { 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
-	  \on-the-fly #not-first-page "Mass for Four Voices: Gloria"
+	  \on-the-fly #not-part-first-page "Mass for Four Voices: Gloria"
 	  \on-the-fly #not-first-page "Byrd" }
     oddHeaderMarkup= \markup  \fill-line { 
 	  \on-the-fly #not-first-page "Byrd"
-	  \on-the-fly #not-first-page "Mass for Four Voices: Gloria"
+	  \on-the-fly #not-part-first-page "Mass for Four Voices: Gloria"
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
-  }
-  \header { 
-    title="Gloria in Excelcis Deo"
   }
   \score {
     \transpose c df
@@ -670,6 +671,7 @@ GloriaBassLyrics  =  \lyricmode {
         \new Staff <<
           \set Staff.instrumentName = "Bass"
           \set Staff.shortInstrumentName = "B."
+          \set Staff.midiInstrument = #"trumpet"
           \context Staff <<
             \context Voice = "GloriaBass" { \GloriaBassNotes }
             \new Lyrics \lyricsto "GloriaBass" \GloriaBassLyrics

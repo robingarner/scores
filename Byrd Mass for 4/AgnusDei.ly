@@ -286,7 +286,20 @@ AgnusDeiBassLyrics  =  \lyricmode {
 }
 
 \bookpart {
-
+  \header { 
+    title="Mass for Four Voices"
+    subtitle="Agnus Dei"
+  }
+  \paper {
+    evenHeaderMarkup=\markup  \fill-line { 
+	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
+	  \on-the-fly #not-part-first-page "Mass for Four Voices: Agnus Dei"
+	  \on-the-fly #not-first-page "Byrd" }
+    oddHeaderMarkup= \markup  \fill-line { 
+	  \on-the-fly #not-first-page "Byrd"
+	  \on-the-fly #not-part-first-page "Mass for Four Voices: Agnus Dei"
+	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
+  }
   \score {
     \transpose c df
     <<
@@ -327,7 +340,6 @@ AgnusDeiBassLyrics  =  \lyricmode {
       >>
 
     >>
-    \header { piece = \markup{ \fontsize #4 "Agnus Dei" } }
     \layout {ragged-right = ##f
              % system-count = #7
              \override Score.BarNumber.break-visibility = ##(#f #t #t)
