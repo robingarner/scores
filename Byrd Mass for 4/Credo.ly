@@ -920,7 +920,7 @@ CredoBassLyrics  =  \lyricmode {
     subtitle="Credo in unum Deum"
   }
   \paper {
-    page-count = #7
+    page-count = #8
     evenHeaderMarkup=\markup  \fill-line { 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
 	  \on-the-fly #not-part-first-page "Mass for Four Voices: Credo"

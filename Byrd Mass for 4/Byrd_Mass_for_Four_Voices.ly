@@ -53,9 +53,9 @@
 }
 \include "Kyrie.ly"
 \include "Gloria.ly"
-%\include "Credo.ly"
-%\include "Sanctus.ly"
-%\include "AgnusDei.ly"
+\include "Credo.ly"
+\include "Sanctus.ly"
+\include "AgnusDei.ly"
 
 
 
