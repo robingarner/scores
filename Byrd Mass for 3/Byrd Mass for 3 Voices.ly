@@ -1,12 +1,11 @@
 \version "2.18.2"
 
+\include "common.ly"
+
 \header {
     composer = "William Byrd (c.1540-1623)"
-    title = "Mass for 3 Voices"
+    title = \htitle
 }
-
-htitle="Mass for 3 Voices"
-hcomposer="William Byrd"
 
 mtempo = 100
 
@@ -19,10 +18,12 @@ mtempo = 100
     left-margin = 1.8\cm
     right-margin = 1.8\cm
     evenHeaderMarkup=\markup  \fill-line { 
-	  \fromproperty #'page:page-number-string \htitle \hcomposer }
+	  \fromproperty #'page:page-number-string 
+	  \on-the-fly #not-part-first-page \htitle
+	  \on-the-fly #not-part-first-page \hcomposer }
     oddHeaderMarkup= \markup  \fill-line { 
-	  \on-the-fly #not-first-page \hcomposer 
-	  \on-the-fly #not-first-page \htitle
+	  \on-the-fly #not-part-first-page \hcomposer 
+	  \on-the-fly #not-part-first-page \htitle
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
 }
     
@@ -35,6 +36,7 @@ mtempo = 100
       }
 
 }
+
 \include "Kyrie.ly"
 \include "Gloria.ly"
 \include "Credo.ly"

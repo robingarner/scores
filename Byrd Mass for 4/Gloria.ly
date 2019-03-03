@@ -1,25 +1,9 @@
-\version "2.18.2"
-\language "english"
-\include "articulate.ly"
+\include "common.ly"
 
-#(set-global-staff-size 15)
-\header {
-  title = "Mass for Four Voices"
-  composer = "William Byrd"
-}
-
-\layout {
-  \context {
-    \Score
-    skipBars = ##t
-    autoBeaming = ##f
-  }
-}
 
 GloriaSopranoNotes =  \relative b' {
   \clef "treble" \key g \major \numericTimeSignature\time 4/2
-  \tempo 2=104 r1  
-  b1 ~ | % 38
+  \tempo 2=120 r1 b1 ~ | % 38
   b2 fs2 a1 | % 39
   g1 fs1 | \barNumberCheck #4
   r2 fs2 b2. b4 | % 41
@@ -66,10 +50,10 @@ GloriaSopranoNotes =  \relative b' {
   r2 g2. fs4 fs2 ~ | % 83
   fs2 \melisma e2 \melismaEnd fs1 | % 84
   R1*2 |
-  r2 -"rit." g2. fs4 fs2 ~ \bar "!"
+  r2 ^"rit." g2. fs4 fs2 ~ \bar "!"
   \once \omit Staff.TimeSignature \time 2/2 fs2 e2 |
   \once \omit Staff.TimeSignature \time 4/2  fs\breve ^\fermata \bar "||" \break
-  R1*12 | % 93
+  \tempo 2=88 R1*12 | % 93
   R1*10 |
   r1 r2 a2 |
   d1 b2 d2 | \barNumberCheck #65
@@ -81,7 +65,7 @@ GloriaSopranoNotes =  \relative b' {
   r1 r1 |
   r2 b1 a2 |
   g2 fs2 b2 c2 |
-  d2. c4 b4 -"rit." a4 g2 ~ |
+  d2. c4 b4 a4 g2 ~ |
   g4 a4 b2 c1 |
   b\breve | \barNumberCheck #76
   r2 g2 b2 e,2 | % 111
@@ -96,7 +80,7 @@ GloriaSopranoNotes =  \relative b' {
   b2 g2 b2. c4 | \barNumberCheck #86
   d1 b2 c2 ~ | % 121
   c4 b4 g4 a4 b4 g4 a2 ~ | % 122
-  a4 g4 g1 fs2 |
+  a4 g4 g1 fs2 \bar "||"
   g1 r2 g2 | % 124
   a1 fs1 | % 125
   r2 a2 d2. d4 | % 126
@@ -225,7 +209,7 @@ GloriaAltoNotes =  \relative e' {
   e4 e2 d4 d1 \bar "!"
   \once \hide Staff.TimeSignature \time 2/2 b2. cs4 |
   \once \hide Staff.TimeSignature \time 4/2  ds\breve ^\fermata \bar "||"
-  \tempo 2=104 e2. e4 b2 c2 ~ | % 88
+  e2. e4 b2 c2 ~ | % 88
   c2 b2 d2 e2 | % 89
   g1 fs1 | \barNumberCheck #55
   b,1 b2 e2 ~ | % 91
@@ -251,7 +235,7 @@ GloriaAltoNotes =  \relative e' {
   R1*4 | % 112
   R1*12 | % 118
   R1*10|
-  r2 d2 g1 | % 124
+  r2 \tempo 2=108 d2 g1 | % 124
   e2 e2 a2. a4 | % 125
   fs1. g2 ~ | % 126
   g4 fs4 e2 fs1 | % 127
@@ -647,6 +631,9 @@ GloriaBassLyrics  =  \lyricmode {
         \new Staff <<
           \set Staff.instrumentName = "Soprano"
           \set Staff.shortInstrumentName = "S."
+          \set Staff.midiInstrument = #"flute"
+          \set Staff.midiMinimumVolume = #0.3
+          \set Staff.midiMaximumVolume = #0.5
           \context Staff <<
             \context Voice = "GloriaSoprano" { \GloriaSopranoNotes }
             \new Lyrics \lyricsto "GloriaSoprano" \GloriaSopranoLyrics
@@ -655,6 +642,9 @@ GloriaBassLyrics  =  \lyricmode {
         \new Staff <<
           \set Staff.instrumentName = "Alto"
           \set Staff.shortInstrumentName = "A."
+          \set Staff.midiInstrument = #"clarinet"
+          \set Staff.midiMinimumVolume = #0.3
+          \set Staff.midiMaximumVolume = #0.5
           \context Staff <<
             \context Voice = "GloriaAlto" { \GloriaAltoNotes }
             \new Lyrics \lyricsto "GloriaAlto" \GloriaAltoLyrics
@@ -663,6 +653,9 @@ GloriaBassLyrics  =  \lyricmode {
         \new Staff <<
           \set Staff.instrumentName = "Tenor"
           \set Staff.shortInstrumentName = "T."
+           \set Staff.midiInstrument = #"trumpet"
+         \set Staff.midiMinimumVolume = #0.3
+          \set Staff.midiMaximumVolume = #0.5
           \context Staff <<
             \context Voice = "GloriaTenor" { \GloriaTenorNotes }
             \new Lyrics \lyricsto "GloriaTenor" \GloriaTenorLyrics
@@ -671,7 +664,9 @@ GloriaBassLyrics  =  \lyricmode {
         \new Staff <<
           \set Staff.instrumentName = "Bass"
           \set Staff.shortInstrumentName = "B."
-          \set Staff.midiInstrument = #"trumpet"
+          \set Staff.midiInstrument = #"bassoon"
+          \set Staff.midiMinimumVolume = #0.7
+          \set Staff.midiMaximumVolume = #0.9
           \context Staff <<
             \context Voice = "GloriaBass" { \GloriaBassNotes }
             \new Lyrics \lyricsto "GloriaBass" \GloriaBassLyrics

@@ -1,3 +1,6 @@
+\version "2.18.2"
+
+\include "common.ly"
 
 kyrieAltoNotes =  \relative fis' {
   % Permit first bar number to be printed
@@ -64,6 +67,7 @@ kyrieBassLyrics = \lyricmode {
 %
 % Kyrie
 %
+\bookpart{
 \score {
     <<
         \new Staff <<
@@ -105,11 +109,13 @@ kyrieBassLyrics = \lyricmode {
     \header { piece = \markup{ \fontsize #4 "Kyrie eleison" } }
     \layout {
       ragged-right = ##f
-      system-count = #1
+      %system-count = #1
+      \override Score.SpacingSpanner.spacing-increment = #1.5
       \override Score.BarNumber.break-visibility = ##(#f #t #t)
       \context {\Staff 
         \consists Ambitus_engraver 
       }
     }
     \midi { \tempo 4 = 180 }
+}
 }

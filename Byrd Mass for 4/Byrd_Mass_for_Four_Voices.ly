@@ -5,9 +5,6 @@
 %% additional definitions required by the score:
 \language "english"
 
-
-#(set-global-staff-size 15)
-
 \header {
     composer = "William Byrd (15xx-16xx)"
     title = "Mass for Four Voices"
@@ -36,7 +33,7 @@
 }
 
 \layout {
-  \override NoteHead.style = #'baroque
+  % \override NoteHead.style = #'baroque
 
   \context {
     \Score

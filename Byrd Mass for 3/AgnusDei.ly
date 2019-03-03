@@ -1,5 +1,7 @@
 \version "2.18.2"
 
+\include "common.ly"
+
 agnusDeiAltoNotes =  \relative fis' {
     \clef "treble" \key d \major 
   % Permit first bar number to be printed
@@ -47,9 +49,9 @@ agnusDeiAltoNotes =  \relative fis' {
     a2. fis4 g2 fis2 ~ | % 386
     fis4 e4 d4 cis4 d2 b2 | % 387
     cis2 fis2. d4 e2 ~ | % 388
-    e4 d4 d1 cis4 b4 |
-    cis1 s1 | \barNumberCheck #53
-    d\breve ^\fermata \bar "|."
+    e4 d4 d1 cis4 b4 \bar "!"
+    \once \hide Staff.TimeSignature \time 2/2  cis1 | \barNumberCheck #53
+    \once \hide Staff.TimeSignature \time 4/2  d\breve ^\fermata \bar "|."
 }
 
 agnusDeiAltoLyrics = \lyricmode { 
@@ -118,9 +120,9 @@ agnusDeiTenorNotes =  \relative a {
     a1 r1 | % 386
     r2 fis1 d2 | % 387
     a'1 fis2 g2 ~ | % 388
-    g4 fis4 e4 d4 e1 ~
-    e1 s1 | \barNumberCheck #53
-    fis\breve ^\fermata \bar "|."
+    g4 fis4 e4 d4 e1 ~ \bar "!"
+    \once \hide Staff.TimeSignature \time 2/2 e1 | \barNumberCheck #53
+    \once \hide Staff.TimeSignature \time 4/2 fis\breve ^\fermata \bar "|."
 }
 
 agnusDeiTenorLyrics = \lyricmode { 
@@ -192,9 +194,9 @@ agnusDeiBassNotes =  \relative d {
     fis1 b,1 | % 386
     d1 b1 | % 387
     a2 d1 g,2 | % 388
-    b2 b2 a1 ~ |
-    a1 s1 | \barNumberCheck #53
-    d\breve ^\fermata \bar "|."
+    b2 b2 a1 ~ \bar "!"
+    \once \hide Staff.TimeSignature \time 2/2 a1 | \barNumberCheck #53
+    \once \hide Staff.TimeSignature \time 4/2 d\breve ^\fermata \bar "|."
 }
 
 agnusDeiBassLyrics = \lyricmode { 
@@ -216,7 +218,8 @@ agnusDeiBassLyrics = \lyricmode {
 %
 % Kyrie
 %
-\score {
+\bookpart {
+  \score {
     <<
         \new Staff <<
             \set Staff.instrumentName = "Alto"
@@ -255,4 +258,5 @@ agnusDeiBassLyrics = \lyricmode {
         \consists Ambitus_engraver 
       }
     }
+  }
 }

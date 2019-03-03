@@ -1,23 +1,4 @@
-\version "2.18.2"
-\language "english"
-
-htitle="Mass for Four Voices"
-hcomposer="William Byrd"
-
-#(set-global-staff-size 15)
-\header {
-  title = "Mass for Four Voices"
-  composer = "William Byrd"
-}
-
-\layout {
-  \context {
-    \Score
-    skipBars = ##t
-    autoBeaming = ##f
-  }
-}
-
+\include "common.ly"
 
 KyrieSopranoNotes  = \relative b' {
   \clef "treble" \key g \major \numericTimeSignature\time 4/2 | % 1
@@ -29,7 +10,7 @@ KyrieSopranoNotes  = \relative b' {
   fs4 e4 e1 ds2 | % 7
   e1 r2 b'2 ~ | % 8
   b2 e,2 fs2 a2 ~ | % 9
-  a2 -"rit." \melisma  g2  fs1 \melismaEnd | \barNumberCheck #10
+  a2 ^"rit." \melisma  g2  fs1 \melismaEnd | \barNumberCheck #10
   gs\breve ^\fermata \bar "||" \break
   \tempo 2=80 | % 11
   r1 r2 b2 ~ | % 12
@@ -65,14 +46,19 @@ KyrieSopranoNotes  = \relative b' {
 }
 
 KyrieSopranoLyrics =  \lyricmode {
-  Ky -- rie e -- lei
-  -- "son," Ky -- rie e -- le -- _ _ _ _ _
-  _ i -- "son," Ky -- rie e -- lei -- "son." Chri -- ste e -- lei
-  -- "son," Chri -- ste e -- lei -- "son," Chri -- "ste " __ e -- lei
-  -- "son," Chri -- ste e -- lei -- "son." Ky -- ri -- e e -- lei --
-  "son," Ky -- ri -- e e -- lei -- "son," Ky -- rie e -- lei -- "son,"
-  Ky -- ri -- e e -- lei -- "son," Ky -- ri -- e e -- lei -- "son," Ky
-  -- rie e -- lei -- _ "son." 
+  Ky -- rie e -- lei -- "son," 
+  Ky -- rie e -- le -- _ _ _ _ _ _ _ "son," 
+  Ky -- rie e -- lei -- "son." 
+  Chri -- ste e -- lei -- "son," 
+  Chri -- ste e -- lei -- "son," 
+  Chri -- "ste " __ e -- lei  -- "son," 
+  Chri -- ste e -- lei -- "son." 
+  Ky -- ri -- e e -- lei --  "son," 
+  Ky -- ri -- e e -- lei -- "son," 
+  Ky -- rie e -- lei -- "son,"
+  Ky -- ri -- e e -- lei -- "son," 
+  Ky -- ri -- e e -- lei -- "son," 
+  Ky -- rie e -- lei -- _ "son." 
 }
 
 KyrieAltoNotes =  \relative e' {
@@ -118,15 +104,18 @@ KyrieAltoNotes =  \relative e' {
 }
 
 KyrieAltoLyrics =  \lyricmode {
-  Ky -- rie e -- lei
-  -- _ _ _ _ _ _ _ _ _
-  "son," Ky -- rie e -- lei -- "son," Ky -- ri -- e e -- lei -- "son."
-  Chri -- ste e -- lei -- _ _ _ _ "son," Chri --
-  ste e -- le -- _ _ _ _ i -- "son," Chri -- ste e
-  -- lei -- "son." Ky -- ri -- e e -- lei -- "son," Ky -- ri -- e e --
-  lei -- "son," Ky -- rie e -- lei -- "son," Ky -- rie e -- lei --
-  "son," Ky -- ri -- e -- e -- lei -- "son," Ky -- ri -- e e -- lei --
-  _ _ _ _ _ _ "son." 
+  Ky -- rie e -- lei -- _ _ _ _ _ _ _ _ _  "son," 
+  Ky -- rie e -- lei -- "son," 
+  Ky -- ri -- e e -- lei -- "son."
+  Chri -- ste e -- lei -- _ _ _ _ "son," 
+  Chri -- ste e -- le -- _ _ _ _ i -- "son," 
+  Chri -- ste e -- lei -- "son." 
+  Ky -- ri -- e e -- lei -- "son," 
+  Ky -- ri -- e e -- lei -- "son," 
+  Ky -- rie e -- lei -- "son," 
+  Ky -- rie e -- lei -- "son," 
+  Ky -- ri -- e   e -- lei -- "son," 
+  Ky -- ri -- e e -- lei -- _ _ _ _ _ _ "son." 
 }
 
 KyrieTenorNotes =  \relative b {
@@ -243,6 +232,7 @@ KyrieBassLyrics  =  \lyricmode {
     subtitle="Kyrie Eleison"
   }
   \paper {
+    page-count = #2
     evenHeaderMarkup=\markup  \fill-line { 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
 	  \on-the-fly #not-part-first-page "Mass for Four Voices: Kyrie"
@@ -259,6 +249,9 @@ KyrieBassLyrics  =  \lyricmode {
       \new Staff <<
         \set Staff.instrumentName = "Soprano"
         \set Staff.shortInstrumentName = "S."
+          \set Staff.midiInstrument = #"flute"
+          \set Staff.midiMinimumVolume = #0.3
+          \set Staff.midiMaximumVolume = #0.5
         \context Staff <<
           \context Voice = "KyrieSoprano" { \KyrieSopranoNotes }
           \new Lyrics \lyricsto "KyrieSoprano" \KyrieSopranoLyrics
@@ -267,7 +260,10 @@ KyrieBassLyrics  =  \lyricmode {
       \new Staff <<
         \set Staff.instrumentName = "Alto"
         \set Staff.shortInstrumentName = "A."
-        \context Staff <<
+           \set Staff.midiInstrument = #"clarinet"
+          \set Staff.midiMinimumVolume = #0.3
+          \set Staff.midiMaximumVolume = #0.5
+       \context Staff <<
           \context Voice = "KyrieAlto" { \KyrieAltoNotes }
           \new Lyrics \lyricsto "KyrieAlto" \KyrieAltoLyrics
         >>
@@ -275,6 +271,9 @@ KyrieBassLyrics  =  \lyricmode {
       \new Staff <<
         \set Staff.instrumentName = "Tenor"
         \set Staff.shortInstrumentName = "T."
+          \set Staff.midiInstrument = #"trumpet"
+          \set Staff.midiMinimumVolume = #0.3
+          \set Staff.midiMaximumVolume = #0.5
         \context Staff <<
           \context Voice = "KyrieTenor" { \KyrieTenorNotes }
           \new Lyrics \lyricsto "KyrieTenor" \KyrieTenorLyrics
@@ -283,6 +282,9 @@ KyrieBassLyrics  =  \lyricmode {
       \new Staff <<
         \set Staff.instrumentName = "Bass"
         \set Staff.shortInstrumentName = "B."
+          \set Staff.midiMinimumVolume = #0.7
+          \set Staff.midiMaximumVolume = #0.9
+          \set Staff.midiInstrument = #"bassoon"
         \context Staff <<
           \context Voice = "KyrieBass" { \KyrieBassNotes }
           \new Lyrics \lyricsto "KyrieBass" \KyrieBassLyrics
@@ -292,7 +294,6 @@ KyrieBassLyrics  =  \lyricmode {
     >>
 
   >>
-  \header { piece = \markup{ \fontsize #4 "Kyrie eleison" } }
   \layout {
     ragged-last-bottom = ##t
       ragged-right = ##f

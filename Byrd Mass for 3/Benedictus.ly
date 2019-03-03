@@ -1,3 +1,8 @@
+\version "2.18.2"
+
+\include "common.ly"
+
+
 benedictusAltoNotes =  \relative fis' {
   % Permit first bar number to be printed
   \bar ""
@@ -6,14 +11,14 @@ benedictusAltoNotes =  \relative fis' {
     d1. a2 | % 323
     d4 e4 fis1 e2 | % 324
     fis1 g1 | % 325
-    fis1 r2 b,2 \break | % 326
+    fis1 r2 b,2 | % 326
     fis'2. a4 g2 fis2 ~ | % 327
     fis2 fis2 b,4 d2 cis4 | % 328
     ais2 r4 cis4 fis2. a4 | % 329
     g2 fis1 e2 | \barNumberCheck #9
     cis1 r2 d2 | % 331
     b2 a2 d2 e2 | % 332
-    fis1 e2 e2 \pageBreak | % 333
+    fis1 e2 e2 | % 333
     cis2 a2 r2 a'2 | % 334
     g2 e2 fis2. g4 | % 335
     a1 a,2 r2 | % 336
@@ -35,14 +40,14 @@ benedictusTenorNotes =  \relative a {
     R1*2 | % 323
     r1 a1 ~ | % 324
     a2 d,2 g4 a4 b2 ~ | % 325
-    b2 a2 b2 d2 ~ \break | % 326
+    b2 a2 b2 d2 ~ | % 326
     d2 cis2 b1 | % 327
     a1 r2 a2 | % 328
     cis2. e4 d2 cis2 ~ | % 329
     cis4 b4 b2. ais4 cis4 b4 | \barNumberCheck #9
     ais4 gis4 ais2 b2 r4 b4 | % 331
     g2 fis2 b2 cis2 | % 332
-    d1 cis1 \pageBreak | % 333
+    d1 cis1 | % 333
     r2 e2 cis2 a2 | % 334
     b2 cis2 d1 | % 335
     a2 cis2. d4 e2 ~ | % 336
@@ -64,14 +69,14 @@ benedictusBassNotes =  \relative d {
     r1 d1 ~ | % 323
     d1 a1 | % 324
     d4 e4 fis2 e1 | % 325
-    d1 g1 \break | % 326
+    d1 g1 | % 326
     fis1 r2 b,2 | % 327
     fis'2. a4 g2 fis2 ~ | % 328
     fis2 fis2 b,2 a2 | % 329
     b2. d4 cis1 | \barNumberCheck #9
     fis2. fis4 b,1 | % 331
     r2 d2 b2 a2 | % 332
-    d2 fis2 a1 \pageBreak | % 333
+    d2 fis2 a1 | % 333
     a,\breve | % 334
     r2 a'2 fis2 d2 | % 335
     fis1. g2 | % 336
@@ -89,9 +94,10 @@ benedictusBassLyrics = \lyricmode {
 
 
 %
-% Kyrie
+% Benedictus
 %
-\score {
+\bookpart {
+  \score {
     <<
         \new Staff <<
             \set Staff.instrumentName = "Alto"
@@ -130,4 +136,5 @@ benedictusBassLyrics = \lyricmode {
         \consists Ambitus_engraver 
       }
     }
+  }
 }

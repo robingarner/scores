@@ -1,19 +1,5 @@
-\version "2.18.2"
-\language "english"
+\include "common.ly"
 
-#(set-global-staff-size 15)
-\header {
-  title = "Mass for Four Voices"
-  composer = "William Byrd"
-}
-
-\layout {
-  \context {
-    \Score
-    skipBars = ##t
-    autoBeaming = ##f
-  }
-}
 
 SanctusSopranoNotes =  \relative b' {
   \clef "treble" \key g \major \numericTimeSignature\time 4/2
@@ -37,37 +23,37 @@ SanctusSopranoNotes =  \relative b' {
   r2 b2. b4 b2 | % 359
   a2 b2 r2 d2 ~ | \barNumberCheck #19
   d4 d4 d2 cs2 d2 | % 361
-  b2. b4 a2 b2 ~ \bar "||"
-  \time 3/1  | % 362
-  b4 -"rit." a4 a1 g2 ( fs1 ) \bar "||"
-  \numericTimeSignature\time 4/2  gs\breve \bar "||"
+  b2. b4 a2 b2 ~ |
+  b4 ^"rit." a4 a1 g2 ( \bar "!"
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 fs1 ) |
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  gs\breve \bar "||"
   \tempo 2=96 R1*4 | % 366
   r1 r2 e2 | % 367
   a2 g2 c1 | % 368
   b2 a4 a2 b4 g2 | % 369
-  fs1 r2 a2 ~ | \barNumberCheck #29
+  fs1 r2 a2 ~ | \barNumberCheck #30
   a4 a4 e2 g2. a4 | % 371
   b2 a1 g2 | % 372
   fs1 r1 | % 373
   b2. b4 e,2 g2 ~ | % 374
-  g4 a4 b2 c1 \bar "||"
-  \time 3/1  | % 375
-  b2 -"rit." a2 d1 ( c1 ) \bar "||"
-  \numericTimeSignature\time 4/2  | % 376
+  g4 a4 b2 c1 | % 375
+  b2 ^"rit." a2 d1 ( \bar "!"
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 c1 ) \bar "||" 
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  | % 376
   \tempo 2=96 b\breve | % 377
   r1 e,1 | % 378
   b'2. fs4 b2 c2 | % 379
-  d1 b1 | \barNumberCheck #39
+  d1 b1 | \barNumberCheck #41
   r2 e,2 a2. g4 | % 381
   a2 b2 c1 | % 382
-  b2 -"rit." b2. cs4 d2 | % 383
+  b2 ^"rit." b2. cs4 d2 | % 383
   b\breve ~ | % 384
   b\breve \bar "||"
   \tempo 2=96 r1 g1 ~ | % 386
   g1 a1 | % 387
   b\breve | % 388
   e,2 g1 fs2 ~ | % 389
-  fs2 e2 ds1 | \barNumberCheck #49
+  fs2 e2 ds1 | \barNumberCheck #51
   r2 c'2 b2 e,2 ~ | % 391
   e4 fs8 [ g8 ] a1 g2 | % 392
   fs2 e2 g1 ( | % 393
@@ -77,7 +63,7 @@ SanctusSopranoNotes =  \relative b' {
   fs2 e2 ) g1 ~ | % 397
   g1 r2 b2 | % 398
   c2. c4 a2 b2 ~ | % 399
-  b4 a4 a1 ( gs2 ) | \barNumberCheck #59
+  b4 a4 a1 ( gs2 ) | \barNumberCheck #61
   a\breve | % 401
   r2 e2 g2. a4 | % 402
   b2 g2 d'1 | % 403
@@ -86,8 +72,8 @@ SanctusSopranoNotes =  \relative b' {
   a1 r1 | % 406
   r2 a,2 e'2. fs4 | % 407
   g2 e2 b'2. cs4 | % 408
-  d4 -"rit." cs4 b4 a4 b2 g2 ~ | % 409
-  g4 a4 b2. ( a4 gs4 fs4 ) | \barNumberCheck #69
+  d4 ^"rit." cs4 b4 a4 b2 g2 ~ | % 409
+  g4 a4 b2. ( a4 gs4 fs4 ) | \barNumberCheck #71
   gs\breve \fermata \bar "|." \pageBreak
 }
 
@@ -132,25 +118,27 @@ SanctusAltoNotes =  \relative e' {
   d\breve | % 359
   r2 g2. g4 g2 | \barNumberCheck #19
   fs2 g2 e2 fs2 ( | % 361
-  d2 b2 ) fs'1 \bar "||"
-  \time 3/1  r2 fs2. e4 e1 ( ds2 ) \bar "||"
-  \numericTimeSignature\time 4/2  e\breve \bar "||"
+  d2 b2 ) fs'1 |
+  r2 fs2. e4 e2 ~ \bar "!"
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 e2 \melisma ds2 \melismaEnd |
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  e\breve \bar "||"
   r2 b2 e2 d2 | % 365
   g1 fs2 e4 e4 ~ | % 366
   e4 fs4 d2 cs1 | % 367
   a2 e'2 c2 e2 ~ | % 368
   e4 d4 d1 b4. cs8 | % 369
-  d4 a4 b2 a1 | \barNumberCheck #29
+  d4 a4 b2 a1 | \barNumberCheck #30
   r2 c2. c4 b2 | % 371
   d4. e8 fs2. e4 e2 ~ | % 372
   e2 ds2 e1 | % 373
   R1*2 | % 374
-  r2 e2. e4 a,2 \bar "||"
-  \time 3/1  d2. e4 fs2 g1 fs2 \bar "||"
-  \numericTimeSignature\time 4/2  g\breve | % 377
+  r2 e2. e4 a,2 |
+  d2. e4 fs2 g2 ~ \bar "!"
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 g2 fs2 |
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  g\breve | % 377
   R1*2 | % 378
   fs1 g2. e4 | % 379
-  fs4 g4 a1 ( gs2 ) | \barNumberCheck #39
+  fs4 g4 a1 ( gs2 ) | \barNumberCheck #41
   a2 a,4 b4 c4 ( d4 e2 ) | % 381
   a,2 r2 r2 a2 | % 382
   e'2. d4 e2 fs2 | % 383
@@ -160,7 +148,7 @@ SanctusAltoNotes =  \relative e' {
   c2 b2 a2 d2 ~ | % 387
   d2 ( e2 ) b1 | % 388
   R1*2 | % 389
-  r2 g'2 fs2 b,2 ~ | \barNumberCheck #49
+  r2 g'2 fs2 b,2 ~ | \barNumberCheck #51
   b4 c8 [ d8 ] e2. d4 c2 | % 391
   b2 a2 b1 | % 392
   b2 r2 r2 g2 | % 393
@@ -170,7 +158,7 @@ SanctusAltoNotes =  \relative e' {
   a2. a4 g1 | % 397
   r2 d'2 g2. g4 | % 398
   e2 a2. g4 fs2 | % 399
-  e1. e2 | \barNumberCheck #59
+  e1. e2 | \barNumberCheck #61
   e1 r2 a,2 | % 401
   c2. d4 e2 c2 | % 402
   g'1 fs2 fs2 ~ | % 403
@@ -180,7 +168,7 @@ SanctusAltoNotes =  \relative e' {
   a1 g2 e2 ~ | % 407
   e4 fs4 g4 ( fs4 e4 d4 ) e2 | % 408
   r2 g,1 e2 | % 409
-  e'1 ( ds1 ) | \barNumberCheck #69
+  e'1 ( ds1 ) | \barNumberCheck #71
   e\breve \fermata \bar "|."
 }
 
@@ -226,25 +214,27 @@ SanctusTenorNotes =  \relative b {
   b1 r2 d2 ~ | % 359
   d4 d4 d2 e2 d2 | \barNumberCheck #19
   R1*2 | % 361
-  r2 d2. d4 d2 \bar "||"
-  \time 3/1  cs2 d2 b1. b2 \bar "||"
-  \numericTimeSignature\time 4/2  b\breve \bar "||"
+  r2 d2. d4 d2 |
+  cs2 d2 b1 ~ \bar "!"
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 b2 b2 |
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  b\breve \bar "||"
   g1. g2 ~ | % 365
   g2 e2 a1 ~ | % 366
-  a2 ( b2 ) a2 a2 | % 367
+  a2 \melisma b2 \melismaEnd a2 a2 | % 367
   c1. c,2 | % 368
   g'2 fs2 d2 e2 | % 369
-  d\breve | \barNumberCheck #29
+  d\breve | \barNumberCheck #30
   a'2. a4 e2 g2 ~ | % 371
   g2 ( a2 ) b1 | % 372
   b2. b4 e,2 g2 ~ | % 373
   g4 a4 b2 c2. b4 | % 374
-  c2 g2 a1 \bar "||"
-  \time 3/1  d,2 d'2. c4 b2 a1 \bar "||"
-  \numericTimeSignature\time 4/2  g1 r2 b2 | % 377
+  c2 g2 a1 |
+  d,2 d'2. c4 b2 \bar "!"
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 a1 |
+  \once \hide Staff.TimeSignature\numericTimeSignature\time 4/2  g1 r2 b2 | % 377
   d2. b4 c4 d4 e2 ~ | % 378
   e2 ( ds2 ) e1 | % 379
-  d2 d2 e2. d4 | \barNumberCheck #39
+  d2 d2 e2. d4 | \barNumberCheck #41
   c4. a8 c4 b4 a2 e2 | % 381
   e'2. d4 e2 fs2 | % 382
   g1 g,2 b2 ~ | % 383
@@ -253,7 +243,7 @@ SanctusTenorNotes =  \relative b {
   R1*4 | % 387
   g,\breve ~ | % 388
   g1 a1 | % 389
-  b\breve | \barNumberCheck #49
+  b\breve | \barNumberCheck #51
   e,\breve | % 391
   R1*2 | % 392
   r2 c'2 b2 e,2 ~ | % 393
@@ -263,7 +253,7 @@ SanctusTenorNotes =  \relative b {
   d4 c4 c1 ( b4 a4 ) | % 397
   b1 b2 e2 ~ | % 398
   e4 e4 c1 d2 ~ | % 399
-  d2 ( c2 b2. ) b4 | \barNumberCheck #59
+  d2 ( c2 b2. ) b4 | \barNumberCheck #61
   cs2 a2 c2. b4 | % 401
   a2 a2 e1 | % 402
   r2 e2 b'2. c4 | % 403
@@ -273,7 +263,7 @@ SanctusTenorNotes =  \relative b {
   fs1 e2 c'2 | % 407
   b1 e,2 b'2 ~ | % 408
   b4 cs4 d2 b2 e2 ~ | % 409
-  e4 e,4 g4 a4 b1 | \barNumberCheck #69
+  e4 e,4 g4 a4 b1 | \barNumberCheck #71
   b\breve \fermata \bar "|."
 }
 SanctusTenorLyrics  =  \lyricmode {
@@ -316,17 +306,19 @@ SanctusBassNotes =  \relative e {
   b2 g'2. g4 g2 | % 359
   fs2 g2 r2 b2 ~ | \barNumberCheck #19
   b4 b4 b2 a2 d,2 | % 361
-  g2. g4 fs2 b,2 \bar "||"
-  \time 3/1  fs'2 d2 e1 b1 \bar "||"
-  \numericTimeSignature\time 4/2  e\breve \bar "||"
+  g2. g4 fs2 b,2 |
+  fs'2 d2 e1 \bar "!"
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 b1 |
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  e\breve \bar "||"
   R1*10 | % 369
   R1*8 | % 373
-  R1*4 \bar "||"
-  \time 3/1  R1*3 \bar "||"
-  \numericTimeSignature\time 4/2  r2 e2 g2. e4 | % 377
+  R1*4 |
+  R1*2 \bar "!"
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 R1
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  r2 e2 g2. e4 | % 377
   fs2 g2 a2 ( c2 ) | % 378
   b1 r1 | % 379
-  r1 e,1 | \barNumberCheck #39
+  r1 e,1 | \barNumberCheck #41
   a2. g4 a4 b4 c2 ~ | % 381
   c2 ( b2 ) a1 | % 382
   e2 g1 d2 | % 383
@@ -335,7 +327,7 @@ SanctusBassNotes =  \relative e {
   R1*4 | % 387
   r2 e1 b2 | % 388
   c2 b2 a2 d2 ~ | % 389
-  d2 ( e2 ) b1 | \barNumberCheck #49
+  d2 ( e2 ) b1 | \barNumberCheck #51
   r1 g'1 ~ | % 391
   g2 fs2 b,4 c8 [ d8 ] e2 | % 392
   ds2 e1 c2 ~ | % 393
@@ -345,7 +337,7 @@ SanctusBassNotes =  \relative e {
   r1 e1 | % 397
   g2. g4 e1 | % 398
   a1. ( d,2 | % 399
-  e1. ) e2 | \barNumberCheck #59
+  e1. ) e2 | \barNumberCheck #61
   a,\breve | % 401
   R1*4 | % 403
   r1 r2 a2 | % 404
@@ -354,7 +346,7 @@ SanctusBassNotes =  \relative e {
   r1 r2 a,2 | % 407
   e'2. fs4 g2 e2 | % 408
   b'\breve | % 409
-  e,1 b1 | \barNumberCheck #69
+  e,1 b1 | \barNumberCheck #71
   e\breve \fermata \bar "|." 
 }
 SanctusBassLyrics  =  \lyricmode {

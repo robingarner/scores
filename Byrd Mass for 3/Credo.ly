@@ -1,8 +1,12 @@
 \version "2.18.2"
 
+\include "common.ly"
+
+
 credoAltoNotes =  \relative fis' {
   %\set Score.currentBarNumber = #11
   % Permit first bar number to be printed
+  \bar ""
   \clef "treble" \key d \major \numericTimeSignature\time 4/2 
     R1*2 | % 1
     fis1 fis2 d2 | % 2
@@ -43,12 +47,12 @@ credoAltoNotes =  \relative fis' {
     cis1 r1 | % 152
     R1*2 | % 153
     r2 fis2 g2 a2 ~ | % 154
-    a4 g4 fis2 e2 d2 ~ | 
+    a4 g4 fis2 e2 d2 ~ \bar "!" 
     % Original has a long bar and a d\breve
     \once \hide Staff.TimeSignature \time 2/2 
-    d2 cis2  \bar "!"
+    d2 cis2  |
     \once \hide Staff.TimeSignature \time 4/2 
-    d\breve ^\fermata \bar "||" \barNumberCheck #43
+    d\breve ^\fermata \bar "||" \barNumberCheck #43 \break
     a1 b2 cis2 | % 158
     d2 e2. cis4 a2 | % 159
     r2 e'2 fis2 b,2 | \barNumberCheck #46
@@ -110,11 +114,11 @@ credoAltoNotes =  \relative fis' {
     e1 r1 | % 216
     r2 a2 fis2 g2 | % 217
     a1 d,2 r2 | % 218
-    r2 d2 b2 cis2 |
+    r2 d2 b2 cis2 \bar "!"
     \once \hide Staff.TimeSignature \time 2/2 
-    d1 \bar "!" \barNumberCheck #106
+    d1 | \barNumberCheck #106
     \once \hide Staff.TimeSignature \time 4/2 
-    a\breve ^\fermata \bar "||"
+    a\breve ^\fermata \bar "||" \break
     R\breve*11  | \barNumberCheck #118
     r1 r2 e'2 ~ | % 233
     e2 g2 fis1 | % 234
@@ -253,9 +257,9 @@ credoTenorNotes =  \relative a {
     a1 b2 cis2 | % 152
     e2. d4 cis2 b2 ~ | % 153
     b2 a2 b2 e,2 | % 154
-    fis2 a2. g4 fis2 |
+    fis2 a2. g4 fis2 \bar "!"
     \once \hide Staff.TimeSignature \time 2/2 
-    e2 e2 \bar "!"
+    e2 e2 |
     % Original has a long bar and a fis\breve
     \once \hide Staff.TimeSignature \time 4/2 
     fis \breve ^\fermata \bar "||"  \barNumberCheck #43
@@ -320,9 +324,9 @@ credoTenorNotes =  \relative a {
     r2 cis2 a2 b2 | % 216
     cis2. a4 d2 b2 | % 217
     cis2 d1 a2 | % 104
-    r4 a4 fis2 g2 a2 ~ |
+    r4 a4 fis2 g2 a2 ~ \bar "!"
     \once \hide Staff.TimeSignature \time 2/2 
-    a4 d,4 g2 ~ \bar "!"
+    a4 d,4 g2 ~ |
     \once \hide Staff.TimeSignature \time 4/2 
     g2 fis4 e4
     fis1 ^\fermata \bar "||" \barNumberCheck #107
@@ -479,9 +483,9 @@ credoBassNotes =  \relative d {
     r2 fis'2 g2 a2 ~ | % 152
     a4 g4 fis2 e2 e2 | % 153
     d1 b2 cis2 | % 154
-    d2. d4 a1 |
+    d2. d4 a1 \bar "!"
     \once \hide Staff.TimeSignature \time 2/2 
-    a2 a2 \bar "!"
+    a2 a2 |
     \once \hide Staff.TimeSignature \time 4/2 
     d\breve ^\fermata \bar "||" \barNumberCheck #43
     | % 157
@@ -546,9 +550,9 @@ credoBassNotes =  \relative d {
     a2 r4 a'4 fis2 g2 | % 216
     a1 d,2 r2 | % 217
     r2 d2 b2 cis2 | % 218
-    d2. b4 e2 a,2 |
+    d2. b4 e2 a,2 \bar "!"
     \once \hide Staff.TimeSignature \time 2/2 
-    b2. cis4  \bar "!"
+    b2. cis4  |
     \once \hide Staff.TimeSignature \time 4/2 
     d\breve ^\fermata \bar "||" \barNumberCheck #107
     r1 d1 ~ | % 222
@@ -663,7 +667,8 @@ credoBassLyrics = \lyricmode {
 %
 % Kyrie
 %
-\score {
+\bookpart {
+  \score {
     <<
         \new Staff <<
             \set Staff.instrumentName = "Alto"
@@ -704,4 +709,5 @@ credoBassLyrics = \lyricmode {
     }
     % To create MIDI output, uncomment the following line:
     \midi { \tempo 2 = 90 }
+  }
 }

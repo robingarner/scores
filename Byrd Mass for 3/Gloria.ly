@@ -1,5 +1,6 @@
-
 \version "2.18.2"
+
+\include "common.ly"
 
 
 gloriaAltoNotes = \relative fis' {
@@ -46,11 +47,11 @@ gloriaAltoNotes = \relative fis' {
     a2 d,2 fis1 | % 48
     cis2 e2. d4 cis4 b4 | % 49
     a2 a'1 d,2 | 
-    fis2. e4 d4 cis4 d2 | % 51
+    fis2. e4 d4 cis4 d2  \bar "!" % 51
     \once \hide Staff.TimeSignature \time 2/2 
-    cis1  \bar "!" % 52
+    cis1 | % 52
     \once \hide Staff.TimeSignature  \time 4/2 
-    dis\breve ^\fermata \bar "||"
+    dis\breve ^\fermata \bar "||" \break
     R\breve*5
     r1 r2 d2 | % 59
     fis2 e4 d4 fis2 e2 ~ | 
@@ -183,9 +184,9 @@ gloriaTenorNotes = \relative a {
     a2 b1 fis2 | % 48
     a1 e2 fis2 ~ | % 49
     fis4 g4 fis4 e4 d4 cis4 b2 ~ |
-    b2 b'2. fis2 b4 ~ | % 51
+    b2 b'2. fis2 b4 ~ \bar "!" % 51
     \once \hide Staff.TimeSignature \time 2/2 
-    b4 ais8 [ gis8 ] ais2  \bar "!" % 52
+    b4 ais8 [ gis8 ] ais2  | % 52
     \once \hide Staff.TimeSignature \time 4/2 
     b\breve ^\fermata \bar "||"
     fis2. g4 a2 b2 ~ | % 54
@@ -327,8 +328,8 @@ gloriaBassNotes = \relative d {
     fis2 b,2 d1 | % 48
     a1 r2 a'2 ~ | % 49
     a2 d,2 fis2. e4 | 
-    d4 cis4 b2. ais4 b2  | % 51
-    \once \hide Staff.TimeSignature  \time 2/2 fis'1 \bar "!" % 52
+    d4 cis4 b2. ais4 b2 \bar "!" % 51
+    \once \hide Staff.TimeSignature  \time 2/2 fis'1 | % 52
     \once \hide Staff.TimeSignature  \time 4/2 b,\breve ^\fermata \bar "||"
     R1*2 | % 54
     b2. cis4 d2 e2 ~ | % 55
@@ -422,11 +423,15 @@ gloriaBassLyrics = \lyricmode {
 }
 
 
-
 %
 % Gloria
 %
-\score {
+\bookpart {
+  \header {
+    composer = "William Byrd (c.1540-1623)"
+    title = #(string-append htitle " - Gloria")
+  }
+  \score {
     <<
         \new Staff <<
             \set Staff.instrumentName = "Alto"
@@ -473,4 +478,5 @@ gloriaBassLyrics = \lyricmode {
     }
     % To create MIDI output, uncomment the following line:
     \midi { \tempo 2 = 90 }
+  } 
 }

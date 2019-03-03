@@ -1,3 +1,7 @@
+\version "2.18.2"
+
+\include "common.ly"
+
 sanctusAltoNotes =  \relative fis' {
   % Permit first bar number to be printed
   \bar ""
@@ -7,7 +11,7 @@ sanctusAltoNotes =  \relative fis' {
     d\breve ~ | % 285
     d\breve | % 286
     e1 e2. d4 | % 287
-    cis4 b4 a2 e'2 fis2 ~ \break | % 288
+    cis4 b4 a2 e'2 fis2 ~ | % 288
     fis4 e4 fis4 gis4 a1 ~ | % 289
     a2 gis2 a1 | \barNumberCheck #8
     r1 g2. fis4 | % 291
@@ -15,7 +19,7 @@ sanctusAltoNotes =  \relative fis' {
     fis4 e4 fis4 d4 e2 d2 | % 293
     cis2 d1 cis2 | % 294
     d1 a'2. a4 | % 295
-    g2 fis1 e2 \pageBreak | % 296
+    g2 fis1 e2 | % 296
     d1 cis2 b2 | % 297
     d1 a'2. a4 | % 298
     g2 fis2. d4 fis2 ~ \bar ":"
@@ -23,21 +27,21 @@ sanctusAltoNotes =  \relative fis' {
     dis\breve ^\fermata \bar "||"
     r2 fis2 d2 b2 | % 302
     g'1 g2 fis2 | % 303
-    e2 d2 cis1 \break | % 304
+    e2 d2 cis1 | % 304
     r2 fis2 d2 b2 | % 305
     g'1 g2 fis2 | % 306
     e1 dis2 r4 d4 ~ | % 307
     d4 fis4 e2 fis2 e2 | % 308
     r2 fis2. a4 gis2 | % 309
     a2 fis2 r2 a,2 ~ | \barNumberCheck #28
-    a4 d4 cis2 fis1 ~ \break | % 311
+    a4 d4 cis2 fis1 ~ | % 311
     fis2 cis2 r1 | % 312
     R1*2 | % 313
     r1 r2 fis2 | % 314
     g2. e4 fis2 g2 | % 315
     a2. g4 fis4 e4 d2 | % 316
     fis1 r2 d2 | % 317
-    g2 e2 g2 a2 \break | % 318
+    g2 e2 g2 a2 | % 318
     b2. a4 g4 fis4 e4 fis4 | % 319
     g2 fis2 e1 | \barNumberCheck #38
     d2. d4 g1 | % 321
@@ -65,7 +69,7 @@ sanctusTenorNotes =  \relative a {
     fis4 g4 a1 d,2 | % 285
     fis2 b2 a2 d2 | % 286
     cis\breve | % 287
-    e2. d4 cis4 b4 a2 \break | % 288
+    e2. d4 cis4 b4 a2 | % 288
     cis2 d2. cis4 d4 e4 | % 289
     fis2 e1 dis2 | \barNumberCheck #8
     e\breve | % 291
@@ -73,7 +77,7 @@ sanctusTenorNotes =  \relative a {
     a1. fis2 ~ | % 293
     fis4 e4 fis4 d4 e1 | % 294
     fis\breve | % 295
-    b2. b4 a2 g2 ~ \pageBreak | % 296
+    b2. b4 a2 g2 ~ | % 296
     g2 fis2 e2. e4 | % 297
     d2 d'2. d4 cis2 | % 298
     b1. a2 \bar ":"
@@ -81,21 +85,21 @@ sanctusTenorNotes =  \relative a {
     fis\breve ^\fermata \bar "||"
     b1. g2 ~ | % 302
     g2 e2 b'2. d4 | % 303
-    cis2 b1 ais2 \break | % 304
+    cis2 b1 ais2 | % 304
     b1 b2 g2 | % 305
     e4 e'2 d4 cis4 b4 b2 ~ | % 306
     b2 ais2 b1 | % 307
     r2 a2. d4 cis2 | % 308
     d2 a2 r1 | % 309
     r2 a2. d4 cis2 | \barNumberCheck #28
-    fis2. e4 d4 cis4 b2 \break | % 311
+    fis2. e4 d4 cis4 b2 | % 311
     ais1 cis2 d2 ~ | % 312
     d2 b2 cis2 d2 | % 313
     e2. d4 cis4 b4 a2 | % 314
     b2 cis2 d2 b2 | % 315
     a1 r1 | % 316
     r2 b2 d2 b2 | % 317
-    e1. fis2 \break | % 318
+    e1. fis2 | % 318
     g2. fis4 e4 d4 cis2 | % 319
     d4 d2 cis4 b4 a4 g4 a4 | \barNumberCheck #38
     b4 cis4 d1 cis2 | % 321
@@ -126,7 +130,7 @@ sanctusBassNotes =  \relative d {
     d2. e4 fis4 g4 a2 ~ | % 285
     a2 d,2 fis2 b2 | % 286
     a\breve | % 287
-    a\breve \break | % 288
+    a\breve | % 288
     fis1. d2 ~ | % 289
     d2 e2 fis1 | \barNumberCheck #8
     e\breve | % 291
@@ -134,28 +138,28 @@ sanctusBassNotes =  \relative d {
     cis2 d2. cis4 d4 b4 | % 293
     a\breve | % 294
     d\breve | % 295
-    R1*2 \pageBreak | % 296
+    R1*2 | % 296
     r2 a'2. a4 g2 | % 297
     fis2. d4 fis2. fis4 | % 298
     b,1 d2 d2 \bar ":"
     e2. e4 s1 | \barNumberCheck #18
     b\breve ^\fermata \bar "||"
     R1*4 | % 303
-    r1 fis'1 \break | % 304
+    r1 fis'1 | % 304
     d2 b2 g'1 | % 305
     g2 fis2 e2 d2 | % 306
     cis1 r2 b2 ~ | % 307
     b4 d4 cis2 d2 a2 | % 308
     r2 d2. fis4 e2 | % 309
     fis2 d2 r2 fis2 ~ | \barNumberCheck #28
-    fis4 b4 ais2 b1 \break | % 311
+    fis4 b4 ais2 b1 | % 311
     fis1 r2 fis2 | % 312
     g1 e2 fis2 | % 313
     g2 a2. g4 fis2 | % 314
     e1 r2 e2 | % 315
     fis2 d2 a'2 b2 | % 316
     d2. cis4 b4 a4 g4 fis4 | % 317
-    e1 r2 d2 \break | % 318
+    e1 r2 d2 | % 318
     g2 e2 g2 a2 | % 319
     b2. a4 g4 fis4 e4 fis4 | \barNumberCheck #38
     g2 fis2 e1 | % 321
@@ -176,10 +180,10 @@ sanctusBassLyrics = \lyricmode {
     
 }
 
-
 %
-% Kyrie
+% Sanctus
 %
+\bookpart{
 \score {
     <<
         \new Staff <<
@@ -219,4 +223,5 @@ sanctusBassLyrics = \lyricmode {
         \consists Ambitus_engraver 
       }
     }
+  }
 }

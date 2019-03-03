@@ -1,19 +1,5 @@
-\version "2.18.2"
-\language "english"
+\include "common.ly"
 
-#(set-global-staff-size 15)
-\header {
-  title = "Mass for Four Voices"
-  composer = "William Byrd"
-}
-
-\layout {
-  \context {
-    \Score
-    skipBars = ##t
-    autoBeaming = ##f
-  }
-}
 
 CredoSopranoNotes =  \relative b' {
   \clef "treble" \key g \major \numericTimeSignature\time 4/2 | % 1
