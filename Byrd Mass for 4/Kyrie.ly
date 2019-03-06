@@ -72,7 +72,7 @@ KyrieAltoNotes =  \relative e' {
   e2 e'1 ds2 | % 8
   e1 a,1 | % 9
   b\breve | \barNumberCheck #10
-  b\breve \bar "||"
+  b\breve ^\fermata \bar "||"
   r1 e1 | % 12
   d1 c2 b2 ~ | % 13
   b4 a4 b2 g2 a2 | % 14
@@ -128,7 +128,7 @@ KyrieTenorNotes =  \relative b {
   b2 e,2 g2 b2 ~ | % 8
   b4 a4 b4 cs4 d4 e4 fs2 ~ | % 9
   fs4 e4 e1 ds2 | \barNumberCheck #10
-  e\breve \bar "||"
+  e\breve ^\fermata \bar "||"
   b1 a2 g2 | % 12
   fs1 e1 | % 13
   r1 r2 e'2 ~ | % 14
@@ -184,7 +184,7 @@ KyrieBassNotes =  \relative e {
   r1 b'1 | % 8
   e,2 g2 fs2. e4 | % 9
   ds2 e2 b1 | \barNumberCheck #10
-  e\breve \bar "||"
+  e\breve ^\fermata \bar "||"
   R1*2 | % 12
   r1 r2 e2 ~ | % 13
   e2 d1 c2 | % 14

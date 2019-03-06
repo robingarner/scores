@@ -1,3 +1,5 @@
+\version "2.18.2"
+\language "english"
 \include "common.ly"
 
 
@@ -8,7 +10,7 @@ GloriaSopranoNotes =  \relative b' {
   g1 fs1 | \barNumberCheck #4
   r2 fs2 b2. b4 | % 41
   e,2 g1 fs2 | % 42
-  d4 e4 fs2. e4 e2 ~ | % 43
+  d4 e4 fs2. e4 e2 ~ \break | % 43
   e2 ds2 e1 | % 44
   r1 r2 b'4 b4 | % 45
   a2 fs2 g1 | % 46

@@ -76,7 +76,7 @@ CredoSopranoNotes =  \relative b' {
   r2 e2 g2 ^"rit." fs2 | % 234
   a2. g4 fs4 e4 fs2 ~ | % 235
   fs2 e2 g2. fs4 | % 236
-  e4 d4 e2 ds1 \bar "||"
+  e4 d4 e2 ds1 \bar "||" \break
   \tempo 2=72 | % 237
   r2 fs2 ^\p ~ fs2 fs2 | % 238
   b2 a2 b2. a4 | % 239

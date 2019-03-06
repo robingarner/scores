@@ -1,6 +1,6 @@
 { "inputs" : [
     { "file" : "../Byrd Mass for 3/Byrd Mass for 3 Voices.pdf" },
-    { "file" : "../../../Dropbox/music/mad wrigglers/BYRD-Mass for 4 Voices.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/BYRD-Mass for 4 Voices.pdf" , "include" : "false" },
     { "file" : "../Byrd Mass for 4/Byrd_Mass_for_Four_Voices.pdf", "align" : "EVEN" }
   ]
 }
