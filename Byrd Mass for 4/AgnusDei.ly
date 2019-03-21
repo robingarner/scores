@@ -21,7 +21,7 @@ AgnusDeiSopranoNotes =  \relative b' {
   fs1 r1 | % 427
   r1 fs2 g2 ~ | % 428
   g4 g4 a2 b2 g2 | % 429
-  c1 b1 ~ | \barNumberCheck #20 \pageBreak
+  c1 b1 ~ | \barNumberCheck #20 
   b1 r2 a2 ~ | % 431
   a2 g2 g2 fs2 | % 432
   e1 b'1 | % 433
@@ -343,7 +343,7 @@ AgnusDeiBassLyrics  =  \lyricmode {
     >>
     \layout {ragged-right = ##f
              % system-count = #7
-             \override Score.SpacingSpanner.spacing-increment = #1.5
+             \override Score.SpacingSpanner.spacing-increment = #1.3
              \override Score.BarNumber.break-visibility = ##(#f #t #t)
              \context {\Staff 
                        \consists Ambitus_engraver 
