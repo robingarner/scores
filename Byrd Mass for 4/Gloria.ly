@@ -82,7 +82,7 @@ GloriaSopranoNotes =  \relative b' {
   b2 g2 b2. c4 | \barNumberCheck #86
   d1 b2 c2 ~ | % 121
   c4 b4 g4 a4 b4 g4 a2 ~ | % 122
-  a4 g4 g1 fs2 \bar "||"
+  a4 g4 g1 fs2 |
   g1 r2 g2 | % 124
   a1 fs1 | % 125
   r2 a2 d2. d4 | % 126
@@ -91,8 +91,7 @@ GloriaSopranoNotes =  \relative b' {
   R1*2 | % 129
   r1 a4 b4 c2 | \barNumberCheck #96
   b2 d2. g,4 c2 | % 131
-  b2 a2 a1 \bar "||"
-  \tempo 2=108 | % 132
+  b2 a2 a1 |
   r2 a1 b2 | % 133
   a2 d,2 g2 fs2 | % 134
   e1 fs1 | % 135
@@ -121,7 +120,7 @@ GloriaSopranoNotes =  \relative b' {
   b2 a2 b1 | % 158
   b1. c2 |
   b1 b1 |
-  r2 b2. ^"rit." a4 g4 fs4 | \barNumberCheck #127
+  r2 \tempo 2=88 b2. a4 g4 fs4 | \barNumberCheck #127
   g2 e2 a2 c2 ~ | % 161
   c4 b4 b2. a4 a2 ~ | % 162
   a2 gs4 fs4 gs1 \fermata \bar "|." \pageBreak
@@ -245,7 +244,7 @@ GloriaAltoNotes =  \relative e' {
   e4 fs4 g2 fs2 a2 ~ | % 129
   a4 e4 g2 fs2 e2 ~ | \barNumberCheck #96
   e4 d4 b2 d2 g,4 a4 | % 131
-  b4 c4 d1 \melisma cs2 \melismaEnd \bar "||"
+  b4 c4 d1 \melisma cs2 \melismaEnd |
   d\breve ~ | % 133
   d1 r1 | % 134
   a1. b2 | % 135
@@ -395,7 +394,7 @@ GloriaTenorNotes =  \relative b {
   c2 b2 d2. a4 | % 129
   c2 b2 a1 | \barNumberCheck #96
   g2 g4 a4 b2 e2 | % 131
-  d2 \melisma fs2 \melismaEnd e1 \bar "||"
+  d2 \melisma fs2 \melismaEnd e1 |
   r2 fs1 g2 | % 133
   fs2 fs2 e2 d4 d4 ~ | % 134
   d4 \melisma cs8 [ b8 ] cs2 \melismaEnd d1 | % 135
@@ -468,7 +467,7 @@ GloriaBassNotes =  \relative e {
   d2 e2 c2 a2 | % 49
   e'\breve | \barNumberCheck #14
   r2 a,2 c2. d4 | % 51
-  e2 f2 \melisma e1 \melismaEnd | % 52
+  e2  \melisma f2 \melismaEnd e1 | % 52
   a,1 r2 a'2 ~ | % 53
   a4 a4 d,2 g2. g4 | % 54
   e1 a1 | % 55
@@ -550,7 +549,7 @@ GloriaBassNotes =  \relative e {
   e1 \melismaEnd d1 | % 129
   R1*2 | \barNumberCheck #96
   r1 r2 e4 fs4 | % 131
-  g2 fs2 a1 \bar "||"
+  g2 fs2 a1 |
   d,\breve ~ | % 133
   d1 r1 | % 134
   r1 d1 ~ | % 135
@@ -585,8 +584,8 @@ GloriaBassNotes =  \relative e {
   e\breve \fermata \bar "|."
 }
 GloriaBassLyrics  =  \lyricmode {
-  Lau -- da -- mus "te." A -- do -- ra -- mus "te." Glo
-  -- ri -- fi -- ca -- mus "te," glo -- ri -- fi -- ca -- "mus " __
+  Lau -- da -- mus te. A -- do -- ra -- mus "te." Glo
+  -- ri -- fi -- ca -- mus "te," __ glo -- ri -- fi -- ca -- "mus"
   "te." Gra -- ti -- as a -- gi -- mus ti -- bi pro -- pter ma -- gnam
   glo -- ri -- am tu -- "am." Do -- mi -- ne De -- "us," Rex coe -- le
   -- "stis," De -- us Pa -- ter o -- mni -- po -- "tens," De -- us Pa
