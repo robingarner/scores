@@ -191,7 +191,7 @@ PartPOneVoiceOneLyricsOne =  \lyricmode {
     No -- va re -- plet __ _ _ lae -- _ ti -- _ ti -- a. 
     A -- ve cu -- ius na -- ti -- vi -- tas na -- ti -- _ vi- tas, 
     Ut lu -- ci -- fer lux -- o -- _ ri -- ens. 
-    Ve -- rum so -- lem prae -- ve -- _ _ _ _ _ _ _ ens. 
+    Ve -- rum so -- lem prae -- ve -- _ _ _ _ _ _ ni -- ens. 
     A -- ve pi -- a hu -- mi -- _ li -- tas, Cu -- ius an --
     nun -- ci -- a -- _ ti -- o. __ _ _ _
     A -- ve ve -- ra vir -- gi -- ni  -- tas, 
@@ -370,7 +370,7 @@ PartPTwoVoiceOneLyricsOne =  \lyricmode {
     No -- stra __ _ fu -- _ it pur -- ga -- ti -- o pur -- ga -- ti -- o. 
     A -- ve prae -- cla -- _ _ ra o -- _ _ mni -- bus __ _
     An -- ge -- li -- cis __ _ _ _   vir -- tu -- _ ti -- bus, __ _ 
-    Cu -- _ _ ius fu -- it _  as -- sump -- _ _ _ _ _ _ ti -- o 
+    Cu -- _ _ ius fu -- _ it as -- _ sump -- _ _ _ _ _ ti -- o 
     No -- stra glo -- ri -- fi -- _ ca -- ti -- o 
     glo -- _ ri -- _ fi -- ca -- _ ti -- o. 
     O Ma -- ter De -- i, me -- men -- to me -- _ i. __
@@ -528,7 +528,7 @@ PartPThreeVoiceOneLyricsOne =  \lyricmode {
     it so -- lem -- ni -- tas, so -- lem -- _ ni -- tas, 
     Ut lu -- ci -- fer
     lux o -- _ ri -- ens. 
-    Ve -- rum so -- lem prae -- _ ve -- _ _ _ _ _ _ _ ens 
+    Ve -- rum so -- lem prae -- _ ve -- _ _ _ _ _ _ ni -- ens 
     Si -- ne vi -- ro fe -- cun -- _ di -- tas,
     No -- stra fu -- it sal -- va -- _ _ _ _ ti -- o. 
     A -- ve  ve -- ra vir -- gi -- ni -- tas, 
