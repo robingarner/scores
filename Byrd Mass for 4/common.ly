@@ -19,8 +19,6 @@
     bottom-margin = 2.0\cm
     left-margin = 1.0\cm
     right-margin = 1.0\cm
-  %  page-count = #21
-  % system-count = #16
     evenHeaderMarkup=\markup  \fill-line { 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
 	  \on-the-fly #not-part-first-page "Mass for Four Voices"
@@ -39,15 +37,15 @@
   }
 }
 
-sopInstrument = "piano"
+sopInstrument = "acoustic grand"
 sopMinVol = 0.7
 sopMaxVol = 0.9
-altInstrument = "piano"
+altInstrument = "acoustic grand"
 altMinVol = 0.7
 altMaxVol = 0.9
-tenInstrument = "piano"
+tenInstrument = "acoustic grand"
 tenMinVol = 0.7
 tenMaxVol = 0.9
-basInstrument = "piano"
+basInstrument = "acoustic grand"
 basMinVol = 0.7
 basMaxVol = 0.9
