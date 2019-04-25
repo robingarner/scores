@@ -1,0 +1,14 @@
+{ "inputs" : [
+    { "file" : "../../../Dropbox/music/mad wrigglers/Lassus-Bonjour.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Hark,_all_ye_lovely_saints.pdf" },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Il_bianco_e_dolce_Arcadelt.pdf" },
+    { "file" : "../shsb/SweetHoneySuckingBees.pdf" },
+    { "file" : "../draw_on/Draw_on_sweet_night_Wilbye.pdf" },
+    { "file" : "../josquin-ave-maria/Ave_Maria_-_Josquin_V5.pdf" },
+    { "file" : "../absalon/Absalon_Fili_Mi_4.pdf" },
+    { "file" : "../st-cecilia-press/o_magnum/o_magnum.pdf" },
+    { "file" : "../sicut/Palestrina-Sicut_Cervus_Desiderat.pdf" },
+    { "file" : "../Byrd_Ave_Verum/Ave_Verum_Corpus_Byrd.pdf" },
+    { "file" : "../Byrd Mass for 4/Byrd_Mass_for_Four_Voices.pdf", "align" : "EVEN" }
+  ]
+}

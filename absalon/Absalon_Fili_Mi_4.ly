@@ -4,21 +4,21 @@
 
 htitle="Absalon Fili Mi"
 hcomposer="Josquin des Pres"
+date = #(strftime "%d/%m/%Y" (localtime (current-time)))
 
 
 \header {
-    encodingsoftware = "MuseScore 2.1.0"
-    encodingdate = "2018-07-30"
     composer = #(string-append hcomposer " (or Pierre de la Rue)")
     title = \htitle
-    }
+  copyright = \markup { \lower #5 \tiny { \line{ Lilypond Markup by Robin Garner,  \date } } }
+}
 
 #(set-global-staff-size 14.7954330709)
 \paper {
     paper-width = 21.01\cm
     paper-height = 29.69\cm
     top-margin = 1.0\cm
-    bottom-margin = 2.0\cm
+    bottom-margin = 1.2\cm
     left-margin = 1.0\cm
     right-margin = 1.0\cm
     page-count = #2
@@ -32,11 +32,16 @@ hcomposer="Josquin des Pres"
 }
 
 \layout {
+  \override Score.BarNumber.break-visibility = ##(#f #t #t)
     \context { \Score
         skipBars = ##t
         autoBeaming = ##f
         }
-    }
+	\context {\Staff 
+		\consists Ambitus_engraver 
+		\override LigatureBracket.padding = #1
+	}
+}
 PartPOneVoiceOne =  \relative g' {
     \clef "treble" \key c \major \time 2/2 | % 1
     \tempo 4=150 g1 | % 2

@@ -233,19 +233,19 @@ KyrieBassLyrics  =  \lyricmode {
   }
   \paper {
     page-count = #2
-    evenHeaderMarkup=\markup  \fill-line { 
+    oddHeaderMarkup=\markup  \fill-line { 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
-	  \on-the-fly #not-part-first-page "Mass for Four Voices: Kyrie"
-	  \on-the-fly #not-first-page "Byrd" }
-    oddHeaderMarkup= \markup  \fill-line { 
-	  \on-the-fly #not-first-page "Byrd"
-	  \on-the-fly #not-part-first-page "Mass for Four Voices: Kyrie"
+	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Kyrie" }
+	  \on-the-fly #not-part-first-page \hcomposer }
+    evenHeaderMarkup= \markup  \fill-line { 
+	  \on-the-fly #not-part-first-page \hcomposer
+	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Kyrie" }
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
   }
 \score {
   \transpose c df
   <<
-    \new StaffGroup <<
+    \new ChoirStaff <<
       \new Staff <<
         \set Staff.instrumentName = "Soprano"
         \set Staff.shortInstrumentName = "S."
@@ -282,9 +282,9 @@ KyrieBassLyrics  =  \lyricmode {
       \new Staff <<
         \set Staff.instrumentName = "Bass"
         \set Staff.shortInstrumentName = "B."
-          \set Staff.midiMinimumVolume = #0.7
-          \set Staff.midiMaximumVolume = #0.9
-          \set Staff.midiInstrument = #"bassoon"
+          \set Staff.midiMinimumVolume = \basMinVol
+          \set Staff.midiMaximumVolume = \basMaxVol
+          \set Staff.midiInstrument = \basInstrument
         \context Staff <<
           \context Voice = "KyrieBass" { \KyrieBassNotes }
           \new Lyrics \lyricsto "KyrieBass" \KyrieBassLyrics

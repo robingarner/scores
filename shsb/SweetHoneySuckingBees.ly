@@ -4,10 +4,12 @@
 
 hcomposer = "Wilbye"
 htitle = "Sweet Honey Sucking Bees"
+date = #(strftime "%d/%m/%Y" (localtime (current-time)))
 
 \header {
     composer = "John Wilbye"
     title = \htitle
+  copyright = \markup { \lower #5 \tiny { \line{ Lilypond Markup by Robin Garner,  \date } } }
 }
 
 #(set-global-staff-size 16)
@@ -33,8 +35,12 @@ htitle = "Sweet Honey Sucking Bees"
         \override BarNumber.break-visibility = ##(#f #t #t)
         skipBars = ##t
         autoBeaming = ##f
-        }
     }
+    \context {\Staff 
+        \consists Ambitus_engraver 
+    }
+}
+
 PartPOneVoiceOne =  \relative c'' {
     \clef "treble" \key es \major \time 2/2 | % 1
     \tempo 2=66 R1 | % 2
@@ -42,20 +48,20 @@ PartPOneVoiceOne =  \relative c'' {
     r4 \mf c4 c4. bes8 | % 3
     as4 as4 g2 | % 4
     r4 c4 c4. bes8 | % 5
-    as4 as4 g8 [ c8 c8 des8 ] | % 6
-    es2 r8 bes8 [ bes8 c8 ] | % 7
-    des2 r8 as8 [ as8 bes8 ] | % 8
+    as4 as4 g8 c8 c8 des8| % 6
+    es2 r8 bes8 bes8 c8 | % 7
+    des2 r8 as8 as8 bes8 | % 8
     c4 es4. es8 des4 | % 9
     c2. c4 | \barNumberCheck #10
     bes4 bes4 g4 g4 | % 11
     f4 c'4 \p c4. bes8 | % 12
     as4 as4 g2 | % 13
     f4 c'4 c4. \melisma bes8 \melismaEnd | % 14
-    as2 r8 es8 [ es8 f8 ] | % 15
+    as2 r8 es8 es8 f8 | % 15
     g2 r2 | % 16
-    r8 es8 [ f8 g8 ] as2 | % 17
-    r8 f8 [ g8 as8 ] bes2 | % 18
-    r8 g8 [ as8 bes8 ] c4 bes8 [ as8 ] | % 19
+    r8 es8 f8 g8 ] as2 % 17
+    r8 f8 g8 as8 bes2 | % 18
+    r8 g8 as8 bes8 c4 bes8 [ as8 ] | % 19
     g4 as4 g4 g4 | \barNumberCheck #20
     f8 [ g8 as8 bes8 ] c2 | % 21
     r2 c2 | % 22
@@ -125,15 +131,15 @@ PartPOneVoiceOne =  \relative c'' {
     g1 | % 94
     r4 c4 \f as4 des4 | % 95
     c8 [ \melisma bes8 c8 des8 ] c4 \melismaEnd bes4 | % 96
-    as2 as4 as8 [ g8 ] | % 97
-    f2 bes4 bes8 [ as8 ] | % 98
-    g2 c4 c8 [ bes8 ] | % 99
+    as2 as4 as8 g8 | % 97
+    f2 bes4 bes8 as8 | % 98
+    g2 c4 c8 bes8 | % 99
     as2 g2 | \barNumberCheck #100
     f4 g4 as4 bes4 | % 101
     c2 as2 ~ | % 102
     as4 g8 f8 g4 g4 | % 103
     f2 f'2 ~ | % 104
-    f4 es8 [ des8 ] es2 ~ | % 105
+    f4 es8 des8 es2 ~ | % 105
     es4 des8 c8 bes4 bes4 | % 106
     c1 | % 107
     R1 | % 108
@@ -148,9 +154,9 @@ PartPOneVoiceOne =  \relative c'' {
     as4 bes4 c4 d4 | % 127
     e2 f2 \p ~ | % 128
     f4 es8 des8 es2 ~ | % 129
-    es4 des8 [ c8 ] des2 ~ | \barNumberCheck #130
-    des4 c8 [ bes8 ] c4 bes4 ~ | % 131
-    bes4 as8 [ g8 ] as4 g8 [ f8 ] | % 132
+    es4 des8 c8 des2 ~ | \barNumberCheck #130
+    des4 c8 bes8 c4 bes4 ~ | % 131
+    bes4 as8 g8 as4 g8 f8 | % 132
     g2. g4 | % 133
     f1 | % 134
     R1 | % 135
@@ -236,9 +242,9 @@ PartPTwoVoiceOne =  \relative c'' {
     as4 as4 g2 | % 3
     r4 c4 c4. bes8 | % 4
     as4 as4 g2 | % 5
-    r2 r8 g8 [ as8 bes8 ] | % 6
-    c2 r8 g8 [ g8 as8 ] | % 7
-    bes2 r8 f8 [ f8 g8 ] | % 8
+    r2 r8 g8 as8 bes8 | % 6
+    c2 r8 g8 g8 as8 | % 7
+    bes2 r8 f8 f8 g8 | % 8
     as4 c4. c8 bes4 | % 9
     g2. as4 | \barNumberCheck #10
     g4 f4 f4 e4 | % 11
@@ -248,7 +254,7 @@ PartPTwoVoiceOne =  \relative c'' {
     f8 [ g8 as8 bes8 ] c2 ~ | % 15
     c4 bes8 [ as8 ] bes4 bes4 | % 16
     as2 r2 | % 17
-    r8 as8 [ bes8 c8 ] des4 des4 | % 18
+    r8 as8 bes8 c8 des4 des4 | % 18
     c2. c4 | % 19
     c2 c2 | \barNumberCheck #20
     c4 f,4 c4 c4 | % 21
@@ -321,15 +327,15 @@ PartPTwoVoiceOne =  \relative c'' {
     bes1 | % 94
     r4 es4 \f c4 f4 | % 95
     es8 [ \melisma des8 es8 f8 ] es4. \melismaEnd des8 | % 96
-    c2 c4 c8 [ bes8 ] | % 97
-    as2 des4 des8 [ c8 ] | % 98
-    bes2 es4 es8 [ des8 ] | % 99
+    c2 c4 c8 bes8 | % 97
+    as2 des4 des8 c8 | % 98
+    bes2 es4 es8 des8 | % 99
     c2. c4 | \barNumberCheck #100
     as4 bes4 c4 d4 | % 101
     e2 f2 ~ | % 102
     f4 es8 des8 es2 ~ | % 103
-    es4 des8 [ c8 ] des2 ~ | % 104
-    des4 c8 [ bes8 ] c4 bes8 [ as8 ] | % 105
+    es4 des8 c8 des2 ~ | % 104
+    des4 c8 bes8 c4 bes8 as8 | % 105
     g4 as4 as4 g4 | % 106
     as1 | % 107
     R1 | % 108
@@ -344,10 +350,10 @@ PartPTwoVoiceOne =  \relative c'' {
     f4 g4 as4 bes4 | % 127
     c2 as2 \p ~ | % 128
     as4 g8 f8 g2 ~ | % 129
-    g4 f8 [ es8 ] f2 ~ | \barNumberCheck #130
-    f4 es8 [ des8 ] c4 d4 | % 131
+    g4 f8 es8 f2 ~ | \barNumberCheck #130
+    f4 es8 des8 c4 d4 | % 131
     e4 c4 f2 ~ | % 132
-    f4 e8 [  d8  ] e2 | % 133
+    f4 e8  d8 e2 | % 133
     f2 r2 | % 134
     R1*3 | % 137
     c'1 \f | % 138
@@ -423,20 +429,20 @@ PartPThreeVoiceOne =  \relative f' {
     f4 f,4 c'2 | % 3
     r4 f4 e4 c4 | % 4
     f4 f,4 c'2 | % 5
-    r8 f8 [ f8 f8 ] e2 | % 6
-    r8 es8 [ es8 f8 ] g2 | % 7
-    r8 f8 [ des8 es8 ] f2 | % 8
+    r8 f8 f8 f8 e2 | % 6
+    r8 es8 es8 f8 g2 | % 7
+    r8 f8 des8 es8 f2 | % 8
     r4 c4. c8 des4 | % 9
     es4. f8 g4 f4 | \barNumberCheck #10
     des4 des4 c2 | % 11
     r4 f4 \p e4 c4 | % 12
     f4 f,4 c'2 | % 13
     f,4 f'2 e4 | % 14
-    f2 r8 c8 [ c8 des8 ] | % 15
+    f2 r8 c8 c8 des8 | % 15
     es4. f8 es4 des4 | % 16
     c2. des8 [ es8 ] | % 17
     f1 | % 18
-    r8 es8 [ f8 g8 ] as4 \melisma g8 [ f8 ] | % 19
+    r8 es8 f8 g8 as4 \melisma g8 [ f8 ] | % 19
     e4 f2 \melismaEnd e4 | \barNumberCheck #20
     f4 c4 as'4 as4 | % 21
     g8 [ f8 e8 d8 ] c2 | % 22
@@ -511,14 +517,14 @@ PartPThreeVoiceOne =  \relative f' {
     as2 \f as4 des,4 | % 95
     as'2. es4 | % 96
     as,1 | % 97
-    des4 des8 [ c8 ] bes2 | % 98
-    es4 es8 [ des8 ] c4 c4 | % 99
+    des4 des8 c8 bes2 | % 98
+    es4 es8 des8 c4 c4 | % 99
     f4. f8 e4 c4 | \barNumberCheck #100
     f1 | % 101
     c1 ~ | % 102
     c1 | % 103
-    des2. c8 [ bes8 ] | % 104
-    as4 as'2 g8 [ f8 ] | % 105
+    des2. c8 bes8 | % 104
+    as4 as'2 g8 f8 | % 105
     es2 es2 | % 106
     as,1 | % 107
     r4 es'4 \f c4 f4 | % 108
@@ -543,7 +549,7 @@ PartPThreeVoiceOne =  \relative f' {
     f2 f2 | % 127
     c1 | % 128
     c2. \p bes8 as8 | % 129
-    bes2. as8 [ g8 ] | \barNumberCheck #130
+    bes2. as8 g8 | \barNumberCheck #130
     as2. bes4 | % 131
     c1 | % 132
     c1 | % 133
@@ -625,8 +631,8 @@ PartPFourVoiceOne =  \relative f' {
     f4 f,4 c'2 | % 4
     r4 f4 e4 c4 | % 5
     f4 f,4 c'2 | % 6
-    r8 c8 [ c8 des8 ] es2 | % 7
-    r8 bes8 [ bes8 c8 ] des2 | % 8
+    r8 c8 c8 des8 es2 | % 7
+    r8 bes8 bes8 c8 des2 | % 8
     r4 as4. as8 bes4 | % 9
     c4. \melisma d8 e4 \melismaEnd f4 | \barNumberCheck #10
     bes,4 bes4 c4 c4 | % 11
@@ -634,11 +640,11 @@ PartPFourVoiceOne =  \relative f' {
     r4 f'4 \p e4 c4 | % 13
     f4 f,4 c'4 c4 | % 14
     f,4. \melisma g8 as4 \melismaEnd g8 [ f8 ] | % 15
-    es2 r8 es8 [ f8 g8 ] | % 16
-    as2 r8 as8 [ bes8 c8 ] | % 17
+    es2 r8 es8 f8 g8 | % 16
+    as2 r8 as8 bes8 c8 | % 17
     des2 bes2 | % 18
-    c1 \melisma | % 19
-    c4 \melismaEnd f,4 c'4 c4 | \barNumberCheck #20
+    c1 ~ | % 19
+    c4  f,4 c'4 c4 | \barNumberCheck #20
     as8 [ g8 f8 g8 ] as8 [ bes8 c8 d8 ] | % 21
     e4 c4 e4 f4 | % 22
     c2. c4 | % 23
@@ -948,16 +954,16 @@ PartPFiveVoiceOneLyricsOne =  \lyricmode {
 \score {
     <<
         \new Staff <<
-            \set Staff.instrumentName = "Soprano"
-            \set Staff.shortInstrumentName = "S."
+            \set Staff.instrumentName = "Soprano 1"
+            \set Staff.shortInstrumentName = "S1"
             \context Staff << 
                 \context Voice = "PartPOneVoiceOne" { \PartPOneVoiceOne }
                 \new Lyrics \lyricsto "PartPOneVoiceOne" \PartPOneVoiceOneLyricsOne
                 >>
             >>
         \new Staff <<
-            \set Staff.instrumentName = "Soprano"
-            \set Staff.shortInstrumentName = "S."
+            \set Staff.instrumentName = "Soprano 2"
+            \set Staff.shortInstrumentName = "S2"
             \context Staff << 
                 \context Voice = "PartPTwoVoiceOne" { \PartPTwoVoiceOne }
                 \new Lyrics \lyricsto "PartPTwoVoiceOne" \PartPTwoVoiceOneLyricsOne
@@ -965,7 +971,7 @@ PartPFiveVoiceOneLyricsOne =  \lyricmode {
             >>
         \new Staff <<
             \set Staff.instrumentName = "Alto"
-            \set Staff.shortInstrumentName = "A."
+            \set Staff.shortInstrumentName = "A"
             \context Staff << 
                 \context Voice = "PartPThreeVoiceOne" { \PartPThreeVoiceOne }
                 \new Lyrics \lyricsto "PartPThreeVoiceOne" \PartPThreeVoiceOneLyricsOne
@@ -973,7 +979,7 @@ PartPFiveVoiceOneLyricsOne =  \lyricmode {
             >>
         \new Staff <<
             \set Staff.instrumentName = "Tenor"
-            \set Staff.shortInstrumentName = "T."
+            \set Staff.shortInstrumentName = "T"
             \context Staff << 
                 \context Voice = "PartPFourVoiceOne" { \PartPFourVoiceOne }
                 \new Lyrics \lyricsto "PartPFourVoiceOne" \PartPFourVoiceOneLyricsOne
@@ -981,7 +987,7 @@ PartPFiveVoiceOneLyricsOne =  \lyricmode {
             >>
         \new Staff <<
             \set Staff.instrumentName = "Bass"
-            \set Staff.shortInstrumentName = "B."
+            \set Staff.shortInstrumentName = "B"
             \context Staff << 
                 \context Voice = "PartPFiveVoiceOne" { \PartPFiveVoiceOne }
                 \new Lyrics \lyricsto "PartPFiveVoiceOne" \PartPFiveVoiceOneLyricsOne

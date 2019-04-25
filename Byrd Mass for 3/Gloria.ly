@@ -3,112 +3,112 @@
 \include "common.ly"
 
 
-gloriaAltoNotes = \relative fis' {
+gloriaAltoNotes = \relative fs' {
   \bar ""
     \key d \major 
     \time 4/2  
-    fis1. fis2 | % 11
-    e2 g2 fis2 d2 | % 12
-    fis2. fis4 e1 | % 13
-    d2. fis4 e4 d4 d2 ~ | % 14
-    d2 cis2 d2 d2 ~ | % 15
-    d4 e4 fis4 d4 g1 | % 16
-    fis1 r2 fis2 | % 17
-    fis2 e2 dis1 | % 18
-    r2 d2 e2 fis2 ~ | % 19
-    fis4 g4 e2 fis1 | 
-    a1 g2 fis2 ~ | % 21
-    fis2 e2 d2 r4 b4 | % 22
-    cis2 d2 e2 cis2 | % 23
+    fs1. fs2 | % 11
+    e2 g2 fs2 d2 | % 12
+    fs2. fs4 e1 | % 13
+    d2. fs4 e4 d4 d2 ~ | % 14
+    d2 cs2 d2 d2 ~ | % 15
+    d4 e4 fs4 d4 g1 | % 16
+    fs1 r2 fs2 | % 17
+    fs2 e2 ds1 | % 18
+    r2 d2 e2 fs2 ~ | % 19
+    fs4 g4 e2 fs1 | 
+    a1 g2 fs2 ~ | % 21
+    fs2 e2 d2 r4 b4 | % 22
+    cs2 d2 e2 cs2 | % 23
     b1 r2 r4 d4 | % 24
-    e2 fis2 g1 | % 25
-    e1 fis1 | % 26
-    r2 fis2. fis4 fis2 | % 27
-    e2. fis4 d2 fis2 ~ | % 28
-    fis2 e2 d2 cis2 | % 29
+    e2 fs2 g1 | % 25
+    e1 fs1 | % 26
+    r2 fs2. fs4 fs2 | % 27
+    e2. fs4 d2 fs2 ~ | % 28
+    fs2 e2 d2 cs2 | % 29
     b2 a2 e'2. d4  |
-    cis2 d2 cis2 b2 | % 31
-    ais2 d2 cis1 | % 32
-    r2 d2. e4 fis2 | % 33
-    g1 fis1 | % 34
-    d2 e2 fis2. g4 | % 35
+    cs2 d2 cs2 b2 | % 31
+    as2 d2 cs1 | % 32
+    r2 d2. e4 fs2 | % 33
+    g1 fs1 | % 34
+    d2 e2 fs2. g4 | % 35
     a2 d,2 g1 | % 36
-    fis1 r2 d2 ~  | % 37
-    d2 e2 fis2. e4 | % 38
-    d4 cis4 d4 cis4 b4 a4 b2 | % 39
-    ais1 r1 | 
-    a'2. g4 fis2 e2 | % 41
-    fis2 d1 cis2 | % 42
+    fs1 r2 d2 ~  | % 37
+    d2 e2 fs2. e4 | % 38
+    d4 cs4 d4 cs4 b4 a4 b2 | % 39
+    as1 r1 | 
+    a'2. g4 fs2 e2 | % 41
+    fs2 d1 cs2 | % 42
     d\breve | % 43
-    r2 b2. cis4 d2 | % 44
+    r2 b2. cs4 d2 | % 44
     e1 b2 d2 | % 45
     b2 e2. e4 d2 | % 46
-    g1 fis2 a2 ~ | % 47
-    a2 d,2 fis1 | % 48
-    cis2 e2. d4 cis4 b4 | % 49
+    g1 fs2 a2 ~ | % 47
+    a2 d,2 fs1 | % 48
+    cs2 e2. d4 cs4 b4 | % 49
     a2 a'1 d,2 | 
-    fis2. e4 d4 cis4 d2  \bar "!" % 51
+    fs2. e4 d4 cs4 d2  \bar "!" % 51
     \once \hide Staff.TimeSignature \time 2/2 
-    cis1 | % 52
+    cs1 | % 52
     \once \hide Staff.TimeSignature  \time 4/2 
-    dis\breve ^\fermata \bar "||" \break
+    ds\breve ^\fermata \bar "||" \break
     R\breve*5
     r1 r2 d2 | % 59
-    fis2 e4 d4 fis2 e2 ~ | 
+    fs2 e4 d4 fs2 e2 ~ | 
     e2 d2 g1 | % 61
-    fis1 r1 | % 62
-    r2 fis1 e2 | % 63
-    d2 cis4 cis2 d4 b2 | % 64
+    fs1 r1 | % 62
+    r2 fs1 e2 | % 63
+    d2 cs4 cs2 d4 b2 | % 64
     a1 r2 a'2 ~ | % 65
-    a2 g2 fis2 e4 e4 ~ | % 66
-    e4 fis4 d2 cis1 | % 67
-    r2 cis2 fis2. fis4 | % 68
-    d2 g1 fis2 | % 69
-    e1 fis1 | 
-    r2 fis2. cis4 d2 | % 71
-    cis2 fis,2 a2 b2 | % 72
-    d2. cis4 b2 a2 | % 73
+    a2 g2 fs2 e4 e4 ~ | % 66
+    e4 fs4 d2 cs1 | % 67
+    r2 cs2 fs2. fs4 | % 68
+    d2 g1 fs2 | % 69
+    e1 fs1 | 
+    r2 fs2. cs4 d2 | % 71
+    cs2 fs,2 a2 b2 | % 72
+    d2. cs4 b2 a2 | % 73
     r2 a'2. d,4 g2 | % 74
-    fis2. d4 fis2. e4 | % 75
-    d2 cis2 b2 a2 ~ | % 76
-    a4 gis8 [ fis8 ] gis2 a1 | % 77
-    r2 cis2 e1 | % 78
-    a,1 r2 cis2 | % 79
-    fis2. fis4 e2 a2 ~ | 
-    a2 d,4 e4 fis4 g4 fis2 ~ | % 81
-    fis2 e2 fis1 | % 82
-    e2. d4 cis2 b2 | % 83
-    cis1 b2 g'2 ~ | % 84
-    g2 fis2 e2 dis2 | % 85
-    e1 dis1 | % 86
-    r2 fis1 fis2 | % 87
-    fis2 d2 d2 d2 | % 88
+    fs2. d4 fs2. e4 | % 75
+    d2 cs2 b2 a2 ~ | % 76
+    a4 gs8 [ fs8 ] gs2 a1 | % 77
+    r2 cs2 e1 | % 78
+    a,1 r2 cs2 | % 79
+    fs2. fs4 e2 a2 ~ | 
+    a2 d,4 e4 fs4 g4 fs2 ~ | % 81
+    fs2 e2 fs1 | % 82
+    e2. d4 cs2 b2 | % 83
+    cs1 b2 g'2 ~ | % 84
+    g2 fs2 e2 ds2 | % 85
+    e1 ds1 | % 86
+    r2 fs1 fs2 | % 87
+    fs2 d2 d2 d2 | % 88
     b1 b2 d2 | % 89
-    cis2 a2 b2. b4 | 
+    cs2 a2 b2. b4 | 
     a1 r2 g'2 | % 91
-    fis2 d2 e2. e4 | % 92
-    d1 r2 cis2 | % 93
-    e2. e4 fis2 a2 ~ | % 94
-    a4 g4 fis4 e4 d2 fis2 | % 95
+    fs2 d2 e2. e4 | % 92
+    d1 r2 cs2 | % 93
+    e2. e4 fs2 a2 ~ | % 94
+    a4 g4 fs4 e4 d2 fs2 | % 95
     e1 r2 b2 | % 96
-    fis'2. fis4 g2 b2 ~ | % 97
-    b4 a4 g4 fis4 e2 a2 ~ | % 98
-    a2 fis2 g1  | % 99
-    fis\breve | 
+    fs'2. fs4 g2 b2 ~ | % 97
+    b4 a4 g4 fs4 e2 a2 ~ | % 98
+    a2 fs2 g1  | % 99
+    fs\breve | 
     r2 e2 d2 b2 | % 101
-    fis'2. fis4 e1 | % 102
-    r1 r2 cis2 | % 103
-    e2. d4 cis2 fis2 ~ | % 104
-    fis2 e2 d2 g2 | % 105
-    fis1 r1 | % 106
-    r2 fis2 a2. g4 | % 107
-    fis2 e2. d4 d2 ~ | % 108
-    d4 cis8 [ b8 ] cis2 d1 ~ | % 109
+    fs'2. fs4 e1 | % 102
+    r1 r2 cs2 | % 103
+    e2. d4 cs2 fs2 ~ | % 104
+    fs2 e2 d2 g2 | % 105
+    fs1 r1 | % 106
+    r2 fs2 a2. g4 | % 107
+    fs2 e2. d4 d2 ~ | % 108
+    d4 cs8 [ b8 ] cs2 d1 ~ | % 109
     d1 d1 ~ | 
     d1 d1 | % 111
-    r2 b2. cis4 d4 e4 | % 112
-    fis2 g1 fis4 e4 | % 113
-    fis\breve ^\fermata \bar "|."
+    r2 b2. cs4 d4 e4 | % 112
+    fs2 g1 fs4 e4 | % 113
+    fs\breve ^\fermata \bar "|."
 }
 
 gloriaAltoLyrics = \lyricmode {
@@ -146,108 +146,108 @@ gloriaTenorNotes = \relative a {
     \clef "treble_8" \key d \major
     \time 4/2  a1. a2 | % 11
     a2 b2 a1 | % 12
-    a2 d2. d4 cis2 | % 13
-    b2 a2 g2 fis2 | % 14
-    e1 d4 a'2 fis4 | % 15
-    b4 cis4 d1 cis2 | % 16
+    a2 d2. d4 cs2 | % 13
+    b2 a2 g2 fs2 | % 14
+    e1 d4 a'2 fs4 | % 15
+    b4 cs4 d1 cs2 | % 16
     d1 r2 a2  | % 17
-    b2 g2 fis1 | % 18
-    fis2 b2 a2. a4 | % 19
+    b2 g2 fs1 | % 18
+    fs2 b2 a2. a4 | % 19
     a1 a2 d2 ~ | 
-    d2 cis2 b2 b2 | % 21
-    a2 r4 e4 fis2 gis2 | % 22
-    a2 fis2 e2 r4 e4  | % 23
-    fis2 g2 a2 fis2 | % 24
-    e4 a2 b2 cis4 d2 ~ | % 25
-    d2 cis2 d1 | % 26
+    d2 cs2 b2 b2 | % 21
+    a2 r4 e4 fs2 gs2 | % 22
+    a2 fs2 e2 r4 e4  | % 23
+    fs2 g2 a2 fs2 | % 24
+    e4 a2 b2 cs4 d2 ~ | % 25
+    d2 cs2 d1 | % 26
     r2 a2. a4 a2 | % 27
     a2. a4 b1 | % 28
     a1 a1 | % 29
-    d1 cis2 b2 ~ |
+    d1 cs2 b2 ~ |
     b2 a2 e'2. d4 | % 31
-    cis2 b1 ais2 | % 32
+    cs2 b1 as2 | % 32
     b\breve | % 33
-    r2 b2. a4 fis2 | % 34
-    g1 fis1 | % 35
-    r1 b2 cis2 | % 36
-    d2. cis4 b4 a4 b4 a4 | % 37
-    g4 fis4 e2 a2 fis2 ~ | % 38
-    fis2 fis2 d'1 | % 39
-    cis2 fis1 e2 | 
-    d2 cis2 d2 a2 ~ | % 41
-    a4 g4 fis2 e1 | % 42
-    r2 d2. e4 fis2 | % 43
-    g1 fis2 b2 | % 44
-    e,2 g2. g4 fis2 | % 45
+    r2 b2. a4 fs2 | % 34
+    g1 fs1 | % 35
+    r1 b2 cs2 | % 36
+    d2. cs4 b4 a4 b4 a4 | % 37
+    g4 fs4 e2 a2 fs2 ~ | % 38
+    fs2 fs2 d'1 | % 39
+    cs2 fs1 e2 | 
+    d2 cs2 d2 a2 ~ | % 41
+    a4 g4 fs2 e1 | % 42
+    r2 d2. e4 fs2 | % 43
+    g1 fs2 b2 | % 44
+    e,2 g2. g4 fs2 | % 45
     r2 b2 a2 d2 ~ | % 46
-    d4 d4 cis2 d1 | % 47
-    a2 b1 fis2 | % 48
-    a1 e2 fis2 ~ | % 49
-    fis4 g4 fis4 e4 d4 cis4 b2 ~ |
-    b2 b'2. fis2 b4 ~ \bar "!" % 51
+    d4 d4 cs2 d1 | % 47
+    a2 b1 fs2 | % 48
+    a1 e2 fs2 ~ | % 49
+    fs4 g4 fs4 e4 d4 cs4 b2 ~ |
+    b2 b'2. fs2 b4 ~ \bar "!" % 51
     \once \hide Staff.TimeSignature \time 2/2 
-    b4 ais8 [ gis8 ] ais2  | % 52
+    b4 as8 [ gs8 ] as2  | % 52
     \once \hide Staff.TimeSignature \time 4/2 
     b\breve ^\fermata \bar "||"
-    fis2. g4 a2 b2 ~ | % 54
-    b2 fis2 b2 b2 | % 55
-    cis1 ais1 | % 56
+    fs2. g4 a2 b2 ~ | % 54
+    b2 fs2 b2 b2 | % 55
+    cs1 as1 | % 56
     r2 b2. a4 d2 | % 57
-    cis2. d4 cis4 b4 b2 ~ | % 58
-    b2 ais2 b1  | % 59
+    cs2. d4 cs4 b4 b2 ~ | % 58
+    b2 as2 b1  | % 59
     R1*2 | 
     r2 a2 b2 a4 g4 | % 61
-    b2 a1 fis2 | % 62
-    d'1 cis1 | % 63
-    r1 r2 fis2 ~ | % 64
-    fis2 e2 d2 cis4 cis4 ~ | % 65
-    cis4 d4 b2 a2 a2 | % 66
-    g2 fis2 a1 | % 67
-    e2 a2. a4 fis2 | % 68
+    b2 a1 fs2 | % 62
+    d'1 cs1 | % 63
+    r1 r2 fs2 ~ | % 64
+    fs2 e2 d2 cs4 cs4 ~ | % 65
+    cs4 d4 b2 a2 a2 | % 66
+    g2 fs2 a1 | % 67
+    e2 a2. a4 fs2 | % 68
     b1 g2 d'2 ~ | % 69
-    d2 cis2 r2 d2 ~ | 
+    d2 cs2 r2 d2 ~ | 
     d4 a4 b2 a2 d,2 | % 71
-    a'2. g4 fis2 e2 | % 72
-    d2 g2 fis1  | % 73
-    d'2. cis4 fis,2 b2 ~ | % 74
+    a'2. g4 fs2 e2 | % 72
+    d2 g2 fs1  | % 73
+    d'2. cs4 fs,2 b2 ~ | % 74
     b2 a2 d,2 e2 | % 75
-    fis2 a2 gis2 a2 | % 76
-    b1 r2 cis2 | % 77
-    e1 a,2 cis2 ~ | % 78
-    cis2 fis2. fis4 e2  | % 79
-    d2 a2 cis1 | 
-    fis2. e4 d2 cis2 | % 81
-    b1 ais2 cis2 ~ | % 82
-    cis2 b2 ais2 b2 | % 83
-    ais1 b1 | % 84
-    b2. b4 e,2 fis4 b4 ~ | % 85
-    b4 ais8 [ gis8 ] ais2 b1  | % 86
-    r2 d1 cis2 | % 87
-    a2 b2 a2 fis2 | % 88
-    g1 fis2 r4 b4 | % 89
-    a2 fis2 g2. g4 | 
-    d2 d'1 cis2 | % 91
-    d2 r4 d4 cis2 a2 | % 92
+    fs2 a2 gs2 a2 | % 76
+    b1 r2 cs2 | % 77
+    e1 a,2 cs2 ~ | % 78
+    cs2 fs2. fs4 e2  | % 79
+    d2 a2 cs1 | 
+    fs2. e4 d2 cs2 | % 81
+    b1 as2 cs2 ~ | % 82
+    cs2 b2 as2 b2 | % 83
+    as1 b1 | % 84
+    b2. b4 e,2 fs4 b4 ~ | % 85
+    b4 as8 [ gs8 ] as2 b1  | % 86
+    r2 d1 cs2 | % 87
+    a2 b2 a2 fs2 | % 88
+    g1 fs2 r4 b4 | % 89
+    a2 fs2 g2. g4 | 
+    d2 d'1 cs2 | % 91
+    d2 r4 d4 cs2 a2 | % 92
     b2. b4 a1 | % 93
     r1 r2 d,2 | % 94
     a'2. a4 b2 d2 ~ | % 95
-    d2 cis2 d2 g,2 | % 96
+    d2 cs2 d2 g,2 | % 96
     d'2. d4 e2 g2 ~ | % 97
-    g4 fis4 e4 d4 cis1 | % 98
-    d2. a4 b2 cis2 | % 99
+    g4 fs4 e4 d4 cs1 | % 98
+    d2. a4 b2 cs2 | % 99
     d1 r2 d2 | 
-    cis2 a2 b2. b4 | % 101
-    a1 cis2 e2 ~ | % 102
-    e4 d4 cis2 b2 a4 a4 ~ | % 103
-    a4 gis8 [ fis8 ] gis2 a1 | % 104
+    cs2 a2 b2. b4 | % 101
+    a1 cs2 e2 ~ | % 102
+    e4 d4 cs2 b2 a4 a4 ~ | % 103
+    a4 gs8 [ fs8 ] gs2 a1 | % 104
     R1*2 | % 105
-    r2 a2 d2. cis4 | % 106
+    r2 a2 d2. cs4 | % 106
     b2 a1 e2 | % 107
-    a2. g4 fis2 g2 | % 108
-    e1 fis1 | % 109
-    r2 d2. e4 fis4 g4 | 
+    a2. g4 fs2 g2 | % 108
+    e1 fs1 | % 109
+    r2 d2. e4 fs4 g4 | 
     a2 b1 a4 g4 | % 111
-    fis2 g2. a4 b4 cis4 | % 112
+    fs2 g2. a4 b4 cs4 | % 112
     d2 b1 a2  | % 113
     a\breve ^\fermata \bar "|."
 }
@@ -272,7 +272,7 @@ gloriaTenorLyrics = \lyricmode {
     bis, Qui tol -- lis pec -- ca -- ta mun -- di, sus -- ci -- pe
     de -- pre -- ca -- ti -- o -- nem no -- _ stram, sus -- ci --
     pe de -- pre -- ca -- ti -- o -- nem no -- _ stram, Qui se --
-    des ad  __ dex -- te -- ram pa -- tris, ad dex -- te -- ram pa
+    des ad  dex -- te -- ram pa -- tris, ad dex -- te -- ram pa
     -- _ tris, mi -- se -- re -- re no -- bis, mi -- se -- re
     -- re no -- _ _ _ bis. Quo -- ni -- am tu so -- lus san --
     ctus, tu so -- lus Do -- mi -- nus, Do -- mi -- nus, tu so --
@@ -289,107 +289,107 @@ gloriaTenorLyrics = \lyricmode {
 gloriaBassNotes = \relative d {
    \clef "bass" \key d \major 
     \time 4/2  d1. d2 | % 11
-    cis2 b2 d1 | % 12
+    cs2 b2 d1 | % 12
     r2 d2 a'2. a4 | % 13
     d,1 r1 | % 14
-    r1 fis2. a4 | % 15
-    g2 fis2 e1 | % 16
+    r1 fs2. a4 | % 15
+    g2 fs2 e1 | % 16
     d1 r2 d2 | % 17
     b2 e2 b1 | % 18
-    r2 b2 cis2 d2 ~ | % 19
-    d4 e4 cis2 d1 | 
+    r2 b2 cs2 d2 ~ | % 19
+    d4 e4 cs2 d1 | 
     r1 r2 d2 ~ | % 21
-    d2 cis2 b2 b2 | % 22
+    d2 cs2 b2 b2 | % 22
     a1 r2 a2 | % 23
-    d2 e2 fis2 d2 | % 24
-    cis2 d2 e2 fis2 | % 25
+    d2 e2 fs2 d2 | % 24
+    cs2 d2 e2 fs2 | % 25
     g2 e2 d1 | % 26
     r2 d2. d4 d2 | % 27
-    cis2. d4 b2 d2 ~ | % 28
-    d2 cis2 fis2 fis2 | % 29
-    g2 fis2 e2 e2  | 
-    fis1 e1 | % 31
-    fis\breve | % 32
-    r2 b,2. cis4 d2 | % 33
+    cs2. d4 b2 d2 ~ | % 28
+    d2 cs2 fs2 fs2 | % 29
+    g2 fs2 e2 e2  | 
+    fs1 e1 | % 31
+    fs\breve | % 32
+    r2 b,2. cs4 d2 | % 33
     e1 d1 | % 34
-    r2 b'2 cis2 d2 ~ | % 35
-    d4 cis4 b4 a4 g4 fis4 e2 | % 36
+    r2 b'2 cs2 d2 ~ | % 35
+    d4 cs4 b4 a4 g4 fs4 e2 | % 36
     d1 r1 | % 37
-    b2 cis2 d2. cis4 | % 38
-    b4 a4 b2. cis4 d4 e4 | % 39
-    fis1 a2. g4 | 
-    fis2 e2 d2 cis2 | % 41
+    b2 cs2 d2. cs4 | % 38
+    b4 a4 b2. cs4 d4 e4 | % 39
+    fs1 a2. g4 | 
+    fs2 e2 d2 cs2 | % 41
     d1 a1 | % 42
-    r2 b2. cis4 d2 | % 43
+    r2 b2. cs4 d2 | % 43
     e1 b1 | % 44
     r2 e1 d2 | % 45
-    g2. g4 fis1 | % 46
-    e1 d2 fis2 ~ | % 47
-    fis2 b,2 d1 | % 48
+    g2. g4 fs1 | % 46
+    e1 d2 fs2 ~ | % 47
+    fs2 b,2 d1 | % 48
     a1 r2 a'2 ~ | % 49
-    a2 d,2 fis2. e4 | 
-    d4 cis4 b2. ais4 b2 \bar "!" % 51
-    \once \hide Staff.TimeSignature  \time 2/2 fis'1 | % 52
+    a2 d,2 fs2. e4 | 
+    d4 cs4 b2. as4 b2 \bar "!" % 51
+    \once \hide Staff.TimeSignature  \time 2/2 fs'1 | % 52
     \once \hide Staff.TimeSignature  \time 4/2 b,\breve ^\fermata \bar "||"
     R1*2 | % 54
-    b2. cis4 d2 e2 ~ | % 55
-    e2 cis2 fis2 fis2 | % 56
+    b2. cs4 d2 e2 ~ | % 55
+    e2 cs2 fs2 fs2 | % 56
     g1 d1 | % 57
     r2 e2. d4 g2 | % 58
-    fis1 b,1 | % 59
+    fs1 b,1 | % 59
     d1 a'1 |
-    g2 fis2 e1 | % 61
-    d1 d2. cis4 | % 62
+    g2 fs2 e1 | % 61
+    d1 d2. cs4 | % 62
     b1 a1 | % 63
-    fis'1 e2 d2 ~ | % 64
-    d2 cis2 b2 a4 a'4 ~ | % 65
-    a4 d,4 e2 a,2 cis2  | % 66
+    fs'1 e2 d2 ~ | % 64
+    d2 cs2 b2 a4 a'4 ~ | % 65
+    a4 d,4 e2 a,2 cs2  | % 66
     b1 a1 | % 67
     r2 a2 d2. d4 | % 68
     b2 e1 d2 | % 69
     a'1 d,1 ~ | 
     d1 r1 | % 71
     r2 a'2. d,4 g2 | % 72
-    fis2 b,2 d2. cis4 | % 73
+    fs2 b,2 d2. cs4 | % 73
     b2 a2 d2 e2 | % 74
-    d2 d1 cis2 | % 75
-    b2 a2 e'2 fis2 | % 76
+    d2 d1 cs2 | % 75
+    b2 a2 e'2 fs2 | % 76
     e1 a,1 ~ | % 77
     a1 r1 | % 78
-    r2 fis'2 a1 | % 79
-    d,1 r2 fis2 ~ | 
-    fis2 b2. b4 a2 | % 81
-    g1 fis1 | % 82
+    r2 fs'2 a1 | % 79
+    d,1 r2 fs2 ~ | 
+    fs2 b2. b4 a2 | % 81
+    g1 fs1 | % 82
     R1*4 | % 84
-    e2. d4 cis2 b2 | % 85
-    cis1 b1 | % 86
+    e2. d4 cs2 b2 | % 85
+    cs1 b1 | % 86
     r2 b'1 a2 | % 87
-    fis2 g2 fis2 d2 | % 88
+    fs2 g2 fs2 d2 | % 88
     e1 b1 | % 89
     r1 r2 g'2 | 
-    fis2 d2 e2. e4 | % 91
+    fs2 d2 e2. e4 | % 91
     d1 r1 | % 92
-    r2 b2 fis'2. fis4 | % 93
-    g2 a2. g4 fis4 e4 | % 94
+    r2 b2 fs'2. fs4 | % 93
+    g2 a2. g4 fs4 e4 | % 94
     d1 r2 d2 | % 95
     a'2. a4 b2 d2 ~ | % 96
-    d4 cis4 b4 a4 g1 | % 97
+    d4 cs4 b4 a4 g1 | % 97
     e2 e2 a1 | % 98
     d,1 r2 e2  | % 99
     d2 b2 d2. d4 | 
     a1 r2 g'2 | % 101
-    fis2 d2 a'2. a4 | % 102
-    e2 e1 fis2 | % 103
-    e1 r2 fis2 | % 104
-    a2. g4 fis2 e2 ~ | % 105
-    e4 d4 d2. cis8 [ b8 ] a2 | % 106
-    d2 d1 cis2 | % 107
+    fs2 d2 a'2. a4 | % 102
+    e2 e1 fs2 | % 103
+    e1 r2 fs2 | % 104
+    a2. g4 fs2 e2 ~ | % 105
+    e4 d4 d2. cs8 [ b8 ] a2 | % 106
+    d2 d1 cs2 | % 107
     d2 a2 b2 g2 | % 108
     a1 d1 | % 109
-    r2 b2. cis4 d4 e4 | 
-    fis2 g1 fis4 e4 | % 111
+    r2 b2. cs4 d4 e4 | 
+    fs2 g1 fs4 e4 | % 111
     d2 e2 b1 | % 112
-    b2. cis4 d1 ~ | % 113
+    b2. cs4 d1 ~ | % 113
     d\breve ^\fermata \bar "|."
 }
 
@@ -429,10 +429,21 @@ gloriaBassLyrics = \lyricmode {
 \bookpart {
   \header {
     composer = "William Byrd (c.1540-1623)"
-    title = #(string-append htitle " - Gloria")
+    subtitle="Gloria in Excelcis Deo"
+  }
+  \paper {
+    oddHeaderMarkup=\markup  \fill-line { 
+	  \fromproperty #'page:page-number-string 
+	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Gloria" }
+	  \on-the-fly #not-part-first-page \hcomposer }
+    evenHeaderMarkup= \markup  \fill-line { 
+	  \on-the-fly #not-part-first-page \hcomposer 
+	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Gloria" }
+	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
+
   }
   \score {
-    <<
+    \new ChoirStaff <<
         \new Staff <<
             \set Staff.instrumentName = "Alto"
             \set Staff.shortInstrumentName = "A."
@@ -470,12 +481,7 @@ gloriaBassLyrics = \lyricmode {
             >>
         
     >>
-  \header { piece = \markup{\fontsize #4 "Gloria"} }
-    \layout {
-  \context {\Staff 
-    \consists Ambitus_engraver 
-  }
-    }
+    \layout { }
     % To create MIDI output, uncomment the following line:
     \midi { \tempo 2 = 90 }
   } 

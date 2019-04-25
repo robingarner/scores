@@ -4,6 +4,7 @@
 #(set-default-paper-size "a4")
 #(set-global-staff-size 18)
 %mobile -s15.5 -i3.2
+date = #(strftime "%d/%m/%Y" (localtime (current-time)))
 
 italicas=\override LyricText.font-shape = #'italic
 rectas=\override LyricText.font-shape = #'upright
@@ -12,13 +13,33 @@ ss=\once \set suggestAccidentals = ##t
 htitle="Confitemini Domino"
 hcomposer="Costantini"
 
-% copiado de Breiktopf und Härtel 1862
+\paper{
+    top-margin = 10
+    bottom-margin = 1.2\cm
+	evenHeaderMarkup=\markup  \fill-line { 
+	  \fromproperty #'page:page-number-string \htitle \hcomposer }
+	oddHeaderMarkup= \markup  \fill-line { 
+	  \on-the-fly #not-first-page \hcomposer \on-the-fly #not-first-page 
+	  \htitle \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
+	system-count=7
+	page-count = 2
+	ragged-last-bottom = ##t
+	indent=2.0\cm
+	system-system-spacing =
+	#'((basic-distance . 20) (minimum-distance . 0) (padding . 4))
+	top-system-spacing = % header
+	#'((basic-distance . 20) (minimum-distance . 0) (padding . 0))
+	last-bottom-spacing = % footer
+	#'((basic-distance . 12) (minimum-distance . 0) (padding . 0))
+
+}
 
 \header {
 	title=\markup{\fontsize #4 "Confitemini Domino"}
 	% subtitle="Psalm 135"
 	subsubtitle=\markup{\null \vspace #2.5 }
 	composer="Alessandro Costantini (c.1581-1657)"
+  copyright = \markup { \lower #5 \tiny { \line{ Lilypond Markup by Robin Garner,  \date } } }
 }
 
 
@@ -46,15 +67,15 @@ highNotes= \relative c' {
 }
 
 highLyrics=\lyricmode{
-  Con- fi- te- mi- ni Do- mi- no, quo- ni- am bo- nus, 
-  Con- fi- te- mi- ni Do- -- _ _ _ mi- no, quo- ni- am bo- nus.
-  Quo- ni- am in sae- cu- lum mi- se- ri- cor- di- a e- ius 
-  mi- se- ri- cor- di- a e- ius. 
-  Quo- ni- am in sae- cu- lum mi- se- ri- cor- di- a e- ius.
+  Con -- fi -- te -- mi -- ni Do -- mi -- no, quo -- ni -- am bo -- nus, 
+  Con -- fi -- te -- mi -- ni Do -- _ _ _ mi -- no, quo -- ni -- am bo -- nus.
+  Quo -- ni -- am in sae -- cu -- lum mi -- se -- ri -- cor -- di -- a e -- ius 
+  mi -- se -- ri -- cor -- di -- a e -- ius. 
+  Quo -- ni -- am in sae -- cu -- lum mi -- se -- ri -- cor -- di -- a e -- ius.
   
-  Al- le- lu ia __ _ _ al- le- lu- ia, al- -- _ _ le- lu- ia, al- le- lu- ia, __ _ _ _ _
-  al- le- lu- ia, al- le- lu- ia, __ _ _ al- -- _ _ _ _ le- lu- ia, al- le- lu- ia, __ _ _ 
-  al- le- lu- ia, __ _ _ _ al- le- lu- ia.
+  Al -- le -- lu ia __ _ _ al -- le -- lu -- ia, al -- _ _ le -- lu -- ia, al -- le -- lu -- ia, __ _ _ _ _
+  al -- le -- lu -- ia, al -- le -- lu -- ia, __ _ _ al -- _ _ _ _ le -- lu -- ia, al -- le -- lu -- ia, __ _ _ 
+  al -- le -- lu -- ia, __ _ _ _ al -- le -- lu -- ia.
 }
 
 midNotes=\relative c' {
@@ -72,17 +93,18 @@ R1. | R1. |  g,2 g f | e2. d4 e f | g2 g fis | g1. \fermata ||
 
 
 midLyrics=\lyricmode{
-  Con- fi- te- mi- ni  Do- mi- no,        quo- ni- am bo- -- _ _ _ nus, 
-  Con- fi- te- mi- ni Do- mi- no, quo- ni- am bo- -- _ _ _ nus.             
-  Quo- ni- am in  sae- cu- lum           
-  mi- se- ri- cor- di- a e- -- _ ius 
-  mi- se- ri- cor- di- a e- -- _ _ ius. 
-  Quo- ni- am in sae- cu- lum 
-  mi- se- ri- cor- di- a e- -- _ _ ius. 
+  Con -- fi -- te -- mi -- ni  Do -- mi -- no,        quo -- ni -- am bo -- _ _ _ nus, 
+  Con -- fi -- te -- mi -- ni Do -- mi -- no, quo -- ni -- am bo -- _ _ _ nus.             
+  Quo -- ni -- am in  sae -- cu -- lum           
+  mi -- se -- ri -- cor -- di -- a e -- _ ius 
+  mi -- se -- ri -- cor -- di -- a e -- _ _ ius. 
+  Quo -- ni -- am in sae -- cu -- lum 
+  mi -- se -- ri -- cor -- di -- a e -- _ _ ius. 
   
-  Al- le- lu- ia al- le- lu- ia, al- -- _ _ le- lu- ia, al- le- lu- 
-  ia, __ _ _ _ _ al---_ _ le- lu- ia, al- le- lu- ia, al- -- _ _ _ _ le- lu- ia,
-  al- le- lu- ia, al- -- _ _ _ le- lu- ia. 
+  Al -- le -- lu -- ia, al -- le -- lu -- ia, 
+  al -- _ _ le -- lu -- ia, al -- le -- lu -- ia, __ _ _ _ _ 
+  al -- _ le -- lu -- ia, al -- le -- lu -- ia, al -- _ _ _ _ le -- lu -- ia,
+  al -- le -- lu -- ia, al -- _ _ _ le -- lu -- ia. 
 }
 
 lowNotes=\relative c {
@@ -100,14 +122,14 @@ R1. | g2 g f | e1 d2 | c1 c2 | e d1 | g1. \fermata ||
 
 
 lowLyrics=\lyricmode{
-  Con-  fi- te- mi- ni Do- mi- no, quo- ni- am bo- nus, 
-  Con- fi- te- mi- ni Do- mi- no, quo- ni- am bo- nus.
-  Quo- ni- am in sae- cu- lum mi- se- ri- cor- di- a e- -- _ _ ius.
-  Mi- se- ri- cor- di- a e- ius.
+  Con --  fi -- te -- mi -- ni Do -- mi -- no, quo -- ni -- am bo -- nus, 
+  Con -- fi -- te -- mi -- ni Do -- mi -- no, quo -- ni -- am bo -- nus.
+  Quo -- ni -- am in sae -- cu -- lum mi -- se -- ri -- cor -- di -- a e -- _ _ ius.
+  Mi -- se -- ri -- cor -- di -- a e -- ius.
   
-  Al- le- lu- ia, __ _ _ al- le- lu- ia, al- le- lu- ia, __ _ _ _
-  al- le- lu- ia, al- le- lu- ia,
-  al- le- lu- ia, __ _ _ al- le- lu- ia, al- le- lu- ia.
+  Al -- le -- lu -- ia, __ _ _ al -- le -- lu -- ia, al -- le -- lu -- ia, __ _ _ _
+  al -- le -- lu -- ia, al -- le -- lu -- ia,
+  al -- le -- lu -- ia, __ _ _ al -- le -- lu -- ia, al -- le -- lu -- ia.
 }
 
 %
@@ -205,22 +227,3 @@ voicings = #'(
 }
 
 
-\paper{
-  top-margin = 10
-	evenHeaderMarkup=\markup  \fill-line { 
-	  \fromproperty #'page:page-number-string \htitle \hcomposer }
-	oddHeaderMarkup= \markup  \fill-line { 
-	  \on-the-fly #not-first-page \hcomposer \on-the-fly #not-first-page 
-	  \htitle \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
-	system-count=7
-	page-count = 2
-	ragged-last-bottom = ##t
-	indent=2.0\cm
-	system-system-spacing =
-	#'((basic-distance . 20) (minimum-distance . 0) (padding . 5))
-	top-system-spacing = % header
-	#'((basic-distance . 20) (minimum-distance . 0) (padding . 0))
-	last-bottom-spacing = % footer
-	#'((basic-distance . 12) (minimum-distance . 0) (padding . 0))
-
-}

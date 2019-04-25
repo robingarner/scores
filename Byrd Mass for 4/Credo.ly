@@ -867,7 +867,7 @@ CredoBassLyrics  =  \lyricmode {
   vi -- si -- bi
   -- li -- um o -- mni -- um et in -- vi -- si -- bi -- li -- "um." Et
   in u -- num Do -- mi -- num Je -- sum Chri -- "stum," Fi -- li -- um
-  De -- i u -- ni -- ge -- ni -- "tum:" et ex Pa -- tre na -- tum an
+  De -- i u -- ni -- ge -- ni -- "tum:" __ et ex Pa -- tre na -- tum an
   -- te o -- mni -- a sae -- cu -- "la." Lu -- men de lu -- mi --
   "ne," de De -- o ve -- "ro," de De -- o ve -- "ro," ge -- ni -- tum
   non fa -- "ctum," con -- sub -- stan -- ti -- a -- lem Pa -- "tri,"
@@ -907,19 +907,19 @@ CredoBassLyrics  =  \lyricmode {
   }
   \paper {
     page-count = #8
-    evenHeaderMarkup=\markup  \fill-line { 
+    oddHeaderMarkup=\markup  \fill-line { 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
-	  \on-the-fly #not-part-first-page "Mass for Four Voices: Credo"
-	  \on-the-fly #not-first-page "Byrd" }
-    oddHeaderMarkup= \markup  \fill-line { 
-	  \on-the-fly #not-first-page "Byrd"
-	  \on-the-fly #not-part-first-page "Mass for Four Voices: Credo"
+	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Credo" } 
+	  \on-the-fly #not-part-first-page \hcomposer }
+    evenHeaderMarkup= \markup  \fill-line { 
+	  \on-the-fly #not-part-first-page \hcomposer
+	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Credo" } 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
   }
   \score {
     \transpose c df
     <<
-      \new StaffGroup <<
+      \new ChoirStaff <<
         \new Staff <<
           \set Staff.instrumentName = "Soprano"
           \set Staff.shortInstrumentName = "S."

@@ -2,6 +2,9 @@
 \version "2.18.2"
 % automatically converted by musicxml2ly from Draw_on_sweet_night_Wilbye.mxl
 
+% first, define a variable to hold the formatted date:
+date = #(strftime "%d/%m/%Y" (localtime (current-time)))
+
 htitle="Draw On Sweet Night"
 hcomposer="Wilbye"
 
@@ -10,6 +13,7 @@ hcomposer="Wilbye"
   % subtitle="Psalm 135"
   subsubtitle=\markup{\null \vspace #2.5 }
   composer=\hcomposer
+  copyright = \markup { \lower #5 \tiny { \line{ Lilypond Markup by Robin Garner,  \date } } }
 }
 
 #(set-global-staff-size 14)
@@ -40,8 +44,8 @@ hcomposer="Wilbye"
   }
 }
 \layout {
-  \context {
-    \Score
+  \context { \Score
+    markFormatter = #format-mark-box-alphabet
     skipBars = ##t
     autoBeaming = ##f
   }
@@ -60,7 +64,7 @@ PartPOneVoiceOne =  \relative a' {
   r2 d2 ~ | % 12
   d2 d2 ~ | % 13
   d2 cis2 | % 14
-  d2. cis8 ( [ b8 ) ] | % 15
+  d2. cis8 [ b8 ] | % 15
   a1 | % 16
   R1*3 | % 19
   r2 d,2 | \barNumberCheck #20
@@ -71,13 +75,13 @@ PartPOneVoiceOne =  \relative a' {
   d2 d2 | % 25
   R1 | % 26
   d2 d'2 ~ | % 27
-  d2 cis4 ( b4 ) | % 28
+  d2 cis4 \melisma b4 \melismaEnd | % 28
   a2 a2 ~ | % 29
   a2 g2 ~ | \barNumberCheck #30
   g2 fis2  | % 31
   e2 e2 | % 32
   R1*4 | % 36
-  a4 c2 bes4 | % 37
+  \mark \default a4 c2 bes4 | % 37
   a2 c2  | % 38
   bes4 a4 a4 g4 | % 39
   a1 ~ | \barNumberCheck #40
@@ -110,8 +114,8 @@ PartPOneVoiceOne =  \relative a' {
   d2 cis4 d4 | % 67
   e1 ~ | % 68
   e2 r2 | % 69
-  R1 | \barNumberCheck #70
-  R1*5 | % 75
+  R1*2 | \barNumberCheck #71
+  \mark \default R1*4 | % 75
   r4 e,4 f4 g4 | % 76
   a1 ~ | % 77
   a4 gis8 [ fis8 ] gis2 | % 78
@@ -147,7 +151,7 @@ PartPOneVoiceOne =  \relative a' {
   a2. g4 | % 117
   f4 e4 d4 d4 | % 118
   cis4  d2 cis4 | % 119
-  d4. c8 d8 ( [ e8 ) ] f4 | \barNumberCheck #120
+  d4. c8 d8 [ e8 ] f4 | \barNumberCheck #120
   e8 [ d8 ] d4 e4 a4  | % 121
   a1 ~ | % 122
   a2 r4 a4 | % 123
@@ -164,18 +168,18 @@ PartPOneVoiceOneLyricsOne =  \lyricmode {
   Draw on, sweet night, draw
   on, sweet night, best friend un -- to those cares, that do a
   -- rise from pain -- ful me -- lan -- cho -- ly, a -- rise from
-  pain -- ful me- lan -- cho -- ly, My life so ill through want of
+  pain -- ful me -- lan -- cho -- ly, My life so ill through want of
   com -- fort fares, That un -- to thee, to thee I con -- se --
   crate it whol -- _ _ ly, That un -- to thee I con -- se -- crate it
   whol -- _ ly: Sweet night draw on, Sweet night draw on, O sweet
   night draw on, Sweet night draw on, Sweet night draw on, My
-  griefs when they __ _ be told To shades and dark- ness, find some
+  griefs when they __ _ be told To shades and dark -- ness, find some
   ease from pain -- _ ing, And while thou all in si -- lence dost en
-  -- fold, in si- lence dost en -- fold, and while thou all in
+  -- fold, in si -- lence dost en -- fold, and while thou all in
   si -- lence dost en -- _ _ _ _ _ fold, I then shall have best time for my
   com -- plain -- ing, I then shall have best time for my com --
   plain -- _ _ ing, for my com -- plain -- _ _ _ ing, I then shall have best
-  time for my com -- plain- ing.
+  time for my com -- plain -- ing.
 }
 PartPTwoVoiceOne =  \relative a' {
   \clef "treble" \key c \major \time 4/4 | % 1
@@ -264,7 +268,7 @@ PartPTwoVoiceOne =  \relative a' {
   R1 | \barNumberCheck #100
   e4 a2 g4 | % 101
   fis4 d4 d'2 ~ | % 102
-  d4 c4 b4 fis8 ( [ g8 ) ] | % 103
+  d4 c4 b4 fis8 [ g8 ] | % 103
   a2 r4 a4 | % 104
   a4 a4 b2 ~ | % 105
   b4 b4 cis2 | % 106
@@ -301,7 +305,7 @@ PartPTwoVoiceOneLyricsOne =  \lyricmode {
   Sweet night draw on, My griefs when they __ _ _ be told To shades and
   dark -- ness, find some ease from pain -- _ ing, And while thou
   all in si -- lence dost en -- _ _ _ fold, And while thou all in si-
-  lence dost en- fold, and while thou all in si -- lence dost
+  lence dost en -- fold, and while thou all in si -- lence dost
   en -- _ _ _ fold, I then shall have best time for my com -- plain --
   ing, I then shall have best time for my com -- plain -- ing, I
   then shall have best time for my com -- plain -- ing.
@@ -419,11 +423,11 @@ PartPThreeVoiceOne =  \relative fis' {
   r2 r4 a4 | % 119
   f4 f4 bes2 ~ | \barNumberCheck #120
   bes4 a4 g4 f4 | % 121
-  e4 d4 d4 ( cis4 ) | % 122
+  e4 d4 d4 \melisma cis4 \melismaEnd | % 122
   d2 r2 | % 123
   R1 | % 124
   r2 d2 | % 125
-  a'4 g8 ( [ f8 ) ] e4.  d8 | % 126
+  a'4 g8 [ f8 ] e4.  d8 | % 126
   cis4 a4 r4 e'4 | % 127
   cis4 d4 e4 f8 [ g8 ] | % 128
   a4 d,4 e2 | % 129
@@ -434,7 +438,7 @@ PartPThreeVoiceOneLyricsOne =  \lyricmode {
   Draw on, sweet night,
   best friend un -- to those cares, draw on, sweet night, draw
   on, sweet night, best friend un -- to those cares, that do a
-  -- rise, a -- rise from pain- ful me- lan -- cho- ly, My
+  -- rise, a -- rise from pain -- ful me -- lan -- cho -- ly, My
   life so ill through want of com -- fort fares, My life so ill
   through want of com -- fort fares, That un -- to thee I con -- se
   -- crate it whol -- ly, That un -- to thee I con -- se -- crate it
@@ -447,7 +451,7 @@ PartPThreeVoiceOneLyricsOne =  \lyricmode {
   en -- _ _ _ _ fold, and while thou all in si -- lence dost en -- _ _ fold, I
   then shall have best time for my com -- plain -- _ _ ing, for my com
   -- plain -- ing, I then shall have best time for my com --
-  plain- ing, for my com- plain -- _ _ ing, for my com -- plain -- _ _ _ _
+  plain -- ing, for my com -- plain -- _ _ ing, for my com -- plain -- _ _ _ _
   ing.
 }
 PartPFourVoiceOne =  \relative d' {
@@ -480,7 +484,7 @@ PartPFourVoiceOne =  \relative d' {
   fis4 e4 e2 ~ | % 28
   e4 d4 d2 ~ | % 29
   d2 e2 | \barNumberCheck #30
-  cis4 ( a4 ) a'2 ~ | % 31
+  cis4 \melisma a4 \melismaEnd a'2 ~ | % 31
   a2 r2 | % 32
   R1*4 | % 36
   c,2 d4 e4 | % 37
@@ -568,7 +572,7 @@ PartPFourVoiceOne =  \relative d' {
   r2 r4 cis4 | % 126
   cis4 cis4 e2 ~ | % 127
   e4 d4 cis4 f4 | % 128
-  e4 d4 d4 ( cis4 ) | % 129
+  e4 d4 d4 \melisma cis4 \melismaEnd | % 129
   d1 ^\fermata \bar "|."
 }
 
@@ -576,8 +580,8 @@ PartPFourVoiceOneLyricsOne =  \lyricmode {
   Draw on, sweet night,
   best friend un -- to those __ _ cares, draw on, sweet  night, best
   friend un -- to those cares, Draw on, sweet night, best friend
-  un -- to those cares, that do a -- rise from pain- ful me- lan
-  -- cho- ly, My life so ill through want of com -- fort fares,
+  un -- to those cares, that do a -- rise from pain -- ful me -- lan
+  -- cho -- ly, My life so ill through want of com -- fort fares,
   That un -- to thee, that un -- to thee I con -- se -- crate it
   whol -- ly, That un -- to thee, to thee I con -- se -- crate it
   whol -- ly: Sweet night draw on, Sweet night draw  on, Sweet
@@ -632,7 +636,7 @@ PartPFiveVoiceOne =  \relative g {
   bes4 a4 g4 g4 | % 45
   f8 f8 c'4 f4. e8 | % 46
   d4 d4 e4. d8 | % 47
-  cis4 d4 d4 ( cis4 ) | % 48
+  cis4 d4 d4 \melisma cis4 \melismaEnd | % 48
   d1 ~ | % 49
   d2 r4 a4 | \barNumberCheck #50
   a2 a2 | % 51
@@ -713,8 +717,8 @@ PartPFiveVoiceOneLyricsOne =  \lyricmode {
   friend un -- to those cares, un -- to those cares, that do a --
   rise from pain -- ful me -- lan -- cho -- ly, My life so ill
   through want of com -- fort fares, That un -- to thee, that un
-  -- to thee, I con- se -- crate it whol -- ly, That un -- to
-  thee I con -- se -- crate it whol- ly, it whol -- ly: Sweet
+  -- to thee, I con -- se -- crate it whol -- ly, That un -- to
+  thee I con -- se -- crate it whol -- ly, it whol -- ly: Sweet
   night draw on, Sweet night draw on, Sweet night draw on, draw
   on, Sweet night, Sweet night draw on, My griefs when they be __ _ _ 
   told To shades and dark -- ness, find some ease from pain --
@@ -884,7 +888,14 @@ PartPSixVoiceOneLyricsOne =  \lyricmode {
     >>
 
   >>
-  \layout {}
+    \layout {ragged-right = ##f
+             % system-count = #7
+             %\override Score.SpacingSpanner.spacing-increment = #1.3
+             \override Score.BarNumber.break-visibility = ##(#f #t #t)
+             \context {\Staff 
+                       \consists Ambitus_engraver 
+             }
+    }
   % To create MIDI output, uncomment the following line:
   %  \midi {}
 }

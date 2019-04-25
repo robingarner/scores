@@ -72,7 +72,7 @@ AgnusDeiSopranoLyrics  =  \lyricmode {
   _ _ "bis," mi -- se -- re -- re no -- _ _ _
   _ _ "bis." A -- gnus De -- "i," A -- gnus De -- "i," qui
   tol -- lis pec -- ca -- ta mun -- _ _ _ _ _
-  _ "di," qui tol -- lis pec -- ca -- ta -- mun -- _ _
+  _ "di," qui tol -- lis pec -- ca -- ta mun -- _ _
   _ "di," do -- na no -- bis pa -- "cem," do -- na no -- bis pa
   -- "cem," pa -- "cem," do -- na no -- bis pa -- "cem," do -- na no
   -- bis pa -- "cem," do -- na no -- bis pa -- "cem."
@@ -136,7 +136,7 @@ AgnusDeiAltoLyrics  =  \lyricmode {
   re -- "re," mi -- se -- re -- "re," mi -- se -- re -- re no --
   _ _ _ "bis. " __ A -- gnus De -- "i," A -- gnus De --
   "i," qui tol -- lis pec -- ca -- ta mun -- "di," qui tol -- lis pec
-  -- ca -- ta -- mun -- "di," qui tol -- lis pec -- ca -- ta -- mun --
+  -- ca -- ta  mun -- "di," qui tol -- lis pec -- ca -- ta mun --
   "di," do -- na no -- bis pa -- "cem," do -- na no -- bis pa --
   "cem," do -- na no -- bis pa -- "cem," do -- na no -- bis pa --
   _ _ "cem," do -- na no -- bis pa -- "cem," do -- na no --
@@ -267,7 +267,7 @@ AgnusDeiBassLyrics  =  \lyricmode {
   _ _ _ _ _ _ _ _ _
   "bis." 
   A -- gnus De -- "i," De -- "i," qui tol -- lis pec -- ca --
-  ta -- mun -- "di," qui tol -- lis pec -- ca -- ta -- mun -- _
+  ta  mun -- "di," qui tol -- lis pec -- ca -- ta mun -- _
   _ _ _ "di," do -- na no -- bis pa -- _ _
   _ _ _ "cem, " __ do -- na no -- bis pa -- "cem," pa
   -- "cem," do -- na no -- bis pa -- "cem," do -- na no -- bis pa --
@@ -280,19 +280,19 @@ AgnusDeiBassLyrics  =  \lyricmode {
     subtitle="Agnus Dei"
   }
   \paper {
-    evenHeaderMarkup=\markup  \fill-line { 
+    oddHeaderMarkup=\markup  \fill-line { 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
-	  \on-the-fly #not-part-first-page "Mass for Four Voices: Agnus Dei"
-	  \on-the-fly #not-first-page "Byrd" }
-    oddHeaderMarkup= \markup  \fill-line { 
-	  \on-the-fly #not-first-page "Byrd"
-	  \on-the-fly #not-part-first-page "Mass for Four Voices: Agnus Dei"
+	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Agnus Dei" }
+	  \on-the-fly #not-part-first-page \hcomposer }
+    evenHeaderMarkup= \markup  \fill-line { 
+	  \on-the-fly #not-part-first-page \hcomposer
+	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Agnus Dei" }
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
   }
   \score {
     \transpose c df
     <<
-      \new StaffGroup <<
+      \new ChoirStaff <<
         \new Staff <<
           \set Staff.instrumentName = "Soprano"
           \set Staff.shortInstrumentName = "S."
@@ -343,7 +343,7 @@ AgnusDeiBassLyrics  =  \lyricmode {
     >>
     \layout {ragged-right = ##f
              % system-count = #7
-             \override Score.SpacingSpanner.spacing-increment = #1.3
+             \override Score.SpacingSpanner.spacing-increment = #1.2
              \override Score.BarNumber.break-visibility = ##(#f #t #t)
              \context {\Staff 
                        \consists Ambitus_engraver 

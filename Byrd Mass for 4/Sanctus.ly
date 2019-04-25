@@ -36,9 +36,9 @@ SanctusSopranoNotes =  \relative b' {
   b2 a1 g2 | % 372
   fs1 r1 | % 373
   b2. b4 e,2 g2 ~ | % 374
-  g4 a4 b2 c1 | % 375
+  g4 a4 b2 c1 \break | % 375
   b2 ^"rit." a2 d1 \melisma \bar "!"
-  \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 c1 \melismaEnd \bar "||" 
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 c1 \melismaEnd \bar "||"
   \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  | % 376
   \tempo 2=96 b\breve | % 377
   r1 e,1 | % 378
@@ -352,7 +352,7 @@ SanctusBassNotes =  \relative e {
 SanctusBassLyrics  =  \lyricmode {
   San -- _ _ _ _ _ _ "ctus," San -- _
   _ _ "ctus," San -- _ _ _ _ _
-  _ "(ctus," "San)" -- "ctus:" Do -- mi -- nus De -- us Sa -- ba
+  _ ctus, San -- ctus: Do -- mi -- nus De -- us Sa -- ba
   -- "oth," Sa -- ba -- "oth," Do -- mi -- nus De -- "us," Do -- mi --
   nus De -- us Sa -- ba -- "oth," Sa -- _ _ _ ba --
   "oth." O -- san -- na in ex -- cel -- "sis," O -- san -- na in ex --
@@ -370,19 +370,19 @@ SanctusBassLyrics  =  \lyricmode {
     subtitle="Sanctus Benedictus"
   }
   \paper {
-    evenHeaderMarkup=\markup  \fill-line { 
+    oddHeaderMarkup=\markup  \fill-line { 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
-	  \on-the-fly #not-part-first-page "Mass for Four Voices: Sanctus"
-	  \on-the-fly #not-first-page "Byrd" }
-    oddHeaderMarkup= \markup  \fill-line { 
-	  \on-the-fly #not-first-page "Byrd"
-	  \on-the-fly #not-part-first-page "Mass for Four Voices: Sanctus"
+	  \on-the-fly #not-part-first-page  \line { \htitle &ndash; "Sanctus" }
+	  \on-the-fly #not-part-first-page \hcomposer }
+    evenHeaderMarkup= \markup  \fill-line { 
+	  \on-the-fly #not-part-first-page \hcomposer
+	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Sanctus" }
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
   }
   \score {
     \transpose c df
     <<
-      \new StaffGroup <<
+      \new ChoirStaff <<
         \new Staff <<
           \set Staff.instrumentName = "Soprano"
           \set Staff.shortInstrumentName = "S."

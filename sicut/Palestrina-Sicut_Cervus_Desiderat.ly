@@ -2,7 +2,7 @@
 
 #(set-default-paper-size "a4")
 #(set-global-staff-size 16.3)
-#(ly:set-option 'point-and-click #f)
+%#(ly:set-option 'point-and-click #f)
 %mobile -s15.5 -i3.2
 
 italicas=\override LyricText.font-shape = #'italic
@@ -22,8 +22,8 @@ hcomposer="Palestrina"
 	composer="Giovanni Pierluigi da Palestrina (c.1525-1594)"
 	%opus="(-)"
 	poet="Venecia 1604"
-	copyright=\markup{
-		\fill-line {"Edited by Nancho Alvarez" \typewriter "http://tomasluisdevictoria.org"}
+	copyright=\markup{ \tiny
+		\fill-line {"Edited by Nancho Alvarez, minor adjustments by Robin Garner" \typewriter "http://tomasluisdevictoria.org"}
 	}
 %	tagline=""
 }
@@ -394,7 +394,7 @@ incipitbassus=\markup{
 
 	\new Staff <<\global
 	\new Voice="v1" {
-		\set Staff.instrumentName=\incipitcantus
+		\set Staff.instrumentName="Soprano"
 		\clef "treble"
 		\cantus }
 	\new Lyrics \lyricsto "v1" {\textocantus }
@@ -402,8 +402,8 @@ incipitbassus=\markup{
 	
 	\new Staff << \global
 	\new Voice="v2" {
-		\set Staff.instrumentName=\incipitaltus
-		\clef "G_8" 
+		\set Staff.instrumentName="Alto   "
+		\clef "treble" 
 		\altus}
 	\new Lyrics \lyricsto "v2" {\textoaltus }
 	>>
@@ -411,7 +411,7 @@ incipitbassus=\markup{
 	
 	\new Staff <<\global
 	\new Voice="v3" {
-		\set Staff.instrumentName=\incipittenor
+		\set Staff.instrumentName="Tenor  "
 		\clef "G_8"
 		\tenor }
 	\new Lyrics \lyricsto "v3" {\textotenor }
@@ -419,7 +419,7 @@ incipitbassus=\markup{
 	
 	\new Staff <<\global
 	\new Voice="v4" {
-		\set Staff.instrumentName=\incipitbassus
+		\set Staff.instrumentName="Bass   "
 		\clef "bass" 
 		\bassus }
 	\new Lyrics \lyricsto "v4" {\textobassus }
@@ -466,7 +466,7 @@ incipitbassus=\markup{
 	%system-count=20
 	%page-count = 8
 	ragged-last-bottom = ##f
-	indent=3.4\cm
+	indent=2.5\cm
 	system-system-spacing =
 	#'((basic-distance . 20) (minimum-distance . 0) (padding . 5))
 	top-system-spacing = % header

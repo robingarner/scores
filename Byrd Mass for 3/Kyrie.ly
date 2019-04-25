@@ -2,20 +2,20 @@
 
 \include "common.ly"
 
-kyrieAltoNotes =  \relative fis' {
+kyrieAltoNotes =  \relative fs' {
   % Permit first bar number to be printed
   \bar ""
 
   \clef "treble" \key d \major \numericTimeSignature
   \time 4/2 
-    fis1. fis2 | % 2
-    e2 fis2 g2 fis4 e4 | % 3
-    fis1 fis1 | % 4
-    e2 fis2 g2 fis4 e4 | % 5
-    fis1 a2. a4 | % 6
-    g2 fis1 e2 ~ | % 7
-    e2 d4 cis4 d4 b4 d2 ~ | % 8
-    d2 cis4 b4 cis1 ^\fermata \bar "|."
+    fs1. fs2 | % 2
+    e2 fs2 g2 fs4 e4 | % 3
+    fs1 fs1 | % 4
+    e2 fs2 g2 fs4 e4 | % 5
+    fs1 a2. a4 | % 6
+    g2 fs1 e2 ~ | % 7
+    e2 d4 cs4 d4 b4 d2 ~ | % 8
+    d2 cs4 b4 cs1 ^\fermata \bar "|."
     | % 9
 }
 
@@ -31,11 +31,11 @@ kyrieTenorNotes =  \relative a {
     | % 2
     a2 a2 b1 | % 3
     a1 d1 | % 4
-    cis2 d2 b2. cis4 | % 5
-    d1 cis2. d4 | % 6
+    cs2 d2 b2. cs4 | % 5
+    d1 cs2. d4 | % 6
     b1 a2. a4 | % 7
-    g2 fis1 b2 ~ | % 8
-    b2 ais4 gis4 ais1 ^\fermata \bar "|."
+    g2 fs1 b2 ~ | % 8
+    b2 as4 gs4 as1 ^\fermata \bar "|."
 }
 
 kyrieTenorLyrics = \lyricmode { 
@@ -48,13 +48,13 @@ kyrieTenorLyrics = \lyricmode {
 kyrieBassNotes =  \relative d {
     \clef "bass" \key d \major \numericTimeSignature\time 4/2 
     d1. d2 | % 2
-    cis2 d2 b2. cis4 | % 3
+    cs2 d2 b2. cs4 | % 3
     d1 d1 | % 4
     a'2 d,2 e1 | % 5
-    d1 fis2. d4 | % 6
-    e2 b2 d2 cis2 | % 7
+    d1 fs2. d4 | % 6
+    e2 b2 d2 cs2 | % 7
     b\breve | % 8
-    fis'\breve ^\fermata \bar "|."
+    fs'\breve ^\fermata \bar "|."
 }
 
 kyrieBassLyrics = \lyricmode { 
@@ -68,7 +68,21 @@ kyrieBassLyrics = \lyricmode {
 % Kyrie
 %
 \bookpart{
-\score {
+  \header { 
+    subtitle="Kyrie Eleison"
+  }
+  \paper {
+    evenHeaderMarkup=\markup  \fill-line { 
+	  \fromproperty #'page:page-number-string 
+	  \on-the-fly #not-part-first-page \line { \htitle "- Kyrie" }
+	  \on-the-fly #not-part-first-page \hcomposer }
+    oddHeaderMarkup= \markup  \fill-line { 
+	  \on-the-fly #not-part-first-page \hcomposer 
+	  \on-the-fly #not-part-first-page \line { \htitle "- Kyrie" }
+	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
+
+  }
+  \score {
     <<
         \new Staff <<
             \set Staff.instrumentName = "Alto"
@@ -106,16 +120,9 @@ kyrieBassLyrics = \lyricmode {
             >>
         
     >>
-    \header { piece = \markup{ \fontsize #4 "Kyrie eleison" } }
     \layout {
-      ragged-right = ##f
-      %system-count = #1
-      \override Score.SpacingSpanner.spacing-increment = #1.5
-      \override Score.BarNumber.break-visibility = ##(#f #t #t)
-      \context {\Staff 
-        \consists Ambitus_engraver 
-      }
+      \override Score.SpacingSpanner.spacing-increment = #1.2
     }
     \midi { \tempo 4 = 180 }
-}
+  }
 }

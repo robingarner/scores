@@ -4,10 +4,14 @@
 
 htitle="Ave Maria"
 hcomposer="Josquin des Pres"
+% first, define a variable to hold the formatted date:
+date = #(strftime "%d/%m/%Y" (localtime (current-time)))
+
 
 \header {
     composer = #(string-append hcomposer " (1450-1521)")
     title = \htitle
+  copyright = \markup { \lower #5 \tiny { \line{ Lilypond Markup by Robin Garner,  \date } } }
 }
     
 
@@ -16,27 +20,31 @@ hcomposer="Josquin des Pres"
     paper-width = 21.0\cm
     paper-height = 29.7\cm
     top-margin = 1.0\cm
-    bottom-margin = 2.0\cm
+    bottom-margin = 1.2\cm
     left-margin = 1.0\cm
     right-margin = 1.0\cm
   page-count = #4
   system-count = #16
-    evenHeaderMarkup=\markup  \fill-line { 
-	  \fromproperty #'page:page-number-string \htitle \hcomposer }
-    oddHeaderMarkup= \markup  \fill-line { 
+    oddHeaderMarkup=\markup  \fill-line { 
+	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
+	  \on-the-fly #not-first-page \htitle 
+	  \on-the-fly #not-first-page \hcomposer }
+    evenHeaderMarkup= \markup  \fill-line { 
 	  \on-the-fly #not-first-page \hcomposer 
 	  \on-the-fly #not-first-page \htitle
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
 }
 \layout {
     \override Score.BarNumber.break-visibility = ##(#f #t #t)
+    % Default size is -2
+    \override Score.BarNumber.font-size = #-3
     \context { \Score
         skipBars = ##t
         autoBeaming = ##f
-        }
-      \context {\Staff 
+    }
+    \context {\Staff 
         \consists Ambitus_engraver 
-      }
+    }
 }
     
 PartPOneVoiceOne =  \relative g' {

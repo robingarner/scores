@@ -618,17 +618,17 @@ GloriaBassLyrics  =  \lyricmode {
   \paper {
     evenHeaderMarkup=\markup  \fill-line { 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
-	  \on-the-fly #not-part-first-page "Mass for Four Voices: Gloria"
-	  \on-the-fly #not-first-page "Byrd" }
+	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Gloria" }
+	  \on-the-fly #not-part-first-page "Byrd" }
     oddHeaderMarkup= \markup  \fill-line { 
-	  \on-the-fly #not-first-page "Byrd"
-	  \on-the-fly #not-part-first-page "Mass for Four Voices: Gloria"
+	  \on-the-fly #not-part-first-page "Byrd"
+	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Gloria" }
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
   }
   \score {
     \transpose c df
     <<
-      \new StaffGroup <<
+      \new ChoirStaff <<
         \new Staff <<
           \set Staff.instrumentName = "Soprano"
           \set Staff.shortInstrumentName = "S."
