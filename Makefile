@@ -8,40 +8,50 @@
 %.pdf: %.tex
 	pdflatex $^
 
-.PHONY: confitemini-domino kruisvaarderslied
+%.pdf: %.ly
+	lilypond $^
 
-all: confitemini-domino kruisvaarderslied \
-	my-peace.pdf my-peace-latex.pdf linverno.pdf \
-	spring.pdf
+SUBDIRS="Byrd_Mass_for_3 Byrd_Mass_for_4 Byrd_Ave_Verum"
+SUBDIRS+=" confitemini"
+#SUBDIRS+=" linverno spring kruisvaarderslied my-peace"
+SUBDIRS+=" absalon josquin-ave-maria shsb"
 
-confitemini-domino:
+.PHONY: $(SUBDIRS)
+
+all: $(SUBDIRS)
+
+confitemini:
 	$(MAKE) -C confitemini
 
 kruisvaarderslied:
 	$(MAKE) -C kruisvaarderslied
 
-linverno.pdf: linverno.pmx linverno-lyrics.tex
-my-peace.pdf: my-peace.pmx
-spring.pdf: spring.pmx
-confitemini-domino-stb.pdf: cd/confitemini-domino-stb.pmx
-confitemini-domino-ttt.pdf: cd/confitemini-domino-ttt.pmx
-kruisvaarderslied.pdf: kruisvaarderslied.pmx
+Byrd_Mass_for_3:
+	$(MAKE) -C Byrd_Mass_for_3
 
-linverno-latex.pdf: linverno.pdf linverno-latex.tex
-	pdflatex linverno-latex
-	musixflx linverno-latex
-	pdflatex linverno-latex
+Byrd_Mass_for_4:
+	$(MAKE) -C Byrd_Mass_for_4
 
-my-peace-latex.pdf: my-peace-latex.tex my-peace.pdf
-	pdflatex my-peace-latex
-	musixflx my-peace-latex
-	pdflatex my-peace-latex
+Byrd_Ave_Verum:
+	$(MAKE) -C Byrd_Ave_Verum --makefile=../Makefile Ave_Verum_Corpus_Byrd.pdf
 
-# confitemini-domino-ttt.pdf : confitemini-domino-ttt.pmx
-#	pmx2pdf confitemini-domino-ttt
-#
-#confitemini-domino-ttt.pmx : confitemini-domino-ttt.mtx
-#	prepmx -bvn confitemini-domino-ttt
-#
+my-peace:
+	$(MAKE) -C my-peace
+
+josquin-ave-maria:
+	$(MAKE) -C josquin-ave-maria --makefile=../Makefile Ave_Maria_-_Josquin_V5.pdf
+
+absalon:
+	$(MAKE) -C absalon --makefile=../Makefile Absalon_Fili_Mi_4.pdf
+
+linverno:
+	$(MAKE) -C linverno
+
+spring:
+	$(MAKE) -C spring --makefile=../Makefile spring.pdf
+
+shsb:
+	$(MAKE) -C shsb --makefile=../Makefile SweetHoneySuckingBees.pdf
+
 clean: 
 	rm *.mx1 *.mx2 *.aux *.log *.dvi *.pmx *.pml

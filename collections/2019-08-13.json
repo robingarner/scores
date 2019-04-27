@@ -1,14 +1,37 @@
-{ "inputs" : [
-    { "file" : "../../../Dropbox/music/mad wrigglers/Lassus-Bonjour.pdf" },
-    { "file" : "../../../Dropbox/music/mad wrigglers/Hark,_all_ye_lovely_saints.pdf" },
-    { "file" : "../../../Dropbox/music/mad wrigglers/Il_bianco_e_dolce_Arcadelt.pdf" },
-    { "file" : "../shsb/SweetHoneySuckingBees.pdf" },
-    { "file" : "../draw_on/Draw_on_sweet_night_Wilbye.pdf" },
-    { "file" : "../josquin-ave-maria/Ave_Maria_-_Josquin_V5.pdf" },
-    { "file" : "../absalon/Absalon_Fili_Mi_4.pdf" },
-    { "file" : "../st-cecilia-press/o_magnum/o_magnum.pdf" },
-    { "file" : "../sicut/Palestrina-Sicut_Cervus_Desiderat.pdf" },
-    { "file" : "../Byrd_Ave_Verum/Ave_Verum_Corpus_Byrd.pdf" },
-    { "file" : "../Byrd Mass for 4/Byrd_Mass_for_Four_Voices.pdf", "align" : "EVEN" }
+{ "toc" : true,
+  "inputs" : [
+    { "file" : "../../../Dropbox/music/mad wrigglers/Lassus-Bonjour.pdf",
+      "toc" : "Bonjour mon Coeur (Lassus)"
+    },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Hark,_all_ye_lovely_saints.pdf",
+      "toc" : "Hark, all ye Lovely Saints (Weelkes)"
+    },
+    { "file" : "../../../Dropbox/music/mad wrigglers/Il_bianco_e_dolce_Arcadelt.pdf",
+      "toc" : "Il Bianco e dolce Cigno (Arcadelt)"
+    },
+    { "file" : "../shsb/SweetHoneySuckingBees.pdf",
+      "toc" : "Sweet Honey Sucking Bees (Wilbye)"
+    },
+    { "file" : "../draw_on/Draw_on_sweet_night_Wilbye.pdf",
+      "toc" : "Draw On Sweet Night (Wilbye)"
+    },
+    { "file" : "../josquin-ave-maria/Ave_Maria_-_Josquin_V5.pdf",
+      "toc" : "Ave Maria (Josquin)"
+    },
+    { "file" : "../absalon/Absalon_Fili_Mi_4.pdf",
+      "toc" : "Absalon Fili Mi (Josquin)"
+    },
+    { "file" : "../st-cecilia-press/o_magnum/o_magnum.pdf",
+      "toc" : "O Magnum Mysterium (Victoria)"
+    },
+    { "file" : "../sicut/Palestrina-Sicut_Cervus_Desiderat.pdf",
+      "toc" : "Sicut Cervus (Palestrina)"
+    },
+    { "file" : "../Byrd_Ave_Verum/Ave_Verum_Corpus_Byrd.pdf",
+      "toc" : "Ave Verum Corpus (Byrd)"
+    },
+    { "file" : "../Byrd_Mass_for_4/Byrd_Mass_for_Four_Voices.pdf", "align" : "EVEN",
+      "toc" : "Mass for 4 Voices (Byrd)"
+    }
   ]
 }

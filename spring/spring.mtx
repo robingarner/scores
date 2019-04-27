@@ -1,0 +1,25 @@
+Title: The Spring Has Come
+Composer: Philip Haes
+Round: Voices V1; Vocal; Clefs G;
+Style: Round
+Octave: 4 
+Meter: 4/4
+Pages: 1
+Systems: 3
+Sharps: 4
+Space: +8 +8
+%% \twelverm 
+
+% Set A4 paper
+%%h270m
+%%w190m
+U: !bf 1 | | | ~ 2
+b4 | Rl gd a8 b4 e4 | g4d- a8 b4 c | b a g f | e2d r4 | 
+L: The Spring has come, I hear the birds are sing-ing once a-gain
+
+U:  | | | ~ ~ 3
+ e2d r4 | e2d r4 | e2 b4 b | e2 r4 g4 |
+L: Hark. Hark. I hear them sing. The
+
+e4d f8 g4 g | e4d f8 g4 a | g f e d | e2d  :|
+L: Dron-go and the Fri-ar-bird King Par-rots and the Wren. 
