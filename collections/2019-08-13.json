@@ -1,12 +1,12 @@
 { "toc" : true,
   "inputs" : [
-    { "file" : "../../../Dropbox/music/mad wrigglers/Lassus-Bonjour.pdf",
+    { "file" : "../3rd-party/Lassus-Bonjour.pdf",
       "toc" : "Bonjour mon Coeur (Lassus)"
     },
-    { "file" : "../../../Dropbox/music/mad wrigglers/Hark,_all_ye_lovely_saints.pdf",
+    { "file" : "../3rd-party/Hark,_all_ye_lovely_saints.pdf",
       "toc" : "Hark, all ye Lovely Saints (Weelkes)"
     },
-    { "file" : "../../../Dropbox/music/mad wrigglers/Il_bianco_e_dolce_Arcadelt.pdf",
+    { "file" : "../3rd-party/Il_bianco_e_dolce_Arcadelt.pdf",
       "toc" : "Il Bianco e dolce Cigno (Arcadelt)"
     },
     { "file" : "../shsb/SweetHoneySuckingBees.pdf",

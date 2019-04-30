@@ -3,11 +3,11 @@
     { "file" : "../absalon/Absalon_Fili_Mi_4.pdf", 
       "toc" : "Absalon (Josquin)" 
     },
-    { "file" : "../../../Dropbox/music/mad wrigglers/Allon gay.Costeley.SATB.pdf", 
+    { "file" : "../3rd-party/Allon gay.Costeley.SATB.pdf", 
       "toc" : "Allon Gay Bergeres (Costeley)",
       "include" : "false" 
     },
-    { "file" : "../../../Dropbox/music/mad wrigglers/April_is_in_my_mistress_face_Morley.pdf",
+    { "file" : "../3rd-party/April_is_in_my_mistress_face_Morley.pdf",
       "toc": "April is in my Mistress' Face (Morley)"
     },
     { "file" : "../josquin-ave-maria/Ave_Maria_-_Josquin_V5.pdf",
@@ -16,17 +16,17 @@
     { "file" : "../Byrd_Ave_Verum/Ave_Verum_Corpus_Byrd.pdf",
       "toc" : "Ave Verum Corpus (Byrd)"
     },
-    { "file" : "../../../Dropbox/music/mad wrigglers/Lassus-Bonjour.pdf",
+    { "file" : "../3rd-party/Lassus-Bonjour.pdf",
       "toc" : "Bonjour mon Coeur (Lassus)"
     },
     { "file" : "../confitemini/confitemini.pdf" ,
       "toc" : "Confitemini Domino (Costantini)"
     },
-    { "file" : "../../../Dropbox/music/mad wrigglers/Those_dainty_daffodillies.SATBB.pdf",
+    { "file" : "../3rd-party/Those_dainty_daffodillies.SATBB.pdf",
       "toc" : "Those Dainty Daffodillies (Morley)",
       "include" : "false" 
     },
-    { "file" : "../../../Dropbox/music/mad wrigglers/Deep_lamenting_Morley.SAB.pdf",
+    { "file" : "../3rd-party/Deep_lamenting_Morley.SAB.pdf",
       "toc" : "Deep Lamenting (Morley)",  
       "include" : "false" 
     },
@@ -36,27 +36,27 @@
     { "file" : "../st-cecilia-press/fine_knacks/fine_knacks.pdf" ,
       "toc" : "Fine Knacks for Ladies (Dowland)"
     },
-    { "file" : "../../../Dropbox/music/mad wrigglers/Hark,_all_ye_lovely_saints.pdf" ,
+    { "file" : "../3rd-party/Hark,_all_ye_lovely_saints.pdf" ,
       "toc" : "Hark, all ye Lovely Saints (Weelkes)"
     },
-    { "file" : "../../../Dropbox/music/mad wrigglers/Hic_Est_beatissimus_Evangelista_Nanino.pdf",
+    { "file" : "../3rd-party/Hic_Est_beatissimus_Evangelista_Nanino.pdf",
       "toc" : "Hic est Beatissimus Evangelista (Nanino)" 
     },
-    { "file" : "../../../Dropbox/music/mad wrigglers/Il_bianco_e_dolce_Arcadelt.pdf",
+    { "file" : "../3rd-party/Il_bianco_e_dolce_Arcadelt.pdf",
       "toc" : "Il Bianco e Dolce Cigno (Arcadelt)" 
     },
-    { "file" : "../../../Dropbox/music/mad wrigglers/Il_Est_Bel_Et_Bon.David.E minor.pdf",
+    { "file" : "../3rd-party/Il_Est_Bel_Et_Bon.David.E minor.pdf",
       "toc" : "Il est Bel et Bon (Passereau)" 
     },
-    { "file" : "../../../Dropbox/music/mad wrigglers/I_love,_alas,_I_love_thee.SAATB.pdf",
+    { "file" : "../3rd-party/I_love,_alas,_I_love_thee.SAATB.pdf",
       "toc" : "",  
       "include" : "false" 
     },
-    { "file" : "../../../Dropbox/music/mad wrigglers/Lullaby_Byrd_SAATB.pdf",
+    { "file" : "../3rd-party/Lullaby_Byrd_SAATB.pdf",
       "toc" : "Lullaby (Byrd)",  
       "include" : "false" 
     },
-    { "file" : "../../../Dropbox/music/mad wrigglers/Margot-labourez-les-vignes_Arcadelt.pdf",
+    { "file" : "../3rd-party/Margot-labourez-les-vignes_Arcadelt.pdf",
       "toc" : "Margo Labourez les Vignes (Arcadelt)" 
     },
     { "file" : "../Byrd_Mass_for_3/Byrd_Mass_for_Three_Voices.pdf",
@@ -66,33 +66,33 @@
       "align" : "EVEN",
       "toc" : "Mass for 4 Voices (Byrd)"
     },
-    { "file" : "../../../Dropbox/music/mad wrigglers/Now_is_the_month_1_0.pdf",
+    { "file" : "../3rd-party/Now_is_the_month_1_0.pdf",
       "toc" : "Now is the Month of Maying (Morley)" 
     },
-    { "file" : "../../../Dropbox/music/mad wrigglers/Gibbons_Loosemore_O Lord.pdf",
+    { "file" : "../3rd-party/Gibbons_Loosemore_O Lord.pdf",
       "toc" : "O Lord Increase My Faith (Loosemore)"
     },
     { "file" : "../st-cecilia-press/o_magnum/o_magnum.pdf",
       "toc" : "O Magnum Misterium (Victoria)" },
-    { "file" : "../../../Dropbox/music/mad wrigglers/O_sleep,_fond_fancy.SSB.pdf",
+    { "file" : "../3rd-party/O_sleep,_fond_fancy.SSB.pdf",
       "toc" : "",  
       "include" : "false" 
     },
     { "file" : "../sicut/Palestrina-Sicut_Cervus_Desiderat.pdf",
       "toc" : "Sicut Cervus (Palestrina)" },
-    { "file" : "../../../Dropbox/music/mad wrigglers/Ford, Since First--TUMS.pdf",
+    { "file" : "../3rd-party/Ford, Since First--TUMS.pdf",
       "toc" : "Since First I Saw Your Face (Ford)" },
-    { "file" : "../../../Dropbox/music/mad wrigglers/Springtime_mantleth_every_bough.SAT.pdf",
+    { "file" : "../3rd-party/Springtime_mantleth_every_bough.SAT.pdf",
       "toc" : "",  
       "include" : "false" 
     },
     { "file" : "../shsb/SweetHoneySuckingBees.pdf",
       "toc" : "Sweet Honey Sucking Bees (Wilbye)" },
-    { "file" : "../../../Dropbox/music/mad wrigglers/Vedrassi_prima_Palestrina.pdf",
+    { "file" : "../3rd-party/Vedrassi_prima_Palestrina.pdf",
       "toc" : "",  
       "include" : "false" 
     },
-    { "file" : "../../../Dropbox/music/mad wrigglers/Versa_est_in_luctum_Lobo.pdf",
+    { "file" : "../3rd-party/Versa_est_in_luctum_Lobo.pdf",
       "toc" : "Versa est in Luctum (Lobo)",  
       "include" : "false" 
     }
