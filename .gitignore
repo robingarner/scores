@@ -16,3 +16,5 @@ tmp/
 **/*.pdf
 **/*.out
 **/*.synctex.gz
+**/*.jpg
+st-cecilia-press/*/*.yaml
