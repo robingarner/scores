@@ -433,11 +433,12 @@ incipitbassus=\markup{
 	\context {\Lyrics 
 		\override VerticalAxisGroup.staff-affinity = #UP
 		\override VerticalAxisGroup.nonstaff-relatedstaff-spacing =
-			#'((basic-distance . 0) (minimum-distance . 0) (padding . 1))
+			#'((basic-distance . 0) (minimum-distance . 0) (padding . 0))
 		%\override LyricText.font-size = #1.2
 		\override LyricHyphen.minimum-distance = #0.5
 	}
 	\context {\Score 
+                \override BarNumber.break-visibility = ##(#f #t #t)
 		tempoHideNote = ##t
 		\override BarNumber.padding = #2 
 	}

@@ -1,6 +1,6 @@
 
 
-      #(set-default-paper-size "letter")
+      #(set-default-paper-size "a4")
     
       #(set-global-staff-size scStaffSize )
     
@@ -141,6 +141,9 @@
          
         >>
         \layout { 
+	\context {\Score 
+                \override BarNumber.break-visibility = ##(#f #t #t)
+	}
         }
         \midi {
           \context {
@@ -152,7 +155,7 @@
     }
   
 
-      #(set-default-paper-size "letter")
+      #(set-default-paper-size "a4")
     
       #(set-global-staff-size scStaffSizeTranspose )
     
@@ -303,6 +306,9 @@
          
         >>
         \layout { 
+	\context {\Score 
+                \override BarNumber.break-visibility = ##(#f #t #t)
+	}
         }
         \midi {
           \context {
