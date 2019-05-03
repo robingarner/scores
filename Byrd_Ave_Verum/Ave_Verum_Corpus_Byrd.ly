@@ -39,6 +39,7 @@ hcomposer = "William Byrd"
     \context { \Score
         \override SpacingSpanner.spacing-increment = #2.5
         \override BarNumber.break-visibility = ##(#f #t #t)
+	\override LyricHyphen.minimum-distance = #0.5
         skipBars = ##t
         autoBeaming = ##f
     }
