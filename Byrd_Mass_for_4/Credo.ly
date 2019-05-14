@@ -52,8 +52,8 @@ CredoSopranoNotes =  \relative b' {
   b2 c2 d2. c4 | % 211
   b2 g4 a4 b2 ^"rit." a2 ~ |
   a4 g4 fs2. g4 \melisma e2 \melismaEnd |
-  fs\breve \bar "||" \break
-  \tempo 2=96 b1 b2 a2 | % 215
+  fs\breve ^\fermata \bar "||" \break
+  \mark \default \tempo 2=80 b1 b2 a2 | % 215
   b2 c2. b4 g2 | % 216
   r2 b2 a2 fs2 | % 217
   g1 fs2 d2 | % 218
@@ -61,9 +61,9 @@ CredoSopranoNotes =  \relative b' {
   r2 e2 c1 | \barNumberCheck #59
   b1 g'2 b2 ~ | % 221
   b4 a4 fs4 g4 a2. g8 [ fs8 ] |
-  e4 ^"rit." fs4 g2. fs4 fs4 e8 [ d8 ] |
+  e4 fs4 g2. fs4 fs4 e8 [ d8 ] |
   e1 fs1 \bar "||" % 223
-  \tempo 2=80 r1 r2 e2 | % 224
+  r1 r2 e2 | % 224
   g1 fs2 g2 ~ | % 225
   g4 a4 g2 r1 | % 226
   r1 r2 e2 | % 227
@@ -78,7 +78,7 @@ CredoSopranoNotes =  \relative b' {
   fs2 e2 g2. fs4 | % 236
   e4 d4 e2 ds1 \bar "||" \break
   \tempo 2=72 | % 237
-  r2 fs2 ^\p ~ fs2 fs2 | % 238
+  \mark \default r2 fs2 ^\p ~ fs2 fs2 | % 238
   b2 a2 b2. a4 | % 239
   fs2 b2 as1 | \barNumberCheck #80
   b2 g2 fs2. e4 | % 241
@@ -122,7 +122,7 @@ CredoSopranoNotes =  \relative b' {
   d2 a2 r2 c2 | % 278
   b2 g2 b1 ~ |
   b2 g2 r1 \bar "||"
-  \tempo 2=104 r2 g1 g2 | % 281
+  \mark\default \tempo 2=104 r2 g1 g2 | % 281
   a2. a4 b1 | % 282
   c1 b1 | % 283
   a2. a4 a2 d2 | % 284
@@ -150,7 +150,7 @@ CredoSopranoNotes =  \relative b' {
   b2. \melisma c4 b2 \melismaEnd a4 a4 ~ |
   a4 ^"rit." g4 g1 fs4 e4 \bar "!"
   \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 fs4 g2 fs4 |
-  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2 g\breve \bar "||"
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2 g\breve ^\fermata \bar "||"
   \tempo 2=104 g1 b2 g2 |
   r2 b2. \melisma c4 d2 \melismaEnd | % 309
   b1 r2 b2 | \barNumberCheck #153
@@ -192,15 +192,15 @@ CredoSopranoLyrics  =  \lyricmode {
   Pa -- trem o -- mni -- po -- ten
   -- "tem," fa -- cto -- rem coe -- li et ter -- _ _ _
   _ _ _ _ _ _ _ "rae," vi -- si --
-  bi -- li -- um o -- mni -- um et in -- vi -- si -- bi -- li -- "um."
-  Et in u -- num Do -- mi -- num Je -- sum Chri -- "stum," Fi -- li --
+  bi -- li -- um o -- mni -- um et __ in -- vi -- si -- bi -- li -- "um."
+  Et __ in u -- num Do -- mi -- num Je -- sum Chri -- "stum," Fi -- li --
   um De -- i u -- ni -- ge -- ni -- "tum," u -- ni -- ge -- ni --
   "tum:" De -- um de De -- "o," De -- um ve -- rum de De -- o ve -- ro
   ve -- _ _ _ "ro," ge -- ni -- tum non fa -- "ctum,"
   con -- sub -- stan -- ti -- a -- lem Pa -- "tri," con -- sub -- stan
-  -- ti -- a -- lem Pa -- "tri, " __ per quem o -- mni -- a fa -- cta
+  -- ti -- a -- lem Pa -- tri,   per quem o -- mni -- a fa -- cta
   "sunt," per quem o -- mni -- a fa -- _ _ _ _
-  _ "cta " __ "sunt." Qui pro -- pter nos ho -- mi -- nes et pro
+  _ cta sunt. Qui pro -- pter nos ho -- mi -- nes et pro
   -- pter no -- stram sa -- lu -- tem de -- scen -- dit de -- coe --
   _ _ _ _ _ _ _ _ _
   _ _ _ "lis:" Et in -- car -- na -- tus est de Spi --
@@ -221,16 +221,16 @@ CredoSopranoLyrics  =  \lyricmode {
   can -- "tem," qui ex Pa -- tre Fi -- li -- o -- que pro -- ce --
   "dit," qui cum Pa -- tre et Fi -- li -- o si -- mul a -- do -- ra --
   tur et con -- glo -- ri -- fi -- ca -- "tur," qui lo -- cu -- tus
-  est per Pro -- phe -- "tas," "per " __ Pro -- phe -- _ _
+  est per Pro -- phe -- "tas," per  Pro -- phe -- _ _
   _ _ _ "tas." Et u -- nam san -- ctam ca -- tho -- li
   -- "cam," ca -- tho -- li -- cam et a -- po -- sto -- li -- cam Ec
   -- cle -- si -- "am." Con -- fi -- te -- or u -- num bap -- tis --
   ma in re -- mis -- si -- o -- nem pec -- ca -- to -- "rum:" Et ex --
   spe -- cto re -- sur -- re -- cti -- o -- nem mor -- tu -- o --
-  "rum," mor -- tu -- o -- "rum, " __ mor -- tu -- o -- rum et vi --
-  tam ven -- tu -- ri sae -- cu -- "li," et vi -- tam ven -- tu --
-  "ri," et vi -- tam ven -- tu -- ri sae -- cu -- "li." A -- _
-  _ _ _ _ _ _ "men." A -- "men." 
+  "rum," mor -- tu -- o -- rum, __ mor -- tu -- o -- rum et vi --
+  tam ven -- tu -- ri sae -- cu -- li, et vi -- tam ven -- tu --
+  "ri," et vi -- tam ven -- tu -- ri sae -- cu -- li. A -- _
+  _ _ _ _ _ _ men. A -- men. 
 }
 
 CredoAltoNotes =  \relative e' {
@@ -286,7 +286,7 @@ CredoAltoNotes =  \relative e' {
   fs2 e2 fs2 r2 | % 211
   d2 e2 fs2. e4 |
   d1  b2. cs4 |
-  ds\breve\bar "||"
+  ds\breve ^\fermata \bar "||"
   R1*10 | % 219
   R1*6 |
   R1*2 |
@@ -330,7 +330,7 @@ CredoAltoNotes =  \relative e' {
   R1*2 | \barNumberCheck #100
   e2 a,2 b4 d4. d8 d4 |
   e4 g4 fs4. e8 d4 e8 [ fs8 ] g4 fs4 |
-  e2 \melisma d2 \melismaEnd b1 |
+  e2 d2 \melisma b1 \melismaEnd |
   b1 r2 b2 | % 263
   g'2. g4 fs2 g2 | % 264
   e2 d2 g2 r4 d4 | % 265
@@ -377,7 +377,7 @@ CredoAltoNotes =  \relative e' {
   g1 d2 e2 ~ |
   e2 b2 d2. a4 \bar "!"
   \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 d1 |
-  \once \hide Staff.TimeSignature  \numericTimeSignature\time 4/2 d\breve \bar "||"
+  \once \hide Staff.TimeSignature  \numericTimeSignature\time 4/2 d\breve ^\fermata \bar "||"
   r1 g1 | % 309
   fs2 g2 r2 g2 ~ |
   g2 \melisma fs2 \melismaEnd g2 d2 |  \barNumberCheck #153
@@ -418,7 +418,7 @@ CredoAltoNotes =  \relative e' {
 CredoAltoLyrics  =  \lyricmode {
   Pa -- trem o -- mni po
   -- ten -- "tem," fa -- cto -- rem coe -- li et ter -- "rae," coe --
-  li "et " __ ter -- _ _ _ "rae," vi -- si -- bi -- li
+  li et __ ter -- _ _ _ rae, __ vi -- si -- bi -- li
   -- um o -- mni -- um et in -- vi -- si -- bi -- li -- "um." Et in u
   -- num Do -- mi -- num Je -- sum Chri -- "stum," Fi -- li -- um De
   -- i u -- ni -- ge -- ni -- "tum," u -- ni -- ge -- ni -- "tum:" et
@@ -426,10 +426,10 @@ CredoAltoLyrics  =  \lyricmode {
   -- um de De -- "o," De -- um ve -- num de De -- o ve -- "ro," ve --
   "ro," ge -- ni -- tum non fa -- "ctum," con -- sub -- stan -- ti --
   a -- lem Pa -- "tri," con -- sub -- stan -- ti --  a -- lem Pa
-  -- "tri, " __ per quem o -- mni -- a fa -- cta "sunt," per quem o --
+  -- tri, per quem o -- mni -- a fa -- cta "sunt," per quem o --
   mni -- a fa -- cta "sunt," per quem o -- mni -- a fa -- cta "sunt."
   Et in -- car -- na -- tus est de Spi -- ri -- tu San -- _
-  _ _ cto "ex " __ Ma -- ri -- a vir -- gi -- "ne," et ho --
+  _ _ cto ex Ma -- ri -- a vir -- gi -- "ne," et ho --
   mo fa -- ctus "est," fa -- _ _ _ ctus "est," et ho --
   mo fa -- ctus "est," fa -- ctus "est." Cru -- ci -- fi -- xus e --
   ti -- am pro no -- bis sub Pon -- ti -- o Pi -- la -- to pas -- sus
@@ -438,7 +438,7 @@ CredoAltoLyrics  =  \lyricmode {
   -- dum scrip -- tu -- "ras." Et a -- scen -- dit in coe -- "lum," se
   -- det ad dex -- te -- ram Pa -- _ _ _ _ _
   _ _ _ "tris," se -- det ad dex -- te -- ram Pa --
-  _ _ _ _ _ _ _ "tris, " __ Pa --
+  _ _ _ _ _ _ _ tris, Pa --
   "tris," et i -- te -- rum ven -- tu -- rus est cum glo -- ri -- a ju
   -- di -- ca -- "re," cum glo -- ri -- a ju -- di -- ca -- re vi --
   vos et mor -- tu -- "os," cu -- jus re -- "gni," cu -- jus re -- gni
@@ -511,7 +511,7 @@ CredoTenorNotes =  \relative b {
   g4 fs4 \melismaEnd g2 a2 b2 ~ | % 211
   b2 c2 d2. c4 |
   b2 a1 g2 |
-  fs\breve \bar "||"
+  fs\breve ^\fermata \bar "||"
   r1 d'1 | % 215
   d2 c2 d2 e2 ~ | % 216
   e4 d4 b2 r2 d2 | % 217
@@ -608,7 +608,7 @@ CredoTenorNotes =  \relative b {
   r1 r2 c2 ~ |
   c2 g2 b2. c4 \bar "!"
   \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 b2 a2 |
-  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2 b\breve \bar "||"
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2 b\breve ^\fermata \bar "||"
   r1 d1 |
   d2 d2 r2 b2 ~ | % 309
   b4 \melisma c4 d2 \melismaEnd b2 b2 | \barNumberCheck #153
@@ -660,7 +660,7 @@ CredoTenorLyrics  =  \lyricmode {
   -- cta "sunt." Qui pro -- pter nos ho -- mi -- nes et pro -- pter no
   -- stram sa -- lu -- tem de -- scen -- dit de -- coe -- _
   _ _ _ "lis:" Et in -- car -- na -- tus est de Spi --
-  ri -- tu San -- _ _ _ _ cto "ex " __ Ma -- ri --
+  ri -- tu San -- _ _ _ _ cto ex Ma -- ri --
   a vir -- gi -- "ne," et ho -- mo fa -- ctus "est," et ho -- mo fa --
   _ _ _ _ _ _ ctus "est." Cru -- ci --
   fi -- xus e -- ti -- am pro no -- bis sub Pon -- ti -- o Pi -- la --
@@ -670,11 +670,11 @@ CredoTenorLyrics  =  \lyricmode {
   -- tu -- "ras." Et a -- scen -- dit in coe -- "lum," se -- det ad
   dex -- te -- ram Pa -- _ _ _ _ _ "tris," se
   -- det ad dex -- te -- ram Pa -- "tris," et i -- te -- rum ven -- tu
-  -- "rus " __ est cum glo -- ri -- a ju -- di -- ca -- re vi -- vos
+  -- rus __ est cum glo -- ri -- a ju -- di -- ca -- re vi -- vos
   et mor -- tu -- "os," et mor -- tu -- "os," cu -- jus re -- gni non
   e -- rit fi -- "nis," cu -- jus re -- gni non e -- rit fi -- "nis,"
   non e -- rit fi -- "nis." Et in Spi -- ri -- tum San -- ctum Do --
-  mi -- num et vi -- vi -- fi -- can -- "tem," "qui " __ ex Pa -- tre
+  mi -- num et vi -- vi -- fi -- can -- tem, qui __ ex Pa -- tre
   Fi -- li -- o -- que pro -- ce -- "dit," Fi -- li -- o -- que pro --
   ce -- "dit," qui cum Pa -- tre et Fi -- li -- o si -- mul a -- do --
   ra -- _ _ tur et con -- glo -- ri -- fi -- ca -- "tur," et
@@ -684,10 +684,10 @@ CredoTenorLyrics  =  \lyricmode {
   cam et a -- po -- sto -- li -- cam Ec -- cle -- si -- "am." Con --
   fi -- te -- or u -- num ba -- ptis -- ma in re -- mis -- si -- o --
   nem pec -- ca -- to -- _ _ _ _ "rum:" Et ex --
-  spe -- cto re -- sur -- re -- cti -- o -- "nem," re -- sur -- re --
-  cti -- o -- nem mor -- tu -- o -- "rum," et vi -- tam ven -- tu --
+  spe -- cto re -- sur -- re -- cti -- o -- nem, re -- sur -- re --
+  cti -- o -- nem mor -- tu -- o -- rum, et vi -- tam ven -- tu --
   ri sae -- cu -- "li," et vi -- tam ven -- tu -- ri sae -- cu --
-  "li," et vi -- tam ven -- tu -- "ri " __ sae -- cu -- "li." A -- "men." 
+  "li," et vi -- tam ven -- tu -- ri __ sae -- cu -- li. A -- men.
 }
 CredoBassNotes =  \relative e {
   \clef "bass" \key g \major \numericTimeSignature\time 4/2
@@ -736,7 +736,7 @@ CredoBassNotes =  \relative e {
   e1 d2 g2 ~ | % 211
   g4 fs4 e2 d1 ~ |
   d1 e1 |
-  b\breve \bar "||"
+  b\breve ^\fermata \bar "||"
   g'1 g2 fs2 | % 215
   g2 a2. g4 e2 | % 216
   r2 g2 fs2 d2 | % 217
@@ -826,7 +826,7 @@ CredoBassNotes =  \relative e {
   r2 g1 c,2 |
   e1 \melisma d1 ~ \bar "!"
   \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 d1 \melismaEnd |
-  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2 g\breve \bar "||"
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2 g\breve ^\fermata \bar "||"
   r1 g1 |
   b2 g2 r2 g2 ~ | % 309
   g4 \melisma a4 b2 \melismaEnd g1 | \barNumberCheck #153
@@ -865,9 +865,9 @@ CredoBassNotes =  \relative e {
 }
 CredoBassLyrics  =  \lyricmode {
   vi -- si -- bi
-  -- li -- um o -- mni -- um et in -- vi -- si -- bi -- li -- "um." Et
-  in u -- num Do -- mi -- num Je -- sum Chri -- "stum," Fi -- li -- um
-  De -- i u -- ni -- ge -- ni -- "tum:" __ et ex Pa -- tre na -- tum an
+  -- li -- um o -- mni -- um et in -- vi -- si -- bi -- li -- um. Et __
+  in u -- num Do -- mi -- num Je -- sum Chri -- stum, Fi -- li -- um
+  De -- i u -- ni -- ge -- ni -- tum: __ et ex Pa -- tre na -- tum an
   -- te o -- mni -- a sae -- cu -- "la." Lu -- men de lu -- mi --
   "ne," de De -- o ve -- "ro," de De -- o ve -- "ro," ge -- ni -- tum
   non fa -- "ctum," con -- sub -- stan -- ti -- a -- lem Pa -- "tri,"
@@ -876,8 +876,8 @@ CredoBassLyrics  =  \lyricmode {
   nos ho -- mi -- nes et pro -- pter no -- stram sa -- lu -- tem de --
   scen -- dit de -- coe -- _ _ _ _ _ _
   _ _ "lis:" Et in -- car -- na -- tus est de Spi -- ri --
-  tu San -- "cto," de Spi -- ri -- tu San -- cto "ex " __ Ma -- ri --
-  a vir -- gi -- "ne," et ho -- mo fa -- ctus "est." Et re -- sur --
+  tu San -- "cto," de Spi -- ri -- tu San -- cto ex Ma -- ri --
+  a vir -- gi -- "ne," et ho -- mo fa -- ctus est. __ Et re -- sur --
   re -- xit ter -- ti -- a di -- "e," ter -- ti -- a di -- e se -- cun
   -- dum scrip -- tu -- "ras," se -- cun -- dum scrip -- tu -- "ras."
   Et a -- scen -- dit in -- coe -- "lum," se -- det ad -- dex -- te --

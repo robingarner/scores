@@ -18,19 +18,18 @@ hcomposer = "William Byrd"
 
 \paper{
   #(include-special-characters)
-  top-margin = 12
   ragged-last-bottom = ##t
-    paper-width = 21.0\cm
-    paper-height = 29.7\cm
-    top-margin = 1.0\cm
-    bottom-margin = 1.2\cm
-    left-margin = 1.0\cm
-    right-margin = 1.0\cm
-    evenHeaderMarkup=\markup  \fill-line { 
+  paper-width = 21.0\cm
+  paper-height = 29.7\cm
+  top-margin = 1.2\cm
+  bottom-margin = 1.2\cm
+  left-margin = 1.0\cm
+  right-margin = 1.0\cm
+  evenHeaderMarkup=\markup  \fill-line { 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
 	  \on-the-fly #not-part-first-page \htitle
 	  \on-the-fly #not-part-first-page \hcomposer }
-    oddHeaderMarkup= \markup  \fill-line { 
+  oddHeaderMarkup= \markup  \fill-line { 
 	  \on-the-fly #not-part-first-page \hcomposer
 	  \on-the-fly #not-part-first-page \htitle
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
@@ -39,6 +38,7 @@ hcomposer = "William Byrd"
 \layout {
   % \override NoteHead.style = #'baroque
   \context { \Score
+    markFormatter = #format-mark-box-alphabet
     skipBars = ##t
     autoBeaming = ##f
   }

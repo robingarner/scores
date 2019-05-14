@@ -80,8 +80,8 @@ PartPOneVoiceOne =  \relative a' {
   a2 g2 ~ | \barNumberCheck #30
   g2 fis2  | % 31
   e2 e2 | % 32
-  R1*4 | % 36
-  \mark \default a4 c2 bes4 | % 37
+  \mark \default R1*4 | % 36
+  a4 c2 bes4 | % 37
   a2 c2  | % 38
   bes4 a4 a4 g4 | % 39
   a1 ~ | \barNumberCheck #40

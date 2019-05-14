@@ -3,7 +3,7 @@
 KyrieSopranoNotes  = \relative b' {
   \clef "treble" \key g \major \numericTimeSignature\time 4/2 | % 1
   \tempo 2=80 R1*2 | % 2
-  b1 ^\p e,2 g2 | % 3
+  b1 e,2 g2 | % 3
   fs1 e1 | % 4
   e1 a,2 c2 | % 5
   b2. c4 d4 e4 fs2 ~ | % 6
@@ -63,7 +63,7 @@ KyrieSopranoLyrics =  \lyricmode {
 
 KyrieAltoNotes =  \relative e' {
   \clef "treble" \key g \major \numericTimeSignature\time 4/2 | % 1
-  e1 ^\p b2 d2 | % 2
+  e1 b2 d2 | % 2
   e4 fs4 g2. fs4 e2 ~ | % 3
   e2 ds2 e2 b2 | % 4
   c2 a2 e'1 | % 5
@@ -121,7 +121,7 @@ KyrieAltoLyrics =  \lyricmode {
 KyrieTenorNotes =  \relative b {
   \transposition c \clef "treble_8" \key g \major
   \numericTimeSignature\time 4/2 R1*4 | % 3
-  b1 ^\p e,2 g2 | % 4
+  b1 e,2 g2 | % 4
   a4 b4 c2. b4 a2 ~ | % 5
   a2 g1 fs2 | % 6
   g2 e2 r2 b'2 ~ | % 7
@@ -179,7 +179,7 @@ KyrieBassNotes =  \relative e {
   \clef "bass" \key g \major \numericTimeSignature\time 4/2 
   R1*6 | % 4
   R1*2 | % 5
-  e1 ^\p b2 d2 | % 6
+  e1 b2 d2 | % 6
   c2. b4 a2 b2 | % 7
   r1 b'1 | % 8
   e,2 g2 fs2. e4 | % 9
@@ -232,7 +232,6 @@ KyrieBassLyrics  =  \lyricmode {
     subtitle="Kyrie Eleison"
   }
   \paper {
-    page-count = #2
     oddHeaderMarkup=\markup  \fill-line { 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
 	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Kyrie" }
@@ -296,13 +295,12 @@ KyrieBassLyrics  =  \lyricmode {
   >>
   \layout {
     ragged-last-bottom = ##t
-      ragged-right = ##f
-      system-count = #7
-    % page-count = #2
-     \override Score.BarNumber.break-visibility = ##(#f #t #t)
+    ragged-right = ##f
+    system-count = #7
+    \override Score.BarNumber.break-visibility = ##(#f #t #t)
       \context {\Staff 
         \consists Ambitus_engraver 
-      }
+    }
   }
   \midi {}
 }
