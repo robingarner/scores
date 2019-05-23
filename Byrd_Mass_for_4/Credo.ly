@@ -1,3 +1,4 @@
+\version "2.19.83"
 \include "common.ly"
 
 
@@ -78,7 +79,7 @@ CredoSopranoNotes =  \relative b' {
   fs2 e2 g2. fs4 | % 236
   e4 d4 e2 ds1 \bar "||" \break
   \tempo 2=72 | % 237
-  \mark \default r2 fs2 ^\p ~ fs2 fs2 | % 238
+  \mark \default r2 fs1 \p fs2 | % 238
   b2 a2 b2. a4 | % 239
   fs2 b2 as1 | \barNumberCheck #80
   b2 g2 fs2. e4 | % 241
@@ -88,7 +89,7 @@ CredoSopranoNotes =  \relative b' {
   g1 e1 \bar "||"
   \tempo 2=104 e1 r1 | % 246
   R1*2 | % 247
-  r1 r2 e2 ^\f | % 248
+  r1 r2 e2 \f | % 248
   a2 b2 c2 d2 | % 249
   b2. b4 a2 g2 | \barNumberCheck #90
   fs1 r2 e2 | % 251
@@ -151,7 +152,7 @@ CredoSopranoNotes =  \relative b' {
   a4 ^"rit." g4 g1 fs4 e4 \bar "!"
   \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 fs4 g2 fs4 |
   \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2 g\breve ^\fermata \bar "||"
-  \tempo 2=104 g1 b2 g2 |
+  \tempo 2=104 \mark\default g1 b2 g2 |
   r2 b2. \melisma c4 d2 \melismaEnd | % 309
   b1 r2 b2 | \barNumberCheck #153
   c2. b4 a2 a2 | % 311
@@ -305,7 +306,7 @@ CredoAltoNotes =  \relative e' {
   e2 e,2 b'2. a4 | % 235
   fs2 a2 g2 g2 ~ | % 236
   g2 e2 fs1 \bar "||"
-  r2 d'1 ^\p d2 | % 238
+  r2 d'1 \p d2 | % 238
   d2 d2 d2. d4 | % 239
   d2 b2 cs1 | \barNumberCheck #80
   b2 b2 b2. b4 | % 241
@@ -313,7 +314,7 @@ CredoAltoNotes =  \relative e' {
   d1 a2. c4 | % 243
   b2 g2 b2. b4 |
   e,2 r4 e4 g2 c2 \bar "||"
-  b1 r2 b2 ^\f | % 246
+  b1 r2 b2 \f | % 246
   cs2 ds2 e2 g2 | % 247
   fs2. fs4 e1 | % 248
   d2 \melisma b2 a2 \melismaEnd b2 | % 249
@@ -536,7 +537,7 @@ CredoTenorNotes =  \relative b {
   c2 b2 d2. c4 | % 235
   b4 a4 c2. b4 b2 ~ | % 236
   b2 a2 b1 \bar "||"
-  r2 b1 ^\p b2 | % 238
+  r2 b1 \p b2 | % 238
   g2 fs2 g2. fs4 | % 239
   d2 g2 fs1 | \barNumberCheck #80
   b,2 e2 ds2. e4 | % 241
@@ -906,7 +907,7 @@ CredoBassLyrics  =  \lyricmode {
     subtitle="Credo in unum Deum"
   }
   \paper {
-    page-count = #8
+    %page-count = #8
     oddHeaderMarkup=\markup  \fill-line { 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
 	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Credo" } 
@@ -956,14 +957,8 @@ CredoBassLyrics  =  \lyricmode {
       >>
 
     >>
-    \layout {ragged-right = ##f
-             % system-count = #7
-             \override Score.BarNumber.break-visibility = ##(#f #t #t)
-             \context {\Staff 
-                       \consists Ambitus_engraver 
-             }
-    }
-    \midi {}
+    \layout { }
+    \midi { }
   }
 
 }

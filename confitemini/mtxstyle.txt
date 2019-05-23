@@ -1,6 +1,0 @@
-TTT: Voices T1 T2 T3; Choral; Clefs G8 G8 G8
-STB: Voices Soprano Alto/Tenor Bass; Choral; Clefs G G8 F
-TTB: Voices Soprano Tenor Bass; Choral; Clefs G8 G8 F
-ATB: Voices Alto Tenor Bass; Choral; Clefs G G8 F
-SAB: Voices Soprano Alto Bass; Choral; Clefs G G F
-

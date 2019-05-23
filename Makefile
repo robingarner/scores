@@ -11,47 +11,55 @@
 %.pdf: %.ly
 	lilypond $^
 
-SUBDIRS="Byrd_Mass_for_3 Byrd_Mass_for_4 Byrd_Ave_Verum"
-SUBDIRS+=" confitemini"
-#SUBDIRS+=" linverno spring kruisvaarderslied my-peace"
-SUBDIRS+=" absalon josquin-ave-maria shsb"
+SUBDIRS = Byrd_Mass_for_3 Byrd_Mass_for_4 Byrd_Ave_Verum
+#SUBDIRS += linverno spring kruisvaarderslied my-peace
+SUBDIRS += Costantini_Confitemini Josquin_Absalon Josquin_Ave_Maria
+SUBDIRS += Palestrina_Sicut Palestrina_Vedrassi Wilbye_Draw_On Wilbye_SHSB
+SUBDIRS += collections
+#st-cecilia-press
 
-.PHONY: $(SUBDIRS)
+.PHONY: $(SUBDIRS) Byrd_Ave_Verum
 
 all: $(SUBDIRS)
 
-confitemini:
-	$(MAKE) -C confitemini
-
-kruisvaarderslied:
-	$(MAKE) -C kruisvaarderslied
-
-Byrd_Mass_for_3:
-	$(MAKE) -C Byrd_Mass_for_3
-
-Byrd_Mass_for_4:
-	$(MAKE) -C Byrd_Mass_for_4
+collections:
+	$(MAKE) -C collections all
 
 Byrd_Ave_Verum:
 	$(MAKE) -C Byrd_Ave_Verum --makefile=../Makefile Ave_Verum_Corpus_Byrd.pdf
 
+Byrd_Mass_for_3:
+	$(MAKE) -C Byrd_Mass_for_3 all
+
+Byrd_Mass_for_4:
+	$(MAKE) -C Byrd_Mass_for_4 all
+
+Costantini_Confitemini:
+	$(MAKE) -C Costantini_Confitemini all
+
+Josquin_Ave_Maria:
+	$(MAKE) -C Josquin_Ave_Maria --makefile=../Makefile Ave_Maria_-_Josquin_V5.pdf
+
+Josquin_Absalon:
+	$(MAKE) -C Josquin_Absalon Absalon_Fili_Mi_4.pdf
+
+Wilbye_Draw_On:
+	$(MAKE) -C Wilbye_SHSB --makefile=../Makefile SweetHoneySuckingBees.pdf
+
+Wilbye_SHSB:
+	$(MAKE) -C Wilbye_SHSB --makefile=../Makefile SweetHoneySuckingBees.pdf
+
+kruisvaarderslied:
+	$(MAKE) -C kruisvaarderslied all
+
 my-peace:
-	$(MAKE) -C my-peace
-
-josquin-ave-maria:
-	$(MAKE) -C josquin-ave-maria --makefile=../Makefile Ave_Maria_-_Josquin_V5.pdf
-
-absalon:
-	$(MAKE) -C absalon --makefile=../Makefile Absalon_Fili_Mi_4.pdf
+	$(MAKE) -C my-peace all
 
 linverno:
 	$(MAKE) -C linverno
 
 spring:
 	$(MAKE) -C spring --makefile=../Makefile spring.pdf
-
-shsb:
-	$(MAKE) -C shsb --makefile=../Makefile SweetHoneySuckingBees.pdf
 
 clean: 
 	rm *.mx1 *.mx2 *.aux *.log *.dvi *.pmx *.pml

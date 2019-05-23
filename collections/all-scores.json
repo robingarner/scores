@@ -1,6 +1,6 @@
 { "toc" : true,
   "inputs" : [
-    { "file" : "../absalon/Absalon_Fili_Mi_4.pdf", 
+    { "file" : "../Josquin_Absalon/Absalon_Fili_Mi_4.pdf", 
       "toc" : "Absalon (Josquin)" 
     },
     { "file" : "../3rd-party/Allon gay.Costeley.SATB.pdf", 
@@ -10,7 +10,7 @@
     { "file" : "../3rd-party/April_is_in_my_mistress_face_Morley.pdf",
       "toc": "April is in my Mistress' Face (Morley)"
     },
-    { "file" : "../josquin-ave-maria/Ave_Maria_-_Josquin_V5.pdf",
+    { "file" : "../Josquin_Ave_Maria/Ave_Maria_-_Josquin_V5.pdf",
       "toc" : "Ave Maria (Josquin)"
     },
     { "file" : "../Byrd_Ave_Verum/Ave_Verum_Corpus_Byrd.pdf",
@@ -19,7 +19,7 @@
     { "file" : "../3rd-party/Lassus-Bonjour.pdf",
       "toc" : "Bonjour mon Coeur (Lassus)"
     },
-    { "file" : "../confitemini/confitemini.pdf" ,
+    { "file" : "../Costantini_Confitemini/confitemini.pdf" ,
       "toc" : "Confitemini Domino (Costantini)"
     },
     { "file" : "../3rd-party/Those_dainty_daffodillies.SATBB.pdf",
@@ -30,7 +30,7 @@
       "toc" : "Deep Lamenting (Morley)",  
       "include" : "false" 
     },
-    { "file" : "../draw_on/Draw_on_sweet_night_Wilbye.pdf" ,
+    { "file" : "../Wilbye_Draw_On/Draw_on_sweet_night_Wilbye.pdf" ,
       "toc" : "Draw On Sweet Night (Wilbye)"
     },
     { "file" : "../st-cecilia-press/fine_knacks/fine_knacks.pdf" ,
@@ -72,13 +72,13 @@
     { "file" : "../3rd-party/Gibbons_Loosemore_O Lord.pdf",
       "toc" : "O Lord Increase My Faith (Loosemore)"
     },
-    { "file" : "../st-cecilia-press/o_magnum/o_magnum.pdf",
+    { "file" : "../st-cecilia-press/o_magnum/o_magnum-transposed.pdf",
       "toc" : "O Magnum Misterium (Victoria)" },
     { "file" : "../3rd-party/O_sleep,_fond_fancy.SSB.pdf",
       "toc" : "",  
       "include" : "false" 
     },
-    { "file" : "../sicut/Palestrina-Sicut_Cervus_Desiderat.pdf",
+    { "file" : "../Palestrina_Sicut/Palestrina-Sicut_Cervus_Desiderat.pdf",
       "toc" : "Sicut Cervus (Palestrina)" },
     { "file" : "../3rd-party/Ford, Since First--TUMS.pdf",
       "toc" : "Since First I Saw Your Face (Ford)" },
@@ -86,7 +86,7 @@
       "toc" : "",  
       "include" : "false" 
     },
-    { "file" : "../shsb/SweetHoneySuckingBees.pdf",
+    { "file" : "../Wilbye_SHSB/SweetHoneySuckingBees.pdf",
       "toc" : "Sweet Honey Sucking Bees (Wilbye)" },
     { "file" : "../3rd-party/Vedrassi_prima_Palestrina.pdf",
       "toc" : "",  

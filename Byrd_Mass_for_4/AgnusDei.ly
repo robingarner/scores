@@ -1,3 +1,4 @@
+\version "2.19.83"
 \include "common.ly"
 
 
@@ -32,7 +33,7 @@ AgnusDeiSopranoNotes =  \relative b' {
   \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 g2 fs2 |
   \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  | % 437
   g\breve ^\fermata |  \break 
-  b1. ^\f g2 | % 439
+  b1. \f g2 | % 439
   c2. \melisma b4 a4 g4 fs2 \melismaEnd | \barNumberCheck #31
   b2 g2. e4 a2 ~ | % 441
   a4 \melisma g4 fs4 e4 fs1 \melismaEnd | % 442
@@ -98,7 +99,7 @@ AgnusDeiAltoNotes =  \relative e' {
   R1*8 |
   R1*2 \bar "!"
   \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 R1 |
-  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  r1 \tempo 2=88 d1 ^\f ~ | % 438
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  r1 \tempo 2=88 d1 \f ~ | % 438
   d2 b2 e2. \melisma d4 | % 439
   c4 b4 a2 \melismaEnd d1 | \barNumberCheck #31
   b2. g4 c2. \melisma b4 | % 441
@@ -165,7 +166,7 @@ AgnusDeiTenorNotes =  \relative b {
   \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 a1 |
   \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  b\breve ^\fermata | % 438
   R1*2 | % 439
-  r1 r2 d2 ^\f ~ | \barNumberCheck #31
+  r1 r2 d2 \f ~ | \barNumberCheck #31
   d2 b2 e2. \melisma d4 | % 441
   c4 b4 a2 \melismaEnd d1 ~ | % 442
   d1 r2 c2 | % 443
@@ -228,7 +229,7 @@ AgnusDeiBassNotes =  \relative e {
   \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 c2 d2 |
   \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  | % 437
   g,\breve ^\fermata | % 438
-  g'1. ^\f e2 | % 439
+  g'1. \f e2 | % 439
   a2. \melisma g4 fs4 e4 d2 \melismaEnd | \barNumberCheck #31
   g1 c,1 ~ | % 441
   c2 \melisma d2 \melismaEnd d1 | % 442

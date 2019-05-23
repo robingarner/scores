@@ -1,22 +1,14 @@
 
-\version "2.18.2"
-\language "english"
+\version "2.19.83"
 \include "common.ly"
-
-
-\header {
-    composer = \markup { \hcomposer "(1543-1623)" }
-    title = "Mass for Four Voices"
-}
-    
 
 \include "Kyrie.ly"
 \include "Gloria.ly"
-\pageBreak
+%\pageBreak
 \include "Credo.ly"
 \include "Sanctus.ly"
-\pageBreak
+%\pageBreak
 \include "AgnusDei.ly"
 
-
+\include "Translation.ly"
 

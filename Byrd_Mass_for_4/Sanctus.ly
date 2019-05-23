@@ -1,9 +1,10 @@
+\version "2.19.83"
 \include "common.ly"
 
 
 SanctusSopranoNotes =  \relative b' {
   \clef "treble" \key g \major \numericTimeSignature\time 4/2
-  \tempo 2=88 e,2. ^"(editorial extra text in ms. 351-4, 374-5)" fs4 g4
+  \tempo 2=72 e,2. \p fs4 g4
   a4 b2 ~ | % 343
   b2 a4 g4 fs2 d2 | % 344
   g1 fs2. a4 | % 345
@@ -26,7 +27,7 @@ SanctusSopranoNotes =  \relative b' {
   b2. b4 a2 b2 ~ |
   b4 ^"rit." a4 a1 g2 \melisma \bar "!"
   \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 fs1 \melismaEnd |
-  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  gs\breve \bar "||"
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  gs\breve ^\fermata \bar "||"
   \tempo 2=96 R1*4 | % 366
   r1 r2 e2 | % 367
   a2 g2 c1 | % 368
@@ -49,7 +50,7 @@ SanctusSopranoNotes =  \relative b' {
   b2 ^"rit." b2. cs4 d2 | % 383
   b\breve ~ | % 384
   b\breve \bar "||"
-  \tempo 2=96 r1 g1 ~ | % 386
+  \tempo 2=80 r1 g1 ~ | % 386
   g1 a1 | % 387
   b\breve | % 388
   e,2 g1 fs2 ~ | % 389
@@ -74,10 +75,10 @@ SanctusSopranoNotes =  \relative b' {
   g2 e2 b'2. cs4 | % 408
   d4 ^"rit." cs4 b4 a4 b2 g2 ~ | % 409
   g4 a4 b2. \melisma a4 gs4 fs4 \melismaEnd | \barNumberCheck #71
-  gs\breve \fermata \bar "|." \pageBreak
+  gs\breve \fermata \bar "|." 
 }
 
-SanctusSopranoLyrics  =  \lyricmode {
+SanctusSopranoLyricsOld  =  \lyricmode {
   San -- _ _ _ _ _ _ _ _ _
   _ _ "ctus," San -- _ _ _ _ _
   _ _ "ctus," San -- _ _ _ _ _
@@ -97,10 +98,30 @@ SanctusSopranoLyrics  =  \lyricmode {
   "sis," "in " __ ex -- cel -- "sis." 
 }
 
+SanctusSopranoLyrics  =  \lyricmode {
+  San -- _ _ _ _ _ _ _ _ _
+  _ _ "ctus," San -- _ _ _ _ _
+  _ _ "ctus," San -- _ _ _ _ _
+  _ _ _ _ _ _ _ _
+  _ _ "ctus:" Do -- mi -- nus De -- us Sa -- ba -- "oth," Do
+  -- mi -- nus De -- "us," Do -- mi -- nus De -- us Sa -- ba -- "oth,"
+  Sa -- _ _ ba -- "oth." Ple -- ni -- sunt coe -- li et ter
+  -- _ _ "ra." glo -- ri -- a tu -- _ _ _
+  _ "a," glo -- ri -- a tu -- _ "(a," glo -- ri -- a "tu)"
+  -- "a." O -- san -- na in ex -- cel -- "sis," O -- san -- na in ex
+  -- cel -- "sis," in ex -- cel -- "sis. " __ Be -- ne -- di -- ctus
+  qui ve -- _ "nit," qui ve -- _ _ _ _ "nit,"
+  qui ve -- nit in no -- mi -- ne Do -- mi -- _ "ni, " __ in no
+  -- mi -- ne Do -- mi -- _ "ni." O -- san -- na in ex -- cel --
+  "sis," in ex -- cel -- _ _ _ _ _ "sis," O
+  -- san -- na in ex -- cel -- _ _ _ _ _
+  "sis," "in " __ ex -- cel -- "sis." 
+}
+
 SanctusAltoNotes =  \relative e' {
   \clef "treble" \key g \major \numericTimeSignature\time 4/2
   R1*2 | % 343
-  b2. cs4 d4 e4 fs2 ~ | % 344
+  b2. \p cs4 d4 e4 fs2 ~ | % 344
   fs4 e4 e1 ds2 | % 345
   e1 b2. cs4 | % 346
   d2 e2 fs2 g2 ~ | % 347
@@ -121,7 +142,7 @@ SanctusAltoNotes =  \relative e' {
   d2 b2 \melismaEnd fs'1 |
   r2 fs2. e4 e2 ~ \bar "!"
   \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 e2 \melisma ds2 \melismaEnd |
-  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  e\breve \bar "||"
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  e\breve ^\fermata \bar "||"
   r2 b2 e2 d2 | % 365
   g1 fs2 e4 e4 ~ | % 366
   e4 fs4 d2 cs1 | % 367
@@ -172,7 +193,7 @@ SanctusAltoNotes =  \relative e' {
   e\breve \fermata \bar "|."
 }
 
-SanctusAltoLyrics  =  \lyricmode {
+SanctusAltoLyricsOld  =  \lyricmode {
   San -- _ _ _ _ _
   _ _ "ctus," San -- _ _ _ _ _
   _ _ _ _ _ _ _ _ _
@@ -192,10 +213,32 @@ SanctusAltoLyrics  =  \lyricmode {
   "sis," "in " __ ex -- cel -- "sis," O -- san -- na in ex -- cel --
   "sis," "in " __ ex -- cel -- "sis," in ex -- cel -- "sis." 
 }
+
+SanctusAltoLyrics  =  \lyricmode {
+  San -- _ _ _ _ _
+  _ _ "ctus," San -- _ _ _ _ _
+  _ _ _ _ _ _ _ _ _
+  "ctus," San -- _ _ _ _ _ _ _
+  _ _ _ _ _ _ _ _ "ctus:"
+  Do -- mi -- nus De -- us Sa -- ba -- "oth," Do -- mi -- nus De -- us
+  Sa -- ba -- "oth," Sa -- ba -- _ "oth." Ple -- ni -- sunt coe
+  -- li et ter -- _ _ "ra," ple -- ni -- sunt coe -- li et
+  ter -- _ _ _ _ ra glo -- ri -- a tu -- _
+  _ _ _ _ "a," glo -- ri -- a tu -- _ _
+  _ _ "a." O -- san -- na in ex -- cel -- "sis," in ex --
+  cel -- "sis," O -- san -- na in ex -- cel -- "sis. " __ Be -- ne --
+  di -- ctus qui ve -- "nit," qui ve -- _ _ _ _
+  _ "nit," qui ve -- nit in no -- mi -- ne Do -- mi -- "ni," Do
+  -- _ _ _ _ mi -- "ni," in no -- mi -- ne Do --
+  _ _ _ mi -- "ni." O -- san -- na in ex -- cel --
+  "sis," "in " __ ex -- cel -- "sis," O -- san -- na in ex -- cel --
+  "sis," "in " __ ex -- cel -- "sis," in ex -- cel -- "sis." 
+}
+
 SanctusTenorNotes =  \relative b {
   \transposition c \clef "treble_8" \key g \major
   \numericTimeSignature\time 4/2 
-  r1 e,2. fs4 | % 343
+  r1 e,2. \p fs4 | % 343
   g2 a2 b1 ~ | % 344
   b2 a4 g4 a2 b2 | % 345
   b1 r1 | % 346
@@ -217,7 +260,7 @@ SanctusTenorNotes =  \relative b {
   r2 d2. d4 d2 |
   cs2 d2 b1 ~ \bar "!"
   \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 b2 b2 |
-  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  b\breve \bar "||"
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  b\breve ^\fermata \bar "||"
   g1. g2 ~ | % 365
   g2 e2 a1 ~ | % 366
   a2 \melisma b2 \melismaEnd a2 a2 | % 367
@@ -266,7 +309,8 @@ SanctusTenorNotes =  \relative b {
   e4 e,4 g4 a4 b1 | \barNumberCheck #71
   b\breve \fermata \bar "|."
 }
-SanctusTenorLyrics  =  \lyricmode {
+
+SanctusTenorLyricsOld  =  \lyricmode {
   San -- _
   _ _ _ _ _ _ _ "ctus," San --
   _ _ _ _ _ _ _ _ "ctus," San
@@ -287,10 +331,31 @@ SanctusTenorLyrics  =  \lyricmode {
   _ _ _ _ "sis." 
   
 }
+
+SanctusTenorLyrics  =  \lyricmode {
+  San -- _ _ _ _ _ _ _ _ "ctus," 
+  San -- _ _ _ _ _ _ _ _ "ctus," 
+  San -- _ _ _ _ _ _ _ _  _ _ _ _ _ _ _ "ctus: " __ 
+  Do -- mi -- nus De -- us Sa -- ba -- "oth," Do -- mi -- nus De -- "us," Do
+  -- mi -- nus De -- us Sa -- ba -- "oth." Ple -- "ni " __ sunt coe --
+  li et ter -- _ _ _ _ _ ra glo -- ri -- a tu
+  -- "a," glo -- ri -- a tu -- _ _ _ _ _
+  _ _ "a," glo -- ri -- a tu -- "a." O -- san -- na in ex --
+  cel -- "sis," in ex -- cel -- _ _ _ _ _
+  "sis," O -- san -- na in ex -- cel -- "sis," "in " __ ex -- cel --
+  "sis." Be -- ne -- di -- ctus qui ve -- _ _ _ _
+  nit in no -- mi -- ne Do -- mi -- _ "ni," in no -- mi -- ne Do
+  -- mi -- "ni," Do -- _ _ _ mi -- "ni." O -- san -- na
+  in ex -- cel -- "sis," in ex -- cel -- _ _ _ _
+  _ _ _ _ "sis," O -- san -- na in ex -- cel --
+  _ _ _ _ "sis." 
+  
+}
+
 SanctusBassNotes =  \relative e {
   \clef "bass" \key g \major \numericTimeSignature\time 4/2
   R1*6 | % 345
-  e2. fs4 g4 a4 b2 ~ | % 346
+  e2. \p fs4 g4 a4 b2 ~ | % 346
   b2 c2 b1 | % 347
   e,\breve | % 348
   r2 a,2. b4 c4 d4 | % 349
@@ -309,7 +374,7 @@ SanctusBassNotes =  \relative e {
   g2. g4 fs2 b,2 |
   fs'2 d2 e1 \bar "!"
   \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 b1 |
-  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  e\breve \bar "||"
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  e\breve ^\fermata \bar "||"
   R1*10 | % 369
   R1*8 | % 373
   R1*4 |
@@ -349,10 +414,25 @@ SanctusBassNotes =  \relative e {
   e,1 b1 | \barNumberCheck #71
   e\breve \fermata \bar "|." 
 }
-SanctusBassLyrics  =  \lyricmode {
+
+SanctusBassLyricsOld  =  \lyricmode {
   San -- _ _ _ _ _ _ "ctus," San -- _
   _ _ "ctus," San -- _ _ _ _ _
   _ ctus, San -- ctus: Do -- mi -- nus De -- us Sa -- ba
+  -- "oth," Sa -- ba -- "oth," Do -- mi -- nus De -- "us," Do -- mi --
+  nus De -- us Sa -- ba -- "oth," Sa -- _ _ _ ba --
+  "oth." O -- san -- na in ex -- cel -- "sis," O -- san -- na in ex --
+  cel -- "sis," O -- san -- na in ex -- cel -- "sis." Be -- ne -- di
+  -- ctus qui ve -- "nit," "qui " __ ve -- _ _ _ "nit,"
+  qui ve -- _ _ _ nit in no -- mi -- ne Do -- mi --
+  "ni." O -- san -- na in ex -- cel -- "sis," O -- san -- na in ex --
+  cel -- _ _ "sis." 
+}
+
+SanctusBassLyrics  =  \lyricmode {
+  San -- _ _ _ _ _ _ "ctus," San -- _
+  _ _ "ctus," San -- _ _ _ _ _
+  _ _ _ ctus: Do -- mi -- nus De -- us Sa -- ba
   -- "oth," Sa -- ba -- "oth," Do -- mi -- nus De -- "us," Do -- mi --
   nus De -- us Sa -- ba -- "oth," Sa -- _ _ _ ba --
   "oth." O -- san -- na in ex -- cel -- "sis," O -- san -- na in ex --
@@ -419,13 +499,7 @@ SanctusBassLyrics  =  \lyricmode {
       >>
 
     >>
-    \layout {ragged-right = ##f
-             % system-count = #7
-             \override Score.BarNumber.break-visibility = ##(#f #t #t)
-             \context {\Staff 
-                       \consists Ambitus_engraver 
-             }
-    }
+    \layout { }
     \midi {}
   }
 

@@ -1,5 +1,4 @@
-\version "2.18.2"
-\language "english"
+\version "2.19.83"
 \include "common.ly"
 
 
@@ -131,11 +130,11 @@ GloriaSopranoLyrics  =  \lyricmode {
   -- bus bo -- nae vo -- lun -- ta -- _ _ _ "tis." Be
   -- ne -- di -- ci -- mus "te." Glo -- ri -- fi -- ca -- mus "te,"
   glo -- ri -- fi -- ca -- mus "te," glo -- ri -- fi -- ca -- "mus "
-  __ "te." Gra -- ti -- as a -- gi -- mus ti -- bi pro -- pter ma --
+  __ te. Gra -- ti -- as a -- gi -- mus ti -- bi pro -- pter ma --
   gnam glo -- ri -- am tu -- "am," pro -- pter ma -- gnam glo -- ri --
   am tu -- "am." Do -- mi -- ne De -- "us," Rex coe -- le -- _
   _ _ _ _ "stis," De -- us Pa -- ter o -- mni --
-  po -- "tens, " __ De -- us Pa -- ter o -- mni -- po -- "tens." Do --
+  po -- tens, __ De -- us Pa -- ter o -- mni -- po -- "tens." Do --
   mi -- ne Fi -- li u -- ni -- ge -- ni -- "te," Je -- su Chri --
   "ste," Je -- su Chri -- "ste," Je -- su Chri -- _ "ste." Qui tol --
   lis pec -- ca -- ta mun -- "di:" mi -- se -- re -- re no -- "bis,"
@@ -300,14 +299,14 @@ GloriaAltoLyrics  =  \lyricmode {
   re -- re -- no -- _ _ _ _ _ "bis." Qui se
   -- des ad dex -- te -- ram Pa -- _ _ _ "tris:" mi --
   se -- re -- re no -- _ _ _ _ _ _
-  "bis," mi -- se -- re -- re no -- "bis. " __ Quo -- ni -- am tu so
+  "bis," mi -- se -- re -- re no -- bis. __ Quo -- ni -- am tu so
   -- lus San -- "ctus," tu so -- lus Do -- mi -- "nus," tu so -- lus
-  Do -- mi -- "nus," "tu " __ so -- lus Al -- tis -- si -- "mus," Je
+  Do -- mi -- "nus," tu __ so -- lus Al -- tis -- si -- "mus," Je
   -- su Chri -- _ _ _ "ste," cum San -- cto Spi -- ri
   -- tu in glo -- ri -- a De -- i Pa -- "tris," in glo -- ri -- a De
   -- i Pa -- "tris," in glo -- ri -- a De -- i Pa -- _ _
   _ _ _ _ _ _ _ _ "tris." A --
-  _ _ _ _ _ "men. " __ 
+  _ _ _ _ _ men. 
 }
 GloriaTenorNotes =  \relative b {
   \transposition c \clef "treble_8" \key g \major
@@ -431,7 +430,7 @@ GloriaTenorNotes =  \relative b {
 GloriaTenorLyrics  =  \lyricmode {
   Lau -- da -- mus "te." A -- do -- ra --
   mus "te." Glo -- ri -- fi -- ca -- mus "te," glo -- ri -- fi -- ca
-  -- "mus " __ "te." Gra -- ti -- as a -- gi -- mus ti -- bi pro --
+  -- mus __ te. Gra -- ti -- as a -- gi -- mus ti -- bi pro --
   pter ma -- gnam glo -- ri -- am tu -- "am." Do -- mi -- ne De --
   "us," Rex coe -- le -- "stis," rex coe -- le -- "stis," De -- us Pa
   -- ter o -- mni -- po -- "tens," o -- mni -- po -- "tens." Do -- mi
@@ -585,7 +584,7 @@ GloriaBassNotes =  \relative e {
 }
 GloriaBassLyrics  =  \lyricmode {
   Lau -- da -- mus te. A -- do -- ra -- mus "te." Glo
-  -- ri -- fi -- ca -- mus "te," __ glo -- ri -- fi -- ca -- "mus"
+  -- ri -- fi -- ca -- mus te,  glo -- ri -- fi -- ca -- "mus"
   "te." Gra -- ti -- as a -- gi -- mus ti -- bi pro -- pter ma -- gnam
   glo -- ri -- am tu -- "am." Do -- mi -- ne De -- "us," Rex coe -- le
   -- "stis," De -- us Pa -- ter o -- mni -- po -- "tens," De -- us Pa
@@ -600,14 +599,14 @@ GloriaBassLyrics  =  \lyricmode {
   _ "bis," mi -- se -- re -- re no -- "bis." Qui tol -- lis pec
   -- ca -- ta mun -- "di:" sus -- ci -- pe de -- pre -- ca -- ti -- o
   -- nem no -- "stram," sus -- ci -- pe de -- pre -- ca -- ti -- o --
-  nem no -- "stram." Qui se -- "des " __ ad dex -- te -- ram Pa --
-  "tris:" mi -- se -- re -- re no -- "bis. " __ Quo -- ni -- am tu so
+  nem no -- "stram." Qui se -- des __ ad dex -- te -- ram Pa --
+  "tris:" mi -- se -- re -- re no -- bis. __ Quo -- ni -- am tu so
   -- lus San -- "ctus," tu so -- lus Do -- mi -- "nus," tu so -- lus
   Al -- tis -- _ _ _ _ _ _ si -- "mus,"
   Al -- tis -- si -- "mus," Je -- su Chri -- "ste," cum San -- cto Spi
   -- ri -- tu in glo -- ri -- a De -- i Pa -- "tris," in glo -- ri --
   a De -- i Pa -- "tris," De -- i Pa -- "tris." A -- _ _
-  _ _ _ _ _ _ "men. " __ 
+  _ _ _ _ _ _ men.
 }
 
 \bookpart {
@@ -673,16 +672,9 @@ GloriaBassLyrics  =  \lyricmode {
             \new Lyrics \lyricsto "GloriaBass" \GloriaBassLyrics
           >>
         >>
-
       >>
-
     >>
-    \layout {ragged-right = ##f
-             % system-count = #7
-             \override Score.BarNumber.break-visibility = ##(#f #t #t)
-             \context {\Staff 
-                       \consists Ambitus_engraver 
-             }
+    \layout {
     }
     \midi {
       
