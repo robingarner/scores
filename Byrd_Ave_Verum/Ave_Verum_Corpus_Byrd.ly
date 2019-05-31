@@ -1,5 +1,5 @@
 
-\version "2.18.2"
+\version "2.19.83"
 % automatically converted by musicxml2ly from Ave_Verum_Corpus_Byrd.mxl
 \include "articulate.ly"
 #(ly:set-option 'midi-extension "mid")
@@ -7,24 +7,15 @@ date = #(strftime "%d/%m/%Y" (localtime (current-time)))
 
 htitle = "Ave Verum Corpus"
 hcomposer = "William Byrd"
+hdates = "1543&ndash;1623"
 
-\header {
-  title = \htitle
-  composer = \markup { \hcomposer "1543&ndash;1623" }
-  copyright = \markup { \lower #5 \tiny { \line{ Lilypond Markup by Robin Garner,  \date } } }
-}
 
-#(set-global-staff-size 15)
+#(set-global-staff-size 16)
+
+\include "../include/common.ly"
+
 \paper {
   #(include-special-characters)
-    paper-width = 20.99\cm
-    paper-height = 29.69\cm
-    top-margin = 1.49\cm
-    bottom-margin = 1.99\cm
-    left-margin = 1.49\cm
-    right-margin = 1.49\cm
-    between-system-space = 0.0\cm
-    page-top-space = 0.91\cm
 
     oddHeaderMarkup=\markup  \fill-line { 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
