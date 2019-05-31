@@ -3,6 +3,8 @@ htitle = "Mass for Four Voices"
 hcomposer = "William Byrd"
 hdates="(c. 1543-1623)"
 
+#(set-global-staff-size 17)
+
 \include "../include/common.ly"
 
 

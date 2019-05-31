@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.19.83"
 
 \include "common.ly"
 
@@ -128,7 +128,7 @@ gloriaAltoLyrics = \lyricmode {
     no -- _ _ bis, mi -- se -- re -- re no -- _ _
     bis, Qui tol -- lis pec -- ca -- ta mun -- di, sus -- ci -- pe
     de -- pre -- ca -- ti -- o -- nem no -- stram, sus -- ci -- pe de
-    -- pre -- ca -- ti -- o -- nem no -- _ _ _ _ stram,
+    -- pre -- ca -- ti -- o -- nem no -- _ _ _ stram,
     Qui se -- des ad dex -- te -- ram pa -- _ _ _ _
     _ _ tris, mi -- se -- re -- re no -- bis, mi -- se --
     re -- re no -- bis. Quo -- ni -- am tu so -- lus san -- ctus, tu
@@ -136,9 +136,8 @@ gloriaAltoLyrics = \lyricmode {
     -- lus al -- tis -- si -- _ _ _ _ mus, tu so
     -- lus al -- tis -- si -- _ _ mus, Je -- su Chri --
     ste, cum san -- cto Spi -- ri -- tu, in glo -- ri -- a De -- i
-    pa -- _ tris, in glo -- ri -- a De -- i pa -- _ _ _
-    tris.  __ A -- men. A -- _ _ _ _ _
-    _ _ men. 
+    pa -- _ tris, in glo -- ri -- a De -- i pa -- _ _
+    tris.  __ A -- men. A -- _ _ _ _ _ _ _ men. 
     
 }
 
@@ -265,7 +264,7 @@ gloriaTenorLyrics = \lyricmode {
     ter om -- ni -- po -- _ tens, Do -- mi -- ne fi -- li u -- ni
     -- ge -- ni -- te, u -- ni -- ge -- ni -- te Je -- su Chri --
     ste, Je -- su Chri -- _ _ _ _ _ ste, 
-    __ Je -- su Chri -- _ _ _ ste. Do -- mi -- ne De -- us a
+    __ Je -- su Chri -- _ _ ste. Do -- mi -- ne De -- us a
     -- gnus De -- i, fi -- li -- us pa -- _ _ _ _
     _ tris. Qui tol -- lis pec -- ca -- ta mun -- _ di, mi
     -- se -- re -- re no -- _ _ bis, no -- _ _
@@ -274,15 +273,14 @@ gloriaTenorLyrics = \lyricmode {
     pe de -- pre -- ca -- ti -- o -- nem no -- _ stram, Qui se --
     des ad  dex -- te -- ram pa -- tris, ad dex -- te -- ram pa
     -- _ tris, mi -- se -- re -- re no -- bis, mi -- se -- re
-    -- re no -- _ _ _ bis. Quo -- ni -- am tu so -- lus san --
+    -- re no -- _ _ bis. Quo -- ni -- am tu so -- lus san --
     ctus, tu so -- lus Do -- mi -- nus, Do -- mi -- nus, tu so --
     lus Do -- mi -- nus, tu so -- lus al -- tis -- si -- mus, tu so
     -- lus al -- tis -- si -- _ _ mus, Je -- su Chri --
     _ ste, cum san -- cto Spi -- ri -- tu, in glo -- ri -- a De
     -- i pa -- _ _ tris, in glo -- ri -- a De -- i pa --
     _ _ _ _ tris. A -- _ _ _ _
-    _ _ _ men. A -- _ _ _ _ _
-    _ _ men.
+    _ _ _ men. A -- _ _ _ _ _ _ men.
     
 }
 
@@ -417,7 +415,7 @@ gloriaBassLyrics = \lyricmode {
     _ _ mus, Je -- su Chri -- ste, cum san -- cto Spi --
     ri -- tu, cum san -- cto Spi -- ri -- tu, Spi -- ri -- tu, in
     glo -- ri -- a De -- i pa -- _ _ _  tris, De -- i pa --
-    _ _ _ _ tris. A -- _ _ _ _
+    _ _ _ tris. A -- _ _ _ _
     _ _ _ _ _ men. A -- _ men.  __ 
     
 }

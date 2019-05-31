@@ -1,6 +1,5 @@
 \include "articulate.ly"
 
-#(set-global-staff-size 17)
 #(ly:set-option 'midi-extension "mid")
 % define a variable to hold the formatted date:
 date = #(strftime "%d/%m/%Y" (localtime (current-time)))

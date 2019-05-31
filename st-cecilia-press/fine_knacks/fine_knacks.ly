@@ -30,7 +30,6 @@ scGlobal= {
 
 
 
-scMinimumSystemSpacing = #20
 
 
 scMusicOneName = "cantus"

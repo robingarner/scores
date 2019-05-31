@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.19.83"
 
 \include "common.ly"
 
@@ -74,11 +74,11 @@ kyrieBassLyrics = \lyricmode {
   \paper {
     evenHeaderMarkup=\markup  \fill-line { 
 	  \fromproperty #'page:page-number-string 
-	  \on-the-fly #not-part-first-page \line { \htitle "- Kyrie" }
+	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Kyrie" }
 	  \on-the-fly #not-part-first-page \hcomposer }
     oddHeaderMarkup= \markup  \fill-line { 
 	  \on-the-fly #not-part-first-page \hcomposer 
-	  \on-the-fly #not-part-first-page \line { \htitle "- Kyrie" }
+	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Kyrie" }
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
 
   }
