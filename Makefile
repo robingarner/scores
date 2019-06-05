@@ -44,7 +44,7 @@ Josquin_Absalon:
 	$(MAKE) -C Josquin_Absalon Absalon_Fili_Mi_4.pdf
 
 Wilbye_Draw_On:
-	$(MAKE) -C Wilbye_SHSB --makefile=../Makefile SweetHoneySuckingBees.pdf
+	$(MAKE) -C Wilbye_Draw_On targets
 
 Wilbye_SHSB:
 	$(MAKE) -C Wilbye_SHSB --makefile=../Makefile SweetHoneySuckingBees.pdf
