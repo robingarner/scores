@@ -1,33 +1,19 @@
 
-\version "2.18.2"
+\version "2.19.83"
 % automatically converted by musicxml2ly from Draw_on_sweet_night_Wilbye.mxl
 
-% first, define a variable to hold the formatted date:
-date = #(strftime "%d/%m/%Y" (localtime (current-time)))
-
-htitle="Draw On Sweet Night"
-hcomposer="Wilbye"
-
-\header {
-  title=\markup{\fontsize #4 \htitle}
-  % subtitle="Psalm 135"
-  subsubtitle=\markup{\null \vspace #2.5 }
-  composer=\hcomposer
-  copyright = \markup { \lower #5 \tiny { \line{ Lilypond Markup by Robin Garner,  \date } } }
-}
 
 #(set-global-staff-size 14)
+
+htitle="Draw On Sweet Night"
+hcomposer="John Wilbye"
+hdates="(1574-1638)"
+
+\include "../include/common.ly"
+
 \paper {
-  % paper-width = 20.99\cm
-  % paper-height = 29.7\cm
-  top-margin = 1.0\cm
-  bottom-margin = 1.0\cm
-  left-margin = 1.49\cm
-  right-margin = 1.49\cm
-  % between-system-space = 0.0\cm
-  % page-top-space = 0.96\cm
-  system-count=24
-  page-count = 8
+  system-count=18
+  page-count = 6
   system-system-spacing =
   #'((basic-distance . 10) (minimum-distance . 0) (padding . 5))
   top-system-spacing = % header
@@ -35,23 +21,10 @@ hcomposer="Wilbye"
   last-bottom-spacing = % footer
   #'((basic-distance . 12) (minimum-distance . 0) (padding . 0))
 
-  evenHeaderMarkup=\markup  \fill-line {
-    \fromproperty #'page:page-number-string \htitle \hcomposer
-  }
-  oddHeaderMarkup= \markup  \fill-line {
-    \on-the-fly #not-first-page \hcomposer \on-the-fly #not-first-page
-    \htitle \on-the-fly #not-first-page \fromproperty #'page:page-number-string
-  }
 }
-\layout {
-  \context { \Score
-    markFormatter = #format-mark-box-alphabet
-    skipBars = ##t
-    autoBeaming = ##f
-  }
-}
+
 PartPOneVoiceOne =  \relative a' {
-  \clef "treble" \key c \major \time 4/4 | % 1
+  \clef "treble" \key c \major \time 2/2 | % 1
   a1 ~ | % 2
   a2 fis4 g4 | % 3
   a1 ~ | % 4
@@ -182,7 +155,7 @@ PartPOneVoiceOneLyricsOne =  \lyricmode {
   time for my com -- plain -- ing.
 }
 PartPTwoVoiceOne =  \relative a' {
-  \clef "treble" \key c \major \time 4/4 | % 1
+  \clef "treble" \key c \major \time 2/2 | % 1
   R1*3 | % 4
   r2 a2 ~ | % 5
   a2 a2 ~ | % 6
@@ -311,7 +284,7 @@ PartPTwoVoiceOneLyricsOne =  \lyricmode {
   then shall have best time for my com -- plain -- ing.
 }
 PartPThreeVoiceOne =  \relative fis' {
-  \clef "treble" \key c \major \time 4/4 | % 1
+  \clef "treble" \key c \major \time 2/2 | % 1
   R1 | % 2
   fis1 ~ | % 3
   fis2 e4 d4 | % 4
@@ -455,7 +428,7 @@ PartPThreeVoiceOneLyricsOne =  \lyricmode {
   ing.
 }
 PartPFourVoiceOne =  \relative d' {
-  \clef "treble" \key c \major \time 4/4 | % 1
+  \clef "treble" \key c \major \time 2/2 | % 1
   R1 | % 2
   d1 ~ | % 3
   d2 cis4 b4 | % 4
@@ -598,7 +571,7 @@ PartPFourVoiceOneLyricsOne =  \lyricmode {
   ing.
 }
 PartPFiveVoiceOne =  \relative g {
-  \clef "treble_8" \key c \major \time 4/4 | % 1
+  \clef "treble_8" \key c \major \time 2/2 | % 1
   R1*8 | % 9
   g1 ~ | \barNumberCheck #10
   g2 fis4 e4 | % 11
@@ -729,7 +702,7 @@ PartPFiveVoiceOneLyricsOne =  \lyricmode {
   I then shall have best time for my com -- plain -- ing.
 }
 PartPSixVoiceOne =  \relative d {
-  \clef "bass" \key c \major \time 4/4 | % 1
+  \clef "bass" \key c \major \time 2/2 | % 1
   R1*8 | % 9
   R1*6 | % 15
   d1 ~ | % 16
@@ -888,13 +861,7 @@ PartPSixVoiceOneLyricsOne =  \lyricmode {
     >>
 
   >>
-    \layout {ragged-right = ##f
-             % system-count = #7
-             %\override Score.SpacingSpanner.spacing-increment = #1.3
-             \override Score.BarNumber.break-visibility = ##(#f #t #t)
-             \context {\Staff 
-                       \consists Ambitus_engraver 
-             }
+    \layout {
     }
   % To create MIDI output, uncomment the following line:
   %  \midi {}
