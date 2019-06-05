@@ -2,42 +2,20 @@
 \version "2.18.2"
 % automatically converted by musicxml2ly from SweetHoneySuckingBees-OneTone.xml
 
-hcomposer = "Wilbye"
+hcomposer="John Wilbye"
+hdates="(1574-1638)"
 htitle = "Sweet Honey Sucking Bees"
-date = #(strftime "%d/%m/%Y" (localtime (current-time)))
-
-\header {
-    composer = "John Wilbye"
-    title = \htitle
-  copyright = \markup { \lower #5 \tiny { \line{ Lilypond Markup by Robin Garner,  \date } } }
-}
 
 #(set-global-staff-size 16)
+\include "../include/common.ly"
+
 \paper {
-    paper-width = 21.0\cm
-    paper-height = 29.7\cm
-    top-margin = 1.0\cm
-    bottom-margin = 2.0\cm
-    left-margin = 1.0\cm
-    right-margin = 1.0\cm
 %    page-count = #8
 %  system-count = #23
-    evenHeaderMarkup=\markup  \fill-line { 
-	  \fromproperty #'page:page-number-string \htitle \hcomposer }
-    oddHeaderMarkup= \markup  \fill-line { 
-	  \on-the-fly #not-first-page \hcomposer 
-	  \on-the-fly #not-first-page \htitle
-	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
 }
 \layout {
     \context { \Score
         \override SpacingSpanner.spacing-increment = #1.35
-        \override BarNumber.break-visibility = ##(#f #t #t)
-        skipBars = ##t
-        autoBeaming = ##f
-    }
-    \context {\Staff 
-        \consists Ambitus_engraver 
     }
 }
 
@@ -103,7 +81,7 @@ PartPOneVoiceOne =  \relative c'' {
     as2 g2 | % 67
     f1 ~ | % 68
     f2 e4 \melisma d4 \melismaEnd | % 69
-    e1 \bar "|." \break
+    e1 ^\fermata \bar "|." \break
     | \barNumberCheck #70
     R1 | % 71
     r2 c'2 \p | % 72
@@ -300,7 +278,7 @@ PartPTwoVoiceOne =  \relative c'' {
     f2 c'2 | % 67
     c2 c2 | % 68
     c1 ~ | % 69
-    c1 \bar "|."
+    c1 ^\fermata \bar "|."
     | \barNumberCheck #70
     c2 \p as4 bes4 | % 71
     g2 r2 | % 72
@@ -490,7 +468,7 @@ PartPThreeVoiceOne =  \relative f' {
     f2 g2 | % 67
     as2 as2 | % 68
     g1 ~ | % 69
-    g1 \bar "|."
+    g1 ^\fermata \bar "|."
     | \barNumberCheck #70
     r4 \p e4 f4 g4 | % 71
     e2. c4 | % 72
@@ -691,7 +669,7 @@ PartPFourVoiceOne =  \relative f' {
     c2 c2 | % 67
     c2 c2 | % 68
     c1 ~ | % 69
-    c1 \bar "|."
+    c1 ^\fermata \bar "|."
     | \barNumberCheck #70
     c2 \p f4 bes,4 | % 71
     c2. e4 | % 72
@@ -850,7 +828,7 @@ PartPFiveVoiceOne =  \relative c {
     f2 e2 | % 67
     f2 f2 | % 68
     c1 ~ | % 69
-    c1 \bar "|."
+    c1 ^\fermata \bar "|."
     | \barNumberCheck #70
     R1 | % 71
     r2 \p c2 | % 72
