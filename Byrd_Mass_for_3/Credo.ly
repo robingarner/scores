@@ -181,7 +181,7 @@ credoAltoLyrics = \lyricmode {
     -- ni -- "tum," "Et " __ ex pa -- tre na -- tum an -- te om -- ni --
     a "sæ" -- cu -- "la," De -- um de De -- "o," lu -- men de lu -- mi
     -- "ne," De -- um ve -- _ _ rum de De -- o ve -- _
-    _ _ _ _ "ro," ge -- ni -- tum non fa -- "ctum," con --
+    _ _ _ "ro," ge -- ni -- tum non fa -- "ctum," con --
     sub -- stan -- ti -- a -- lem pa -- "tri," per quem om -- ni -- a fa
     -- "cta " __ _ "sunt." Qui pro -- pter nos ho -- mi -- "nes,"
     et pro -- pter no -- stram sa -- lu -- _ _ _ _
@@ -413,7 +413,7 @@ credoTenorLyrics = \lyricmode {
     "cto," ex Ma -- ri -- a vir -- _ gi -- "ne," et ho -- mo fa --
     _ _ _ ctus "est, " __ Cru -- ci -- fi -- xus e -- ti
     -- am pro no -- "bis," sub Pon -- ti -- o Pi -- la -- to pas -- sus
-    et se -- pul -- tus "est," se -- pul -- "tus " __ _ _ "est. " __
+    et se -- pul -- tus "est," se -- pul -- "tus " __ _ "est. " __
     Et re -- sur -- re -- xit ter -- ti -- a di -- e se -- cun -- dum
     scrip -- tu -- "ras," se -- cun -- dum scrip -- tu -- _ _
     "ras," Et a -- scen -- dit in "cæ" -- _ _ _ "lum," se
@@ -430,7 +430,7 @@ credoTenorLyrics = \lyricmode {
     et con -- glo -- ri -- fi -- ca -- "tur," qui lo -- cu -- tus est
     per Pro -- phe -- _ _ _ _ _ _ "tas."
     Et u -- nam san -- _ _ ctam Ca -- tho -- li -- "cam," et A
-    -- po -- sto -- li -- cam Ec -- cle -- si -- _ _ "am," et A -- po
+    -- po -- sto -- li -- cam Ec -- cle -- si -- _ "am," et A -- po
     -- sto -- li -- cam Ec -- cle -- si -- "am." Con -- fi -- te -- or u
     -- num bap -- ti -- _ sma in re -- mis -- si -- o -- nem pec --
     ca -- to -- _ _ _ _ _ "rum," Et ex -- spe
@@ -626,7 +626,7 @@ credoBassLyrics = \lyricmode {
     "stum," fi -- li -- um De -- i u -- ni -- ge -- ni -- "tum," an --
     te om -- ni -- a "sæ" -- _ _ cu -- "la," De -- um de De --
     "o," lu -- men de lu -- mi -- "ne," De -- um ve -- _ _
-    _ "rum," de De -- o ve -- _ _ _ _ _ _ _ "ro," 
+    _ "rum," de De -- o ve -- _ _ _ _ _ _ "ro," 
     ge -- ni -- tum non fa -- "ctum," con -- sub -- stan --
     ti -- a -- lem pa -- _ "tri," per quem om -- ni -- a fa -- cta
     "sunt," per quem om -- ni -- a fa -- cta "sunt." Qui pro -- pter nos
@@ -654,7 +654,7 @@ credoBassLyrics = \lyricmode {
     Pro -- phe -- "tas," per Pro -- phe -- "tas." Et u -- nam san --
     _ _ ctam Ca -- tho -- li -- "cam," Ca -- tho -- li -- cam
     et A -- po -- sto -- li -- cam Ec -- cle -- si -- "am," Ec -- cle --
-    si -- _ _ "am." Con -- fi -- te -- or u -- num bap -- ti --
+    si -- _ "am." Con -- fi -- te -- or u -- num bap -- ti --
     _ sma in re -- mis -- si -- o -- nem pec -- ca -- to -- "rum,"
     Et ex -- spe -- cto re -- sur -- re -- xi -- o -- "nem " __ mor --
     tu -- o -- "rum," et vi -- tam ven -- tu -- ri "sæ" -- cu -- "li,"

@@ -1,5 +1,5 @@
 %.pdf: %.json
-	java -jar ../lib/pdf-stitcher-2.one.jar $^
+	java --add-opens java.base/java.lang=com.google.guice,javassist -jar ../lib/pdf-stitcher-2.one.jar $^
 
 all: all-scores.pdf byrd-masses.pdf 2019-08-13.pdf
 

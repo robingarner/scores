@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.19.83"
 
 \include "common.ly"
 
@@ -50,7 +50,7 @@ agnusDeiAltoNotes =  \relative fs' {
     fs4 e4 d4 cs4 d2 b2 | % 387
     cs2 fs2. d4 e2 ~ | % 388
     e4 d4 d1 cs4 b4 \bar "!"
-    \once \hide Staff.TimeSignature \time 2/2  cs1 | \barNumberCheck #53
+    \once \hide Staff.TimeSignature \time 2/2   cs1 ^\markup{ &ndash;2&ndash;} | \barNumberCheck #53
     \once \hide Staff.TimeSignature \time 4/2  d\breve ^\fermata \bar "|."
 }
 
@@ -63,7 +63,7 @@ agnusDeiAltoLyrics = \lyricmode {
     _ _ _ "i," A -- gnus De -- _ _ _
     _ _ _ _ "i," De -- _ "i," qui tol -- lis
     pec -- ca -- ta mun -- "di," do -- na no -- bis pa -- "cem," pa --
-    _ _ "cem," pa -- _ _ "cem," do -- na no -- bis pa --
+    _ _ "cem," pa -- _ "cem," do -- na no -- bis pa --
     _ _ _ _ "cem," do -- na no -- bis pa -- _
     _ _ _ _ _ "cem," do -- na no -- bis pa --
     _ _ _ "cem."

@@ -4,14 +4,14 @@ scDate = "2017-Jan-27"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 
-scStaffSize = 16
-scStaffSizeTranspose = 16
+scStaffSize = 17
+scStaffSizeTranspose = 17
 #(ly:set-option 'midi-extension "mid")
 
 \include "english.ly"
 
 scTempo = #(ly:make-moment 120 2)
-scTitle = "O Magnum Misterium"
+scTitle = "O Magnum Mysterium"
 scSubtitle = ""
 scComposer = "Tomás Luis de Victoria"
 scArranger = ""
@@ -150,9 +150,9 @@ d\breve g,2 g'2 g4[ \melisma f ef d] c2 b \melismaEnd c1 ~ c1 g1 ~ g\breve
   
   
 scWordsOneA = \lyricmode {
-O ma -- gnum mi -- ste -- ri -- um
+O ma -- gnum my -- ste -- ri -- um
 et ad -- mi -- ra -- bi -- le sa -- cra -- men -- tum,
-O ma -- gnum __ _ _ mi -- ste -- ri -- um
+O ma -- gnum __ _ _ my -- ste -- ri -- um
 et ad -- mi -- ra -- bi -- le 
 et ad -- mi -- ra -- bi -- le sa -- cra -- men -- _ tum
 ut a -- ni -- ma -- li -- a
@@ -174,9 +174,9 @@ al -- le -- _ lu -- ya.
   
   
 scWordsTwoA = \lyricmode {
-O ma -- gnum mi -- ste -- ri -- um
+O ma -- gnum my -- ste -- ri -- um
 et ad -- mi -- ra -- bi -- le sa -- cra -- men -- _ _ tum,
-O ma -- gnum __ _ _ mi -- ste --  _ _ ri -- um
+O ma -- gnum __ _ _ my -- ste --  _ _ ri -- um
 et ad -- mi -- ra -- bi -- le sa -- cra -- men -- _ tum
 et ad -- mi -- ra -- bi -- le sa -- cra -- men -- tum
 ut a -- ni -- ma -- li -- a
@@ -199,7 +199,7 @@ al -- le -- _ _ lu -- ya.
   
   
 scWordsThreeA = \lyricmode {
-O ma -- gnum mi -- ste -- ri -- um
+O ma -- gnum my -- ste -- ri -- um
 et ad -- mi -- ra -- bi -- le sa -- cra -- men -- tum,
 et ad -- mi -- ra -- bi -- le sa -- cra --  _ men -- tum
 
@@ -224,7 +224,7 @@ al -- le -- lu -- ya.
   
   
 scWordsFourA = \lyricmode {
-O ma -- gnum mi -- ste -- ri -- um
+O ma -- gnum my -- ste -- ri -- um
 et ad -- mi -- ra -- bi -- le sa -- cra -- men -- tum,
 et ad -- mi -- ra -- bi -- le sa -- cra --  _ men -- tum
 ut a -- ni -- ma -- li -- a

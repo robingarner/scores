@@ -66,7 +66,7 @@ SanctusSopranoNotes =  \relative b' {
   c2. c4 a2 b2 ~ | % 399
   b4 a4 a1 \melisma gs2 \melismaEnd | \barNumberCheck #61
   a\breve | % 401
-  r2 e2 g2. a4 | % 402
+  r2 e2 ^"faster" g2. a4 | % 402
   b2 g2 d'1 | % 403
   a2 b2. b4 c2 ~ | % 404
   c4 b8 [ a8 ] g4 a4 b2 g2 | % 405
@@ -180,7 +180,7 @@ SanctusAltoNotes =  \relative e' {
   r2 d'2 g2. g4 | % 398
   e2 a2. g4 fs2 | % 399
   e1. e2 | \barNumberCheck #61
-  e1 r2 a,2 | % 401
+  e1 r2 \tempo 2=96 a,2 | % 401
   c2. d4 e2 c2 | % 402
   g'1 fs2 fs2 ~ | % 403
   fs2 fs2 g2 \melisma e2 \melismaEnd | % 404

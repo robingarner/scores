@@ -1,19 +1,19 @@
 
-\version "2.18.2"
-% automatically converted by musicxml2ly from Absalon_Fili_Mi_4.mxl
+\version "2.19.83"
+
+#(set-global-staff-size 16)
 
 htitle="Absalon Fili Mi"
 hcomposer="Josquin des Pres"
-date = #(strftime "%d/%m/%Y" (localtime (current-time)))
+hdates="(1450-1521)"
+
+\include "../include/common.ly"
 
 
 \header {
     composer = #(string-append hcomposer " (or Pierre de la Rue)")
-    title = \htitle
-  copyright = \markup { \lower #5 \tiny { \line{ Lilypond Markup by Robin Garner,  \date } } }
 }
 
-#(set-global-staff-size 14.7954330709)
 \paper {
     paper-width = 21.01\cm
     paper-height = 29.69\cm

@@ -151,7 +151,7 @@ CredoSopranoNotes =  \relative b' {
   b2. \melisma c4 b2 \melismaEnd a4 a4 ~ |
   a4 ^"rit." g4 g1 fs4 e4 \bar "!"
   \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 fs4 g2 fs4 |
-  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2 g\breve ^\fermata \bar "||"
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2 g\breve ^\fermata \bar "||" \break
   \tempo 2=104 \mark\default g1 b2 g2 |
   r2 b2. \melisma c4 d2 \melismaEnd | % 309
   b1 r2 b2 | \barNumberCheck #153
@@ -908,11 +908,11 @@ CredoBassLyrics  =  \lyricmode {
   }
   \paper {
     %page-count = #8
-    oddHeaderMarkup=\markup  \fill-line { 
+    evenHeaderMarkup=\markup  \fill-line { 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
 	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Credo" } 
 	  \on-the-fly #not-part-first-page \hcomposer }
-    evenHeaderMarkup= \markup  \fill-line { 
+    oddHeaderMarkup= \markup  \fill-line { 
 	  \on-the-fly #not-part-first-page \hcomposer
 	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Credo" } 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }

@@ -1,38 +1,18 @@
 
-\version "2.18.2"
-% automatically converted by musicxml2ly from Ave_Maria_-_Josquin_V4.xml
+\version "2.19.83"
+
+#(set-global-staff-size 16)
 
 htitle="Ave Maria"
 hcomposer="Josquin des Pres"
-% first, define a variable to hold the formatted date:
-date = #(strftime "%d/%m/%Y" (localtime (current-time)))
+hdates="(1450-1521)"
+
+\include "../include/common.ly"
 
 
-\header {
-    composer = #(string-append hcomposer " (1450-1521)")
-    title = \htitle
-  copyright = \markup { \lower #5 \tiny { \line{ Lilypond Markup by Robin Garner,  \date } } }
-}
-    
-
-#(set-global-staff-size 16)
 \paper {
-    paper-width = 21.0\cm
-    paper-height = 29.7\cm
-    top-margin = 1.0\cm
-    bottom-margin = 1.2\cm
-    left-margin = 1.0\cm
-    right-margin = 1.0\cm
   page-count = #4
   system-count = #16
-    oddHeaderMarkup=\markup  \fill-line { 
-	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
-	  \on-the-fly #not-first-page \htitle 
-	  \on-the-fly #not-first-page \hcomposer }
-    evenHeaderMarkup= \markup  \fill-line { 
-	  \on-the-fly #not-first-page \hcomposer 
-	  \on-the-fly #not-first-page \htitle
-	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
 }
 \layout {
     \override Score.BarNumber.break-visibility = ##(#f #t #t)

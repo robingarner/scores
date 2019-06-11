@@ -353,8 +353,8 @@ PartPTwoVoiceOne =  \relative c'' {
     bes2. a4 | % 154
     g2 f2 | % 155
     e2 r2 | % 156
-    c'1 ~ | % 157
-    c2 bes4 \pp a4 | % 158
+    c'1 ~  \pp | % 157
+    c2 bes4 a4 | % 158
     g2. f4 | % 159
     e2 c2 | \barNumberCheck #160
     c'1 | % 161
@@ -897,9 +897,9 @@ PartPFiveVoiceOne =  \relative c {
     e2 f2 | % 155
     c2. bes4 | % 156
     a2 bes2 | % 157
-    c1 \pp ~ | % 158
+    c1 ~ | % 158
     c1 | % 159
-    c1 | \barNumberCheck #160
+    c1 \pp | \barNumberCheck #160
     c1 | % 161
     c1 | % 162
     f,1 ^\fermata \bar "|."
