@@ -3,19 +3,21 @@
       #(set-default-paper-size "a4")
     
       #(set-global-staff-size scStaffSize )
-    
+
+\include "../../include/common.ly"
+
     \book {
       
       \paper {
-        
+        top-system-spacing #'basic-distance = 10
           system-system-spacing.minimum-distance = \scMinimumSystemSpacing
         
         print-page-number = ##f
         print-first-page-number = ##f
-        top-margin = 0.5\in
+        top-margin = 0.75\in
         left-margin = 0.75\in
         right-margin = 0.75\in
-        right-bottom = 0.5\in
+%        right-bottom = 0.5\in
         last-bottom-spacing = #'((basic-distance . 4) (padding . 4) (stretchability . 1))
         oddFooterMarkup = \markup { 
         \column{

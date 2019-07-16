@@ -1,4 +1,30 @@
-{ "inputs" : [
-    { "file" : "../Byrd_Mass_for_4/Byrd_Mass_for_Four_Voices.pdf", "align" : "EVEN" }
+{ 
+  "toc" : true,
+  "title" : "Byrd: Mass for Four Voices",
+  "inputs" : [
+    { "file" : "../Byrd_Mass_for_4/Kyrie.pdf", 
+      "align" : "EVEN",
+      "toc" : "Kyrie"
+    },
+    { "file" : "../Byrd_Mass_for_4/Gloria.pdf", 
+      "align" : "EVEN",
+      "toc" : "Gloria"
+    },
+    { "file" : "../Byrd_Mass_for_4/Credo.pdf", 
+      "align" : "EVEN",
+      "toc" : "Credo"
+    },
+    { "file" : "../Byrd_Mass_for_4/Sanctus.pdf", 
+      "align" : "EVEN",
+      "toc" : "Sanctus"
+    },
+    { "file" : "../Byrd_Mass_for_4/AgnusDei.pdf", 
+      "align" : "EVEN",
+      "toc" : "Agnus Dei"
+    },
+    { "file" : "../Byrd_Mass_for_4/Translation.pdf", 
+      "align" : "EVEN",
+      "toc" : "Translation of Latin text"
+    }
   ]
 }

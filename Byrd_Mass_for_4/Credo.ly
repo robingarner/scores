@@ -908,11 +908,11 @@ CredoBassLyrics  =  \lyricmode {
   }
   \paper {
     %page-count = #8
-    evenHeaderMarkup=\markup  \fill-line { 
+    oddHeaderMarkup=\markup  \fill-line { 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
 	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Credo" } 
 	  \on-the-fly #not-part-first-page \hcomposer }
-    oddHeaderMarkup= \markup  \fill-line { 
+    evenHeaderMarkup= \markup  \fill-line { 
 	  \on-the-fly #not-part-first-page \hcomposer
 	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Credo" } 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }

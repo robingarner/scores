@@ -6,6 +6,16 @@
     title="Mass for Four Voices"
     subtitle="Translation of Latin text"
   }
+  \paper {
+    oddHeaderMarkup=\markup  \fill-line { 
+	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
+	  \on-the-fly #not-part-first-page  \line { \htitle &ndash; "Translation" }
+	  \on-the-fly #not-part-first-page \hcomposer }
+    evenHeaderMarkup= \markup  \fill-line { 
+	  \on-the-fly #not-part-first-page \hcomposer
+	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Translation" }
+	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
+  }
   \markuplist {
     \vspace #2
     \line { \huge Gloria }
@@ -51,7 +61,8 @@
     \hspace #1
     \column {
       \line { Credo in unum Deum, Patrem omnipotentem, }
-      \line { factorem coeli et terrae, visibilium omnium et invisibilium. }
+      \line { factorem coeli et terrae,  }
+      \line { visibilium omnium et invisibilium. }
       \line { Et in unum Dominum Jesum Christum, Filium Dei unigenitum. }
       \line { Et ex Patre natum ante omnia saecula. }
       \line { Deum de Deo, lumen de lumine, Deum verum de Deo vero. }
@@ -60,7 +71,7 @@
       \line { Qui propter nos homines,  }
       \line { et propter nostram salutem descendit de coelis. }
       \line { Et incarnatus est de Spiritu Sancto ex Maria Virgine:  }
-      \line { ET HOMO FACTUS EST. }
+      \line { Et homo factus est. }
       \line { Crucifixus etiam pro nobis;  }
       \line { sub Pontio Pilato passus, et sepultus est. }
       \line { Et resurrexit tertia die, secundum Scripturas. }
@@ -79,17 +90,18 @@
     \hspace #2
     \column \italic {
       \line { I believe in one God, The Father Almighty, }
-      \line { Maker of heaven and earth, and of all things visible and invisible. }
+      \line { Maker of heaven and earth,  }
+      \line { and of all things visible and invisible. }
       \line { And in one Lord, Jesus Christ, the Only-begotten Son of God. }
       \line { Born of the Father before all ages. }
       \line { God of God, Light of Light, true God of true God. }
       \line { Begotten, not made, of one substance with the Father: }
-      \line { By whom all things were made,  }
-      \line { who for us men,  }
+      \line { By whom all things were made.  }
+      \line { Who for us men,  }
       \line { and for our salvation came down from heaven. }
       \line { And became incarnate by the Holy Spirit of the Virgin Mary: }
-      \line { AND WAS MADE MAN. }
-      \line { He was also crucified for us,  }
+      \line { And was made man. }
+      \line { He was also crucified for us;  }
       \line { suffered under Pontius Pilate, and was buried. }
       \line { And on the third day He rose again according to the Scriptures. }
       \line { He ascended into heaven and sits at the right hand of the Father. }
@@ -139,19 +151,15 @@
   \fill-line {
     \hspace #1
     \column {
-      \override #'(line-width . 90)
-      \line { Agnus Dei, qui tollis peccata mundi, }
+      \override #'(line-width . 150)
+      \line { Agnus Dei, qui tollis peccata mundi: }
       \line { miserere nobis. }
-      \line { Agnus Dei, qui tollis peccata mundi, }
-      \line { miserere nobis. }
-      \line { Agnus Dei, qui tollis peccata mundi, }
+      \line { Agnus Dei, qui tollis peccata mundi: }
       \line { dona nobis pacem.}
     }
     \hspace #2
     \column \italic {
-      \override #'(line-width . 90)
-      \line { Lamb of God, Who takest away the sins of the world: }
-      \line { have mercy on us. }
+      \override #'(line-width . 150)
       \line { Lamb of God, Who takest away the sins of the world: }
       \line { have mercy on us. }
       \line { Lamb of God, Who takest away the sins of the world: }

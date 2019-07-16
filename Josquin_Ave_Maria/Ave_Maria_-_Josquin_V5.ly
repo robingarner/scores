@@ -1,7 +1,7 @@
 
 \version "2.19.83"
 
-#(set-global-staff-size 16)
+#(set-global-staff-size 17)
 
 htitle="Ave Maria"
 hcomposer="Josquin des Pres"
@@ -11,8 +11,13 @@ hdates="(1450-1521)"
 
 
 \paper {
-  page-count = #4
-  system-count = #16
+  page-count = #6
+  system-count = #18
+  system-system-spacing = 
+    #'((basic-distance . 35) 
+       (minimum-distance . 6) 
+       (padding . 1) 
+       (stretchability . 12)) 
 }
 \layout {
     \override Score.BarNumber.break-visibility = ##(#f #t #t)
@@ -96,7 +101,7 @@ PartPOneVoiceOne =  \relative g' {
     d8 [ b8 ] b2 e4 | % 76
     d8 [ c8 ] c2 b4 | % 77
     c2 r2 | % 78
-    c2 c4 c4 | % 79
+    c2 \p c4 c4 | % 79
     d2 b4 c4 ~ | \barNumberCheck #80
     c4 b4 a2 | % 81
     g1 | % 82
@@ -108,7 +113,7 @@ PartPOneVoiceOne =  \relative g' {
     e4 d8 [ c8 ] g'2 | % 89
     R1*3 | % 92
     R1*2 \bar "||"
-    \time 6/4  g2 g2 g2 | % 95
+    \time 3/2  g2 \p g2 g2 | % 95
     a1 a2 | % 96
     b1 b2 | % 97
     g1 r2 | % 98
@@ -152,7 +157,7 @@ PartPOneVoiceOne =  \relative g' {
     c4 b2. | % 138
     c2 r2 | % 139
     R1*4 | % 143
-    c1 | % 144
+    c1 \p | % 144
     d2 e2 | % 145
     f1 | % 146
     e1 | % 147
@@ -262,7 +267,7 @@ PartPTwoVoiceOne =  \relative g {
     c2 a2 | % 75
     g1 | % 76
     R1*2 | % 78
-    c2 c4 c4 | % 79
+    c2 \p c4 c4 | % 79
     g'2 g4 a4 ~ | \barNumberCheck #80
     a8 [ g8 ] g2 fis4 | % 81
     g1 | % 82
@@ -274,7 +279,7 @@ PartPTwoVoiceOne =  \relative g {
     g'2 c,2 | % 89
     R1*3 | % 92
     R1*2 \bar "||"
-    \time 6/4  e2 e2 e2 | % 95
+    \time 3/2  e2 \p e2 e2 | % 95
     f2. e4 d4 c4  | % 96
     b1 b2 | % 97
     c1 r2 | % 98
@@ -323,7 +328,7 @@ PartPTwoVoiceOne =  \relative g {
     a8 [ g8 ] g2 fis4 | % 141
     g1 | % 142
     R1 | % 143
-    g'1 | % 144
+    g'1 \p | % 144
     g2 g2 | % 145
     a1 | % 146
     g1 | % 147
@@ -431,7 +436,7 @@ PartPThreeVoiceOne =  \relative g {
     f4 e4 d2 | % 77
     c1 | % 78
     R1*3 | % 81
-    c2 c4 c4 | % 82
+    c2 \p c4 c4 | % 82
     d2 b4 c4 ~ | % 83
     c4 b4 a2 | % 84
     g1 | % 85
@@ -442,7 +447,7 @@ PartPThreeVoiceOne =  \relative g {
     d4. c8 d4 e4 ~ | % 92
     e8 [ d8 ] c2 b4 | % 93
     c1 \bar "||"
-    \time 6/4  r2 c2 c2 | % 95
+    \time 3/2  r2 c2 \p c2 | % 95
     c2 d1 | % 96
     d2 e1 | % 97
     e2 c1 | % 98
@@ -487,7 +492,7 @@ PartPThreeVoiceOne =  \relative g {
     c4 b2. | % 141
     c1 | % 142
     R1 | % 143
-    c1 | % 144
+    c1 \p | % 144
     b2 b2 | % 145
     a2. b4 | % 146
     c1 | % 147
@@ -591,7 +596,7 @@ PartPFourVoiceOne =  \relative g, {
     f2 g2 | % 77
     c,1 | % 78
     R1*3 | % 81
-    c2 c4 c4 | % 82
+    c2 \p c4 c4 | % 82
     g'2 g4 a4 ~ | % 83
     a8 [ g8 ] g2 fis4 | % 84
     g1 | % 85
@@ -602,7 +607,7 @@ PartPFourVoiceOne =  \relative g, {
     g4 f2 e8 [ d8 ] | % 92
     c4 e4 d2 | % 93
     c1 \bar "||"
-    \time 6/4  c'2 c2 c2 | % 95
+    \time 3/2  c'2 \p c2 c2 | % 95
     f,1 f2 | % 96
     g1 g2 | % 97
     c,1 r2 | % 98
@@ -646,7 +651,7 @@ PartPFourVoiceOne =  \relative g, {
     f8 [ e8 d8 c8 ] d2 | % 141
     c1 | % 142
     R1 | % 143
-    c1 | % 144
+    c1 \p | % 144
     g'2 g2 | % 145
     f2. e8 [ d8 ] | % 146
     c1 | % 147

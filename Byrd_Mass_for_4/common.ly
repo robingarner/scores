@@ -1,3 +1,4 @@
+\version "2.19.83"
 \language "english"
 htitle = "Mass for Four Voices"
 hcomposer = "William Byrd"

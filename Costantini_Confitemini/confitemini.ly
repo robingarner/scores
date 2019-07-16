@@ -34,6 +34,33 @@ hcomposer="Costantini"
 
 }
 
+\layout {
+    \override Score.BarNumber.break-visibility = ##(#f #t #t)
+	\context {\Lyrics 
+		\override VerticalAxisGroup.staff-affinity = #UP
+		\override VerticalAxisGroup.nonstaff-relatedstaff-spacing =
+			#'((basic-distance . 0) (minimum-distance . 0) (padding . 1))
+		%\override LyricText.font-size = #1.2
+		\override LyricHyphen.minimum-distance = #0.5
+	}
+	\context {\Score 
+		tempoHideNote = ##t
+		\override BarNumber.padding = #2 
+	}
+	\context {\Voice 
+		%melismaBusyProperties = #'()
+		%autoBeaming = ##f
+	}
+	\context {\Staff 
+                %\RemoveEmptyStaves
+                %\override VerticalAxisGroup.remove-first = ##t
+		\override VerticalAxisGroup.staff-staff-spacing =
+			#'((basic-distance . 11) (minimum-distance . 0) (padding . 1))
+		\consists Ambitus_engraver 
+		\override LigatureBracket.padding = #1
+	}
+}
+
 \header {
 	title=\markup{\fontsize #4 "Confitemini Domino"}
 	% subtitle="Psalm 135"
@@ -49,7 +76,6 @@ global={\key c \major \time 2/2
 }
 
 highNotes= \relative c' {
-  \override Score.BarNumber.break-visibility = ##(#f #t #t)
   % \set Score.currentBarNumber = #11
   % Permit first bar number to be printed
   \bar ""
@@ -197,29 +223,6 @@ voicings = #'(
 >>
 
 \layout{ 
-	\context {\Lyrics 
-		\override VerticalAxisGroup.staff-affinity = #UP
-		\override VerticalAxisGroup.nonstaff-relatedstaff-spacing =
-			#'((basic-distance . 0) (minimum-distance . 0) (padding . 1))
-		%\override LyricText.font-size = #1.2
-		\override LyricHyphen.minimum-distance = #0.5
-	}
-	\context {\Score 
-		tempoHideNote = ##t
-		\override BarNumber.padding = #2 
-	}
-	\context {\Voice 
-		%melismaBusyProperties = #'()
-		%autoBeaming = ##f
-	}
-	\context {\Staff 
-                %\RemoveEmptyStaves
-                %\override VerticalAxisGroup.remove-first = ##t
-		\override VerticalAxisGroup.staff-staff-spacing =
-			#'((basic-distance . 11) (minimum-distance . 0) (padding . 1))
-		\consists Ambitus_engraver 
-		\override LigatureBracket.padding = #1
-	}
 }
 
 %\midi { \mtempo }

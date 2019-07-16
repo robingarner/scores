@@ -1,31 +1,31 @@
-\version "2.18.0"
+\version "2.19.83"
 
 #(set-default-paper-size "a4")
-#(set-global-staff-size 16.3)
+#(set-global-staff-size 17)
 %#(ly:set-option 'point-and-click #f)
 %mobile -s15.5 -i3.2
 
 italicas=\override LyricText.font-shape = #'italic
 rectas=\override LyricText.font-shape = #'upright
 ss=\once \set suggestAccidentals = ##t
-incipitwidth = 20
+incipitwidth = 5
 
 htitle="Sicut cervus"
 hcomposer="Palestrina"
+hdates="(c.1525-1594)"
+
+\include "../include/common.ly"
+
+\layout {
+    autoBeaming = ##t
+}
 
 % copiado de Breiktopf und Härtel 1862
 
 \header {
-	title=\markup{\fontsize #4 "Sicut cervus"}
-	subtitle="Psalm 42"
-	subsubtitle=\markup{\null \vspace #2.5 }
-	composer="Giovanni Pierluigi da Palestrina (c.1525-1594)"
-	%opus="(-)"
-	poet="Venecia 1604"
 	copyright=\markup{ \tiny
 		\fill-line {"Edited by Nancho Alvarez, minor adjustments by Robin Garner" \typewriter "http://tomasluisdevictoria.org"}
 	}
-%	tagline=""
 }
 
 
@@ -270,11 +270,11 @@ bassus=\relative c{
 
 textocantus=\lyricmode{
 Si -- cut cer -- vus de -- si -- de -- rat ad fon -- tes a -- qua -- _ _ _ _ rum,
-a -- _ _ _ _ _ _ qua -- rum
+a -- _ _ _ _ qua -- rum
 si -- cut cer -- vus de -- si -- de -- rat ad fon -- tes a -- _ _ _ _ _ _ _ qua -- _ _ _ _ _ rum
 i -- ta de -- _ _ si -- _ _ _ _ _ _ de -- rat
 i -- ta de -- _ _ si -- de -- rat __ _ _ _ _ _ _ 
-a -- ni -- ma me -- a ad te De -- _ _ us __ _ _ _ _ _ 
+a -- ni -- ma me -- a ad te De -- _ _ us __ _ _ _ 
 a -- ni -- ma me -- a
 ad te De -- _ _ _ _ _ _ _ us.
 }
@@ -282,10 +282,10 @@ ad te De -- _ _ _ _ _ _ _ us.
 textoaltus=\lyricmode{
 Si -- cut cer -- vus de -- si -- de -- rat ad fon -- tes a -- qua -- _ _ _ _ _ _ rum
 si -- cut cer -- vus de -- si -- de -- rat ad __ _ _ _ _ fon -- tes a -- qua -- rum,
-de -- si -- de -- rat ad fon -- tes a -- qua -- _ _ _ _ _ _ _ _ _ _ _ rum
+de -- si -- de -- rat ad fon -- tes a -- qua -- _ _ _ _ _ _ _ _ _ rum
 i -- ta de -- _ _ si -- _ _ _ _ _ de -- rat,
 i -- ta
-i -- ta de -- _ _ si -- de -- rat __ _ _ _ _ 
+i -- ta de -- _ _ si -- de -- rat __ _ _ 
 a -- ni -- ma me -- a ad __ _ _ te De -- us
 a -- ni -- ma me -- a ad __ _ _ te De -- _ us,
 ad __ _ _ te De -- _ us
@@ -303,7 +303,7 @@ i -- ta de -- si -- de -- rat
 i -- ta de -- si -- _ _ de -- rat, __ _ 
 de -- si -- de -- rat
 i -- ta de -- _ _ si -- _ _ de -- rat __ _ _ _ _ 
-a -- ni -- ma me -- _ a ad te De -- _ _ _ _ _ _ _ _ _ _ _ _ us
+a -- ni -- ma me -- _ a ad te De -- _ _ _ _ _ _ _ _ us
 a -- ni -- ma me -- a ad te De -- _ _ us
 ad te De -- _ _ us.
 }
@@ -324,70 +324,6 @@ ad te De -- _ _ _ _ _ _ us.
 
 
 
-incipitcantus=\markup{
-	\score{
-		{ 
-		\set Staff.instrumentName="Soprano"
-		\override NoteHead.style = #'neomensural
-		\override Staff.TimeSignature.style = #'neomensural
-		\cadenzaOn 
-		\clef "petrucci-c1"
-		\key f \major
-		\time 2/2
-		f'\breve
-		} 
-	\layout { line-width=\incipitwidth indent = 0 }
-	}
-}
-
-incipitaltus=\markup{
-	\score{
-		{ 
-		\set Staff.instrumentName="Alto     "
-		\override NoteHead.style = #'neomensural 
-		\override Staff.TimeSignature.style = #'neomensural
-		\cadenzaOn 
-		\clef "petrucci-c3"
-		\key f \major
-		\time 2/2
-		c'\breve
-		} 
-	\layout { line-width=\incipitwidth indent = 0 }
-	}
-}
-
-
-incipittenor=\markup{
-	\score{
-		{ 
-		\set Staff.instrumentName="Tenor   "
- 		\override NoteHead.style = #'neomensural 
- 		\override Staff.TimeSignature.style = #'neomensural
-		\cadenzaOn 
-		\clef "petrucci-c4"
-		\key f \major
-		\time 2/2
-		f\breve
-		} 
-	\layout { line-width=\incipitwidth indent=0 }
-	}
-}
-
-incipitbassus=\markup{
-	\score{
-		{ 
-		\set Staff.instrumentName="Bass   "
-		\override NoteHead.style = #'neomensural
-		\override Staff.TimeSignature.style = #'neomensural
-		\cadenzaOn 
-		\clef "petrucci-f4"
-		\key f \major
-		\time 2/2
-		f\breve
-		} 
-	\layout { line-width=\incipitwidth indent = 0 }
-	}
-}
 
 \score {\transpose c' d'{
 \new ChoirStaff<<
@@ -433,14 +369,14 @@ incipitbassus=\markup{
 	\context {\Lyrics 
 		\override VerticalAxisGroup.staff-affinity = #UP
 		\override VerticalAxisGroup.nonstaff-relatedstaff-spacing =
-			#'((basic-distance . 0) (minimum-distance . 0) (padding . 0))
+			#'((basic-distance . 2) (minimum-distance . 0) (padding . 0))
 		%\override LyricText.font-size = #1.2
-		\override LyricHyphen.minimum-distance = #0.5
+		\override LyricHyphen.minimum-distance = #2.0
 	}
 	\context {\Score 
                 \override BarNumber.break-visibility = ##(#f #t #t)
 		tempoHideNote = ##t
-		\override BarNumber.padding = #2 
+		\override BarNumber.padding = #1 
 	}
 	\context {\Voice 
 		%melismaBusyProperties = #'()
@@ -450,7 +386,7 @@ incipitbassus=\markup{
                 %\RemoveEmptyStaves
                 %\override VerticalAxisGroup.remove-first = ##t
 		\override VerticalAxisGroup.staff-staff-spacing =
-			#'((basic-distance . 11) (minimum-distance . 0) (padding . 1))
+			#'((basic-distance . 9) (minimum-distance . 0) (padding . 1))
 		\consists Ambitus_engraver 
 		\override LigatureBracket.padding = #1
 	}

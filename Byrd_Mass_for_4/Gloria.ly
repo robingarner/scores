@@ -615,11 +615,11 @@ GloriaBassLyrics  =  \lyricmode {
     subtitle="Gloria in Excelcis Deo"
   }
   \paper {
-    evenHeaderMarkup=\markup  \fill-line { 
+    oddHeaderMarkup=\markup  \fill-line { 
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string 
 	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Gloria" }
 	  \on-the-fly #not-part-first-page "Byrd" }
-    oddHeaderMarkup= \markup  \fill-line { 
+    evenHeaderMarkup= \markup  \fill-line { 
 	  \on-the-fly #not-part-first-page "Byrd"
 	  \on-the-fly #not-part-first-page \line { \htitle &ndash; "Gloria" }
 	  \on-the-fly #not-first-page \fromproperty #'page:page-number-string }
