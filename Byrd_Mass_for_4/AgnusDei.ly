@@ -4,7 +4,7 @@
 
 AgnusDeiSopranoNotes =  \relative b' {
   \clef "treble" \key g \major \numericTimeSignature\time 4/2
-  \tempo 2=88 r1 b1 ~ | % 412
+  \tempo 2=88 r1 \p b1 ~ | % 412
   b2 fs2 a1 \melisma | % 413
   g1 \melismaEnd fs1 | % 414
   r2 e2 a1 | % 415
@@ -32,8 +32,8 @@ AgnusDeiSopranoNotes =  \relative b' {
   a2. ^"rit." g4 e4 fs4 g2 ~ \bar "!"
   \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 g2 fs2 |
   \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  | % 437
-  g\breve ^\fermata |  \break 
-  b1. \f g2 | % 439
+  g\breve |  \break 
+  b1. \mf g2 | % 439
   c2. \melisma b4 a4 g4 fs2 \melismaEnd | \barNumberCheck #31
   b2 g2. e4 a2 ~ | % 441
   a4 \melisma g4 fs4 e4 fs1 \melismaEnd | % 442
@@ -45,7 +45,7 @@ AgnusDeiSopranoNotes =  \relative b' {
   b2 g4 a4 b1 | % 448
   a2 b2. a4 fs2 | % 449
   g2 e2 r1 | \barNumberCheck #41
-  r2 fs2. e4 e2 ~ | % 451
+  r2 \p fs2. e4 e2 ~ | % 451
   e2 d2 g1 \melisma | % 452
   fs1 \melismaEnd e1 | % 453
   r2 b'2. a4 a2 ~ | % 454
@@ -81,7 +81,7 @@ AgnusDeiSopranoLyrics  =  \lyricmode {
 
 AgnusDeiAltoNotes =  \relative e' {
   \clef "treble" \key g \major \numericTimeSignature\time 4/2
-  e1. b2 | % 412
+  e1. \p b2 | % 412
   d1 \melisma c1 \melismaEnd | % 413
   b1 r2 d2 | % 414
   g1 fs2 d2 | % 415
@@ -113,7 +113,7 @@ AgnusDeiAltoNotes =  \relative e' {
   fs2 d4 e4 fs1 | % 449
   e2 g2. \melisma fs4 e2 \melismaEnd | \barNumberCheck #41
   ds1 r1 | % 451
-  r2 fs2. e4 e2 ~ | % 452
+  r2 \p fs2. e4 e2 ~ | % 452
   e2 d2 c1 \melisma | % 453
   b1 \melismaEnd e1 | % 454
   r2 e2. a,4 e'2 ~ | % 455
@@ -148,7 +148,7 @@ AgnusDeiTenorNotes =  \relative b {
   \numericTimeSignature\time 4/2 
   R1*12 | % 417
   R1*10 | % 422
-  r1 r2 d2 ~ | % 423
+  r1 r2 \p d2 ~ | % 423
   d2 d2 e2 \melisma b2 | % 424
   c1 \melismaEnd b1 | % 425
   a2 b2. b4 cs2 | % 426
@@ -164,9 +164,9 @@ AgnusDeiTenorNotes =  \relative b {
   a1 r2 d2 ~ |
   d2 c2 c2 b2 \bar "!"
   \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 a1 |
-  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  b\breve ^\fermata | % 438
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  b\breve | % 438
   R1*2 | % 439
-  r1 r2 d2 \f ~ | \barNumberCheck #31
+  r1 r2 d2 \mf ~ | \barNumberCheck #31
   d2 b2 e2. \melisma d4 | % 441
   c4 b4 a2 \melismaEnd d1 ~ | % 442
   d1 r2 c2 | % 443
@@ -179,7 +179,7 @@ AgnusDeiTenorNotes =  \relative b {
   r2 c2 b2 g4 a4 | \barNumberCheck #41
   b2. fs4 g1 | % 451
   fs1 r1 | % 452
-  r2 b2. a4 a2 ~ | % 453
+  r2 \p b2. a4 a2 ~ | % 453
   a2 g2 c1 \melisma | % 454
   b1 \melismaEnd a1 | % 455
   r2 fs2. e4 e2 ~ | % 456
@@ -211,8 +211,8 @@ AgnusDeiBassNotes =  \relative e {
   \clef "bass" \key g \major \numericTimeSignature\time 4/2
   R1*12 | % 417
   R1*10 | % 422
-  R1*2 | % 423
-  g1. g2 | % 424
+  R1*2| % 423
+  g1. \p  g2 | % 424
   a2 e2 g1 | % 425
   fs2 g2 e1 | % 426
   r1 e2 g2 ~ | % 427
@@ -228,8 +228,8 @@ AgnusDeiBassNotes =  \relative e {
   d4. e8 f2 c4. d8 e4 b4 \bar "!"
   \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 c2 d2 |
   \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  | % 437
-  g,\breve ^\fermata | % 438
-  g'1. \f e2 | % 439
+  g,\breve | % 438
+  g'1. \mf e2 | % 439
   a2. \melisma g4 fs4 e4 d2 \melismaEnd | \barNumberCheck #31
   g1 c,1 ~ | % 441
   c2 \melisma d2 \melismaEnd d1 | % 442
@@ -242,7 +242,7 @@ AgnusDeiBassNotes =  \relative e {
   d\breve | % 449
   e2 c4 e2 b4 c2 | \barNumberCheck #41
   b\breve | % 451
-  b\breve | % 452
+  b\breve \p | % 452
   b1 e1 ~ | % 453
   e2 e2 c2 a2 | % 454
   e'2. d4 c2 a2 | % 455

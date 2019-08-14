@@ -15,14 +15,13 @@ SUBDIRS = Byrd_Mass_for_3 Byrd_Mass_for_4 Byrd_Ave_Verum
 #SUBDIRS += linverno spring kruisvaarderslied my-peace
 SUBDIRS += Costantini_Confitemini Josquin_Absalon Josquin_Ave_Maria
 SUBDIRS += Palestrina_Sicut Palestrina_Vedrassi Wilbye_Draw_On Wilbye_SHSB
-SUBDIRS += collections
 #st-cecilia-press
 
-.PHONY: $(SUBDIRS) Byrd_Ave_Verum
+.PHONY: $(SUBDIRS)
 
-all: $(SUBDIRS)
+all: collections $(SUBDIRS)
 
-collections:
+collections: $(SUBDIRS)
 	$(MAKE) -C collections all
 
 Byrd_Ave_Verum:

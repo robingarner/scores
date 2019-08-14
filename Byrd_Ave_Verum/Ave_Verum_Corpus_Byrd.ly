@@ -31,6 +31,7 @@ hdates = "1543&ndash;1623"
         \override SpacingSpanner.spacing-increment = #2.5
         \override BarNumber.break-visibility = ##(#f #t #t)
 	\override LyricHyphen.minimum-distance = #0.5
+	\override DynamicLineSpanner.direction = #1
         skipBars = ##t
         autoBeaming = ##f
     }
@@ -74,11 +75,11 @@ PartPOneVoiceOne =  \relative g' {
         | % 31
         bes2 g2 | % 32
         r4 g4 bes2 | % 33
-        a2 r4 g4 | % 34
-        d'2. c4 ~ | % 35
+        a2 r4 g4^\< | % 34
+        << d'2. { s4 s4 \! s4  ^\>} >> c4 ~ | % 35
         c4 bes2 \melisma a8 [ g8  ] \melismaEnd | % 36
-        a4 a4 bes4. \melisma a8 | % 37
-        g2 \melismaEnd fis2 \bar "|"
+        a4 \! a4 \< bes4. \! \melisma a8 \> | % 37
+        g2 \melismaEnd fis2 \! \bar "|"
         R1 | % 39
         r2 g4. bes8 | \barNumberCheck #40
         a4 g4 fis2 | % 41
@@ -144,8 +145,8 @@ PartPTwoVoiceOne =  \relative d' {
         r4 d4 es2 | % 32
         d2 r4 d4 | % 33
         d2 b2 | % 34
-        r4 bes4 f'2 | % 35
-        es4 d2 c4 | % 36
+        r4 bes4^\< << f'2 { s4 \! s4 ^\> } >>| % 35
+        es4 d2 c4 \! | % 36
         r4 f,4 bes2 ~ \melisma | % 37
         bes4 a8 [ g8 ] \melismaEnd a2 \bar "|"
         bes4. d8 c4 bes4 | % 39
@@ -214,9 +215,9 @@ PartPThreeVoiceOne =  \relative bes {
         b2 r4 g4 | % 33
         fis2 g2 ~ | % 34
         g2 r2 | % 35
-        \clef "treble_8" r4 bes4 f'4. es8 | % 36
-        d4 c4 es4 d4 ~ \melisma | % 37
-        d4 c4 \melismaEnd d2 \bar "|"
+        \clef "treble_8" r4 bes4 \< << f'4. {s4 s8\> } >> es8 | % 36
+        d4 c4\! es\< d4 \! ~ \melisma | % 37
+        d4\>c4 \melismaEnd d2 \! \bar "|"
         g,4. bes8 a4 g4 | % 39
         fis2 g2 | \barNumberCheck #40
         \clef "treble_8" r2 a4. c8 | % 41
@@ -281,11 +282,11 @@ PartPFourVoiceOne =  \relative g {
         | % 31
         r4 g4 c2 | % 32
         g2 r4 g4 | % 33
-        d'2 g,4 g'4 | % 34
-        bes2. a4 | % 35
-        g2 f2 | % 36
-        f2 g4. \melisma f8 | % 37
-        es2 \melismaEnd d2 \bar "|"
+        d'2 g,4 g'4 ^\<  | % 34
+        << bes2. { s4 s4 \! s4 ^\> } >> a4 | % 35
+        g2 f2 \!| % 36
+        f2^\<  g4. ^\> \melisma f8 | % 37
+        es2  \melismaEnd  d2 \! \bar "|"
         R1 | % 39
         d4. f8 es4. d8 | \barNumberCheck #40
         c2 d2 | % 41

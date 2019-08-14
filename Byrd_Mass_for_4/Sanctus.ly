@@ -49,7 +49,7 @@ SanctusSopranoNotes =  \relative b' {
   a2 b2 c1 | % 382
   b2 ^"rit." b2. cs4 d2 | % 383
   b\breve ~ | % 384
-  b\breve \bar "||"
+  b\breve ^\fermata \bar "||"
   \tempo 2=80 r1 g1 ~ | % 386
   g1 a1 | % 387
   b\breve | % 388
@@ -80,22 +80,22 @@ SanctusSopranoNotes =  \relative b' {
 
 SanctusSopranoLyrics  =  \lyricmode {
   San -- _ _ _ _ _ _ _ _ _
-  _ _ "ctus," San -- _ _ _ _ _
-  _ _ "ctus," San -- _ _ _ _ _
+  _ _ ctus, San -- _ _ _ _ _
+  _ _ ctus, San -- _ _ _ _ _
   _ _ _ _ _ _ _ _
-  _ _ "ctus:" Do -- mi -- nus De -- us Sa -- ba -- "oth," Do
-  -- mi -- nus De -- "us," Do -- mi -- nus De -- us Sa -- ba -- "oth,"
-  Sa -- _ _ ba -- "oth." Ple -- ni -- sunt coe -- li et ter
+  _ _ ctus: Do -- mi -- nus De -- us Sa -- ba -- oth, Do
+  -- mi -- nus De -- "us," Do -- mi -- nus De -- us Sa -- ba -- oth,
+  Sa -- _ _ ba -- oth. Ple -- ni -- sunt coe -- li et ter
   -- _ _ "ra." glo -- ri -- a tu -- _ _ _
-  _ "a," glo -- ri -- a tu -- _ _ _ _ _ _
-  -- "a." O -- san -- na in ex -- cel -- "sis," O -- san -- na in ex
-  -- cel -- "sis," in ex -- cel -- "sis. " __ Be -- ne -- di -- ctus
-  qui ve -- _ "nit," qui ve -- _ _ _ _ "nit,"
+  _ a, glo -- ri -- a tu -- _ _ _ _ _ _ a. 
+  O -- san -- na in ex -- cel -- sis, O -- san -- na in ex
+  -- cel -- sis, in ex -- cel -- "sis. " __ Be -- ne -- di -- ctus
+  qui ve -- _ nit, qui ve -- _ _ _ _ nit,
   qui ve -- nit in no -- mi -- ne Do -- _ mi -- "ni, " __ in no
   -- mi -- ne Do -- mi -- ni. O -- san -- na in ex -- cel --
-  "sis," in ex -- cel -- _ _ _ _ _ "sis," O
+  sis, in ex -- cel -- _ _ _ _ _ sis, O
   -- san -- na in ex -- cel -- _ _ _ _ _
-  "sis," "in " __ ex -- cel -- "sis." 
+  sis, "in " __ ex -- cel -- sis. 
 }
 
 SanctusAltoNotes =  \relative e' {
@@ -144,7 +144,7 @@ SanctusAltoNotes =  \relative e' {
   a,2 r2 r2 a2 | % 382
   e'2. d4 e2 fs2 | % 383
   g1 fs1 ~ | % 384
-  fs\breve \bar "||"
+  fs\breve ^\fermata \bar "||"
   e1. b2 | % 386
   c2 b2 a2 d2 ~ | % 387
   d2 \melisma e2 \melismaEnd b1 | % 388
@@ -168,30 +168,30 @@ SanctusAltoNotes =  \relative e' {
   e2. fs4 g2 e2 | % 406
   a1 g2 e2 ~ | % 407
   e4 fs4 g4 \melisma fs4 e4 d4 \melismaEnd e2 | % 408
-  r2 g,1 e2 | % 409
+  r2^"rit."  g,1 e2 | % 409
   e'1 \melisma ds1 \melismaEnd | \barNumberCheck #71
   e\breve \fermata \bar "|."
 }
 
 SanctusAltoLyrics  =  \lyricmode {
   San -- _ _ _ _ _
-  _ _ "ctus," San -- _ _ _ _ _
+  _ _ ctus, San -- _ _ _ _ _
   _ _ _ _ _ _ _ _ _
-  "ctus," San -- _ _ _ _ _ _ _
-  _ _ _ _ _ _ _ _ "ctus:"
-  Do -- mi -- nus De -- us Sa -- ba -- "oth," Do -- mi -- nus De -- us
-  Sa -- ba -- "oth," Sa -- ba -- _ "oth." Ple -- ni -- sunt coe
+  ctus, San -- _ _ _ _ _ _ _
+  _ _ _ _ _ _ _ _ ctus:
+  Do -- mi -- nus De -- us Sa -- ba -- oth, Do -- mi -- nus De -- us
+  Sa -- ba -- oth, Sa -- ba -- _ oth. Ple -- ni -- sunt coe
   -- li et ter -- _ _ "ra," ple -- ni -- sunt coe -- li et
   ter -- _ _ _ _ ra glo -- ri -- a tu -- _
-  _ _ _ _ "a," glo -- ri -- a tu -- _ _
-  _ _ "a." O -- san -- na in ex -- cel -- "sis," in ex --
-  cel -- "sis," O -- san -- na in ex -- cel -- "sis. " __ Be -- ne --
-  di -- ctus qui ve -- "nit," qui ve -- _ _ _ _
-  _ "nit," qui ve -- nit in no -- mi -- ne Do -- mi -- "ni," Do
+  _ _ _ _ a, glo -- ri -- a tu -- _ _
+  _ _ a. O -- san -- na in ex -- cel -- sis, in ex --
+  cel -- sis, O -- san -- na in ex -- cel -- sis. __ Be -- ne --
+  di -- ctus qui ve -- nit, qui ve -- _ _ _ _
+  _ nit, qui ve -- nit in no -- mi -- ne Do -- mi -- "ni," Do
   -- _ _ _ _ mi -- "ni," in no -- mi -- ne Do --
   _ _ _ mi -- "ni." O -- san -- na in ex -- cel --
-  "sis," "in " __ ex -- cel -- "sis," O -- san -- na in ex -- cel --
-  "sis," "in " __ ex -- cel -- "sis," in ex -- cel -- "sis." 
+  sis, "in " __ ex -- cel -- sis, O -- san -- na in ex -- cel --
+  sis, "in " __ ex -- cel -- sis, in ex -- cel -- sis. 
 }
 
 SanctusTenorNotes =  \relative b {
@@ -241,7 +241,7 @@ SanctusTenorNotes =  \relative b {
   e'2. d4 e2 fs2 | % 382
   g1 g,2 b2 ~ | % 383
   b4 e,4 e'1 \melisma ds4 cs4 \melismaEnd | % 384
-  ds\breve \bar "||"
+  ds\breve ^\fermata \bar "||"
   R1*4 | % 387
   g,\breve ~ | % 388
   g1 a1 | % 389
@@ -264,29 +264,29 @@ SanctusTenorNotes =  \relative b {
   c2. b8 [ a8 ] g4 a4 b4 g4 | % 406
   fs1 e2 c'2 | % 407
   b1 e,2 b'2 ~ | % 408
-  b4 cs4 d2 b2 e2 ~ | % 409
+  b4^"rit."  cs4 d2 b2 e2 ~ | % 409
   e4 e,4 g4 a4 b1 | \barNumberCheck #71
   b\breve \fermata \bar "|."
 }
 
 
 SanctusTenorLyrics  =  \lyricmode {
-  San -- _ _ _ _ _ _ _ _ "ctus," 
-  San -- _ _ _ _ _ _ _ _ "ctus," 
+  San -- _ _ _ _ _ _ _ _ ctus, 
+  San -- _ _ _ _ _ _ _ _ ctus, 
   San -- _ _ _ _ _ _ _ _  _ _ _ _ _ _ _ "ctus: " __ 
-  Do -- mi -- nus De -- us Sa -- ba -- "oth," Do -- mi -- nus De -- "us," Do
-  -- mi -- nus De -- us Sa -- ba -- "oth." Ple -- "ni " __ sunt coe --
+  Do -- mi -- nus De -- us Sa -- ba -- oth, Do -- mi -- nus De -- "us," Do
+  -- mi -- nus De -- us Sa -- ba -- oth. Ple -- "ni " __ sunt coe --
   li et ter -- _ _ _ _ _ ra glo -- ri -- a tu
-  -- "a," glo -- ri -- a tu -- _ _ _ _ _
-  _ _ "a," glo -- ri -- a tu -- "a." O -- san -- na in ex --
-  cel -- "sis," in ex -- cel -- _ _ _ _ _
-  "sis," O -- san -- na in ex -- cel -- "sis," "in " __ ex -- cel --
-  "sis." Be -- ne -- di -- ctus qui ve -- _ _ _ _
+  -- a, glo -- ri -- a tu -- _ _ _ _ _
+  _ _ a, glo -- ri -- a tu -- a. O -- san -- na in ex --
+  cel -- sis, in ex -- cel -- _ _ _ _ _
+  sis, O -- san -- na in ex -- cel -- sis, "in " __ ex -- cel --
+  sis. Be -- ne -- di -- ctus qui ve -- _ _ _ _
   nit in no -- mi -- ne Do -- mi -- ni, in no -- mi -- ne Do
   -- mi -- "ni," Do -- _ _ _ mi -- "ni." O -- san -- na
-  in ex -- cel -- "sis," in ex -- cel -- _ _ _ _
-  _ _ _ _ "sis," O -- san -- na in ex -- cel --
-  _ _ _ _ "sis." 
+  in ex -- cel -- sis, in ex -- cel -- _ _ _ _
+  _ _ _ _ sis, O -- san -- na in ex -- cel --
+  _ _ _ _ sis. 
   
 }
 
@@ -326,7 +326,7 @@ SanctusBassNotes =  \relative e {
   c2 \melisma b2 \melismaEnd a1 | % 382
   e2 g1 d2 | % 383
   e2 e2 b'1 | % 384
-  b,\breve \bar "||"
+  b,\breve ^\fermata \bar "||"
   R1*4 | % 387
   r2 e1 b2 | % 388
   c2 b2 a2 d2 ~ | % 389
@@ -348,24 +348,24 @@ SanctusBassNotes =  \relative e {
   a1 e1 | % 406
   r1 r2 a,2 | % 407
   e'2. fs4 g2 e2 | % 408
-  b'\breve | % 409
+  b'\breve^"rit."  | % 409
   e,1 b1 | \barNumberCheck #71
   e\breve \fermata \bar "|." 
 }
 
 
 SanctusBassLyrics  =  \lyricmode {
-  San -- _ _ _ _ _ _ "ctus," San -- _
-  _ _ "ctus," San -- _ _ _ _ _
+  San -- _ _ _ _ _ _ ctus, San -- _
+  _ _ ctus, San -- _ _ _ _ _
   _ _ _ ctus: Do -- mi -- nus De -- us Sa -- ba
-  -- "oth," Sa -- ba -- "oth," Do -- mi -- nus De -- "us," Do -- mi --
-  nus De -- us Sa -- ba -- "oth," Sa -- _ _ _ ba --
-  "oth." O -- san -- na in ex -- cel -- "sis," O -- san -- na in ex --
-  cel -- "sis," O -- san -- na in ex -- cel -- "sis." Be -- ne -- di
-  -- ctus qui ve -- "nit," "qui " __ ve -- _ _ _ "nit,"
+  -- oth, Sa -- ba -- oth, Do -- mi -- nus De -- "us," Do -- mi --
+  nus De -- us Sa -- ba -- oth, Sa -- _ _ _ ba --
+  oth. O -- san -- na in ex -- cel -- sis, O -- san -- na in ex --
+  cel -- sis, O -- san -- na in ex -- cel -- sis. Be -- ne -- di
+  -- ctus qui ve -- nit, "qui " __ ve -- _ _ _ nit,
   qui ve -- _ _ _ nit in no -- mi -- ne Do -- mi --
-  "ni." O -- san -- na in ex -- cel -- "sis," O -- san -- na in ex --
-  cel -- _ _ "sis." 
+  "ni." O -- san -- na in ex -- cel -- sis, O -- san -- na in ex --
+  cel -- _ _ sis. 
   
 }
 

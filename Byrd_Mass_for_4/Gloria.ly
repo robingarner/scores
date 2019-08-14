@@ -18,7 +18,7 @@ GloriaSopranoNotes =  \relative b' {
   b1 r2 e,2 | % 49
   g2. a4 b2 c2 | \barNumberCheck #14
   b2 a4 c2 b4 a2 | % 51
-  gs2 \melisma a1 gs2 \melismaEnd | % 52
+  \melisma gs2 a1 \melismaEnd gs2 | % 52
   a1 r2 a2 ~ | % 53
   a4 a4 a2 b2. b4 | % 54
   b1 c1 | % 55
@@ -129,8 +129,8 @@ GloriaSopranoLyrics  =  \lyricmode {
   "Et " __ in ter -- ra pax ho -- mi -- ni
   -- bus bo -- nae vo -- lun -- ta -- _ _ _ "tis." Be
   -- ne -- di -- ci -- mus "te." Glo -- ri -- fi -- ca -- mus "te,"
-  glo -- ri -- fi -- ca -- mus "te," glo -- ri -- fi -- ca -- "mus "
-  __ te. Gra -- ti -- as a -- gi -- mus ti -- bi pro -- pter ma --
+  glo -- ri -- fi -- ca -- mus "te," glo -- ri -- fi -- ca -- mus
+  te. Gra -- ti -- as a -- gi -- mus ti -- bi pro -- pter ma --
   gnam glo -- ri -- am tu -- "am," pro -- pter ma -- gnam glo -- ri --
   am tu -- "am." Do -- mi -- ne De -- "us," Rex coe -- le -- _
   _ _ _ _ "stis," De -- us Pa -- ter o -- mni --
@@ -319,8 +319,8 @@ GloriaTenorNotes =  \relative b {
   r1 r2 e2 | % 48
   fs2 gs2 a2 c2 | % 49
   b1 r2 e,2 | \barNumberCheck #14
-  g2 a2 e2 c'2 \melisma | % 51
-  b2 a2 b1 \melismaEnd | % 52
+  g2 a2 e2 \melisma c'2 | % 51
+  b2 a2 \melismaEnd b1 | % 52
   a1 r2 c2 ~ | % 53
   c4 c4 d2 d2. d4 | % 54
   e1 e1 | % 55
@@ -430,7 +430,7 @@ GloriaTenorNotes =  \relative b {
 GloriaTenorLyrics  =  \lyricmode {
   Lau -- da -- mus "te." A -- do -- ra --
   mus "te." Glo -- ri -- fi -- ca -- mus "te," glo -- ri -- fi -- ca
-  -- mus __ te. Gra -- ti -- as a -- gi -- mus ti -- bi pro --
+  -- mus te. Gra -- ti -- as a -- gi -- mus ti -- bi pro --
   pter ma -- gnam glo -- ri -- am tu -- "am." Do -- mi -- ne De --
   "us," Rex coe -- le -- "stis," rex coe -- le -- "stis," De -- us Pa
   -- ter o -- mni -- po -- "tens," o -- mni -- po -- "tens." Do -- mi

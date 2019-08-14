@@ -89,7 +89,7 @@ CredoSopranoNotes =  \relative b' {
   g1 e1 \bar "||"
   \tempo 2=104 e1 r1 | % 246
   R1*2 | % 247
-  r1 r2 e2 \f | % 248
+  r1 r2 \f e2 | % 248
   a2 b2 c2 d2 | % 249
   b2. b4 a2 g2 | \barNumberCheck #90
   fs1 r2 e2 | % 251
@@ -314,7 +314,7 @@ CredoAltoNotes =  \relative e' {
   d1 a2. c4 | % 243
   b2 g2 b2. b4 |
   e,2 r4 e4 g2 c2 \bar "||"
-  b1 r2 b2 \f | % 246
+  b1 r2 \f b2 | % 246
   cs2 ds2 e2 g2 | % 247
   fs2. fs4 e1 | % 248
   d2 \melisma b2 a2 \melismaEnd b2 | % 249
@@ -469,7 +469,7 @@ CredoTenorNotes =  \relative b {
   g2. a4 b4 \melisma c4 d2 \melismaEnd |
   d2 c2 b2 a4 g4 |
   a4 b4 a2 g1 |
-  r2 e2 ~ e2 e2 | % 172
+  r2 e1 e2 | % 172
   g2. g4 g2 e4. fs8 | % 173
   g4 a4 b2 a2 d2 ~ | % 174
   d2 c2 b2 a2 | % 175
@@ -504,7 +504,7 @@ CredoTenorNotes =  \relative b {
   b1 e2. d4 | % 203
   b1 c1 | % 204
   d1 r2 g,2 | % 205
-  a2 b2 ~ b4 a4 fs2 | % 206
+  a2 b2. a4 fs2 | % 206
   g2 e2 ds2 r2 | % 207
   R1*2 | % 208
   r2 b'2 c2 d2 ~ | % 209
@@ -546,7 +546,7 @@ CredoTenorNotes =  \relative b {
   g2. fs4 e2 g2 |
   c2 \melisma b1 \melismaEnd a2 \bar "||"
   gs1 r1 | % 246
-  r1 r2 b2 ^\f | % 247
+  r1 r2 \f b2 | % 247
   cs2 ds2 e2 g2 | % 248
   fs2. d4 e2 d2 ~ | % 249
   d4 d4 b2 d2 \melisma b2 \melismaEnd | \barNumberCheck #90
@@ -766,7 +766,7 @@ CredoBassNotes =  \relative e {
   R1*4 | \barNumberCheck #80
   R1*8 |
   R1*2 \bar "||"
-  r2 e2 ^\f fs2 gs2 | % 246
+  r2 \f e2 fs2 gs2 | % 246
   a2 b2 e,2. e4 | % 247
   a2 b2 \melisma g2 \melismaEnd e2 | % 248
   R1*2 | % 249
