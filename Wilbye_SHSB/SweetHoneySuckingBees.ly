@@ -931,6 +931,7 @@ PartPFiveVoiceOneLyricsOne =  \lyricmode {
 % The score definition
 \score {
     <<
+      \new ChoirStaff <<
         \new Staff <<
             \set Staff.instrumentName = "Soprano 1"
             \set Staff.shortInstrumentName = "S1"
@@ -971,7 +972,7 @@ PartPFiveVoiceOneLyricsOne =  \lyricmode {
                 \new Lyrics \lyricsto "PartPFiveVoiceOne" \PartPFiveVoiceOneLyricsOne
                 >>
             >>
-        
+          >>
         >>
     \layout {}
     % To create MIDI output, uncomment the following line:

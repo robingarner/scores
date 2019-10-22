@@ -11,7 +11,7 @@ KyrieSopranoNotes  = \relative b' {
   fs4 e4 e1 ds2 | % 7
   e1 r2 b'2 ~ | % 8
   b2 e,2 fs2 a2 ~ | % 9
-  a2 ^"rit." \melisma  g2  fs1 \melismaEnd | \barNumberCheck #10
+  a2 \melisma  g2  fs1 \melismaEnd | \barNumberCheck #10
   gs\breve ^\fermata \bar "||" \break
   \tempo 2=80 | % 11
   r1 r2 b2 ~ | % 12
@@ -23,7 +23,7 @@ KyrieSopranoNotes  = \relative b' {
   r2 d'1 cs2 ~ | % 18
   cs2 b2 a1 ~ | % 19
   a2 \melisma g2 \melismaEnd fs1 | \barNumberCheck #20
-  fs1 ^"rit." fs2 fs2 \bar "!"
+  fs1 fs2 fs2 \bar "!"
   \once \hide Staff.TimeSignature \time 2/2 fs1 |
   \once \hide Staff.TimeSignature  \time 4/2  fs\breve  ^\fermata \bar "||" \break
   \tempo 2=88 
@@ -39,7 +39,7 @@ KyrieSopranoNotes  = \relative b' {
   a2 d1 cs2 | % 32
   d1 r1 | % 33
   R1*2 | % 34
-  r1 ^"rit." b1 |
+  r1 b1 |
   a2 fs2 g1 \bar "!"
   \once \hide Staff.TimeSignature \time 2/2 
   fs1 |

@@ -100,8 +100,8 @@ SanctusSopranoLyrics  =  \lyricmode {
 
 SanctusAltoNotes =  \relative e' {
   \clef "treble" \key g \major \numericTimeSignature\time 4/2
-  R1*2 | % 343
-  b2. \p cs4 d4 e4 fs2 ~ | % 344
+  << R1*2 { s1 s2. s4  \p } >> | % 343
+  b2. cs4 d4 e4 fs2 ~ | % 344
   fs4 e4 e1 ds2 | % 345
   e1 b2. cs4 | % 346
   d2 e2 fs2 g2 ~ | % 347
@@ -174,30 +174,35 @@ SanctusAltoNotes =  \relative e' {
 }
 
 SanctusAltoLyrics  =  \lyricmode {
-  San -- _ _ _ _ _
-  _ _ ctus, San -- _ _ _ _ _
-  _ _ _ _ _ _ _ _ _
-  ctus, San -- _ _ _ _ _ _ _
-  _ _ _ _ _ _ _ _ ctus:
-  Do -- mi -- nus De -- us Sa -- ba -- oth, Do -- mi -- nus De -- us
-  Sa -- ba -- oth, Sa -- ba -- _ oth. Ple -- ni -- sunt coe
-  -- li et ter -- _ _ "ra," ple -- ni -- sunt coe -- li et
-  ter -- _ _ _ _ ra glo -- ri -- a tu -- _
-  _ _ _ _ a, glo -- ri -- a tu -- _ _
-  _ _ a. O -- san -- na in ex -- cel -- sis, in ex --
-  cel -- sis, O -- san -- na in ex -- cel -- sis. __ Be -- ne --
-  di -- ctus qui ve -- nit, qui ve -- _ _ _ _
-  _ nit, qui ve -- nit in no -- mi -- ne Do -- mi -- "ni," Do
-  -- _ _ _ _ mi -- "ni," in no -- mi -- ne Do --
-  _ _ _ mi -- "ni." O -- san -- na in ex -- cel --
-  sis, "in " __ ex -- cel -- sis, O -- san -- na in ex -- cel --
-  sis, "in " __ ex -- cel -- sis, in ex -- cel -- sis. 
+  San -- _ _ _ _ _ _ _ ctus, 
+  San -- _ _ _ _ _ _ _ _ _ _ _ _ _ _ ctus, 
+  San -- _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ctus,
+  Do -- mi -- nus De -- us Sa -- ba -- oth, 
+  Do -- mi -- nus De -- us Sa -- ba -- oth, 
+  Sa -- ba -- _ oth. 
+  
+  Ple -- ni -- sunt coe -- li et ter -- _ _ ra, 
+  ple -- ni -- sunt coe -- li et ter -- _ _ _ _ ra 
+  glo -- ri -- a tu -- _ _ _ _ _ a, 
+  glo -- ri -- a tu -- _ _ _ _ a. 
+  
+  O -- san -- na in ex -- cel -- sis, in ex -- cel -- sis, 
+  O -- san -- na in ex -- cel -- sis. __ 
+  
+  Be -- ne -- di -- ctus qui ve -- nit, 
+  qui ve -- _ _ _ _ _ nit, 
+  qui ve -- nit in no -- mi -- ne Do -- mi -- ni,
+  Do -- _ _ _ _ mi -- ni, in no -- mi -- ne Do -- _ _ _ mi -- "ni." 
+  O -- san -- na in ex -- cel -- sis, 
+  in __ ex -- cel -- sis, 
+  O -- san -- na in ex -- cel -- sis, 
+  in __ ex -- cel -- sis, in ex -- cel -- sis. 
 }
 
 SanctusTenorNotes =  \relative b {
   \transposition c \clef "treble_8" \key g \major
   \numericTimeSignature\time 4/2 
-  r1 e,2. \p fs4 | % 343
+  << r1 {s2. s4 \p} >> e,2.fs4 | % 343
   g2 a2 b1 ~ | % 344
   b2 a4 g4 a2 b2 | % 345
   b1 r1 | % 346
@@ -292,8 +297,8 @@ SanctusTenorLyrics  =  \lyricmode {
 
 SanctusBassNotes =  \relative e {
   \clef "bass" \key g \major \numericTimeSignature\time 4/2
-  R1*6 | % 345
-  e2. \p fs4 g4 a4 b2 ~ | % 346
+   R1*4 << R1*2 { s1 s2. s4 \p } >> | % 345
+  e2. fs4 g4 a4 b2 ~ | % 346
   b2 c2 b1 | % 347
   e,\breve | % 348
   r2 a,2. b4 c4 d4 | % 349

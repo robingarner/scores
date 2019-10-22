@@ -8,6 +8,12 @@ hdates="(c. 1543-1623)"
 
 \include "../include/common.ly"
 
+\layout {
+  \context { \Score
+    skipBars = ##t
+    autoBeaming = ##f
+  }
+}
 
 \paper {
   %

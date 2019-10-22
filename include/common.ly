@@ -42,8 +42,6 @@ date = #(strftime "%d/%m/%Y" (localtime (current-time)))
   \override NoteHead.style = #'baroque
   \context { \Score
     markFormatter = #format-mark-box-alphabet
-    skipBars = ##t
-    autoBeaming = ##f
     \override BarNumber.break-visibility = ##(#f #t #t)
   }
   ragged-right = ##f

@@ -99,7 +99,7 @@ AgnusDeiAltoNotes =  \relative e' {
   R1*8 |
   R1*2 \bar "!"
   \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 R1 |
-  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  r1 \tempo 2=88 d1 \f ~ | % 438
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  r1 \tempo 2=88 d1 \mf ~ | % 438
   d2 b2 e2. \melisma d4 | % 439
   c4 b4 a2 \melismaEnd d1 | \barNumberCheck #31
   b2. g4 c2. \melisma b4 | % 441
