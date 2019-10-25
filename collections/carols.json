@@ -1,0 +1,28 @@
+{ "toc" : true,
+  "inputs" : [
+    { "file" : "../3rd-party/Blessed_Be_That_Maid_Marie.pdf", 
+      "toc" : "Blessed Be That Maid Marie" },
+    { "file" : "../3rd-party/Break_Forth_Bach_German.pdf", 
+      "toc" : "Break Forth" },
+    { "file" : "../3rd-party/Dadme_albricias.pdf", 
+      "toc" : "Dadme Albricias" },
+    { "file" : "../3rd-party/Es_ist_ein_Ros_entsprungen_Vulpius-Praetorius.pdf", 
+      "toc" : "Es ist ein Ros entsprungen" },
+    { "file" : "../3rd-party/Gabriels_Message_Old_Basque_Carol.pdf", 
+      "toc" : "Gabriels Message" },
+    { "file" : "../3rd-party/HodieChristusNatusEst.pdf", 
+      "toc" : "Hodie Christus Natus Est" },
+    { "file" : "../3rd-party/In_Dulci_Jubilo_Bach_version.pdf", 
+      "toc" : "In Dulci Jubilo" },
+    { "file" : "../3rd-party/Lullay_My_Liking_arr._Holst.pdf", 
+      "toc" : "Lullay My Liking" },
+    { "file" : "../3rd-party/Personent_hodie_arr._Holst.pdf", 
+      "toc" : "Personent Hodie" },
+    { "file" : "../3rd-party/Riu_Riu_Chiu_baritone.pdf",  
+      "toc" : "Riu Riu Chiu (baritone)" },
+    { "file" : "../3rd-party/Riu_riu_chiu_tenor.pdf",  
+      "toc" : "Riu riu chiu (tenor)" },
+    { "file" : "../3rd-party/There_is_No_Rose_of_Such_Virtue.pdf",  
+      "toc" : "There is No Rose of Such Virtue" }
+  ]
+}
