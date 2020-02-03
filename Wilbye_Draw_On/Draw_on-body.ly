@@ -18,7 +18,7 @@ PartPOneVoiceOne =  \relative a' {
   r2 d2 ~ | % 12
   d2 d2 ~ | % 13
   d2 cis2 | % 14
-  d2. cis8 [ b8 ] | % 15
+  d2. cis8 [ \melisma b8 ] \melismaEnd | % 15
   a1 | % 16
   R1*3 | % 19
   r2 d,2 | \barNumberCheck #20
@@ -43,13 +43,13 @@ PartPOneVoiceOne =  \relative a' {
   d4. c8 bes4 bes4 | % 42
   a2. c4 | % 43
   bes4 a4 g4 f4 | % 44
-  e4 f2 e4  | % 45
+  e4 \melisma f2 e4 \melismaEnd | % 45
   f1 | % 46
   R1 | % 47
   r2 r4 e'4  | % 48
   f4. e8 d4 d4 | % 49
   e4. d8 cis4 a4 ~ | \barNumberCheck #50
-  a4 d2 cis4 | % 51
+  a4 d2 \melisma cis4 \melismaEnd | % 51
   d2 a2 | % 52
   b2 b2 | % 53
   a1  | % 54
@@ -72,13 +72,13 @@ PartPOneVoiceOne =  \relative a' {
   \mark \default R1*4 | % 75
   r4 e,4 f4 g4 | % 76
   a1 ~ | % 77
-  a4 gis8 [ fis8 ] gis2 | % 78
+  a4 \melisma gis8 [ fis8 ] \melismaEnd gis2 | % 78
   a1 | % 79
   r4 e4 f4 g4 | \barNumberCheck #80
   a2 g2 | % 81
   f2. f4 | % 82
   e4 f4 g2 ~ | % 83
-  g4 f4 e2 | % 84
+  g4\melisma f4 \melismaEnd e2 | % 84
   R1*3 | % 87
   R1*5 | % 92
   R1*4 | % 96
@@ -93,8 +93,8 @@ PartPOneVoiceOne =  \relative a' {
   r4 fis4 fis4 fis4 | % 105
   g2. g4 | % 106
   a2 a2 | % 107
-  b4. a8 b8 [ c8 ] d4 | % 108
-  cis4 d2 cis4 | % 109
+  b4. a8 \melisma b8 [ c8 ] d4 | % 108
+  cis4 d2 cis4 \melismaEnd | % 109
   d2 r4 a4 | \barNumberCheck #110
   a4 a4 c2 | % 111
   bes4 a2 g4 | % 112
@@ -104,9 +104,9 @@ PartPOneVoiceOne =  \relative a' {
   r4 f4 f4 f4 | % 116
   a2. g4 | % 117
   f4 e4 d4 d4 | % 118
-  cis4  d2 cis4 | % 119
-  d4. c8 d8 [ e8 ] f4 | \barNumberCheck #120
-  e8 [ d8 ] d4 e4 a4  | % 121
+  cis4 \melisma  d2  cis4 \melismaEnd | % 119
+  d4. c8 d8 [ \melisma e8 ] \melismaEnd f4 | \barNumberCheck #120
+  e8 [ \melisma d8 ] d4 e4 a4  \melismaEnd | % 121
   a1 ~ | % 122
   a2 r4 a4 | % 123
   a4 a4 c2 | % 124
@@ -119,21 +119,21 @@ PartPOneVoiceOne =  \relative a' {
 }
 
 PartPOneVoiceOneLyricsOne =  \lyricmode {
-  Draw on, sweet night, draw
-  on, sweet night, best friend un -- to those cares, that do a
+  Draw on, sweet night, __ draw
+  on, sweet night, best __ friend __ un -- to those cares, that do a
   -- rise from pain -- ful me -- lan -- cho -- ly, a -- rise from
   pain -- ful me -- lan -- cho -- ly, My life so ill through want of
-  com -- fort fares, That un -- to thee, to thee I con -- se --
-  crate it whol -- _ _ ly, That un -- to thee I con -- se -- crate it
-  whol -- _ ly: Sweet night draw on, Sweet night draw on, O sweet
-  night draw on, Sweet night draw on, Sweet night draw on, My
-  griefs when they __ _ be told To shades and dark -- ness, find some
-  ease from pain -- _ ing, And while thou all in si -- lence dost en
+  com -- fort fares, __ That un -- to thee, to thee I con -- se --
+  crate it whol -- ly, That un -- to thee I con -- se -- crate it
+  whol -- ly: Sweet night draw on, Sweet night draw on, O sweet
+  night draw on, __ Sweet night draw on, Sweet night draw on, My
+  griefs when they __ be told To shades and dark -- ness, find some
+  ease from pain -- ing, And while thou all in si -- lence dost en
   -- fold, in si -- lence dost en -- fold, and while thou all in
-  si -- lence dost en -- _ _ _ _ _ fold, I then shall have best time for my
+  si -- lence dost en -- fold, I then shall have best time for my
   com -- plain -- ing, I then shall have best time for my com --
-  plain -- _ _ ing, for my com -- plain -- _ _ _ ing, I then shall have best
-  time for my com -- plain -- ing.
+  plain -- ing, for my com -- plain -- ing, __ I then shall have best
+  time for my __ com -- plain -- ing.
 }
 PartPTwoVoiceOne =  \relative a' {
   \clef "treble" \key c \major \time 2/2 | % 1
@@ -200,7 +200,7 @@ PartPTwoVoiceOne =  \relative a' {
   b1 | % 71
   R1*4 | % 75
   r4 g4 a4 b4 | % 76
-  c4 d4 e2 | % 77
+  c4 \melisma d4 e2 \melismaEnd | % 77
   d1 | % 78
   cis1 | % 79
   R1*3 | % 82
@@ -209,15 +209,15 @@ PartPTwoVoiceOne =  \relative a' {
   f4 g4 a2 | % 85
   g4 g2 g4 | % 86
   f4 e4 e2 ~ | % 87
-  e2 d2 | % 88
+  e2 \melisma d2 \melismaEnd | % 88
   e1 | % 89
   R1*3 | % 92
   r2 r4 e4 | % 93
   e4 e4 fis2 ~ | % 94
   fis4 fis ?4 gis2 | % 95
   e2 a2 ~ | % 96
-  a4 g4 fis4 e4 | % 97
-  d1 | % 98
+  a4 g4 \melisma fis4 e4 | % 97
+  d1 \melismaEnd | % 98
   a'2 r2 | % 99
   R1 | \barNumberCheck #100
   e4 a2 g4 | % 101
@@ -227,8 +227,8 @@ PartPTwoVoiceOne =  \relative a' {
   a4 a4 b2 ~ | % 105
   b4 b4 cis2 | % 106
   a2 d2 ~ | % 107
-  d4 c4  b4 a4 | % 108
-  g1  | % 109
+  d4 \melisma c4  b4 a4 | % 108
+  g1 \melismaEnd | % 109
   a1 | \barNumberCheck #110
   R1*5 | % 115
   r2 r4 a4 | % 116
@@ -248,19 +248,19 @@ PartPTwoVoiceOne =  \relative a' {
 }
 
 PartPTwoVoiceOneLyricsOne =  \lyricmode {
-  Draw on, sweet night, draw
+  Draw __ on, __ sweet night, __ draw
   on, sweet night, best friend un -- to those cares, that do a
   -- rise from pain -- ful me -- lan -- cho -- ly, from pain --
   ful me -- lan -- cho -- ly, from pain -- ful me -- lan -- cho --
   ly, My life so ill through want of com -- fort fares, That un --
   to thee, that un -- to thee I con -- se -- crate it whol -- ly,
-  That un -- to thee, to thee I con -- se -- crate it whol -- ly:
-  Sweet night draw on, Sweet night draw on, Sweet night draw on,
-  Sweet night draw on, My griefs when they __ _ _ be told To shades and
-  dark -- ness, find some ease from pain -- _ ing, And while thou
-  all in si -- lence dost en -- _ _ _ fold, And while thou all in si-
+  That un -- to thee, to thee __ I con -- se -- crate __ it whol -- ly:
+  Sweet __ night draw on, Sweet __ night draw on, Sweet night draw on,
+  Sweet __ night draw on, My griefs when they __ be told To shades and
+  dark -- ness, find some ease from pain -- ing, And while thou
+  all __ in si -- lence dost en -- fold, And while thou all in si-
   lence dost en -- fold, and while thou all in si -- lence dost
-  en -- _ _ _ fold, I then shall have best time for my com -- plain --
+  en -- fold, I then shall have best time for my com -- plain --
   ing, I then shall have best time for my com -- plain -- ing, I
   then shall have best time for my com -- plain -- ing.
 }
@@ -299,7 +299,7 @@ PartPThreeVoiceOne =  \relative fis' {
   d2 cis2 | % 32
   f4 a2 g4 | % 33
   f2. e4 | % 34
-  d8 [ e8 ] f4 f4 e4 | % 35
+  d8 [ \melisma e8 ] \melismaEnd f4 f4 e4 | % 35
   f1 | % 36
   r4 e4 f4 g4 | % 37
   a2. g4 | % 38
@@ -346,30 +346,30 @@ PartPThreeVoiceOne =  \relative fis' {
   d4 e4 f2 | % 85
   e4 e2 d4 | % 86
   c2. b4 | % 87
-  a4 gis4 a2 | % 88
+  a4 \melisma gis4 a2 \melismaEnd | % 88
   b4 b4 c4 d4 | % 89
   e2 d2 | \barNumberCheck #90
   c2 c2 | % 91
   b4 c4 d2 ~ | % 92
-  d4 c4 b2 | % 93
+  d4 \melisma c4 b2 \melismaEnd | % 93
   cis1 | % 94
   r4 d4 d4 d4 | % 95
   e2. e4 | % 96
-  fis2 d2 | % 97
-  g2. g4 | % 98
-  fis4 e8 [ d8 ] fis4 e4 | % 99
+  fis2 \melisma d2 \melismaEnd | % 97
+  g2. g4 \melisma | % 98
+  fis4 e8 [ d8 ] fis4 e4 \melismaEnd | % 99
   d1 | \barNumberCheck #100
   R1 | % 101
   a2 a4 a4 | % 102
   b2. b4 | % 103
   cis2 a2 | % 104
-  d4. c8 b4 a4 | % 105
+  d4. c8 \melisma b4 a4 \melismaEnd | % 105
   g1 | % 106
   R1*3 | % 109
   r4 f'4 f4 f4 | \barNumberCheck #110
   a2. g4 | % 111
   f4 e4 d4 d4 | % 112
-  cis4 d2 cis4 | % 113
+  cis4 \melisma d2 cis4 \melismaEnd | % 113
   d4 a'4 a4 a4 | % 114
   g1 | % 115
   fis2 r2 | % 116
@@ -381,31 +381,31 @@ PartPThreeVoiceOne =  \relative fis' {
   d2 r2 | % 123
   R1 | % 124
   r2 d2 | % 125
-  a'4 g8 [ f8 ] e4.  d8 | % 126
-  cis4 a4 r4 e'4 | % 127
-  cis4 d4 e4 f8 [ g8 ] | % 128
-  a4 d,4 e2 | % 129
+  a'4 g8 [ \melisma f8 ] \melismaEnd e4. \melisma d8 | % 126
+  cis4 \melismaEnd a4 r4 e'4 | % 127
+  cis4 d4 e4 \melisma f8 [ g8 ] | % 128
+  a4 d,4 e2 \melismaEnd | % 129
   d1 ^\fermata \bar "|."
 }
 
 PartPThreeVoiceOneLyricsOne =  \lyricmode {
-  Draw on, sweet night,
-  best friend un -- to those cares, draw on, sweet night, draw
-  on, sweet night, best friend un -- to those cares, that do a
-  -- rise, a -- rise from pain -- ful me -- lan -- cho -- ly, My
+  Draw __ on, sweet night,
+  best friend un -- to those cares, draw __ on, sweet night, __ draw
+  on, sweet night, best __ friend un -- to those cares, that do a
+  -- rise, a -- rise from __ pain -- ful __ me -- lan -- cho -- ly, My
   life so ill through want of com -- fort fares, My life so ill
-  through want of com -- fort fares, That un -- to thee I con -- se
+  through want of com -- fort fares, __ That un -- to thee I con -- se
   -- crate it whol -- ly, That un -- to thee I con -- se -- crate it
   whol -- ly, That un -- to thee, I con -- se -- crate it whol --
-  ly: Sweet night draw on, Sweet night draw on, Sweet night draw
-  on, Sweet night draw on, Sweet night draw on, Sweet night draw
-  on, My griefs when they be told To shades and dark -- ness, find
-  some ease from pain -- _ _ ing, to shades and dark -- ness, find
-  some ease from pain -- _ _ ing, And while thou all in __ _ si -- lence
-  en -- _ _ _ _ fold, and while thou all in si -- lence dost en -- _ _ fold, I
-  then shall have best time for my com -- plain -- _ _ ing, for my com
+  ly: Sweet night draw on, Sweet __ night draw on, Sweet night draw
+  on, Sweet __ night draw on, Sweet night draw on, __ Sweet __ night draw
+  on, __ My griefs when they be told To shades and dark -- ness, find
+  some ease from pain -- ing, to shades and dark -- ness, find
+  some ease from pain -- ing, And while thou all in __ si -- lence
+  en -- fold, and while thou all in si -- lence dost en -- fold, I
+  then shall have best time for my com -- plain -- ing, for my com
   -- plain -- ing, I then shall have best time for my com --
-  plain -- ing, for my com -- plain -- _ _ ing, for my com -- plain -- _ _ _ _
+  plain -- ing, for my com -- plain -- ing, for my com -- plain --
   ing.
 }
 PartPFourVoiceOne =  \relative d' {
@@ -448,7 +448,7 @@ PartPFourVoiceOne =  \relative d' {
   a4. g8 f2 ~ | % 41
   f4 f4 g4. f8 | % 42
   e2. e4 | % 43
-  d4. c8 d8 [ e8 ] f4 | % 44
+  d4. c8 d8 [ \melisma e8 ] \melismaEnd f4 | % 44
   c1 | % 45
   c1 | % 46
   R1 | % 47
@@ -517,10 +517,10 @@ PartPFourVoiceOne =  \relative d' {
   a1 | % 116
   r4 c4 c4 c4 | % 117
   d2. d4 | % 118
-  e4 f8 [ g8 ] a2 | % 119
+  e4 \melisma f8 [ g8 ] a2 \melismaEnd | % 119
   R1 | \barNumberCheck #120
-  r4 a,4 b8 [ c8 d8 b8 ] | % 121
-  cis4 f4 e2 | % 122
+  r4 a,4 b8 [ \melisma c8 d8 b8 ] | % 121
+  cis4 \melismaEnd f4 e2 | % 122
   d1 | % 123
   R1*2 | % 125
   r2 r4 cis4 | % 126
@@ -535,11 +535,11 @@ PartPFourVoiceOneLyricsOne =  \lyricmode {
   best friend un -- to those __ _ cares, draw on, sweet  night, best
   friend un -- to those cares, Draw on, sweet night, best friend
   un -- to those cares, that do a -- rise from pain -- ful me -- lan
-  -- cho -- ly, My life so ill through want of com -- fort fares,
-  That un -- to thee, that un -- to thee I con -- se -- crate it
+  -- cho -- ly, __ My life so ill through want of com -- fort fares,
+  That un -- to thee, __ that un -- to thee I con -- se -- crate it
   whol -- ly, That un -- to thee, to thee I con -- se -- crate it
-  whol -- ly: Sweet night draw on, Sweet night draw  on, Sweet
-  night draw on, draw on, Sweet night draw on, Sweet night draw
+  whol -- ly: Sweet __ night draw on, Sweet night draw  on, Sweet
+  night draw on, draw on, __ Sweet night draw on, Sweet night draw
   on, Sweet night draw on, Sweet night draw on, My griefs when
   they __ _ _ be told To shades and dark -- ness, find some ease from
   pain -- _ _ ing, to shades and dark -- ness, find some ease from
@@ -547,8 +547,8 @@ PartPFourVoiceOneLyricsOne =  \lyricmode {
   in si -- lence dost en -- fold, and while thou all in si -- lence
   dost en -- fold, and while thou all in si -- lence dost en --
   fold, I then shall have best time for my com -- plain ing, for
-  my com -- plain -- _ ing, I then shall have best time __ _ _ for my __ _ com --
-  plain -- ing, I then shall have best time for my com -- plain-
+  my com -- plain -- _ ing, I then shall have best time __ for my __ com --
+  plain -- ing, I then shall have __ best time for my com -- plain-
   ing.
 }
 PartPFiveVoiceOne =  \relative g {
@@ -614,7 +614,7 @@ PartPFiveVoiceOne =  \relative g {
   gis1 | % 71
   r4 g4 a4 b4 | % 72
   c2 c2 ~ | % 73
-  c4 b8 [ a8 ] b2 | % 74
+  c4 b8 [ \melisma a8 ] \melismaEnd b2 | % 74
   c1 | % 75
   R1 | % 76
   R1*3 | % 79
@@ -666,13 +666,13 @@ PartPFiveVoiceOne =  \relative g {
 }
 
 PartPFiveVoiceOneLyricsOne =  \lyricmode {
-  Draw on, sweet night,
+  Draw __ on, sweet night,
   best friend un -- to those cares, Draw on, sweet night, best
   friend un -- to those cares, un -- to those cares, that do a --
   rise from pain -- ful me -- lan -- cho -- ly, My life so ill
   through want of com -- fort fares, That un -- to thee, that un
   -- to thee, I con -- se -- crate it whol -- ly, That un -- to
-  thee I con -- se -- crate it whol -- ly, it whol -- ly: Sweet
+  thee I con -- se -- crate it whol -- ly, __ it whol -- ly: Sweet
   night draw on, Sweet night draw on, Sweet night draw on, draw
   on, Sweet night, Sweet night draw on, My griefs when they be __ _ _ 
   told To shades and dark -- ness, find some ease from pain --

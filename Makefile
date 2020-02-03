@@ -13,7 +13,8 @@
 
 SUBDIRS = Byrd_Mass_for_3 Byrd_Mass_for_4 Byrd_Ave_Verum
 #SUBDIRS += linverno spring kruisvaarderslied my-peace
-SUBDIRS += Costantini_Confitemini de-Wert_Vox Josquin_Absalon Josquin_Ave_Maria
+SUBDIRS += Costantini_Confitemini de-Wert_Vox de-Wert_Misera de-Wert_Io_mi-1 de-Wert_Io_mi-2
+SUBDIRS += Josquin_Absalon Josquin_Ave_Maria
 SUBDIRS += Palestrina_Sicut Palestrina_Vedrassi Wilbye_Draw_On Wilbye_SHSB
 #st-cecilia-press
 
@@ -35,6 +36,15 @@ Byrd_Mass_for_4:
 
 de-Wert_Vox:
 	$(MAKE) -C de-Wert_Vox --makefile=../Makefile Vox_In_Rama_de-Wert.pdf
+
+de-Wert_Io_mi-1:
+	$(MAKE) -C $@ all
+
+de-Wert_Io_mi-2:
+	$(MAKE) -C $@ all
+
+de-Wert_Misera:
+	$(MAKE) -C $@ all
 
 Costantini_Confitemini:
 	$(MAKE) -C Costantini_Confitemini all

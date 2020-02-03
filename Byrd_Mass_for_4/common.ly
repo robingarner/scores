@@ -21,7 +21,7 @@ hdates="(c. 1543-1623)"
   % sometimes 3 sometimes 4.
   %
   system-system-spacing = 
-    #'((basic-distance . 30) 
+    #'((basic-distance . 28) 
        (minimum-distance . 6) 
        (padding . 1) 
        (stretchability . 12)) 

@@ -40,11 +40,11 @@ PartPOneVoiceOne =  \relative c'' {
     r8 es8 f8 g8 ] as2 % 17
     r8 f8 g8 as8 bes2 | % 18
     r8 g8 as8 bes8 c4 bes8 [ as8 ] | % 19
-    g4 as4 g4 g4 | \barNumberCheck #20
+    g4 as4 \mf g4 g4 | \barNumberCheck #20
     f8 [ g8 as8 bes8 ] c2 | % 21
     r2 c2 | % 22
     c4 c4 c8 [ bes8 as8 g8 ] | % 23
-    as4 f4 \mf as4 g4 | % 24
+    as4 f4 as4 g4 | % 24
     f4 c4 c4 c4 | % 25
     c8 [ d8 e8 f8 ] g4 as4 | % 26
     g4 f4 f4 e4 | % 27
@@ -235,10 +235,10 @@ PartPTwoVoiceOne =  \relative c'' {
     r8 as8 bes8 c8 des4 des4 | % 18
     c2. c4 | % 19
     c2 c2 | \barNumberCheck #20
-    c4 f,4 c4 c4 | % 21
+    c4 f,4 \mf c4 c4 | % 21
     c8 [ d8 e8 f8 ] g4 as4 | % 22
     g4 f4 g4 g4 | % 23
-    f4 f4 \mf f4 e4 | % 24
+    f4 f4 f4 e4 | % 24
     f8 [ g8 as8 bes8 ] c2 ~ | % 25
     c2 r4 c4 | % 26
     c4 as4 g4 g4 | % 27
@@ -422,16 +422,16 @@ PartPThreeVoiceOne =  \relative f' {
     f1 | % 18
     r8 es8 f8 g8 as4 \melisma g8 [ f8 ] | % 19
     e4 f2 \melismaEnd e4 | \barNumberCheck #20
-    f4 c4 as'4 as4 | % 21
+    f4 c4 \mf as'4 as4 | % 21
     g8 [ f8 e8 d8 ] c2 | % 22
     r4 f,4 f4 e4 | % 23
-    f8 [ g8 as8 bes8 ] c4 c4 \mf | % 24
+    f8 [ g8 as8 bes8 ] c4 c4 | % 24
     c2 as'2 | % 25
     g8 [ f8 e8 d8 ] c2 | % 26
-    r2 c4 \f c8 [ bes8 ] | % 27
+    r2 c4 c8 [ bes8 ] | % 27
     as4 f4 c'4 c8 bes8 | % 28
     as4 f4 f'2 | % 29
-    es2 es4 es4 | \barNumberCheck #30
+    es2 \f es4 es4 | \barNumberCheck #30
     es2 es2 | % 31
     R1*2 | % 33
     R1*3 | % 36
@@ -622,7 +622,7 @@ PartPFourVoiceOne =  \relative f' {
     as2 r8 as8 bes8 c8 | % 17
     des2 bes2 | % 18
     c1 ~ | % 19
-    c4  f,4 c'4 c4 | \barNumberCheck #20
+    c4  f,4 \mf c'4 c4 | \barNumberCheck #20
     as8 [ g8 f8 g8 ] as8 [ bes8 c8 d8 ] | % 21
     e4 c4 e4 f4 | % 22
     c2. c4 | % 23
@@ -631,8 +631,8 @@ PartPFourVoiceOne =  \relative f' {
     e4 c4 e4 f4 | % 26
     c4 c4 c2 | % 27
     c4 c8 bes8 as4 f4 | % 28
-    c'4 \f c8 bes8 as4 f4 | % 29
-    r4 c'4 c4 c4 | \barNumberCheck #30
+    c'4 c8 bes8 as4 f4 | % 29
+    r4 \f c'4 c4 c4 | \barNumberCheck #30
     c2 c2 | % 31
     as8 [ bes8 ] c8 [ des8 ] es4 f4 | % 32
     c2. c4 \p | % 33
@@ -788,11 +788,11 @@ PartPFiveVoiceOne =  \relative c {
     R1*6 | % 12
     R1*5 | % 17
     R1*2 | % 19
-    r2 r4 c4 | \barNumberCheck #20
+    r2 r4 c4 \mf | \barNumberCheck #20
     f4 f4 f8 [ g8 as8 bes8 ] | % 21
     c2. f,4 | % 22
     e4 f4 c4 c4 | % 23
-    f2. c4 \mf | % 24
+    f2. c4 | % 24
     f4 f4 f8 [ g8 as8 bes8 ] | % 25
     c2. f,4 | % 26
     e4 f4 c4 c4 | % 27

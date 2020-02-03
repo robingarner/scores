@@ -29,7 +29,7 @@ AgnusDeiSopranoNotes =  \relative b' {
   a2. g4 a4 b4 g2 | % 434
   fs1 r2 d'2 ~ | % 435
   d2 c2 c2 b2 |
-  a2. ^"rit." g4 e4 fs4 g2 ~ \bar "!"
+  a2. g4 e4 fs4 g2 ~ \bar "!"
   \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 g2 fs2 |
   \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  | % 437
   g\breve |  \break 
@@ -99,7 +99,7 @@ AgnusDeiAltoNotes =  \relative e' {
   R1*8 |
   R1*2 \bar "!"
   \once \hide Staff.TimeSignature \numericTimeSignature\time 2/2 R1 |
-  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  r1 \tempo 2=88 d1 \mf ~ | % 438
+  \once \hide Staff.TimeSignature \numericTimeSignature\time 4/2  r1 d1 \mf ~ | % 438
   d2 b2 e2. \melisma d4 | % 439
   c4 b4 a2 \melismaEnd d1 | \barNumberCheck #31
   b2. g4 c2. \melisma b4 | % 441

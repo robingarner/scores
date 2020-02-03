@@ -1,13 +1,20 @@
+\version "2.19.83"
 \language "english"
 
 htitle="Mass for Three Voices"
 hcomposer="William Byrd"
 hdates="(c. 1543-1623)"
 
-#(set-global-staff-size 15)
+#(set-global-staff-size 17)
 
 \include "../include/common.ly"
 
+\layout {
+  \context { \Score
+    skipBars = ##t
+    autoBeaming = ##f
+  }
+}
 
 \paper {
   %
@@ -15,7 +22,7 @@ hdates="(c. 1543-1623)"
   % sometimes 3 sometimes 4.
   %
   system-system-spacing = 
-    #'((basic-distance . 20) 
+    #'((basic-distance . 30) 
        (minimum-distance . 6) 
        (padding . 1) 
        (stretchability . 12)) 

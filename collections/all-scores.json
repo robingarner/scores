@@ -1,117 +1,142 @@
 { "toc" : true,
   "inputs" : [
-    { "file" : "../Josquin_Absalon/Absalon_Fili_Mi_4.pdf", 
-      "toc" : "Absalon (Josquin)" 
-    },
-    { "file" : "../3rd-party/Allon gay.Costeley.SATB.pdf", 
-      "toc" : "Allon Gay Bergeres (Costeley)",
-      "include" : "false" 
-    },
-    { "file" : "../3rd-party/April_is_in_my_mistress_face_Morley.pdf",
-      "toc": "April is in my Mistress' Face (Morley)"
-    },
-    { "file" : "../Josquin_Ave_Maria/Ave_Maria_-_Josquin_V5.pdf",
-      "toc" : "Ave Maria (Josquin)"
-    },
-    { "file" : "../Byrd_Ave_Verum/Ave_Verum_Corpus_Byrd.pdf",
-      "toc" : "Ave Verum Corpus (Byrd)"
-    },
-    { "file" : "../3rd-party/Lassus-Bonjour.pdf",
-      "toc" : "Bonjour mon Coeur (Lassus)"
-    },
-    { "file" : "../Costantini_Confitemini/confitemini.pdf" ,
-      "toc" : "Confitemini Domino (Costantini)"
-    },
-    { "file" : "../3rd-party/Those_dainty_daffodillies.SATBB.pdf",
-      "toc" : "Those Dainty Daffodillies (Morley)",
-      "include" : "false" 
-    },
-    { "file" : "../3rd-party/Deep_lamenting_Morley.SAB.pdf",
-      "toc" : "Deep Lamenting (Morley)",  
-      "include" : "false" 
-    },
-    { "file" : "../Wilbye_Draw_On/Draw_on_sweet_night_Wilbye-compact.pdf" ,
-      "toc" : "Draw On Sweet Night (Wilbye)"
-    },
-    { "file" : "../st-cecilia-press/fine_knacks/fine_knacks.pdf" ,
-      "toc" : "Fine Knacks for Ladies (Dowland)"
-    },
-    { "file" : "../3rd-party/Hark,_all_ye_lovely_saints.pdf" ,
-      "toc" : "Hark, all ye Lovely Saints (Weelkes)"
-    },
-    { "file" : "../3rd-party/Hic_Est_beatissimus_Evangelista_Nanino.pdf",
-      "toc" : "Hic est Beatissimus Evangelista (Nanino)" 
-    },
-    { "file" : "../3rd-party/Il_bianco_e_dolce_Arcadelt.pdf",
-      "toc" : "Il Bianco e Dolce Cigno (Arcadelt)" 
-    },
-    { "file" : "../3rd-party/Il_Est_Bel_Et_Bon.David.E minor.pdf",
-      "toc" : "Il est Bel et Bon (Passereau)" 
-    },
     { "file" : "../3rd-party/I_love,_alas,_I_love_thee.SAATB.pdf",
       "toc" : "",  
       "include" : "false" 
     },
-    { "file" : "../3rd-party/Lullaby_Byrd_SAATB.pdf",
-      "toc" : "Lullaby (Byrd)",  
-      "include" : "false" 
-    },
-    { "file" : "../3rd-party/Margot-labourez-les-vignes_Arcadelt.pdf",
-      "toc" : "Margo Labourez les Vignes (Arcadelt)" 
-    },
-    { "file" : "../Byrd_Mass_for_3/Byrd_Mass_for_Three_Voices.pdf",
-      "toc" : "Mass for 3 Voices (Byrd)"
-    },
-    { "file" : "../Byrd_Mass_for_4/Byrd_Mass_for_Four_Voices.pdf", 
-      "align" : "EVEN",
-      "toc" : "Mass for 4 Voices (Byrd)"
-    },
-    { "file" : "../3rd-party/Misera_che_faro-G De Wert.pdf",
-      "toc" : "Misera che faro (de Wert)",  
-      "include" : "true" 
-    },
-    { "file" : "../3rd-party/Now_is_the_month_1_0.pdf",
-      "toc" : "Now is the Month of Maying (Morley)" 
-    },
-    { "file" : "../3rd-party/Gibbons_Loosemore_O Lord.pdf",
-      "toc" : "O Lord Increase My Faith (Loosemore)"
-    },
-    { "file" : "../st-cecilia-press/o_magnum/o_magnum.pdf",
-      "toc" : "O Magnum Misterium (Victoria)" },
     { "file" : "../3rd-party/O_sleep,_fond_fancy.SSB.pdf",
       "toc" : "",  
       "include" : "false" 
     },
-    { "file" : "../Palestrina_Sicut/Palestrina-Sicut_Cervus_Desiderat.pdf",
-      "toc" : "Sicut Cervus (Palestrina)" },
+    
+    
+    
+    { "file" : "../3rd-party/Il_bianco_e_dolce_Arcadelt.pdf",
+      "toc" : "Arcadelt - Il Bianco e Dolce Cigno" 
+    },
+    { "file" : "../3rd-party/Margot-labourez-les-vignes_Arcadelt.pdf",
+      "toc" : "Arcadelt - Margo Labourez les Vignes" ,  
+      "include" : "false"
+    },
+    { "file" : "../Byrd_Ave_Verum/Ave_Verum_Corpus_Byrd.pdf",
+      "toc" : "Byrd, William - Ave Verum Corpus"
+    },
+    { "file" : "../3rd-party/Lullaby_Byrd_SAATB.pdf",
+      "toc" : "Byrd, William - Lullaby",  
+      "include" : "false" 
+    },
+    { "file" : "../Byrd_Mass_for_3/Byrd_Mass_for_Three_Voices.pdf",
+      "toc" : "Byrd, William - Mass for 3 Voices"
+    },
+    { "file" : "../Byrd_Mass_for_4/Byrd_Mass_for_Four_Voices.pdf", 
+      "align" : "EVEN",
+      "toc" : "Byrd, William - Mass for 4 Voices"
+    },
+    { "file" : "../Costantini_Confitemini/confitemini.pdf" ,
+      "toc" : "Costantini - Confitemini Domino"
+    },
+    { "file" : "../3rd-party/Allon gay.Costeley.SATB.pdf", 
+      "toc" : "Costeley - Allon Gay Bergeres",
+      "include" : "false" 
+    },
+    { "file" : "../st-cecilia-press/fine_knacks/fine_knacks.pdf" ,
+      "toc" : "Dowland, John - Fine Knacks for Ladies"
+    },
     { "file" : "../3rd-party/Ford, Since First--TUMS.pdf",
-      "toc" : "Since First I Saw Your Face (Ford)" },
-    { "file" : "../3rd-party/Springtime_mantleth_every_bough.SAT.pdf",
-      "toc" : "",  
-      "include" : "false" 
+      "toc" : "Ford - Since First I Saw Your Face" 
     },
-    { "file" : "../Wilbye_SHSB/SweetHoneySuckingBees.pdf",
-      "toc" : "Sweet Honey Sucking Bees (Wilbye)" 
+    { "file" : "../Josquin_Absalon/Absalon_Fili_Mi_4.pdf", 
+      "toc" : "Josquin - Absalon" 
     },
-    { "file" : "../3rd-party/Vaghi_boschetti-Giaches de Wert.pdf",
-      "toc" : "Vaghi boschetti di soavi allori (de Wert)",  
-      "include" : "true" 
+    { "file" : "../Josquin_Ave_Maria/Ave_Maria_-_Josquin_V5.pdf",
+      "toc" : "Josquin - Ave Maria"
     },
-    { "file" : "../3rd-party/Vedrassi_prima_Palestrina.pdf",
-      "toc" : "",  
-      "include" : "false" 
+    { "file" : "../3rd-party/Lassus-Bonjour.pdf",
+      "toc" : "di Lassus, Orlando - Bonjour mon Coeur"
     },
     { "file" : "../3rd-party/Versa_est_in_luctum_Lobo.pdf",
-      "toc" : "Versa est in Luctum (Lobo)",  
+      "toc" : "Lobo - Versa est in Luctum",  
       "include" : "false" 
+    },
+    { "file" : "../3rd-party/Gibbons_Loosemore_O Lord.pdf",
+      "toc" : "Loosemore, Henry - O Lord Increase My Faith"
+    },
+    { "file" : "../3rd-party/April_is_in_my_mistress_face_Morley.pdf",
+      "toc": "Morley, Thomas - April is in my Mistress' Face"
+    },
+    { "file" : "../3rd-party/Those_dainty_daffodillies.SATBB.pdf",
+      "toc" : "Morley, Thomas - Those Dainty Daffodillies",
+      "include" : "false" 
+    },
+    { "file" : "../3rd-party/Deep_lamenting_Morley.SAB.pdf",
+      "toc" : "Morley, Thomas - Deep Lamenting",  
+      "include" : "false" 
+    },
+    { "file" : "../3rd-party/Now_is_the_month_1_0.pdf",
+      "toc" : "Morley, Thomas - Now is the Month of Maying" 
+    },
+    { "file" : "../3rd-party/Hic_Est_beatissimus_Evangelista_Nanino.pdf",
+      "toc" : "Nanino - Hic est Beatissimus Evangelista" 
+    },
+    { "file" : "../3rd-party/Il_Est_Bel_Et_Bon.David.E minor.pdf",
+      "toc" : "Passereau, Pierre - Il est Bel et Bon" 
+    },
+    { "file" : "../Palestrina_Sicut/Palestrina-Sicut_Cervus_Desiderat.pdf",
+      "toc" : "Palestrina - Sicut Cervus" 
+    },
+    { "file" : "../3rd-party/Vedrassi_prima_Palestrina.pdf",
+      "toc" : "Palestrina - Vedrassi Prima",  
+      "include" : "false" 
+    },
+    { "file" : "../3rd-party/Springtime_mantleth_every_bough.SAT.pdf",
+      "toc" : "Moore - Springtime Mantleth Every Bough",  
+      "include" : "false" 
+    },
+    { "file" : "../3rd-party/Tallis - In ieiunio et fletu.pdf",
+      "toc" : "Tallis, Thomas - In ieiunio et fletu"
+    },
+    { "file" : "../3rd-party/Tallis - O sacrum convivium.pdf",
+      "toc" : "Tallis, Thomas - O sacrum convivium"
+    },
+    { "file" : "../3rd-party/Tallis - Videte_miraculum.pdf",
+      "toc" : "Tallis, Thomas - Videte_miraculum"
+    },
+    { "file" : "../st-cecilia-press/o_magnum/o_magnum.pdf",
+      "toc" : "de Victoria, Tomas Luis - O Magnum Mysterium"
+    },
+    { "file" : "../3rd-party/Hark,_all_ye_lovely_saints.pdf" ,
+      "toc" : "Weelkes, Thomas - Hark, all ye Lovely Saints"
+    },
+    { "file" : "../de-Wert_Io_mi-1/09-io_mi_vivea---0-score.pdf",
+      "toc" : "de Wert, Giaches - Io mi vivea del mio languir contento",
+      "align" : "EVEN" 
+    },
+    { "file" : "../de-Wert_Io_mi-2/10-riman_solo_il_pensier---0-score.pdf",
+      "toc" : "de Wert, Giaches - Riman solo il pensier"
+    },
+    { "file" : "../de-Wert_Misera/03-misera_che_faro---0-score.pdf",
+      "toc" : "de Wert, Giaches - Misera che faro"
+    },
+    { "file" : "../3rd-party/Vaghi_boschetti-Giaches de Wert.pdf",
+      "toc" : "de Wert, Giaches - Vaghi boschetti di soavi allori"
     },
     { "file" : "../de-Wert_Vox/Vox_In_Rama_de-Wert.pdf",
-      "toc" : "Vox in Rama (de Wert)",  
-      "include" : "true" 
+      "toc" : "de Wert, Giaches - Vox in Rama"
     },
-    { "file" : "../3rd-party/Giaches_de_Wert_Vox_in_Rama.pdf",
-      "toc" : "Vox in Rama (de Wert)",  
-      "include" : "false" 
+    { "file" : "../3rd-party/White - Lamentations of Jeremiah 5 parts.pdf",
+      "toc" : "White, Robert - Lamentations of Jeremiah"
+    },
+    { "file" : "../3rd-party/White - Christe_qui_lux.pdf",
+      "toc" : "White, Robert - Christe Qui Lux es et Dies"
+    },
+    { "file" : "../Wilbye_Draw_On/Draw_on_sweet_night_Wilbye-large.pdf" ,
+      "toc" : "Wilbye, John - Draw On Sweet Night"
+    },
+    { "file" : "../Wilbye_SHSB/SweetHoneySuckingBees.pdf",
+      "toc" : "Wilbye, John - Sweet Honey Sucking Bees" 
+    },
+    { "file" : "../3rd-party/Willaert--Ave_maria_gratia_plena.pdf",
+      "toc" : "Willaert, Adrian - Ave Maria Gratia Plena"
     }
   ]
 }
