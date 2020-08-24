@@ -18,6 +18,9 @@
       "toc" : "Arcadelt - Margo Labourez les Vignes" ,  
       "include" : "false"
     },
+    { "file" : "../3rd-party/Christus_factus_est_Anerio.pdf",
+      "toc" : "Anerio - Christus factus est"
+    },
     { "file" : "../Byrd_Ave_Verum/Ave_Verum_Corpus_Byrd.pdf",
       "toc" : "Byrd, William - Ave Verum Corpus"
     },
@@ -78,6 +81,10 @@
     { "file" : "../3rd-party/Hic_Est_beatissimus_Evangelista_Nanino.pdf",
       "toc" : "Nanino - Hic est Beatissimus Evangelista" 
     },
+    { "file" : "../3rd-party/Parsons-AveMaria(orig,high)-1.pdf",
+      "toc" : "Parsons, Robert - Ave Maria",
+      "align" : "EVEN"
+    },
     { "file" : "../3rd-party/Il_Est_Bel_Et_Bon.David.E minor.pdf",
       "toc" : "Passereau, Pierre - Il est Bel et Bon" 
     },
@@ -92,8 +99,13 @@
       "toc" : "Moore - Springtime Mantleth Every Bough",  
       "include" : "false" 
     },
+    { "file" : "../3rd-party/In_jejunio_et_fletu_Dmin.pdf",
+      "toc" : "Tallis, Thomas - In ieiunio et fletu",
+      "include" : "true" 
+    },
     { "file" : "../3rd-party/Tallis - In ieiunio et fletu.pdf",
-      "toc" : "Tallis, Thomas - In ieiunio et fletu"
+      "toc" : "Tallis, Thomas - In ieiunio et fletu",
+      "include" : "false" 
     },
     { "file" : "../3rd-party/Tallis - O sacrum convivium.pdf",
       "toc" : "Tallis, Thomas - O sacrum convivium"
@@ -124,7 +136,8 @@
       "toc" : "de Wert, Giaches - Vox in Rama"
     },
     { "file" : "../3rd-party/White - Lamentations of Jeremiah 5 parts.pdf",
-      "toc" : "White, Robert - Lamentations of Jeremiah"
+      "toc" : "White, Robert - Lamentations of Jeremiah",  
+      "include" : "false"
     },
     { "file" : "../3rd-party/White - Christe_qui_lux.pdf",
       "toc" : "White, Robert - Christe Qui Lux es et Dies"
@@ -136,7 +149,8 @@
       "toc" : "Wilbye, John - Sweet Honey Sucking Bees" 
     },
     { "file" : "../3rd-party/Willaert--Ave_maria_gratia_plena.pdf",
-      "toc" : "Willaert, Adrian - Ave Maria Gratia Plena"
+      "toc" : "Willaert, Adrian - Ave Maria Gratia Plena",  
+      "include" : "false"
     }
   ]
 }
