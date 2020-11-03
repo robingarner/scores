@@ -29,14 +29,19 @@
       "include" : "false" 
     },
     { "file" : "../Byrd_Mass_for_3/Byrd_Mass_for_Three_Voices.pdf",
-      "toc" : "Byrd, William - Mass for 3 Voices"
+      "toc" : "Byrd, William - Mass for 3 Voices",
+      "include" : "false"
     },
     { "file" : "../Byrd_Mass_for_4/Byrd_Mass_for_Four_Voices.pdf", 
       "align" : "EVEN",
       "toc" : "Byrd, William - Mass for 4 Voices"
     },
+    { 
+      "spacer" : "true" 
+    },
     { "file" : "../Costantini_Confitemini/confitemini.pdf" ,
-      "toc" : "Costantini - Confitemini Domino"
+      "toc" : "Costantini - Confitemini Domino",
+      "include" : "false"
     },
     { "file" : "../3rd-party/Allon gay.Costeley.SATB.pdf", 
       "toc" : "Costeley - Allon Gay Bergeres",
@@ -47,6 +52,9 @@
     },
     { "file" : "../3rd-party/Ford, Since First--TUMS.pdf",
       "toc" : "Ford - Since First I Saw Your Face" 
+    },
+    { "file" : "../Gibbons_Silver_Swan/01-the_silver_swan---0-score.pdf",
+      "toc" : "Gibbons - The Silver Swan"
     },
     { "file" : "../Josquin_Absalon/Absalon_Fili_Mi_4.pdf", 
       "toc" : "Josquin - Absalon" 
@@ -83,7 +91,11 @@
     },
     { "file" : "../3rd-party/Parsons-AveMaria(orig,high)-1.pdf",
       "toc" : "Parsons, Robert - Ave Maria",
-      "align" : "EVEN"
+      "align" : "EVEN",
+      "include" : "false"
+    },
+    { "file" : "../Parsons_Ave_Maria/06-ave_maria---0-score.pdf",
+      "toc" : "Parsons, Robert - Ave Maria"
     },
     { "file" : "../3rd-party/Il_Est_Bel_Et_Bon.David.E minor.pdf",
       "toc" : "Passereau, Pierre - Il est Bel et Bon" 
@@ -99,22 +111,25 @@
       "toc" : "Moore - Springtime Mantleth Every Bough",  
       "include" : "false" 
     },
-    { "file" : "../3rd-party/In_jejunio_et_fletu_Dmin.pdf",
+    { 
+      "spacer" : "true" 
+    },
+    { "file" : "../Tallis_In_Jejunio/TALL-INJ-8859.pdf",
       "toc" : "Tallis, Thomas - In ieiunio et fletu",
       "include" : "true" 
     },
-    { "file" : "../3rd-party/Tallis - In ieiunio et fletu.pdf",
-      "toc" : "Tallis, Thomas - In ieiunio et fletu",
-      "include" : "false" 
-    },
-    { "file" : "../3rd-party/Tallis - O sacrum convivium.pdf",
-      "toc" : "Tallis, Thomas - O sacrum convivium"
+    { "file" : "../Tallis_Sacrum/09-o_sacrum_convivium---0-score.pdf",
+      "toc" : "Tallis, Thomas - O Sacrum Convivium"
     },
     { "file" : "../3rd-party/Tallis - Videte_miraculum.pdf",
-      "toc" : "Tallis, Thomas - Videte_miraculum"
+      "toc" : "Tallis, Thomas - Videte_miraculum",
+      "include" : "false"
     },
     { "file" : "../st-cecilia-press/o_magnum/o_magnum.pdf",
       "toc" : "de Victoria, Tomas Luis - O Magnum Mysterium"
+    },
+    { 
+      "spacer" : "true" 
     },
     { "file" : "../3rd-party/Hark,_all_ye_lovely_saints.pdf" ,
       "toc" : "Weelkes, Thomas - Hark, all ye Lovely Saints"
@@ -140,7 +155,8 @@
       "include" : "false"
     },
     { "file" : "../3rd-party/White - Christe_qui_lux.pdf",
-      "toc" : "White, Robert - Christe Qui Lux es et Dies"
+      "toc" : "White, Robert - Christe Qui Lux es et Dies",
+      "include" : "false"
     },
     { "file" : "../Wilbye_Draw_On/Draw_on_sweet_night_Wilbye-large.pdf" ,
       "toc" : "Wilbye, John - Draw On Sweet Night"

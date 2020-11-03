@@ -28,18 +28,24 @@ hdates = "1543&ndash;1623"
 \layout {
     \context { \Score
         \override SpacingSpanner.spacing-increment = #1.5
-        \override BarNumber.break-visibility = ##(#f #t #t)
 	\override LyricHyphen.minimum-distance = #0.5
 	\override DynamicLineSpanner.direction = #1
         skipBars = ##t
         autoBeaming = ##f
     }
-    \context {\Staff 
-        \consists Ambitus_engraver 
+    \context { \Voice
+        \override Slur #'transparent = ##t 
     }
+
 }
+
+global={\key g \minor \fourTwoCommonTime \skip 1*50 \bar "||" \break
+}
+
+
 PartPOneVoiceOne = \shiftDurations #-1 #0 \relative g' {
-    \clef "treble" \key bes \major \time 4/2 | % 1
+    \override DynamicLineSpanner.staff-padding = #3.5
+    \clef "treble" | % 1
     g1 | % 2
     fis2 a2 ~ | % 3
     a4 g4 fis4 \melisma g4 ~ | % 4
@@ -58,7 +64,7 @@ PartPOneVoiceOne = \shiftDurations #-1 #0 \relative g' {
     g2 g4 | % 17
     a2 g4 | % 18
     bes4. a8 a4 ~ \melisma \bar "||"
-    \time 4/2  a4 g4 a2 \melismaEnd | 
+    \fourTwoCommonTime  a4 g4 a2 \melismaEnd | 
     c2 bes4 a4 ~ | % 21
     a4 g4 f4. f8 | % 22
     f4 f2 f4 \bar "||"
@@ -67,13 +73,13 @@ PartPOneVoiceOne = \shiftDurations #-1 #0 \relative g' {
     g2 g4 | % 25
     g2 g4 | % 26
     a2 a4 \bar "||"
-    \time 4/2  bes2 a4 a4 | % 28
+    \fourTwoCommonTime bes2 a4 a4 | % 28
     c2. bes4 ~ | % 29
     bes4 a2 bes4 ~ | 
     bes4 a4 bes4 f4 \repeat volta 2 {
         | % 31
         bes2 g2 | % 32
-        r4 g4 bes2 | % 33
+        r4 g4 bes2 | \break % 33
         a2 r4 g4^\< | % 34
         << d'2. { s4 s4 \! s4  ^\>} >> c4 ~ | % 35
         c4 bes2 \melisma a8  g8  \melismaEnd | % 36
@@ -108,7 +114,7 @@ PartPOneVoiceOneLyricsOne =  \lyricmode { A -- ve ve -- rum Cor --
     -- i, mi -- se -- re -- re me -- i, me -- i. O i. A --
     men. }
 PartPTwoVoiceOne =  \shiftDurations #-1 #0 \relative d' {
-    \clef "treble" \key bes \major \time 4/2 | % 1
+    \clef "treble" | % 1
     d1 | % 2
     d2 c2 ~ | % 3
     c4 c4 d2 ~ | % 4
@@ -127,7 +133,7 @@ PartPTwoVoiceOne =  \shiftDurations #-1 #0 \relative d' {
     e2 e4 | % 17
     f2 e4 | % 18
     f2 e4 \bar "||"
-    \time 4/2  f4 \melisma e8 d8 \melismaEnd c4 f4 ~ | 
+    \fourTwoCommonTime  f4 \melisma e8 d8 \melismaEnd c4 f4 ~ | 
     f4 es4 d2 | % 21
     c2 d4. d8 | % 22
     d2 c4. c8 \bar "||"
@@ -136,7 +142,7 @@ PartPTwoVoiceOne =  \shiftDurations #-1 #0 \relative d' {
     es2 es4 | % 25
     d2 e4 | % 26
     f2 f4 \bar "||"
-    \time 4/2  f2 f4 f4 | % 28
+    \fourTwoCommonTime  f2 f4 f4 | % 28
     g2 g4 bes,4 | % 29
     f'2 f4 f4 | \barNumberCheck #30
     f4. es8 d2 \repeat volta 2 {
@@ -177,7 +183,7 @@ PartPTwoVoiceOneLyricsOne =  \lyricmode { A -- ve ve -- rum Cor --
     -- se -- re -- re me -- i, mi -- se -- re -- re, mi -- se -- re
     -- re me -- i, mi -- se -- re -- re me -- i. i. A -- men. }
 PartPThreeVoiceOne =  \shiftDurations #-1 #0 \relative bes {
-    \clef "treble_8" \key bes \major \time 4/2 | % 1
+    \clef "treble_8"| % 1
     bes1 | % 2
     a1 | % 3
     c2. bes4 | % 4
@@ -196,7 +202,7 @@ PartPThreeVoiceOne =  \shiftDurations #-1 #0 \relative bes {
     c2 c4 | % 17
     c2 c4 | % 18
     d2 c4 \bar "||"
-    \time 4/2  bes2 a2 | \barNumberCheck #20
+    \fourTwoCommonTime  bes2 a2 | \barNumberCheck #20
     R1 | % 21
     r4 c2 bes4 | % 22
     a8. f16 bes2 a4 \bar "||"
@@ -205,7 +211,7 @@ PartPThreeVoiceOne =  \shiftDurations #-1 #0 \relative bes {
     bes4 g4 c4 ~ \melisma | % 25
     c4 b4 \melismaEnd c4 ~ | % 26
     c4 a4 a4 \bar "||"
-    \time 4/2  d2 c4 c4 | % 28
+    \fourTwoCommonTime  d2 c4 c4 | % 28
     es2. d4 ~ | % 29
     \clef "treble_8" d4 c4 d4 \melisma c8 bes8 | \barNumberCheck #30
     c4 \melismaEnd c4 bes2 \repeat volta 2 {
@@ -223,7 +229,7 @@ PartPThreeVoiceOne =  \shiftDurations #-1 #0 \relative bes {
         bes4 a4. g4. ~ \melisma | % 42
         g4 fis4 \melismaEnd g4 fis4 ~ | % 43
         fis4 g4 a4. c8 | % 44
-        bes4 a8 g8 a2 | % 45
+        bes4 a8 g8( a2) | % 45
         \clef "treble_8" }
     \alternative { {
             g1 }
@@ -246,7 +252,8 @@ PartPThreeVoiceOneLyricsOne =  \lyricmode { A -- ve ve -- rum Cor --
     se -- re -- re me -- i, me -- i. mi -- se -- re -- re me -- i.
     i. A -- men. }
 PartPFourVoiceOne = \shiftDurations #-1 #0  \relative g {
-    \clef "bass" \key bes \major \time 4/2 | % 1
+    \override DynamicLineSpanner.staff-padding = #2
+    \clef "bass" | % 1
     g1 | % 2
     d2 f2 ~ | % 3
     f4 es4 d2 ~ | % 4
@@ -265,7 +272,7 @@ PartPFourVoiceOne = \shiftDurations #-1 #0  \relative g {
     c2 c4 | % 17
     f2 c4 | % 18
     bes2 c4 \bar "||"
-    \time 4/2  d4 \melisma e4 \melismaEnd f2 | \barNumberCheck #20
+    \fourTwoCommonTime  d4 \melisma e4 \melismaEnd f2 | \barNumberCheck #20
     r2 r4 f4 ~ | % 21
     f4 es4 d2 ~ | % 22
     d4 bes4 f'4. f8 \bar "||"
@@ -274,7 +281,7 @@ PartPFourVoiceOne = \shiftDurations #-1 #0  \relative g {
     es2 c4 | % 25
     g'2 c,4 | % 26
     f2 d4 \bar "||"
-    \time 4/2  bes2 f'2 | % 28
+    \fourTwoCommonTime  bes2 f'2 | % 28
     r4 c4 g'2 | % 29
     f4 f4 f2 ~ | \barNumberCheck #30
     f4 f4 bes,2 \repeat volta 2 {
@@ -319,7 +326,7 @@ PartPFourVoiceOneLyricsOne =  \lyricmode { A -- ve ve -- rum Cor --
 \score {
     <<
         \new ChoirStaff <<
-            \new Staff <<
+            \new Staff <<  \global
                 \set Staff.instrumentName = "Soprano"
                 \set Staff.shortInstrumentName = "S"
                 \context Staff << 
@@ -327,7 +334,7 @@ PartPFourVoiceOneLyricsOne =  \lyricmode { A -- ve ve -- rum Cor --
                     \new Lyrics \lyricsto "PartPOneVoiceOne" \PartPOneVoiceOneLyricsOne
                     >>
                 >>
-            \new Staff <<
+            \new Staff << \global
                 \set Staff.instrumentName = "Alto"
                 \set Staff.shortInstrumentName = "A"
                 \context Staff << 
@@ -335,7 +342,7 @@ PartPFourVoiceOneLyricsOne =  \lyricmode { A -- ve ve -- rum Cor --
                     \new Lyrics \lyricsto "PartPTwoVoiceOne" \PartPTwoVoiceOneLyricsOne
                     >>
                 >>
-            \new Staff <<
+            \new Staff << \global
                 \set Staff.instrumentName = "Tenor"
                 \set Staff.shortInstrumentName = "T"
                 \context Staff << 
@@ -343,7 +350,7 @@ PartPFourVoiceOneLyricsOne =  \lyricmode { A -- ve ve -- rum Cor --
                     \new Lyrics \lyricsto "PartPThreeVoiceOne" \PartPThreeVoiceOneLyricsOne
                     >>
                 >>
-            \new Staff <<
+            \new Staff << \global
                 \set Staff.instrumentName = "Bass"
                 \set Staff.shortInstrumentName = "B"
                 \context Staff << 
