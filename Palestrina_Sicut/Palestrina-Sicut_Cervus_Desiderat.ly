@@ -1,14 +1,13 @@
 \version "2.19.83"
 
 #(set-default-paper-size "a4")
-#(set-global-staff-size 17)
+#(set-global-staff-size 16)
 %#(ly:set-option 'point-and-click #f)
 %mobile -s15.5 -i3.2
 
 italicas=\override LyricText.font-shape = #'italic
 rectas=\override LyricText.font-shape = #'upright
 ss=\once \set suggestAccidentals = ##t
-incipitwidth = 5
 
 htitle="Sicut cervus"
 hcomposer="Palestrina"
@@ -31,10 +30,10 @@ hdates="(c.1525-1594)"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 
-global={\key f \major \time 2/2 \skip 1*58 \bar "||" \break
+global={\key f \major \fourTwoCommonTime \skip 1*58 \bar "||" \break
 }
 
-cantus=\relative c'{
+cantus=\shiftDurations #-1 #0 \relative c'{
 	R1*3
 	r2 f ~
 	f f
@@ -43,7 +42,7 @@ cantus=\relative c'{
 	bes2 a4 g
 	a c4. bes8 a4 ~
 	a g a2
-	c4. bes8[ a g] a4 ~
+	c4. bes8 \melisma a g \melismaEnd a4 ~
 	a8 g f2 e4
 	f1
 	R1
@@ -75,9 +74,9 @@ cantus=\relative c'{
 	g1
 	f
 	r4 f g bes ~
-	bes a g2 ~
+	bes \melisma a g2 ~
 	g f4. g8
-	a4 g8 f g2
+	a4 g8 f \melismaEnd g2
 	R1
 	bes2. a4
 	a2 g ~
@@ -91,7 +90,7 @@ cantus=\relative c'{
 	f\breve*1/2
 }
 
-altus=\relative c'{
+altus=\shiftDurations #-1 #0 \relative c'{
 	R1*2
 	c1
 	c2 d
@@ -113,7 +112,7 @@ altus=\relative c'{
 	f2 f ~
 	f4 e d2
 	c1
-	a4. g8[ a bes] a4 ~
+	a4. g8 \melisma a bes \melismaEnd a4 ~
 	a g8 f g2
 	f1
 	R1*2
@@ -128,8 +127,8 @@ altus=\relative c'{
 	c1
 	bes2 a4. bes8
 	c4 d2 \ss cis4
-	d2. c8 bes
-	\[c2 bes\]
+	d2. \melisma c8 bes
+	\[c2 bes\] \melismaEnd
 	r2 f' ~
 	f4 e e2
 	d2 c ~
@@ -150,7 +149,7 @@ altus=\relative c'{
 	c\breve*1/2
 }
 
-tenor=\relative c{
+tenor=\shiftDurations #-1 #0 \relative c{
 	f1
 	f2 g
 	f4 c f4. g8
@@ -197,10 +196,10 @@ tenor=\relative c{
 	r4 bes2 a4
 	a2 \[g
 	f\] c ~
-	c4 g' a bes
-	c c,8[ d e f] g[ e]
+	c4 g' \melisma a \melismaEnd bes
+	c \melisma c,8 d e f g e
 	f4 g4. f8 f4 ~
-	f4 e f2
+	f4 e \melismaEnd f2
 	R1
 	r4 bes2 a4
 	a2 g
@@ -212,7 +211,7 @@ tenor=\relative c{
 	a\breve*1/2
 }
 
-bassus=\relative c{
+bassus=\shiftDurations #-1 #0 \relative c{
 	R1*5
 	r2 f ~
 	f f
@@ -274,7 +273,7 @@ a -- _ _ _ _ qua -- rum
 si -- cut cer -- vus de -- si -- de -- rat ad fon -- tes a -- _ _ _ _ _ _ _ qua -- _ _ _ _ _ rum
 i -- ta de -- _ _ si -- _ _ _ _ _ _ de -- rat
 i -- ta de -- _ _ si -- de -- rat __ _ _ _ _ _ _ 
-a -- ni -- ma me -- a ad te De -- _ _ us __ _ _ _ 
+a -- ni -- ma me -- a ad te De -- us
 a -- ni -- ma me -- a
 ad te De -- _ _ _ _ _ _ _ us.
 }
@@ -284,16 +283,16 @@ Si -- cut cer -- vus de -- si -- de -- rat ad fon -- tes a -- qua -- _ _ _ _ _ _
 si -- cut cer -- vus de -- si -- de -- rat ad __ _ _ _ _ fon -- tes a -- qua -- rum,
 de -- si -- de -- rat ad fon -- tes a -- qua -- _ _ _ _ _ _ _ _ _ rum
 i -- ta de -- _ _ si -- _ _ _ _ _ de -- rat,
-i -- ta
-i -- ta de -- _ _ si -- de -- rat __ _ _ 
-a -- ni -- ma me -- a ad __ _ _ te De -- us
-a -- ni -- ma me -- a ad __ _ _ te De -- _ us,
+i -- ta __
+i -- ta de -- _ _ si -- de -- rat __
+a -- ni -- ma me -- a __ ad __ _ _ te De -- us
+a -- ni -- ma me -- a ad __ _ _ te __ De -- _ us, __
 ad __ _ _ te De -- _ us
 ad te De -- _ _ _ _ _ _ us.
 }
 
 textotenor=\lyricmode{
-Si -- cut cer -- vus de -- si -- de -- rat ad fon -- tes a -- qua -- _ _ _ rum
+Si -- cut cer -- vus de -- si -- de -- rat ad fon -- tes a -- qua -- _ _ _ rum __
 si -- cut cer -- vus de -- si -- de -- rat ad fon -- tes
 a -- _ _ _ qua -- _ _ _ _ _ _ _ _ _ _ _ rum
 de -- si -- de -- rat ad fon -- tes __ _ _ a -- qua -- rum
@@ -303,7 +302,7 @@ i -- ta de -- si -- de -- rat
 i -- ta de -- si -- _ _ de -- rat, __ _ 
 de -- si -- de -- rat
 i -- ta de -- _ _ si -- _ _ de -- rat __ _ _ _ _ 
-a -- ni -- ma me -- _ a ad te De -- _ _ _ _ _ _ _ _ us
+a -- ni -- ma me -- _ a __ ad __ te De -- us
 a -- ni -- ma me -- a ad te De -- _ _ us
 ad te De -- _ _ us.
 }
@@ -316,7 +315,7 @@ ad fon -- tes a -- qua -- _ rum
 i -- ta de -- _ _ _ _ si -- _ _ _ _ _ _ _ _ de -- rat __ _ 
 i -- ta de -- _ _ si -- _ _ _ _ _ de -- rat
 i -- ta de -- si -- _ _ de -- rat,
-de -- si -- de -- rat
+de -- si -- de -- rat __
 a -- ni -- ma me -- a ad te De -- _ _ us,
 a -- ni -- ma me -- a ad te __ _ _ _ _ De -- _ _ _ us,
 ad te De -- _ _ _ _ _ _ us.
@@ -369,14 +368,17 @@ ad te De -- _ _ _ _ _ _ us.
 	\context {\Lyrics 
 		\override VerticalAxisGroup.staff-affinity = #UP
 		\override VerticalAxisGroup.nonstaff-relatedstaff-spacing =
-			#'((basic-distance . 2) (minimum-distance . 0) (padding . 0))
-		%\override LyricText.font-size = #1.2
-		\override LyricHyphen.minimum-distance = #2.0
+			#'((basic-distance . 2) 
+			   (minimum-distance . 0) 
+			   (padding . 0.5))
+		\override LyricText.font-size = #2
+	        \override LyricHyphen.minimum-distance = #1
 	}
 	\context {\Score 
-                \override BarNumber.break-visibility = ##(#f #t #t)
+        \override SpacingSpanner.spacing-increment = #0.7
+	\override DynamicLineSpanner.direction = #1
 		tempoHideNote = ##t
-		\override BarNumber.padding = #1 
+		%\override BarNumber.padding = #1 
 	}
 	\context {\Voice 
 		%melismaBusyProperties = #'()

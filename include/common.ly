@@ -66,3 +66,16 @@ tenMaxVol = 0.9
 basInstrument = "acoustic grand"
 basMinVol = 0.7
 basMaxVol = 0.9
+
+fourTwoCutTime = {
+    \once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+    \once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+    \time 4/2
+}
+
+fourTwoCommonTime = {
+    \once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+    \once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C44"
+    \time 4/2
+}
+
