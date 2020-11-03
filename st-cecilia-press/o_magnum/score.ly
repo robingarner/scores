@@ -9,7 +9,7 @@
     \book {
       
       \paper {
-        top-system-spacing #'basic-distance = 10
+        top-system-spacing.basic-distance = 10
           system-system-spacing.minimum-distance = \scMinimumSystemSpacing
         
         print-page-number = ##f
@@ -26,7 +26,7 @@
             " - Page"
             \fromproperty #'page:page-number-string
           } } 
-      	\fill-line { \tiny { \line{© Monique Rio (CC BY 4.0) | Edition Date: \scDate } } } }
+      	\fill-line { \tiny { \line{© Monique Rio (CC BY 4.0) | Edition Date: \scDate | Tweaks by Robin Garner, Jun 2020 } } } }
         }
         
         evenFooterMarkup = \oddFooterMarkup

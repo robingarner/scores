@@ -14,8 +14,11 @@
 SUBDIRS = Byrd_Mass_for_3 Byrd_Mass_for_4 Byrd_Ave_Verum
 #SUBDIRS += linverno spring kruisvaarderslied my-peace
 SUBDIRS += Costantini_Confitemini de-Wert_Vox de-Wert_Misera de-Wert_Io_mi-1 de-Wert_Io_mi-2
+SUBDIRS += Gibbons_Silver_Swan
 SUBDIRS += Josquin_Absalon Josquin_Ave_Maria
-SUBDIRS += Palestrina_Sicut Palestrina_Vedrassi Wilbye_Draw_On Wilbye_SHSB
+SUBDIRS += Palestrina_Sicut Palestrina_Vedrassi 
+SUBDIRS += Parsons_Ave_Maria Tallis_In_Jejunio Tallis_Sacrum
+SUBDIRS += Wilbye_Draw_On Wilbye_SHSB
 #st-cecilia-press
 
 .PHONY: $(SUBDIRS)
@@ -49,11 +52,23 @@ de-Wert_Misera:
 Costantini_Confitemini:
 	$(MAKE) -C Costantini_Confitemini all
 
+Gibbons_Silver_Swan:
+	$(MAKE) -C Gibbons_Silver_Swan all
+
 Josquin_Ave_Maria:
 	$(MAKE) -C Josquin_Ave_Maria --makefile=../Makefile Ave_Maria_-_Josquin_V5.pdf
 
 Josquin_Absalon:
 	$(MAKE) -C Josquin_Absalon Absalon_Fili_Mi_4.pdf
+
+Parsons_Ave_Maria:
+	$(MAKE) -C Parsons_Ave_Maria all
+
+Tallis_In_Jejunio:
+	$(MAKE) -C Tallis_In_Jejunio --makefile=../Makefile TALL-INJ-8859.pdf
+
+Tallis_Sacrum:
+	$(MAKE) -C Tallis_Sacrum all
 
 Wilbye_Draw_On:
 	$(MAKE) -C Wilbye_Draw_On targets
