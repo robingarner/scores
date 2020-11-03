@@ -35,9 +35,9 @@ cantusLyricsI = \lyricmode {
     The sil -- ver Swanne, who liv -- ing had no Note,
     When death ap -- proacht un -- lockt her si -- lent throat,
     Lean -- ing her breast a -- gainst the ree -- dy shore,
-    Thus sung her first and last, and _ sung no more,
+    Thus sung her first and last, and __ _ sung no more,
     Fare -- well all joyes, O death come close mine eyes,
-    More Geese than Swannes now live, more _ fooles than wise.
+    More Geese than Swannes now live, more __ _ fooles than wise.
 }
 
 quintusIincipit = \relative c' {
@@ -73,7 +73,7 @@ quintusI = \relative c' {
 
 quintusLyricsI = \lyricmode {
     The sil -- ver Swanne, who liv -- ing had no __ Note,
-    When death ap -- proacht un -- lockt __ her __ si -- lent __ throat,
+    When death ap -- proacht un -- lockt her __ si -- lent __ throat,
     Lean -- ing her breast a -- gainst the ree -- dy shore,
     Thus sung her first and last, and sung no more, no __ more, 
     Fare -- well all joyes, O __ death come close mine __ eyes,
@@ -114,7 +114,7 @@ altusLyricsI = \lyricmode {
     Lean -- ing her breast a -- gainst the __ ree -- dy shore,
     Thus sung her first and last, and sung no more,
     Fare -- well all joyes, O death come __ close mine eyes,
-    More Geese than Swannes now live, more fooles than wise.
+    More Geese than Swannes __ now live, more fooles than wise.
 }
 
 tenorIincipit = \relative c' {
@@ -168,7 +168,7 @@ bassusI = \relative c {
 
     r4 f f d c2. a4 | bf4. c8 d4 f c4. d8 
 
-    e8[ f] g4 | g, bf4.( c8) d4 c a bf c | f, f'4. f8 e4
+    e8[ f] g4 | g, bf4. c8( d4) c a bf c | f, f'4. f8 e4
 
     d2. c4 | bf8[ bf] bf'2 a4 g1 | c,4 f2 e4 f d ef bf | c2. c4
 
@@ -180,7 +180,7 @@ bassusI = \relative c {
 
 bassusLyricsI = \lyricmode {
     The sil -- ver Swanne, who liv -- ing had no Note,
-    When death ap -- proacht un -- lockt her si -- lent, si -- lent throat,
+    When death ap -- proacht un -- lockt her __ si -- lent, si -- lent throat,
     Lean -- ing her breast a -- gainst the ree -- dy shore,
     Thus sung her first and last, and sung no more,
     Fare -- well all joyes, O death come close mine eyes,

@@ -6,7 +6,7 @@
 \include "../include/macros.ly" 
 \include "../include/scheme.ly" 
 
-#(set-global-staff-size 16.5)
+#(set-global-staff-size 16)
 
 \header {
     % Things that change per piece:
@@ -20,7 +20,7 @@
 }
 
 \include "../parts/01-the_silver_swan.ly"
-    
+
 \book {
     \bookOutputName "01-the_silver_swan"
     \bookOutputSuffix "--0-score"
@@ -34,31 +34,31 @@
                     \incipit \cantusIincipitVoice
                     \clef treble 
                     \global 
-                    \cantusI 
+                    \shiftDurations #-1 #0 \cantusI 
                 >>
                 \addlyrics { \cantusLyricsI }
                 \new Voice << 
                     \set Staff.instrumentName = #"Altus"
-                    \incipit \altusIincipitVoice
-                    \clef "treble_8"
-                    \global 
-                    \altusI
-                >>
-                \addlyrics { \altusLyricsI }
-                \new Voice << 
-                    \set Staff.instrumentName = #"Quintus"
                     \incipit \quintusIincipitVoice
-                    \clef "treble_8"
+                    \clef "treble"
                     \global 
-                    \quintusI 
+                    \shiftDurations #-1 #0 \quintusI 
                 >>
                 \addlyrics { \quintusLyricsI }
+                \new Voice << 
+                    \set Staff.instrumentName = #"Quintus"
+                    \incipit \altusIincipitVoice
+                    \clef "treble"
+                    \global 
+                    \shiftDurations #-1 #0 \altusI
+                >>
+                \addlyrics { \altusLyricsI }
                 \new Voice << 
                     \set Staff.instrumentName = #"Tenor"
                     \incipit \tenorIincipitVoice
                     \clef "treble_8"
                     \global 
-                    \tenorI 
+                    \shiftDurations #-1 #0 \tenorI 
                 >>
                 \addlyrics { \tenorLyricsI }
                 \new Voice << 
@@ -66,7 +66,7 @@
                     \incipit \bassusIincipitVoice
                     \clef "bass"
                     \global 
-                    \bassusI
+                    \shiftDurations #-1 #0 \bassusI
                 >>
                 \addlyrics { \bassusLyricsI }
             >>

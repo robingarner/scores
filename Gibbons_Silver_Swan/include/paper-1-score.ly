@@ -1,6 +1,7 @@
 #(define *i-am-score* #t)
 
 \paper {
+    system-system-spacing.minimum-distance = 15
     print-first-page-number = ##t
     ragged-bottom = ##t
     myStaffSize = #35
