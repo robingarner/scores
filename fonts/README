@@ -1,0 +1,13 @@
+Fonts (as in Music fonts, not text used for lyrics etc) was introduced in v2.20, and is documented here:
+
+  http://lilypond.org/doc/v2.20/Documentation/notation/replacing-the-notation-font
+
+To get most of these scores printed, you will need to install the Paganini font in lilypond's font
+directory, which on Ubuntu is
+
+  /usr/local/lilypond/usr/share/lilypond/current/fonts/
+
+i.e.
+
+sudo cp fonts/paganini/svg/* /usr/local/lilypond/usr/share/lilypond/current/fonts/svg/
+sudo cp fonts/paganini/otf/* /usr/local/lilypond/usr/share/lilypond/current/fonts/otf/

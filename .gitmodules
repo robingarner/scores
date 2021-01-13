@@ -1,0 +1,3 @@
+[submodule "fonts/paganini"]
+	path = fonts/paganini
+	url = git@github.com:OpenLilyPondFonts/paganini.git
