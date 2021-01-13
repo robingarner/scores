@@ -7,7 +7,7 @@ global = {
 
     \override Accidental #'hide-tied-accidental-after-break = ##t
 
-    \override Score.BarNumber #'font-size = #1
+    \override Score.BarNumber #'font-size = #-2
     \override Score.BarNumber #'self-alignment-X = #0
     \override Score.BarNumber #'break-visibility = #end-of-line-invisible
 

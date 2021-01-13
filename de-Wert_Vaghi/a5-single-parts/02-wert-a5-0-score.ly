@@ -25,8 +25,8 @@
 \include "../a5-parts/02-wert-a5-madrigal.ly"
     
 \book {
-    %\bookOutputName "02-vaghi_boschetti"
-    %\bookOutputSuffix "--0-score"
+    \bookOutputName "02-vaghi_boschetti"
+    \bookOutputSuffix "--0-score"
     \score {
         \new StaffGroup \with {
           systemStartDelimiter = #'SystemStartSquare

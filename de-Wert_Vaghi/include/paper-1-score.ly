@@ -2,14 +2,16 @@
 
 \paper {
     print-first-page-number = ##t
-    ragged-bottom = ##t
+    ragged-bottom = ##f
     myStaffSize = #35
 
-    #(define fonts
-        (make-pango-font-tree "Liberation Serif"
-                              "Liberation Serif"
-                              "Liberation Serif"
-                              (/ myStaffSize 40)))
+  #(define fonts
+    (set-global-fonts
+      #:music "paganini"  ; not "mtf-haydn-16"
+      #:brace "paganini"  ; not "mtf-haydn-brace"
+      #:roman "Norasi"
+      #:factor (/ staff-height pt 35)
+  ))
 
     scoreTitleMarkup = \markup { \column {
         \on-the-fly #print-all-headers { \bookTitleMarkup \hspace #1 }
