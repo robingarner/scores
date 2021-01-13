@@ -1,25 +1,10 @@
 { "toc" : true,
   "inputs" : [
-    { "file" : "../3rd-party/I_love,_alas,_I_love_thee.SAATB.pdf",
-      "toc" : "",  
-      "include" : "false" 
-    },
-    { "file" : "../3rd-party/O_sleep,_fond_fancy.SSB.pdf",
-      "toc" : "",  
-      "include" : "false" 
-    },
-    
-    
-    
-    { "file" : "../3rd-party/Il_bianco_e_dolce_Arcadelt.pdf",
-      "toc" : "Arcadelt - Il Bianco e Dolce Cigno" 
-    },
-    { "file" : "../3rd-party/Margot-labourez-les-vignes_Arcadelt.pdf",
-      "toc" : "Arcadelt - Margo Labourez les Vignes" ,  
-      "include" : "false"
-    },
     { "file" : "../3rd-party/Christus_factus_est_Anerio.pdf",
       "toc" : "Anerio - Christus factus est"
+    },
+    { "file" : "../3rd-party/Il_bianco_e_dolce_Arcadelt.pdf",
+      "toc" : "Arcadelt - Il Bianco e Dolce Cigno" 
     },
     { "file" : "../Byrd_Ave_Verum/Ave_Verum_Corpus_Byrd.pdf",
       "toc" : "Byrd, William - Ave Verum Corpus"
@@ -89,6 +74,9 @@
     { "file" : "../3rd-party/Hic_Est_beatissimus_Evangelista_Nanino.pdf",
       "toc" : "Nanino - Hic est Beatissimus Evangelista" 
     },
+    { "file" : "../Palestrina_Sicut/Palestrina-Sicut_Cervus_Desiderat.pdf",
+      "toc" : "Palestrina - Sicut Cervus" 
+    },
     { "file" : "../3rd-party/Parsons-AveMaria(orig,high)-1.pdf",
       "toc" : "Parsons, Robert - Ave Maria",
       "align" : "EVEN",
@@ -99,9 +87,6 @@
     },
     { "file" : "../3rd-party/Il_Est_Bel_Et_Bon.David.E minor.pdf",
       "toc" : "Passereau, Pierre - Il est Bel et Bon" 
-    },
-    { "file" : "../Palestrina_Sicut/Palestrina-Sicut_Cervus_Desiderat.pdf",
-      "toc" : "Palestrina - Sicut Cervus" 
     },
     { "file" : "../3rd-party/Vedrassi_prima_Palestrina.pdf",
       "toc" : "Palestrina - Vedrassi Prima",  
@@ -135,7 +120,7 @@
       "toc" : "Weelkes, Thomas - Hark, all ye Lovely Saints"
     },
     { "file" : "../de-Wert_Io_mi-1/09-io_mi_vivea---0-score.pdf",
-      "toc" : "de Wert, Giaches - Io mi vivea del mio languir contento",
+      "toc" : "de Wert, Giaches - Io mi vivea",
       "align" : "EVEN" 
     },
     { "file" : "../de-Wert_Io_mi-2/10-riman_solo_il_pensier---0-score.pdf",
@@ -144,8 +129,12 @@
     { "file" : "../de-Wert_Misera/03-misera_che_faro---0-score.pdf",
       "toc" : "de Wert, Giaches - Misera che faro"
     },
+    { "file" : "../de-Wert_Vaghi/02-vaghi_boschetti---0-score.pdf",
+      "toc" : "de Wert, Giaches - Vaghi boschetti"
+    },
     { "file" : "../3rd-party/Vaghi_boschetti-Giaches de Wert.pdf",
-      "toc" : "de Wert, Giaches - Vaghi boschetti di soavi allori"
+      "toc" : "de Wert, Giaches - Vaghi boschetti di soavi allori",
+      "include" : "false"
     },
     { "file" : "../de-Wert_Vox/Vox_In_Rama_de-Wert.pdf",
       "toc" : "de Wert, Giaches - Vox in Rama"
