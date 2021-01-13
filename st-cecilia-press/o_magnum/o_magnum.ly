@@ -1,6 +1,7 @@
 %score_options {"parts": 4, "verses": 1, "transposed": true}
 scDate = "2017-Jan-27"
 
+\include "../../include/common.ly"
 \include "../include/sc_functions.ly"
 \include "../include/sc_layout_vocal.ly"
 
@@ -57,7 +58,7 @@ scMusicOneName = "cantus"
 scMusicOneClef = \clef "treble"
 scMusicOneClefTransposed = \clef "treble"
 
-scMusicOne =  {  \relative c'' {  \time 4/2
+scMusicOne =  {  \relative c'' {  \fourTwoCommonTime
 a\breve d,1 a'1 ~ a2 a bf bf a1 r2 d2 
 bf2 c d2. d4 d2 a bf a2  ~ a4 \melisma g f e  f g a f  g  f  f e8[ d]  e1 ~ e \melismaEnd d1
 fs\breve g1 fs2. g4 a2 bf2.  \melisma a4 g2 ~ g2 fs2 \melismaEnd g2 \melisma f4  e 
@@ -75,7 +76,7 @@ g\breve bf1 a\breve fs1 g1.  \melisma f2 g a  \melismaEnd bf1 a\breve
 bf\breve g1 f\breve d1 e1. d2 e f g\breve fs1 g\breve.
 r1 r1 c1 bf1. a2 bf2 g | a1 f2 g a bf c\breve c1
 bf1 d\breve 
-\time 4/2
+\fourTwoCommonTime
 d\breve r2 d2 d4 c bf a g2 c2. \melisma bf4 a g
 fs2 g1 fs2 \melismaEnd | g\breve ~ g\breve ~ g ~ g \bar "|."
 }
@@ -85,7 +86,7 @@ scMusicTwoName = "altus"
 scMusicTwoClef = \clef "treble"
 scMusicTwoClefTransposed = \clef "treble"
 
-scMusicTwo =   { \relative c' {  \time 4/2
+scMusicTwo =   { \relative c' {  \fourTwoCommonTime
 R\breve r1 d1 ~ d1 g,1 d'1. d2 ef2 ef d1 r2 d2 bf2 c d2. d4 d2 a2 bf2 d1 \melisma cs4 b
 cs1 \melismaEnd d1 d\breve d1 d2. e4 f2 f,2 g2. a4 bf2 a2 g d'2 |
 d2 c a2. a4 a2 bf2. a4 g2 ~ g2 fs2 g2 g'2 d2 f2 f2. f4
@@ -103,7 +104,7 @@ d\breve g1 f\breve d1 e1. d2 e f g\breve fs1
 g\breve d1 d\breve a1 c\breve c1 d1 d\breve d\breve bf1
 g\breve fs1 g\breve g'1 f\breve d1 e1. d2 e f 
 g\breve fs1 
-\time 4/2
+\fourTwoCommonTime
 g1 r2 d2 d4 \melisma c bf a g2 \melismaEnd g'2 ~ g4 \melisma f4 ef d4 c2 ef2 \melismaEnd
 d1 r2 a2 bf2. c4 d2 e2 ~ e \melisma d2 c2. d4 ef1 \melismaEnd d1 ~ d\breve
 }
@@ -113,7 +114,7 @@ scMusicThreeName = "tenor"
 scMusicThreeClef = \clef "G_8"
 scMusicThreeClefTransposed = \clef "G_8"
 
-scMusicThree =   { \relative c' {  \time 4/2
+scMusicThree =   { \relative c' {  \fourTwoCommonTime
 R\breve*7 r1 
 a1 ~ a1 d,1 a'1. a2 bf2 bf a1 r2 d2 bf c d2. d4 d2 a2
 bf2 a2. \melisma g4 f e f1 g1 a1 \melismaEnd bf2 d bf c d2. d4 d2 c bf c a1 g2 bf a2. f4 g2 a bf2 g d'2. d4 
@@ -129,7 +130,7 @@ g\breve g1 d'\breve d1 c\breve c1 g1 d'\breve
 g,\breve bf1 a\breve f1 g1. f2 g a bf1 a\breve g\breve d1 
 
 e1 c\breve d bf'1 a\breve f1 g\breve g1 g1 a\breve 
-\time 4/2
+\fourTwoCommonTime
 g2 bf2 a4 \melisma g f e d2 \melismaEnd g4 \melisma a  bf c d bf c2. d4 ef4 d c bf4 a2 g \melismaEnd 
 a2 d2 d4 \melisma c bf a g2 \melismaEnd bf2 \melisma c d ef2. d4 c1. b4 a \melismaEnd b\breve
 }
@@ -139,7 +140,7 @@ scMusicFourName = "bassus"
 scMusicFourClef = \clef "bass"
 scMusicFourClefTransposed = \clef "bass"
 
-scMusicFour =  {  \relative c {  \time 4/2
+scMusicFour =  {  \relative c {  \fourTwoCommonTime
 R\breve R R R 
 R R R R 
 R d g,1 d'1 ~ d2 d ef ef d1 r2 d2 
@@ -156,7 +157,7 @@ bf,1 r1 R\breve r1 d1 ~ d1 bf ef d
 R\breve. R R 
 r1 r1 g1 d'\breve d1 c\breve c1 g1 d'\breve g,\breve g1 
 c1 a\breve g g1 d'\breve d1 c\breve c1 ef d\breve
-\time 4/2 
+\fourTwoCommonTime 
 g,2 g'2 f4 \melisma e d c bf a g f g1 \melismaEnd c\breve \melisma 
 d\breve \melismaEnd g,2 g'2 g4 \melisma f ef d c2 b \melismaEnd c1 ~ c1 g1 ~ g\breve 
 }
@@ -173,8 +174,8 @@ O ma -- gnum __ _ _ my -- ste -- ri -- um
 et ad -- mi -- ra -- bi -- le 
 et ad -- mi -- ra -- bi -- le sa -- cra -- men -- _ tum
 ut a -- ni -- ma -- li -- a
-vi -- de -- runt do -- mi -- num na -- tum 
-vi -- de -- runt do -- mi -- num na -- _ _ _ tum
+vi -- de -- rent do -- mi -- num na -- tum 
+vi -- de -- rent do -- mi -- num na -- _ _ _ tum
 ia -- cen -- tem in pre -- _ se -- _ _ pi -- o,
 ia -- cen -- tem in pre -- _ se -- pi -- o.
 O Be -- a -- ta vir -- go cu -- ius vi -- sce -- ra me -- ru -- e -- runt 
@@ -197,8 +198,8 @@ O ma -- gnum __ _ _ my -- ste --  _ _ ri -- um
 et ad -- mi -- ra -- bi -- le sa -- cra -- men -- _ tum
 et ad -- mi -- ra -- bi -- le sa -- cra -- men -- tum
 ut a -- ni -- ma -- li -- a
-vi -- de -- runt do -- mi -- num na -- tum 
-vi -- de -- runt do -- mi -- num na -- _ _ _ tum
+vi -- de -- rent do -- mi -- num na -- tum 
+vi -- de -- rent do -- mi -- num na -- _ _ _ tum
 ia -- cen -- tem ia -- cen -- tem in pre -- _ se -- pi -- o,
 ia -- cen -- tem in pre -- se -- pi -- o.
 O Be -- a -- ta vir -- go cu -- ius vi -- sce -- ra me -- ru -- e -- runt 
@@ -221,8 +222,8 @@ et ad -- mi -- ra -- bi -- le sa -- cra -- men -- tum,
 et ad -- mi -- ra -- bi -- le sa -- cra --  _ men -- tum
 
 ut a -- ni -- ma -- li -- a, ut a -- ni -- ma -- li -- a
-vi -- de -- runt do -- mi -- num na -- _ tum 
-vi -- de -- runt do -- mi -- num na -- tum
+vi -- de -- rent do -- mi -- num na -- _ tum 
+vi -- de -- rent do -- mi -- num na -- tum
 ia -- cen -- tem in pre -- se -- pi --  o,
 ia -- cen -- tem in pre -- se -- pi --  o,
 in pre -- se -- pi --  o.
@@ -245,7 +246,7 @@ O ma -- gnum my -- ste -- ri -- um
 et ad -- mi -- ra -- bi -- le sa -- cra -- men -- tum,
 et ad -- mi -- ra -- bi -- le sa -- cra --  men -- tum
 ut a -- ni -- ma -- li -- a
-vi -- de -- runt do -- mi -- num __ na -- tum 
+vi -- de -- rent do -- mi -- num __ na -- tum 
 ia -- cen -- tem in pre -- _ se -- pi --  o,
 ia -- cen -- tem in pre -- _ se -- pi --  o,
 in pre -- _ se -- _ pi -- o.
