@@ -2,7 +2,7 @@
 #(define *is-choir-score* #f)
 #(define *is-parts* #f)
 
-% #(set-global-staff-size 18)
+%#(set-global-staff-size 18)
 
 global = {
 

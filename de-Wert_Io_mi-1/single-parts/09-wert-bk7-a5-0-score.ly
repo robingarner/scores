@@ -6,7 +6,7 @@
 \include "../include/macros.ly" 
 \include "../include/scheme.ly" 
 
-#(set-global-staff-size 14.5)
+#(set-global-staff-size 16)
 
 transposeFrom = d
 transposeTo = c
@@ -32,7 +32,7 @@ transposeTo = c
     \score {
         <<
             \new ChoirStaff = choirStaff \with {
-                \override StaffGrouper.staff-staff-spacing.padding = #4.5
+                \override StaffGrouper.staff-staff-spacing.padding = #3.0
             } <<
                 \new Voice << 
                     \set Staff.instrumentName = #"Canto"
