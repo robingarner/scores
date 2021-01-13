@@ -16,7 +16,7 @@ transposeTo = c
     title = "Io mi vivea del mio languir contento"
     subtitle = "Prima parte"
     folio = \markup { Luigi Tansillo (1510-1568) }
-    instrument = "Io mi vivea (score)"
+    instrument = "Io mi vivea"
 
     % Unchanging:
     \include "include/distribution-header.ly"
@@ -25,7 +25,7 @@ transposeTo = c
 }
 
 \include "../parts/09-wert-a5-madrigal.ly"
-    
+
 \book {
     \bookOutputName "09-io_mi_vivea"
     \bookOutputSuffix "--0-score"

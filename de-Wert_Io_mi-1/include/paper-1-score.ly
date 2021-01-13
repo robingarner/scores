@@ -12,7 +12,9 @@
     ragged-bottom = ##f
     ragged-last-bottom = ##t
     myStaffSize = #35
-
+    bottom-margin = #3
+    
+    last-bottom-spacing.minimum-distance = #12
 
     scoreTitleMarkup = \markup { \column {
         \on-the-fly #print-all-headers { \bookTitleMarkup \hspace #1 }

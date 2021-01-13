@@ -16,7 +16,7 @@ transposeTo = c
     title = "Riman solo il pensier, che in parte rende"
     subtitle = "Seconda parte"
     folio = \markup { Luigi Tansillo (1510-1568) }
-    instrument = "Riman solo il pensier (score)"
+    instrument = "Riman solo il pensier"
 
     % Unchanging:
     \include "include/distribution-header.ly"
