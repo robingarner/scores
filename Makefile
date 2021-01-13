@@ -14,7 +14,7 @@
 SUBDIRS = Byrd_Mass_for_3 Byrd_Mass_for_4 Byrd_Ave_Verum
 #SUBDIRS += linverno spring kruisvaarderslied my-peace
 SUBDIRS += Costantini_Confitemini de-Wert_Vox de-Wert_Misera de-Wert_Io_mi-1 de-Wert_Io_mi-2
-SUBDIRS += Gibbons_Silver_Swan
+SUBDIRS += de-Wert_Vaghi Gibbons_Silver_Swan
 SUBDIRS += Josquin_Absalon Josquin_Ave_Maria
 SUBDIRS += Palestrina_Sicut Palestrina_Vedrassi 
 SUBDIRS += Parsons_Ave_Maria Tallis_In_Jejunio Tallis_Sacrum
@@ -47,6 +47,9 @@ de-Wert_Io_mi-2:
 	$(MAKE) -C $@ all
 
 de-Wert_Misera:
+	$(MAKE) -C $@ all
+
+de-Wert_Vaghi:
 	$(MAKE) -C $@ all
 
 Costantini_Confitemini:
