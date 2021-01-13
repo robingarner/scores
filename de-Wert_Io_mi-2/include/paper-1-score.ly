@@ -6,11 +6,15 @@
     ragged-last-bottom = ##t
     myStaffSize = #35
 
-    #(define fonts
-        (make-pango-font-tree "Liberation Serif"
-                              "Liberation Serif"
-                              "Liberation Serif"
-                              (/ myStaffSize 40)))
+    last-bottom-spacing.minimum-distance = #12
+
+  #(define fonts
+    (set-global-fonts
+      #:music "paganini"  ; not "mtf-haydn-16"
+      #:brace "paganini"  ; not "mtf-haydn-brace"
+      #:roman "Norasi"
+      #:factor (/ staff-height pt 20)
+  ))
 
     scoreTitleMarkup = \markup { \column {
         \on-the-fly #print-all-headers { \bookTitleMarkup \hspace #1 }
