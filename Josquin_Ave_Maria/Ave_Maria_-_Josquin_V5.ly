@@ -156,14 +156,14 @@ PartPOneVoiceOne =  \relative g' {
     d2 c2 ~ | % 137
     c4 b2. | % 138
     c2 r2 | % 139
-    R1*4 | % 143
+    R1*3 | % 143
     c1 \p | % 144
     d2 e2 | % 145
     f1 | % 146
     e1 | % 147
     r2 e2 | % 148
     e2 d2 | % 149
-    c1 | \barNumberCheck #150
+    c1 | \barNumberCheck #149
     b1 ~ | % 151
     b1 | % 152
     c1 ~ | % 153
@@ -326,15 +326,14 @@ PartPTwoVoiceOne =  \relative g {
     g8 [ f8 e8 d8 ] e4 a,4 ~ | % 139
     a4 b4 g4 a4 ~ | \barNumberCheck #140
     a8 [ g8 ] g2 fis4 | % 141
-    g1 | % 142
-    R1 | % 143
+    g1 ^\fermata | % 142
     g'1 \p | % 144
     g2 g2 | % 145
     a1 | % 146
     g1 | % 147
     r2 g2 | % 148
     g2 g2 | % 149
-    e2 f2 | \barNumberCheck #150
+    e2 f2 | \barNumberCheck #149
     g1 ~ | % 151
     g1 | % 152
     g1 ~ | % 153
@@ -490,15 +489,14 @@ PartPThreeVoiceOne =  \relative g {
     c2. d4 ~ | % 139
     d2 c2 ~ | \barNumberCheck #140
     c4 b2. | % 141
-    c1 | % 142
-    R1 | % 143
+    c1 ^\fermata | % 142
     c1 \p | % 144
     b2 b2 | % 145
     a2. b4 | % 146
     c1 | % 147
     r2 c2 | % 148
     c2 b2 | % 149
-    c1 | \barNumberCheck #150
+    c1 | \barNumberCheck #149
     d1 ~ | % 151
     d1 | % 152
     c1 ~ | % 153
@@ -649,15 +647,14 @@ PartPFourVoiceOne =  \relative g, {
     c,4 a'4. g8 [ f8 e8 ] | % 139
     f4 g4 e4 f4 ~ | \barNumberCheck #140
     f8 [ e8 d8 c8 ] d2 | % 141
-    c1 | % 142
-    R1 | % 143
+    c1 ^\fermata | % 142
     c1 \p | % 144
     g'2 g2 | % 145
     f2. e8 [ d8 ] | % 146
     c1 | % 147
     r2 c2 | % 148
     c'2 g2 | % 149
-    a1 | \barNumberCheck #150
+    a1 | \barNumberCheck #149
     g1 ~ | % 151
     g1 | % 152
     c,1 ~ | % 153
