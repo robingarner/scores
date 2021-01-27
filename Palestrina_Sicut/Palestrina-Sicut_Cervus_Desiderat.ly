@@ -1,4 +1,4 @@
-\version "2.19.83"
+\version "2.20.0"
 
 #(set-default-paper-size "a4")
 #(set-global-staff-size 16)
@@ -330,6 +330,7 @@ ad te De -- _ _ _ _ _ _ us.
 	\new Staff <<\global
 	\new Voice="v1" {
 		\set Staff.instrumentName="Soprano"
+		\set Staff.shortInstrumentName = "S."
 		\clef "treble"
 		\cantus }
 	\new Lyrics \lyricsto "v1" {\textocantus }
@@ -338,6 +339,7 @@ ad te De -- _ _ _ _ _ _ us.
 	\new Staff << \global
 	\new Voice="v2" {
 		\set Staff.instrumentName="Alto   "
+		\set Staff.shortInstrumentName = "A."
 		\clef "treble" 
 		\altus}
 	\new Lyrics \lyricsto "v2" {\textoaltus }
@@ -347,6 +349,7 @@ ad te De -- _ _ _ _ _ _ us.
 	\new Staff <<\global
 	\new Voice="v3" {
 		\set Staff.instrumentName="Tenor  "
+		\set Staff.shortInstrumentName = "T."
 		\clef "G_8"
 		\tenor }
 	\new Lyrics \lyricsto "v3" {\textotenor }
@@ -355,6 +358,7 @@ ad te De -- _ _ _ _ _ _ us.
 	\new Staff <<\global
 	\new Voice="v4" {
 		\set Staff.instrumentName="Bass   "
+		\set Staff.shortInstrumentName = "B."
 		\clef "bass" 
 		\bassus }
 	\new Lyrics \lyricsto "v4" {\textobassus }
