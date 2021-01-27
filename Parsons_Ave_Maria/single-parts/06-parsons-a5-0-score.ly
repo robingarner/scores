@@ -1,4 +1,4 @@
-\version "2.19.63"
+\version "2.20.0"
 \include "english.ly"
 
 \include "../include/paper-1-score.ly" 
@@ -33,7 +33,8 @@ transposeTo = ef
                 \override StaffGrouper.staff-staff-spacing.padding = #2
             } <<
                 \new Voice <<
-                    \set Staff.instrumentName = #"Superius"
+                    \set Staff.instrumentName = "Superius"
+                    \set Staff.shortInstrumentName = "S."
                     \incipit \superiusVIincipitVoice
                     \clef "treble"
                     \global
@@ -41,7 +42,8 @@ transposeTo = ef
                 >>
                 \addlyrics { \superiusLyricsVI }
                 \new Voice <<
-                    \set Staff.instrumentName = #"Medius"
+                    \set Staff.instrumentName = "Medius"
+                    \set Staff.shortInstrumentName = "M."
                     \incipit \mediusVIincipitVoice
                     \clef "treble"
                     \global
@@ -49,7 +51,8 @@ transposeTo = ef
                 >>
                 \addlyrics { \mediusLyricsVI }
                 \new Voice <<
-                    \set Staff.instrumentName = #"Contra"
+                    \set Staff.instrumentName = "Contra"
+                    \set Staff.shortInstrumentName = "C."
                     \incipit \contraVIincipitVoice
                     \clef "treble"
                     \global
@@ -58,6 +61,7 @@ transposeTo = ef
                 \addlyrics { \contraLyricsVI }
                 \new Voice <<
                     \set Staff.instrumentName = #"Tenor"
+                    \set Staff.shortInstrumentName = #"T."
                     \incipit \tenorVIincipitVoice
                     \clef "treble_8"
                     \global
@@ -66,6 +70,7 @@ transposeTo = ef
                 \addlyrics { \tenorLyricsVI }
                 \new Voice <<
                     \set Staff.instrumentName = #"Bassus"
+                    \set Staff.shortInstrumentName = #"B."
                     \incipit \bassusVIincipitVoice
                     \clef "bass"
                     \global

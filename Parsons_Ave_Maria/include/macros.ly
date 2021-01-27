@@ -16,14 +16,14 @@ singleTime = \once \override Staff.TimeSignature  #'style = #'single-digit
 invisibleTime = \once \override Staff.TimeSignature #'break-visibility = #all-invisible 
 
 fourTwoCutTime = {
-%    \once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-%    \once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+    \once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+    \once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
     \time 4/2
 }
 
 fourTwoCommonTime = {
-%    \once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-%    \once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C44"
+    \once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+    \once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C44"
     \time 4/2
 }
 
@@ -208,10 +208,10 @@ incipit =
 #(define-music-function (parser location incipit-music) (ly:music?)
   #{
     \once \override Staff.InstrumentName #'self-alignment-X = #RIGHT
-    \once \override Staff.InstrumentName #'self-alignment-Y = #UP
-    \once \override Staff.InstrumentName #'Y-offset =
-      #(lambda (grob)
-         (+ 4 (system-start-text::calc-y-offset grob)))
+    %\once \override Staff.InstrumentName #'self-alignment-Y = #UP
+    %\once \override Staff.InstrumentName #'Y-offset =
+    %  #(lambda (grob)
+    %     (+ 4 (system-start-text::calc-y-offset grob)))
     \once \override Staff.InstrumentName #'padding = #0.3
     \once \override Staff.InstrumentName #'stencil =
       #(lambda (grob)
