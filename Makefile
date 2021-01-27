@@ -68,7 +68,7 @@ Parsons_Ave_Maria:
 	$(MAKE) -C Parsons_Ave_Maria all
 
 Tallis_In_Jejunio:
-	$(MAKE) -C Tallis_In_Jejunio --makefile=../Makefile TALL-INJ-8859.pdf
+	$(MAKE) -C Tallis_In_Jejunio --makefile=../Makefile Tallis_In_Jejunio.pdf
 
 Tallis_Sacrum:
 	$(MAKE) -C Tallis_Sacrum all
