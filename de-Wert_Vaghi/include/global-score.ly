@@ -3,6 +3,9 @@
 
 % #(set-global-staff-size 18)
 
+transposeFrom = d
+transposeTo = c
+
 global = {
 
     \override Accidental #'hide-tied-accidental-after-break = ##t

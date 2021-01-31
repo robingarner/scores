@@ -53,7 +53,7 @@ cantoIIincipit = \relative c'' {
 }
 
 % canto: checked against source
-cantoII = \relative c'' {
+cantoII = \transpose \transposeFrom \transposeTo \relative c'' {
     \fourTwoCutTime
     \key c \major
 
@@ -115,7 +115,7 @@ altoIIincipit = \relative c' {
 }
 
 % alto: checked against source
-altoII = \relative c' {
+altoII = \transpose \transposeFrom \transposeTo \relative c' {
     \fourTwoCutTime
     \key c \major
 
@@ -180,7 +180,7 @@ tenoreIIincipit = \relative c' {
 }
 
 % tenore: checked against source
-tenoreII = \relative c' {
+tenoreII = \transpose \transposeFrom \transposeTo \relative c' {
     \fourTwoCutTime
     \key c \major
 
@@ -241,7 +241,7 @@ bassoIIincipit = \relative c {
 }
 
 % checked against source
-bassoII = \relative c {
+bassoII = \transpose \transposeFrom \transposeTo \relative c {
     \fourTwoCutTime
     \key c \major
 
@@ -296,7 +296,7 @@ quintoIIincipit = \relative c' {
 }
 
 % quinto: checked against source
-quintoII = \relative c' {
+quintoII = \transpose \transposeFrom \transposeTo \relative c' {
     \fourTwoCutTime
     \key c \major
 
