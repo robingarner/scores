@@ -50,7 +50,7 @@ de-Wert_Misera:
 	$(MAKE) -C $@ all
 
 de-Wert_Vaghi:
-	$(MAKE) -C $@ all
+	$(MAKE) -C $@ 02-vaghi_boschetti---0-score.pdf
 
 Costantini_Confitemini:
 	$(MAKE) -C Costantini_Confitemini all
