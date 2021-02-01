@@ -1,4 +1,4 @@
-\version "2.19.83"
+\version "2.20.0"
 \language "english"
 
 htitle="Mass for Three Voices"
@@ -18,8 +18,8 @@ hdates="(c. 1543-1623)"
 
 \paper {
   %
-  % Add enough spacing that we only get 3 systems to a page, rather than 
-  % sometimes 3 sometimes 4.
+  % Add enough spacing that we only get 4 systems to a page, rather than 
+  % sometimes 4 sometimes 5.
   %
   system-system-spacing = 
     #'((basic-distance . 30) 

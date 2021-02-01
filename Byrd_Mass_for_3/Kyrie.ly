@@ -1,4 +1,4 @@
-\version "2.19.83"
+\version "2.20.0"
 
 \include "common.ly"
 
@@ -6,8 +6,7 @@ kyrieAltoNotes =  \relative fs' {
   % Permit first bar number to be printed
   \bar ""
 
-  \clef "treble" \key d \major \numericTimeSignature
-  \time 4/2 
+  \clef "treble" \key d \major \fourTwoCommonTime
     fs1. fs2 | % 2
     e2 fs2 g2 fs4 e4 | % 3
     fs1 fs1 | % 4
@@ -26,8 +25,8 @@ kyrieAltoLyrics = \lyricmode {
 }
 
 kyrieTenorNotes =  \relative a {
-    \clef "treble_8" \key d \major \numericTimeSignature
-    \time 4/2 a1. a2
+    \clef "treble_8" \key d \major \fourTwoCommonTime 
+    a1. a2
     | % 2
     a2 a2 b1 | % 3
     a1 d1 | % 4
@@ -46,7 +45,7 @@ kyrieTenorLyrics = \lyricmode {
 }
 
 kyrieBassNotes =  \relative d {
-    \clef "bass" \key d \major \numericTimeSignature\time 4/2 
+    \clef "bass" \key d \major \fourTwoCommonTime
     d1. d2 | % 2
     cs2 d2 b2. cs4 | % 3
     d1 d1 | % 4

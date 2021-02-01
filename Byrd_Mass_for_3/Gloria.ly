@@ -1,12 +1,11 @@
-\version "2.19.83"
+\version "2.20.0"
 
 \include "common.ly"
 
 
 gloriaAltoNotes = \relative fs' {
-  \bar ""
     \key d \major 
-    \time 4/2  
+    \fourTwoCommonTime
     fs1. fs2 | % 11
     e2 g2 fs2 d2 | % 12
     fs2. fs4 e1 | % 13
@@ -143,7 +142,8 @@ gloriaAltoLyrics = \lyricmode {
 
 gloriaTenorNotes = \relative a {
     \clef "treble_8" \key d \major
-    \time 4/2  a1. a2 | % 11
+    \fourTwoCommonTime  
+    a1. a2 | % 11
     a2 b2 a1 | % 12
     a2 d2. d4 cs2 | % 13
     b2 a2 g2 fs2 | % 14
@@ -286,7 +286,8 @@ gloriaTenorLyrics = \lyricmode {
 
 gloriaBassNotes = \relative d {
    \clef "bass" \key d \major 
-    \time 4/2  d1. d2 | % 11
+    \fourTwoCommonTime  
+    d1. d2 | % 11
     cs2 b2 d1 | % 12
     r2 d2 a'2. a4 | % 13
     d,1 r1 | % 14

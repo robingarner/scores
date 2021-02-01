@@ -7,7 +7,8 @@ credoAltoNotes =  \relative fs' {
   %\set Score.currentBarNumber = #11
   % Permit first bar number to be printed
   \bar ""
-  \clef "treble" \key d \major \numericTimeSignature\time 4/2 
+  \clef "treble" \key d \major 
+  \fourTwoCommonTime 
     R1*2 | % 1
     fs1 fs2 d2 | % 2
     e2 fs2 g1 | % 3
@@ -217,7 +218,7 @@ credoAltoLyrics = \lyricmode {
 
 credoTenorNotes =  \relative a {
     \clef "treble_8" \key d \major 
-    \numericTimeSignature\time 4/2  
+    \fourTwoCommonTime  
     a1 a2 fs2 | % 116
     a2 b2 d1 | % 117
     a1 r2 g2 | % 118
@@ -443,8 +444,8 @@ credoTenorLyrics = \lyricmode {
 
 credoBassNotes =  \relative d {
     \clef "bass" \key d \major
-    \numericTimeSignature
-    \time 4/2  R1*2 | % 116
+    \fourTwoCommonTime
+    R1*2 | % 116
     d1 d2 b2 | % 117
     cs2 d2 e1 | % 118
     d1 r2 cs2 | % 119

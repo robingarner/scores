@@ -8,6 +8,7 @@ benedictusAltoNotes =  \relative fs' {
   \bar ""
 
   \clef "treble" \key d \major 
+  \fourTwoCommonTime
     d1. a2 | % 323
     d4 e4 fs1 e2 | % 324
     fs1 g1 | % 325
@@ -37,6 +38,7 @@ benedictusAltoLyrics = \lyricmode {
 
 benedictusTenorNotes =  \relative a {
     \clef "treble_8" \key d \major 
+  \fourTwoCommonTime
     R1*2 | % 323
     r1 a1 ~ | % 324
     a2 d,2 g4 a4 b2 ~ | % 325
@@ -65,7 +67,9 @@ benedictusTenorLyrics = \lyricmode {
 }
 
 benedictusBassNotes =  \relative d {
-    \clef "bass" \key d \major \time 4/2 
+    \clef "bass" \key d \major   
+    \fourTwoCommonTime
+
     r1 d1 ~ | % 323
     d1 a1 | % 324
     d4 e4 fs2 e1 | % 325

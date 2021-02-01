@@ -7,7 +7,8 @@ agnusDeiAltoNotes =  \relative fs' {
   % Permit first bar number to be printed
   \bar ""
 
-    \time 4/2  d1. a2 | % 339
+    \fourTwoCommonTime
+    d1. a2 | % 339
     d4 e4 fs1 e2  | \barNumberCheck #3
     fs1 r2 g2 | % 341
     fs2. e4 d2 d2 ~ | % 342
@@ -50,7 +51,8 @@ agnusDeiAltoNotes =  \relative fs' {
     fs4 e4 d4 cs4 d2 b2 | % 387
     cs2 fs2. d4 e2 ~ | % 388
     e4 d4 d1 cs4 b4 \bar "!"
-    \once \hide Staff.TimeSignature \time 2/2   cs1 ^\markup{ &ndash;2&ndash;} | \barNumberCheck #53
+   %  ^\markup{ &ndash;2&ndash;} 
+    \once \hide Staff.TimeSignature \time 2/2   cs1 | \barNumberCheck #53
     \once \hide Staff.TimeSignature \time 4/2  d\breve ^\fermata \bar "|."
 }
 
@@ -71,7 +73,8 @@ agnusDeiAltoLyrics = \lyricmode {
 
 agnusDeiTenorNotes =  \relative a {
     \clef "treble_8" \key d \major 
-    \time 4/2  R\breve | % 339
+    \fourTwoCommonTime
+    R\breve | % 339
     r1 a1 ~  | \barNumberCheck #3
     a2 d,2 g4 a4 b2 ~ | % 341
     b2 a2 b1 | % 342
@@ -143,7 +146,7 @@ agnusDeiTenorLyrics = \lyricmode {
 
 agnusDeiBassNotes =  \relative d {
     \clef "bass" \key d \major 
-    \time 4/2  
+    \fourTwoCommonTime  
     r1 d1 ~ | % 339
     d1 a1  | \barNumberCheck #3
     d4 e4 fs2 e1 | % 341

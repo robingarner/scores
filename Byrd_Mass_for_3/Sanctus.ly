@@ -6,7 +6,7 @@ sanctusAltoNotes =  \relative fs' {
   % Permit first bar number to be printed
   \bar ""
 
-    \numericTimeSignature\time 4/2  
+    \fourTwoCommonTime  
     d\breve ~ | % 284
     d\breve ~ | % 285
     d\breve | % 286
@@ -24,7 +24,7 @@ sanctusAltoNotes =  \relative fs' {
     d1 a'2. a4 | % 298
     g2 fs2. d4 fs2 ~ \bar ":"
     fs4 b,4 e2 s1 | \barNumberCheck #18
-    ds\breve ^\fermata \bar "||"
+    ds\breve ^\fermata \bar "||" \break
     r2 fs2 d2 b2 | % 302
     g'1 g2 fs2 | % 303
     e2 d2 cs1 | % 304
@@ -65,7 +65,8 @@ sanctusAltoLyrics = \lyricmode {
 
 sanctusTenorNotes =  \relative a {
     \clef "treble_8" \key d \major 
-    \numericTimeSignature\time 4/2  r1 d,2. e4 | % 284
+    \fourTwoCommonTime  
+    r1 d,2. e4 | % 284
     fs4 g4 a1 d,2 | % 285
     fs2 b2 a2 d2 | % 286
     cs\breve | % 287
@@ -125,7 +126,7 @@ sanctusTenorLyrics = \lyricmode {
 
 sanctusBassNotes =  \relative d {
     \clef "bass" \key d \major 
-    \numericTimeSignature\time 4/2  
+    \fourTwoCommonTime  
     R1*2 | % 284
     d2. e4 fs4 g4 a2 ~ | % 285
     a2 d,2 fs2 b2 | % 286
