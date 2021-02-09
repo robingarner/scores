@@ -16,8 +16,10 @@ SUBDIRS = Byrd_Mass_for_3 Byrd_Mass_for_4 Byrd_Ave_Verum
 SUBDIRS += Costantini_Confitemini de-Wert_Vox de-Wert_Misera de-Wert_Io_mi-1 de-Wert_Io_mi-2
 SUBDIRS += de-Wert_Vaghi Gibbons_Silver_Swan
 SUBDIRS += Josquin_Absalon Josquin_Ave_Maria
+SUBDIRS += Lobo_Versa_Est
 SUBDIRS += Palestrina_Sicut Palestrina_Vedrassi 
 SUBDIRS += Parsons_Ave_Maria Tallis_In_Jejunio Tallis_Sacrum
+SUBDIRS += Victoria_O_Vos_Omnes
 SUBDIRS += Wilbye_Draw_On Wilbye_SHSB
 #st-cecilia-press
 
@@ -64,6 +66,9 @@ Josquin_Ave_Maria:
 Josquin_Absalon:
 	$(MAKE) -C Josquin_Absalon Absalon_Fili_Mi_4.pdf
 
+Lobo_Versa_Est:
+	$(MAKE) -C $@ --makefile=../Makefile  Lobo-Versa_Est_In_Luctum.pdf
+
 Parsons_Ave_Maria:
 	$(MAKE) -C Parsons_Ave_Maria all
 
@@ -72,6 +77,9 @@ Tallis_In_Jejunio:
 
 Tallis_Sacrum:
 	$(MAKE) -C Tallis_Sacrum all
+
+Victoria_O_Vos_Omnes:
+	$(MAKE) -C $@ --makefile=../Makefile O_Vos_Omnes_Qui_Transitis_Per_Viam.pdf
 
 Wilbye_Draw_On:
 	$(MAKE) -C Wilbye_Draw_On targets

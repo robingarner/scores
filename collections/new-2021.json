@@ -1,0 +1,23 @@
+{ 
+  "toc" : true,
+  "inputs" : [
+     { "file" : "../3rd-party/Dona Nobis Pacem.pdf",
+      "toc" : "Anonymous - Dona Nobis Pacem" 
+     },
+    { "file" : "../3rd-party/Gibbons-what is our life.pdf" ,
+      "toc" : "Gibbons, Orlando - What is our Life" 
+    },
+    { "file" : "../Lobo_Versa_Est/Lobo-Versa_Est_In_Luctum.pdf" ,
+      "toc" : "Lobo, Alonso - Versa est in Luctum" 
+    },
+    { "file" : "../3rd-party/Once, Twice, Thrice.pdf",
+      "toc" : "Purcell - Once, Twice, Thrice" 
+    },
+    { "file" : "../Victoria_O_Vos_Omnes/O_Vos_Omnes_Qui_Transitis_Per_Viam.pdf",
+      "toc" : "Victoria, Tomas Luis - O Vos Omnes" 
+     },
+    { "file" : "../3rd-party/When_David_heard_Weelkes.pdf",
+      "toc" : "Weelkes - When David heard" 
+    }
+  ]
+}
