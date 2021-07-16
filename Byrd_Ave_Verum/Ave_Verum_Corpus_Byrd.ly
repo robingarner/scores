@@ -213,14 +213,14 @@ PartPThreeVoiceOne =  \shiftDurations #-1 #0 \relative bes {
     c4 a4 a4 \bar "||"
     \fourTwoCommonTime  d2 c4 c4 | % 28
     es2. d4 ~ | % 29
-    \clef "treble_8" d4 c4 d4 \melisma c8 bes8 | \barNumberCheck #30
+    d4 c4 d4 \melisma c8 bes8 | \barNumberCheck #30
     c4 \melismaEnd c4 bes2 \repeat volta 2 {
         | % 31
         r4 bes4 c2 | % 32
         b2 r4 g4 | % 33
         fis2 g2 ~ | % 34
         g2 r2 | % 35
-        \clef "treble_8" r4 bes4 \< << f'4. {s4 s8\> } >> es8 | % 36
+        r4 bes4 \< << f'4. {s4 s8\> } >> es8 | % 36
         d4 c4\! es\< d4 \! ~ \melisma | % 37
         d4\>c4 \melismaEnd d2 \! \bar "|"
         g,4. bes8 a4 g4 | % 39
@@ -230,7 +230,7 @@ PartPThreeVoiceOne =  \shiftDurations #-1 #0 \relative bes {
         g4 fis4 \melismaEnd g4 fis4 ~ | % 43
         fis4 g4 a4. c8 | % 44
         bes4 a8 g8( a2) | % 45
-        \clef "treble_8" }
+        }
     \alternative { {
             g1 }
         {
