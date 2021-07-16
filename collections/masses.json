@@ -1,0 +1,63 @@
+{ 
+  "toc" : true,
+  "title" : "Masses for 3 & 4 voices",
+  "inputs" : [
+    { "file" : "../Byrd_Mass_for_3/Kyrie.pdf", 
+      "align" : "EVEN",
+      "toc" : "Byrd: Mass for 3 voices -- Kyrie"
+    },
+    { "file" : "../Byrd_Mass_for_3/Gloria.pdf", 
+      "toc" : "Byrd: Mass for 3 voices -- Gloria"
+    },
+    { "file" : "../Byrd_Mass_for_3/Credo.pdf", 
+      "align" : "EVEN",
+      "toc" : "Byrd: Mass for 3 voices -- Credo"
+    },
+    { "file" : "../Byrd_Mass_for_3/Sanctus.pdf", 
+      "align" : "EVEN",
+      "toc" : "Byrd: Mass for 3 voices -- Sanctus"
+    },
+    { "file" : "../Byrd_Mass_for_3/Benedictus.pdf", 
+      "align" : "EVEN",
+      "toc" : "Byrd: Mass for 3 voices -- Benedictus"
+    },
+    { "file" : "../Byrd_Mass_for_3/AgnusDei.pdf", 
+      "toc" : "Byrd: Mass for 3 voices -- Agnus Dei"
+    },
+    { "file" : "../Byrd_Mass_for_4/Kyrie.pdf", 
+      "align" : "EVEN",
+      "toc" : "Byrd: Mass for 4 voices -- Kyrie"
+    },
+    { "file" : "../Byrd_Mass_for_4/Gloria.pdf", 
+      "align" : "EVEN",
+      "toc" : "Byrd: Mass for 4 voices -- Gloria"
+    },
+    { "file" : "../Byrd_Mass_for_4/Credo.pdf", 
+      "toc" : "Byrd: Mass for 4 voices -- Credo"
+    },
+    { "file" : "../Byrd_Mass_for_4/Sanctus.pdf", 
+      "toc" : "Byrd: Mass for 4 voices -- Sanctus"
+    },
+    { "file" : "../Byrd_Mass_for_4/AgnusDei.pdf", 
+      "align" : "EVEN",
+      "toc" : "Byrd: Mass for 4 voices -- Agnus Dei"
+    },
+    { "file" : "../Machaut_Messe/Kyrie.pdf", 
+      "align" : "EVEN",
+      "toc" : "Machaut: Messe de Notre Dame -- Kyrie"
+    },
+    { "file" : "../Machaut_Messe/Gloria.pdf",
+      "align" : "EVEN",
+      "toc" : "Machaut: Messe de Notre Dame -- Gloria"
+    },
+    { "file" : "../Machaut_Messe/Messe_de_Notre_Dame_Kyrie.pdf", 
+      "align" : "EVEN",
+      "toc" : "Machaut: Messe de Notre Dame -- Kyrie"
+    },
+    { "file" : "../Machaut_Messe/Machaut_Messe_de_Nostre_Dame_Gloria.pdf",
+      "align" : "EVEN",
+      "toc" : "Machaut: Messe de Notre Dame -- Gloria"
+    }
+  ]
+}
+`

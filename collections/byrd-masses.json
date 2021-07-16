@@ -1,5 +1,0 @@
-{ "inputs" : [
-    { "file" : "../Byrd_Mass_for_3/Byrd_Mass_for_Three_Voices.pdf" },
-    { "file" : "../Byrd_Mass_for_4/Byrd_Mass_for_Four_Voices.pdf", "align" : "EVEN" }
-  ]
-}
