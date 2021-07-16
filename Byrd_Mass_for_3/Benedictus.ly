@@ -147,5 +147,6 @@ benedictusBassLyrics = \lyricmode {
     >>
     \layout {
     }
+    \midi { \tempo 2 = 90 }
   }
 }

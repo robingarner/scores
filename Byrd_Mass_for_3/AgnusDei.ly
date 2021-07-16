@@ -254,12 +254,7 @@ agnusDeiBassLyrics = \lyricmode {
         
     >>
     \layout {
-      ragged-right = ##f
-      %system-count = #1
-      \override Score.BarNumber.break-visibility = ##(#f #t #t)
-      \context {\Staff 
-        \consists Ambitus_engraver 
-      }
     }
+    \midi { \tempo 2 = 90 }
   }
 }
