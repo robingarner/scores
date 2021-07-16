@@ -21,9 +21,6 @@
       "align" : "EVEN",
       "toc" : "Byrd, William - Mass for 4 Voices"
     },
-    { 
-      "spacer" : "true" 
-    },
     { "file" : "../Costantini_Confitemini/confitemini.pdf" ,
       "toc" : "Costantini - Confitemini Domino",
       "include" : "false"
@@ -96,9 +93,6 @@
       "toc" : "Moore - Springtime Mantleth Every Bough",  
       "include" : "false" 
     },
-    { 
-      "spacer" : "true" 
-    },
     { "file" : "../Tallis_In_Jejunio/Tallis_In_Jejunio.pdf",
       "toc" : "Tallis, Thomas - In ieiunio et fletu",
       "include" : "true" 
@@ -112,9 +106,6 @@
     },
     { "file" : "../st-cecilia-press/o_magnum/o_magnum.pdf",
       "toc" : "de Victoria, Tomas Luis - O Magnum Mysterium"
-    },
-    { 
-      "spacer" : "true" 
     },
     { "file" : "../3rd-party/Hark,_all_ye_lovely_saints.pdf" ,
       "toc" : "Weelkes, Thomas - Hark, all ye Lovely Saints"
