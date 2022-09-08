@@ -22,8 +22,10 @@ sanctusAltoNotes =  \relative fs' {
     g2 fs1 e2 | % 296
     d1 cs2 b2 | % 297
     d1 a'2. a4 | % 298
-    g2 fs2. d4 fs2 ~ \bar ":"
-    fs4 b,4 e2 s1 | \barNumberCheck #18
+    g2 fs2. d4 fs2 ~ \bar "!"
+    \once \hide Staff.TimeSignature \time 2/2 
+    fs4 b,4 e2 | \barNumberCheck #18
+    \once \hide Staff.TimeSignature \time 4/2 
     ds\breve ^\fermata \bar "||" \break
     r2 fs2 d2 b2 | % 302
     g'1 g2 fs2 | % 303
@@ -81,8 +83,10 @@ sanctusTenorNotes =  \relative a {
     b2. b4 a2 g2 ~ | % 296
     g2 fs2 e2. e4 | % 297
     d2 d'2. d4 cs2 | % 298
-    b1. a2 \bar ":"
-    g2. g4 s1 | \barNumberCheck #18
+    b1. a2 \bar "!"
+    \once \hide Staff.TimeSignature \time 2/2 
+    g2. g4 | \barNumberCheck #18
+    \once \hide Staff.TimeSignature \time 4/2 
     fs\breve ^\fermata \bar "||"
     b1. g2 ~ | % 302
     g2 e2 b'2. d4 | % 303
@@ -142,8 +146,10 @@ sanctusBassNotes =  \relative d {
     R1*2 | % 296
     r2 a'2. a4 g2 | % 297
     fs2. d4 fs2. fs4 | % 298
-    b,1 d2 d2 \bar ":"
-    e2. e4 s1 | \barNumberCheck #18
+    b,1 d2 d2 \bar "!"
+    \once \hide Staff.TimeSignature \time 2/2 
+    e2. e4 | \barNumberCheck #18
+    \once \hide Staff.TimeSignature \time 4/2 
     b\breve ^\fermata \bar "||"
     R1*4 | % 303
     r1 fs'1 | % 304

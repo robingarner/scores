@@ -1,4 +1,4 @@
-\version "2.19.83"
+\version "2.22.1"
 
 \include "common.ly"
 
@@ -9,7 +9,7 @@ credoAltoNotes =  \relative fs' {
   \bar ""
   \clef "treble" \key d \major 
   \fourTwoCommonTime 
-    R1*2 | % 1
+    \tempo 2=120 R1*2 | % 1
     fs1 fs2 d2 | % 2
     e2 fs2 g1 | % 3
     fs1 r2 e2 | % 4
@@ -54,7 +54,7 @@ credoAltoNotes =  \relative fs' {
     d2 cs2  |
     \once \hide Staff.TimeSignature \time 4/2 
     d\breve ^\fermata \bar "||" \barNumberCheck #43 \break
-    a1 b2 cs2 | % 158
+    \tempo 2=96 a1 b2 cs2 | % 158
     d2 e2. cs4 a2 | % 159
     r2 e'2 fs2 b,2 | \barNumberCheck #46
     e1 d1 | % 161
@@ -86,7 +86,7 @@ credoAltoNotes =  \relative fs' {
     fs2 e2 d2 g2 | % 187
     fs2. fs4 b,2 a2 ~ | % 188
     a4 b4 cs2 d2. b4 | % 189
-    cs1 r2 d2 | \barNumberCheck #76
+    cs1 r2 \tempo 2=120 d2 | \barNumberCheck #76
     fs2 g2 a2 d,2  | % 191
     r2 fs2. e4 fs2 | % 192
     d4 e4 fs2 d1 | % 193
@@ -120,7 +120,7 @@ credoAltoNotes =  \relative fs' {
     d1 | \barNumberCheck #106
     \once \hide Staff.TimeSignature \time 4/2 
     a\breve ^\fermata \bar "||" \break
-    R\breve*11 \pageBreak  | \barNumberCheck #118
+    \tempo 2=96 R\breve*11 \pageBreak  | \barNumberCheck #118
     r1 r2 e'2 ~ | % 233
     e2 g2 fs1 | % 234
     e1 e2 d2 ~ | % 235
