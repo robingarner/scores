@@ -74,20 +74,11 @@
     { "file" : "../Palestrina_Sicut/Palestrina-Sicut_Cervus_Desiderat.pdf",
       "toc" : "Palestrina - Sicut Cervus" 
     },
-    { "file" : "../3rd-party/Parsons-AveMaria(orig,high)-1.pdf",
-      "toc" : "Parsons, Robert - Ave Maria",
-      "align" : "EVEN",
-      "include" : "false"
-    },
     { "file" : "../Parsons_Ave_Maria/06-ave_maria---0-score.pdf",
       "toc" : "Parsons, Robert - Ave Maria"
     },
     { "file" : "../3rd-party/Il_Est_Bel_Et_Bon.David.E minor.pdf",
       "toc" : "Passereau, Pierre - Il est Bel et Bon" 
-    },
-    { "file" : "../3rd-party/Vedrassi_prima_Palestrina.pdf",
-      "toc" : "Palestrina - Vedrassi Prima",  
-      "include" : "false" 
     },
     { "file" : "../3rd-party/Springtime_mantleth_every_bough.SAT.pdf",
       "toc" : "Moore - Springtime Mantleth Every Bough",  
