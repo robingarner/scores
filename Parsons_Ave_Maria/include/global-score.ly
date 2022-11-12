@@ -13,7 +13,7 @@ global = {
     \override Score.BarNumber.break-visibility = ##(#f #t #t)
     %\override Score.BarNumber #'break-visibility = #end-of-line-invisible
 
-    \compressFullBarRests
+    \compressEmptyMeasures
 
     \override Voice.NoteHead #'style = #'baroque
 

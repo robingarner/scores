@@ -1,10 +1,10 @@
-\version "2.20.0"
+\version "2.22.1"
 
 htitle = "Messe de Notre Dame - Kyrie"
 hcomposer = "Machaut"
 hdates = "1300&ndash;1377"
 
-#(set-global-staff-size 16)
+#(set-global-staff-size 16.2)
 
 \include "../include/common.ly"
 

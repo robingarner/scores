@@ -30,7 +30,7 @@ hdates="c.1548-1611"
 %	tagline=""
 }
 
-global =  {\fourTwoCutTime \key c \major  \skip 1*68  \bar "|."}
+global =  {\fourTwoCutTime \key f \major  \skip 1*68  \bar "|."}
 
 cantus = {
 	R1 |

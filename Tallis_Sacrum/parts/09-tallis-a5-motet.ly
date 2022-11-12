@@ -7,7 +7,7 @@ superiusIXincipit = \relative c' {
 }
 
 % superius: checked against source
-superiusIX = \transpose \transposeFrom \transposeTo \relative c' {
+superiusIX = \relative c' {
     \fourTwoCutTime
     \key bf \major
 
@@ -66,7 +66,7 @@ superiusLyricsIX = \lyricmode {
         no -- bis __ pi -- gnus da -- tur. __
 }
 
-discantusIXincipit = \transpose \transposeFrom \transposeTo \relative c' {
+discantusIXincipit = \relative c' {
     \time 2/2
     \clef "petrucci-c3"
     \key bf \major
@@ -75,7 +75,7 @@ discantusIXincipit = \transpose \transposeFrom \transposeTo \relative c' {
 }
 
 % discantus: checked against source
-discantusIX = \transpose \transposeFrom \transposeTo \relative c' {
+discantusIX = \relative c' {
     \fourTwoCutTime
     \key bf \major
 
@@ -140,7 +140,7 @@ discantusLyricsIX = \lyricmode {
     \normalLyrics
 }
 
-contraIXincipit = \transpose \transposeFrom \transposeTo \relative c' {
+contraIXincipit = \relative c' {
     \time 2/2
     \clef "petrucci-c3"
     \key bf \major
@@ -149,7 +149,7 @@ contraIXincipit = \transpose \transposeFrom \transposeTo \relative c' {
 }
 
 % contra: checked against source
-contraIX = \transpose \transposeFrom \transposeTo \relative c' {
+contraIX = \relative c' {
     \fourTwoCutTime
     \key bf \major
 
@@ -213,7 +213,7 @@ tenorIXincipit = \relative c {
 }
 
 % tenor: checked against source
-tenorIX = \transpose \transposeFrom \transposeTo \relative c {
+tenorIX = \relative c {
     \fourTwoCutTime
     \key bf \major
 
@@ -272,7 +272,7 @@ tenorLyricsIX = \lyricmode {
         no -- bis pi -- gnus da -- tur.
 }
 
-bassusIXincipit = \transpose \transposeFrom \transposeTo \relative c {
+bassusIXincipit = \relative c {
     \time 2/2
     \clef "petrucci-f4"
     \key bf \major
@@ -281,7 +281,7 @@ bassusIXincipit = \transpose \transposeFrom \transposeTo \relative c {
 }
 
 % bassus: checked against source
-bassusIX = \transpose \transposeFrom \transposeTo \relative c {
+bassusIX = \relative c {
     \fourTwoCutTime
     \key bf \major
 

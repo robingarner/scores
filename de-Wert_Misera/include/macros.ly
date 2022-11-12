@@ -29,73 +29,73 @@ fourTwoCommonTime = {
 
 threeFromOneLong = \tempo \markup {
    \concat {
-        \smaller \general-align #Y #DOWN \note #"1" #1
+        \smaller \general-align #Y #DOWN \note {1} #1
         " = "
-        \smaller \override #'(style . neomensural) { \general-align #Y #DOWN \note #"breve." #1 }
+        \smaller \override #'(style . neomensural) { \general-align #Y #DOWN \note {\breve.} #1 }
     }
 }
 
 oneFromThreeLong = \tempo \markup {
    \concat {
-        \smaller \override #'(style . neomensural) { \general-align #Y #DOWN \note #"breve." #1 }
+        \smaller \override #'(style . neomensural) { \general-align #Y #DOWN \note {\breve.} #1 }
         " = "
-        \smaller \general-align #Y #DOWN \note #"1" #1
+        \smaller \general-align #Y #DOWN \note {1} #1
     }
 }
 
 twoFromTwo = \tempo \markup {
    \concat {
-        \smaller \general-align #Y #DOWN \note #"2" #1
+        \smaller \general-align #Y #DOWN \note {2} #1
         " = "
-        \smaller \general-align #Y #DOWN \note #"2" #1
+        \smaller \general-align #Y #DOWN \note {2} #1
     }
 }
 
 dottedtwoFromTwo = \tempo \markup {
    \concat {
-        \smaller \general-align #Y #DOWN \note #"2" #1
+        \smaller \general-align #Y #DOWN \note {2} #1
         " = "
-        \smaller \general-align #Y #DOWN \note #"2." #1
+        \smaller \general-align #Y #DOWN \note {2.} #1
     }
 }
 
 twoFromDottedTwo = \tempo \markup {
    \concat {
-        \smaller \general-align #Y #DOWN \note #"2." #1
+        \smaller \general-align #Y #DOWN \note {2.} #1
         " = "
-        \smaller \general-align #Y #DOWN \note #"2" #1
+        \smaller \general-align #Y #DOWN \note {2} #1
     }
 }
 
 threeFromOne = \tempo \markup {
    \concat {
-        \smaller \general-align #Y #DOWN \note #"1" #1
+        \smaller \general-align #Y #DOWN \note {1} #1
         " = "
-        \smaller \general-align #Y #DOWN \note #"1." #1
+        \smaller \general-align #Y #DOWN \note {1.} #1
     }
 }
 
 threeFromTwo = \tempo \markup {
    \concat {
-        \smaller \general-align #Y #DOWN \note #"2" #1
+        \smaller \general-align #Y #DOWN \note {2} #1
         " = "
-        \smaller \general-align #Y #DOWN \note #"1." #1
+        \smaller \general-align #Y #DOWN \note {1.} #1
     }
 }
 
 twoFromThree = \tempo \markup {
    \concat {
-        \smaller \general-align #Y #DOWN \note #"1." #1
+        \smaller \general-align #Y #DOWN \note {1.} #1
         " = "
-        \smaller \general-align #Y #DOWN \note #"2" #1
+        \smaller \general-align #Y #DOWN \note {2} #1
     }
 }
 
 oneFromThree = \tempo \markup {
    \concat {
-        \smaller \general-align #Y #DOWN \note #"1." #1
+        \smaller \general-align #Y #DOWN \note {1.} #1
         " = "
-        \smaller \general-align #Y #DOWN \note #"1" #1
+        \smaller \general-align #Y #DOWN \note {1} #1
     }
 }
 

@@ -8,7 +8,7 @@ global = {
     \override Score.BarNumber #'self-alignment-X = #0
     \override Score.BarNumber #'break-visibility = #end-of-line-invisible
 
-    \compressFullBarRests
+    \compressEmptyMeasures
 
     \override Voice.NoteHead #'style = #'baroque
 

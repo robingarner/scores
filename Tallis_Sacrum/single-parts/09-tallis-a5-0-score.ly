@@ -7,8 +7,6 @@
 \include "../include/scheme.ly" 
 
 #(set-global-staff-size 16.0)
-transposeFrom = c
-transposeTo = d
 
 \header {
     % Things that change per piece:
@@ -26,9 +24,9 @@ transposeTo = d
 \include "../parts/09-tallis-a5-motet.ly"
 
 \book {
-    \bookOutputName "09-o_sacrum_convivium"
-    \bookOutputSuffix "--0-score"
-    \score {
+    %\bookOutputName "09-o_sacrum_convivium"
+    %\bookOutputSuffix "--0-score"
+    \score { \transpose c d
          <<
             \new ChoirStaff = choirStaff \with {
                 \override StaffGrouper.staff-staff-spacing.padding = #3

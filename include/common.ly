@@ -79,3 +79,9 @@ fourTwoCommonTime = {
     \time 4/2
 }
 
+threeTwoPerfectTime = {
+    \once \override Staff.TimeSignature #'style = #'neomensural
+    \time 3/2
+}
+
+ficta = { \once \set suggestAccidentals = ##t }
