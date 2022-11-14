@@ -72,7 +72,7 @@ a2 fs1 fs2 g2. g4 g1 r2 g2.\melisma a4 bf g a2 \melismaEnd d c1
 bf2 d2 c2 a2 bf2. \melisma a4 g f f e8[ d ] e2 \melismaEnd e d a'2 ~ a2 f1 bf2 ~ 
 bf4 a4 g1 fs2
 \time 6/2
-g\breve bf1 a\breve fs1 g1.  \melisma f2 g a  \melismaEnd bf1 a\breve
+g\breve bf1 a\breve fs1 g1.  f2 \melisma g a  \melismaEnd bf1 a\breve
 bf\breve g1 f\breve d1 e1. d2 e f g\breve fs1 g\breve.
 r1 r1 c1 bf1. a2 bf2 g | a1 f2 g a bf c\breve c1
 bf1 d\breve 
@@ -91,7 +91,7 @@ R\breve r1 d1 ~ d1 g,1 d'1. d2 ef2 ef d1 r2 d2 bf2 c d2. d4 d2 a2 bf2 d1 \melism
 cs1 \melismaEnd d1 d\breve d1 d2. e4 f2 f,2 g2. a4 bf2 a2 g d'2 |
 d2 c a2. a4 a2 bf2. a4 g2 ~ g2 fs2 g2 g'2 d2 f2 f2. f4
 f1 d2 ef2 d1 d1 ~ d1 r1 r2 g2 f2. d4
-d2 fs2 g2 d d2. d4 d2 e2 f1 e1 d2 f2 f2. f4 
+e2 fs2 g2 d d2. d4 d2 e2 f1 e1 d2 f2 f2. f4 
 f2 f g a2 ~ a4 g g1 fs2 g2 d2 f2. \melisma e8 [ f ] g2 f4 e d2 \melismaEnd a2 | r1 r2 g2 
 d'1 c2 a2 bf2 c2 d4 \melisma c d e f2. e8[ f] g2 f4 \melismaEnd  e4 d1 r2 a2 
 d1 c2 a2 bf4 \melisma c d e f1 \melismaEnd g2. \melisma f4 ef d ef2 d1. \melismaEnd d2
@@ -180,7 +180,7 @@ ia -- cen -- tem in pre -- _ se -- _ _ pi -- o,
 ia -- cen -- tem in pre -- _ se -- pi -- o.
 O Be -- a -- ta vir -- go cu -- ius vi -- sce -- ra me -- ru -- e -- runt 
 por -- ta -- re do -- mi -- num
-Je -- sum Chri -- _ _ stum.
+Je -- sum Chri -- _ _ _ stum.
 Al -- le -- lu -- ia, al -- le -- lu -- ia, 
 al -- le -- lu -- ia, al -- _ _ le -- lu -- ia, 
 al -- le -- _ _ _ _ lu -- _ _ _ ia, al -- le -- lu -- ia, 

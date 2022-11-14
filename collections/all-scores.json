@@ -47,9 +47,8 @@
     { "file" : "../3rd-party/Lassus-Bonjour.pdf",
       "toc" : "di Lassus, Orlando - Bonjour mon Coeur"
     },
-    { "file" : "../3rd-party/Versa_est_in_luctum_Lobo.pdf",
-      "toc" : "Lobo - Versa est in Luctum",  
-      "include" : "false" 
+    { "file" : "../Lobo_Versa_Est/Lobo-Versa_Est_In_Luctum.pdf",
+      "toc" : "Lobo - Versa est in Luctum"
     },
     { "file" : "../3rd-party/Gibbons_Loosemore_O Lord.pdf",
       "toc" : "Loosemore, Henry - O Lord Increase My Faith"
